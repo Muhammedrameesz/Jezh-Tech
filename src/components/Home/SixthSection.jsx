@@ -1,4 +1,7 @@
 import { useEffect, useState, useRef } from "react";
+import Project from "../../assets/icons/project-management.png";
+import Users from "../../assets/icons/users.png";
+import Succes from "../../assets/icons/b6d8f0ab979930e320aaca1e0fcb71ea.png"
 
 export default function StatsSection() {
   const projectsRef = useRef(null);
@@ -65,29 +68,54 @@ export default function StatsSection() {
   }, [isVisible]);
 
   return (
-    <div className="flex flex-col md:flex-row items-center gap-2 md:gap-6 justify-center md:space-x-12 space-y-8 md:space-y-0 p-10 bg-gray-50 text-black">
+    <div className="flex flex-col md:flex-row items-center gap-2 md:gap-6 justify-center md:space-x-12 space-y-8 md:space-y-0 p-10 bg-gradient-to-t from-black to-black text-white">
       <div
         ref={projectsRef}
-        className="text-center border-b-2 md:border-0 md:border-b-0 border-dotted border-gray-600 md:pl-8 md:pb-0 pb-4"
+        className="flex flex-row gap-5 text-center border-b-2 md:border-0 md:border-b-0 border-dotted border-gray-600 md:pl-8 md:pb-0 pb-4"
       >
-        <h1 className="text-6xl font-bold">{`${projectsCount}+`}</h1>
-        <p className="text-xl text-black font-semibold ">Projects</p>
+        <img
+          src={Project}
+          alt="project management"
+          className="h-10 w-10 mt-5"
+        />
+
+        <div>
+          <h1 className="text-6xl font-bold">{`${projectsCount}+`}</h1>
+          <p className="text-xl text-customGreen font-semibold ">Projects</p>
+        </div>
       </div>
 
       <div
         ref={customersRef}
-        className="text-center border-b-2 md:border-l-2 md:border-b-0 border-dotted border-gray-600 md:pl-8 md:pb-0 pb-4"
+        className="flex flex-row gap-5 text-center border-b-2 md:border-l-2 md:border-b-0 border-dotted border-gray-600 md:pl-8 md:pb-0 pb-4"
       >
-        <h1 className="text-6xl font-bold">{`${customersCount}+`}</h1>
-        <p className="text-xl text-black font-semibold">Projects</p>
+        <img
+          src={Succes}
+          alt="project management"
+          className="h-10 w-10 mt-5"
+        />
+        <div>
+          <h1 className="text-6xl font-bold">{`${customersCount}+`}</h1>
+          <p className="text-xl text-customGreen font-semibold">Projects</p>
+        </div>
       </div>
 
       <div
         ref={othersRef}
-        className="text-center border-b-2 md:border-l-2 md:border-b-0 border-dotted border-gray-600 md:pl-8 md:pb-0 pb-4"
+        className="flex flex-row gap-5 text-center border-b-2 md:border-l-2 md:border-b-0 border-dotted border-gray-600 md:pl-8 md:pb-0 pb-4"
       >
-        <h1 className="text-6xl font-bold">{`${othersCount}+`}</h1>
-        <p className="text-xl text-black font-semibold">Happy Customers</p>
+        <img
+          src={Users}
+          alt="project management"
+          className="h-10 w-10 mt-5"
+        />
+
+        <div>
+          <h1 className="text-6xl font-bold">{`${othersCount}+`}</h1>
+          <p className="text-xl text-customGreen font-semibold">
+            Happy Customers
+          </p>
+        </div>
       </div>
     </div>
   );

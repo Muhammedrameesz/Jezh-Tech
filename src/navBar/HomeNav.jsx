@@ -13,7 +13,7 @@ export default function HomeNav() {
   return (
     <div>
       <nav
-        className="py-4 px-8 shadow-md z-10 w-full max-w-full flex items-center justify-around fixed top-0 bg-white "
+        className="py-4 px-8 shadow-md z-40 w-full max-w-full flex items-center justify-around fixed top-0 bg-white  "
         style={{
           boxShadow: " rgba(0, 0, 0, 0.5) 0px 20px 40px -40px inset",
         }}
@@ -63,7 +63,7 @@ export default function HomeNav() {
                 activeLink === item.element && (
                   <>
                    <div className="absolute left-0 right-0 top-6 bg-transparent h-6 "/>
-                   <div className="absolute left-1/2 right-1/2 h-8 w-8 -translate-x-1/2 -translate-y-1/2 bg-white z-10 top-12 rotate-45"/>
+                   <div className="absolute left-1/2 right-1/2 h-6 w-6 -translate-x-1/2 -translate-y-1/2 bg-white z-10 top-12 rotate-45"/>
                   </>
                 )}
              

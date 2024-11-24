@@ -29,7 +29,7 @@ export default function ForthSection() {
             <h2 className="text-xl md:text-xl font-semibold text-gray-800 mb-2 ">
               Built for Your Industry
             </h2>
-            <p className="text-sm text-gray-500 font-semibold tracking-tight ">
+            <p className="text-sm text-gray-500 font-semibold tracking-normal ">
               Whether it&apos;s smart homes, e-commerce, healthcare, or
               manufacturing, we align our services to meet the specific needs of
               each industry
@@ -49,7 +49,7 @@ export default function ForthSection() {
             <h2 className="text-xl md:text-xl font-semibold text-gray-800 mb-2 ">
               Adaptable & Scalable
             </h2>
-            <p className="text-sm text-gray-500 font-semibold tracking-tight">
+            <p className="text-sm text-gray-500 font-semibold tracking-normal">
               Our solutions grow with your business, with easy integration and
               scalability as your company evolves.
             </p>
@@ -67,7 +67,7 @@ export default function ForthSection() {
             <h2 className="text-xl md:text-xl font-semibold  text-gray-800 mb-2">
               Technology with a Personal Touch
             </h2>
-            <p className="text-sm text-gray-500 font-semibold tracking-tight">
+            <p className="text-sm text-gray-500 font-semibold tracking-normal">
               Our team is dedicated to understanding your business’s unique
               requirements and delivering solutions that resonate with your
               goals.

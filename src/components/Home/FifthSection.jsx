@@ -4,99 +4,61 @@ import Innovation from "../../assets/icons/intelligence_11764993.png";
 import AnimTB from "../../ui/AnimTB.jsx";
 import AnimBT from "../../ui/AnimBT.jsx";
 
+
 export default function FifthSection() {
   return (
-    <div className="flex flex-col mt-20 items-center px-6 bg-gradient-to-t from-black  to-black py-16 font-helvetica">
-      <div className="mb-10 text-center ">
-        <div className="flex flex-col items-center">
-          <div className="flex items-center w-full">
-            <div className="flex-grow h-1 bg-gradient-to-r from-customGreen to-transparent"></div>
-            <AnimTB>
-              <h1 className="mx-4 text-4xl md:text-5xl font-extrabold text-slate-100 tracking-tight font-poppins ">
-                Why Choose Us?
-              </h1>
-            </AnimTB>
-            <div className="flex-grow h-1 bg-gradient-to-r from-customGreen to-transparent"></div>
-          </div>
+    <div className="flex flex-col mt-20 items-center font-poppins px-6 py-16 bg-gradient-to-b from-gray-50 to-gray-100">
+      <div className="mb-10 text-center">
+        <div className="flex items-center w-full">
+          <div className="flex-grow h-1 bg-gradient-to-r from-customGreen to-transparent"></div>
+          <AnimTB>
+            <h1 className="mx-4 text-4xl md:text-5xl mb-5 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-customGreen via-black to-customGreen tracking-wide">
+              Why Choose Us?
+            </h1>
+          </AnimTB>
+          <div className="flex-grow h-1 bg-gradient-to-l from-customGreen to-transparent"></div>
         </div>
       </div>
 
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-10 items-start justify-center w-full max-w-6xl mx-auto">
-        <AnimBT>
-          <div className="flex flex-col  rounded-xl shadow-2xl p-8 bg-gradient-to-br from-gray-50 to-gray-100 transform transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-2xl border border-customGreen relative">
-            <span className="absolute top-0 left-0 h-24 w-1 bg-customGreen rounded-lg mt-1 "></span>
-            <span className="absolute top-0 left-0 w-24 h-1 bg-customGreen rounded-lg ml-1"></span>
-            <span className="absolute bottom-0 right-0 h-24 w-1 bg-customGreen rounded-lg mb-1"></span>
-            <span className="absolute bottom-0 right-0 w-24 h-1 bg-customGreen rounded-lg mr-1"></span>
+      <section className="grid grid-cols-1 md:grid-cols-3 gap-10 w-full max-w-6xl">
+        {[
+          {
+            icon: Deal,
+            title: "Commitment to Quality",
+            text: "Quality isn’t just a goal—it’s our standard. Our processes include rigorous quality checks to ensure that every solution we deliver meets the highest industry standards. You can trust us to get it right, every time.",
+          },
+          {
+            icon: CustomerCen,
+            title: "Client-Centric Approach",
+            text: "Your satisfaction is our top priority. We believe in working as an extension of your team, maintaining open communication, and providing exceptional support at every step.Stay informed and guided every step of the way",
+          },
+          {
+            icon: Innovation,
+            title: "Innovation at the Core",
+            text: "We’re driven by technology and fueled by innovation. Our team is always exploring the latest advancements, ensuring that our clients benefit from cutting-edge solutions that are efficient, reliable, and future-ready.",
+          },
+        ].map((feature, index) => (
+          <AnimBT key={index} delay={index * 0.3}>
+            <div className="relative flex flex-col items-center p-8 rounded-2xl shadow-xl bg-white transition-transform transform hover:-translate-y-4 hover:shadow-2xl duration-500">
+             
+                <div className="w-20 h-20 rounded-full bg-gradient-to-tl from-customGreen via-black to-gray-800 flex items-center justify-center -mt-12 mb-4 shadow-lg">
+                  <img
+                    src={feature.icon}
+                    alt={feature.title}
+                    className="h-12 w-12"
+                  />
+                </div>
+            
 
-            <span className="absolute right-0 top-0 h-1 w-20 "></span>
-
-            <div className="flex items-center justify-center mb-3  ">
-              <img src={Deal} alt="commitmentjpj" className="h-14 w-1h-14  " />
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center">
+                {feature.title}
+              </h2>
+              <p className="text-gray-600 text-center text-sm leading-relaxed">
+                {feature.text}
+              </p>
             </div>
-            <h2 className="text-center text-2xl md:text-3xl lg:text-2xl font-extrabold text-slate-900 mb-6 ">
-              Commitment to Quality
-            </h2>
-            <p className="text-base text-gray-700 leading-tight font-semibold tracking-tighter">
-              Quality isn’t just a goal—it’s our standard. Our processes include
-              rigorous quality checks to ensure that every solution we deliver
-              meets the highest industry standards. You can trust us to get it
-              right, every time.
-            </p>
-          </div>
-        </AnimBT>
-
-        <AnimBT delay={0.4}>
-          <div className="flex flex-col  rounded-xl shadow-2xl p-8  transform transition-all duration-500 ease-in-out bg-gradient-to-br from-gray-50 to-gray-100 hover:scale-105 hover:shadow-2xl border border-customGreen relative">
-            <div className="flex items-center justify-center mb-3">
-              <span className="absolute bottom-0 left-0 h-24 w-1 bg-customGreen rounded-lg mb-1 "></span>
-              <span className="absolute bottom-0 left-0 w-24 h-1 bg-customGreen rounded-lg ml-1"></span>
-              <span className="absolute top-0 right-0 h-24 w-1 bg-customGreen rounded-lg mt-1"></span>
-              <span className="absolute top-0 right-0 w-24 h-1 bg-customGreen rounded-lg mr-1"></span>
-
-              <img
-                src={CustomerCen}
-                alt="commitmentjpj"
-                className="h-14 w-1h-14 "
-              />
-            </div>
-            <h2 className="text-center text-2xl md:text-3xl lg:text-2xl font-extrabold text-slate-900 mb-6 ">
-              Client-Centric Approach
-            </h2>
-            <p className="text-base text-gray-700 leading-tight font-semibold tracking-tighter">
-              Your satisfaction is our top priority. We believe in working as an
-              extension of your team, maintaining open communication, and
-              providing exceptional support at every step.Stay informed and
-              trust us to guide you every step of the way.
-            </p>
-          </div>
-        </AnimBT>
-
-        <AnimBT delay={0.6}>
-          <div className="flex flex-col rounded-xl shadow-2xl bg-gradient-to-br from-gray-50 to-gray-100 p-8 transform transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-2xl border border-customGreen relative">
-            <div className="flex items-center justify-center mb-3">
-              <span className="absolute top-0 left-0 h-24 w-1 bg-customGreen rounded-lg mt-1 "></span>
-              <span className="absolute top-0 left-0 w-24 h-1 bg-customGreen rounded-lg ml-1"></span>
-              <span className="absolute bottom-0 right-0 h-24 w-1 bg-customGreen rounded-lg mb-1"></span>
-              <span className="absolute bottom-0 right-0 w-24 h-1 bg-customGreen rounded-lg mr-1"></span>
-
-              <img
-                src={Innovation}
-                alt="commitmentjpj"
-                className="h-14 w-1h-14  "
-              />
-            </div>
-            <h2 className="text-center text-2xl md:text-3xl lg:text-2xl font-extrabold text-slate-900 mb-6 ">
-              Innovation at the Core
-            </h2>
-            <p className="text-base text-gray-700 leading-tight font-semibold tracking-tighter">
-              We’re driven by technology and fueled by innovation. Our team is
-              always exploring the latest advancements, ensuring that our
-              clients benefit from cutting-edge solutions that are efficient,
-              reliable, and future-ready.
-            </p>
-          </div>
-        </AnimBT>
+          </AnimBT>
+        ))}
       </section>
     </div>
   );

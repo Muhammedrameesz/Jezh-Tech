@@ -12,6 +12,7 @@ import Blog from "../pages/Resources/Blog.jsx";
 import SocialMedia from "../pages/Resources/SocialMedia.jsx";
 import Contact from "../pages/contact.jsx";
 
+
 export const Router = createBrowserRouter([
   {
     element: <HomeLayout />,

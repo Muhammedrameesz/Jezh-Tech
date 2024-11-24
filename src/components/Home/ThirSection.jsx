@@ -47,7 +47,7 @@ export default function ThirSection() {
               <h2 className="text-xl md:text-xl font-semibold text-gray-800  mb-2">
                 Internet of Things (IoT)
               </h2>
-              <p className="text-sm text-gray-500 font-semibold tracking-tight">
+              <p className="text-sm text-gray-500 font-semibold tracking-normal">
                 We specialize in connecting devices and systems to make your
                 home, business, or industrial environments smarter, safer, and
                 more efficient.
@@ -65,7 +65,7 @@ export default function ThirSection() {
               <h2 className="text-xl md:text-xl font-semibold text-gray-800 mb-2">
                 Artificial Intelligence (AI)
               </h2>
-              <p className="text-sm text-gray-500 font-semibold tracking-tight ">
+              <p className="text-sm text-gray-500 font-semibold tracking-normal ">
                 Our AI solutions empower businesses to optimize processes,
                 improve decision-making, and drive automation through
                 intelligent systems.
@@ -83,7 +83,7 @@ export default function ThirSection() {
               <h2 className="text-xl md:text-xl font-semibold text-gray-800 mb-2">
                 Robotics & Automation
               </h2>
-              <p className="text-sm text-gray-500 font-semibold tracking-tight ">
+              <p className="text-sm text-gray-500 font-semibold tracking-normal ">
                 We integrate robotics and automation technology to streamline
                 tasks, improve productivity, and ensure operational excellence
                 across industries.
