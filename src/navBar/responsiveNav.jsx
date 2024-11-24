@@ -32,9 +32,9 @@ export default function ResponsiveNav() {
             <h2 className="opacity-0 text-gray-50 font-semibold text-lg">
               Menu
             </h2>
-            <button onClick={() => setOpen(false)} className="text-gray-900">
+            {/* <button onClick={() => setOpen(false)} className="text-gray-900">
               <CloseIcon fontSize="large" />
-            </button>
+            </button> */}
           </div>
 
           <ul className="flex flex-col mt-6 gap-6 text-gray-800">
