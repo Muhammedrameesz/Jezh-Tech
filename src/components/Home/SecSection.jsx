@@ -14,7 +14,7 @@ export default function SecSection() {
   };
 
   const cardStyles = (index) =>
-    `relative flex flex-col items-center space-y-6 bg-white border-2 border-gray-200 rounded-3xl  
+    `relative flex flex-col items-center space-y-6  bg-white border-[5px] border-black   
      transition-transform transform duration-500 cursor-pointer p-8 
      ${activeCard === index ? "z-10 scale-110 shadow-2xl" : "hover:scale-105"} 
      ${index === 0 ? "rotate-2" : "-rotate-2"} hover:rotate-0`;
@@ -31,7 +31,7 @@ export default function SecSection() {
       </div>
 
       {/* Card Section */}
-      <section className="relative grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-6xl items-center">
+      <section className="relative grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-4xl items-center">
         <div className="absolute left-1/2 right-1/2 z-20  -translate-x-1/2 -translate-y-1/2 flex justify-center items-center">
           <div className="animate-bounce-custom z-10 ">
             <img src={Jezh} alt="jezj logo" className="w-20 h-10 " />
@@ -45,7 +45,7 @@ export default function SecSection() {
             className="text-customGreen bg-gradient-to-t from-customGreen via-black to-customGreen rounded-lg"
             sx={{ fontSize: "40px" }}
           />
-          <h1 className="text-2xl font-semibold text-gray-800">
+          <h1 className="text-2xl font-semibold text-gray-800 text-center">
             Home & Industrial Automation
           </h1>
           <p className="text-base text-gray-600 leading-relaxed">

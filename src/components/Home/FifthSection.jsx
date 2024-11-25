@@ -7,7 +7,8 @@ import AnimBT from "../../ui/AnimBT.jsx";
 
 export default function FifthSection() {
   return (
-    <div className="flex flex-col mt-20 items-center font-poppins px-6 py-16 bg-gradient-to-b from-gray-50 to-gray-100">
+    <div className="flex flex-col mt-20 items-center font-poppins px-6 py-16 ">
+
       <div className="mb-10 text-center">
         <div className="flex items-center w-full">
           <div className="flex-grow h-1 bg-gradient-to-r from-customGreen to-transparent"></div>
@@ -30,7 +31,7 @@ export default function FifthSection() {
           {
             icon: CustomerCen,
             title: "Client-Centric Approach",
-            text: "Your satisfaction is our top priority. We believe in working as an extension of your team, maintaining open communication, and providing exceptional support at every step.Stay informed and guided every step of the way",
+            text: "Your satisfaction is our top priority. We believe in working as an extension of your team, maintaining open communication, and providing exceptional support at every step.",
           },
           {
             icon: Innovation,
@@ -39,8 +40,15 @@ export default function FifthSection() {
           },
         ].map((feature, index) => (
           <AnimBT key={index} delay={index * 0.3}>
-            <div className="relative flex flex-col items-center p-8 rounded-2xl shadow-xl bg-white transition-transform transform hover:-translate-y-4 hover:shadow-2xl duration-500">
-             
+            <div className="relative flex flex-col items-center p-8   bg-white transition-transform transform hover:-translate-y-4 hover:shadow-2xl duration-500">
+              
+              
+               <span className="absolute left-0 top-0 h-[100%] w-[5px] bg-black"></span>
+               <span className="absolute left-0 top-0 w-[35%] h-[5px] bg-black"></span>
+               <span className="absolute left-0 bottom-0 w-[100%] h-[5px] bg-black"></span>
+               <span className="absolute right-0 bottom-0 h-[100%] w-[5px] bg-black"></span>
+               <span className="absolute right-0 top-0 w-[35%] h-[5px] bg-black"></span>
+
                 <div className="w-20 h-20 rounded-full bg-gradient-to-tl from-customGreen via-black to-gray-800 flex items-center justify-center -mt-12 mb-4 shadow-lg">
                   <img
                     src={feature.icon}

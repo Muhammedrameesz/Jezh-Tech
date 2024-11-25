@@ -22,18 +22,14 @@ export default {
         alata: ["Alata", "sans-serif"],
         helvetica: ["Helvetica", "Arial", "Lucida", "sans-serif"],
       },
-
-      shadow: {
-        boxShadow: "0 -4px 6px rgba(0, 0, 0, 0.1)",
-      },
       keyframes: {
-        bounceVertical: {
-          "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-100px)" }, // Adjust height
+        spinSlow: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
         },
       },
       animation: {
-        "bounce-custom": "bounceVertical 3s ease-in-out infinite",
+        'spin-slow': 'spinSlow 5s linear infinite',  // Adjusted time to 5s for better visibility
       },
     },
   },

@@ -4,10 +4,7 @@ import HoverButton from "../../ui/HoverButton.jsx";
 
 export default function WhoWeAre() {
   return (
-    <div
-      className=" flex flex-col  items-center justify-center bg-gradient-to-t from-oracleGray to-gray-200 min-h-screen px-6 py-12 mx-6 md:mx-12 lg:mx-20 mt-28 font-poppins"
-
-    >
+    <div className=" flex flex-col  items-center justify-center bg-gradient-to-t from-oracleGray to-gray-200 min-h-screen px-6 py-12 mx-6 md:mx-12 lg:mx-20 mt-28 font-poppins">
       <Anim>
         <div className="relative text-center md:text-left space-y-6 max-w-2xl p-10 border-[5px] bg-white border-black">
           <div className="absolute left-[60%]  -translate-y-1/2 z-10 w-56 h-56 bg-white rounded-full ">
@@ -20,7 +17,7 @@ export default function WhoWeAre() {
           <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900">
             Serving Since 2021
           </h1>
-          <p className="text-gray-700 leading-relaxed md:text-lg tracking-tight">
+          <p className="  ">
             Jezh Technologies is a forward-thinking company focused on
             delivering innovative tech solutions. We specialize in smart IoT and
             AI-powered applications that simplify processes and help businesses

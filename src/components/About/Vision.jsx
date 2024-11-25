@@ -18,7 +18,7 @@ export default function VisionMission() {
 
       <div className="flex flex-col md:flex-row items-start justify-center space-y-6 md:space-y-0 md:space-x-12">
         <Anim>
-          <div className=" space-y-6">
+          <div className=" space-y-6 border-[5px] border-black p-5">
             <h2 className="text-2xl font-semibold text-black flex items-center">
               <img
                 src={VisionImage}
@@ -47,7 +47,7 @@ export default function VisionMission() {
           </div>
         </Anim>
         <AnimRL>
-          <div className="space-y-6">
+          <div className="space-y-6 border-[5px] border-black p-5">
             <h2 className="text-2xl font-semibold text-black flex items-center">
               <img
                 src={MissionImage}
