@@ -14,8 +14,8 @@ export default function TestAnim() {
             <div
               key={i}
               className={`relative  border w-[300px] h-[300px] overflow-hidden before:absolute before:top-[-50%] before:left-[-50%] before:right-[-50%] before:bottom-[-50%] 
-                ${i == 0 || i == 2 ? "before:bg-[conic-gradient(from_0deg,_transparent,_transparent,_#8fd14f_100%)]" : "before:bg-[conic-gradient(from_0deg,_transparent,_transparent,_#1c1c1c_100%)]"}  
-                before:animate-spin-slow`}
+                ${i == 0 || i == 2 ? "before:bg-[conic-gradient(from_0deg,_transparent,_transparent,_#8fd14f_100%)]" : "before:bg-[conic-gradient(from_0deg,_transparent,_transparent,_#8fd14f_100%)]"}  
+                before:animate-spin-slow bg-black ` }
             >
               <div className="absolute flex flex-col justify-center items-center top-[7px] right-[7px] bottom-[7px] left-[7px] px-2 bg-gray-50">
                 <Anim delay={i * 0.3}>
