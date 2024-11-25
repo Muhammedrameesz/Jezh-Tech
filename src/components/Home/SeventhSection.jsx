@@ -33,7 +33,7 @@ export default function SeventhSection() {
             >
               <div className="flex flex-row items-center justify-center space-x-4">
                 <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-r from-customGreen to-transparent"></span>
-                <h2 className="text-3xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-customGreen via-black to-customGreen tracking-tighter">
+                <h2 className="text-3xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-customGreen via-black to-customGreen tracking-tighter">
                   Success Stories Straight from Our Clients
                 </h2>
                 <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-l from-customGreen to-transparent"></span>

@@ -7,7 +7,7 @@ import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
 
 export default function VisionMission() {
   return (
-    <div className="font-poppins  py-12 px-6  mx-12 md:mx-20 lg:mx-28 rounded-lg  mb-10 mt-20">
+    <div className="font-poppins  py-12  bg-gray-100 px-12 md:px-20 lg:px-28 rounded-lg  mb-10 mt-20">
       <div className="text-center mb-12">
         <AnimZF>
           <h1 className="text-4xl md:text-5xl mb-5 tracking-tight font-extrabold text-transparent bg-clip-text bg-gradient-to-bl from-customGreen via-black  to-customGreen">
@@ -30,7 +30,7 @@ export default function VisionMission() {
 
             <div className="flex flex-row gap-3">
               <ArrowForwardRoundedIcon />
-              <p className="text-base text-gray-900 leading-relaxed tracking-tight">
+              <p className="text-base text-gray-900 leading-relaxed tracking-tight font-semibold">
                 To be a leader in driving digital transformation by delivering
                 innovative, user-centric technology solutions.
               </p>
@@ -38,7 +38,7 @@ export default function VisionMission() {
 
             <div className="flex flex-row gap-3">
               <ArrowForwardRoundedIcon />
-              <p className="text-base text-gray-900 leading-relaxed tracking-tight">
+              <p className="text-base text-gray-900 leading-relaxed tracking-tight font-semibold">
                 To empower businesses and individuals with accessible,
                 cutting-edge technology that shapes a smarter, more efficient
                 future.
@@ -60,7 +60,7 @@ export default function VisionMission() {
             <div className="flex flex-row gap-3">
               <ArrowForwardRoundedIcon />
 
-              <p className="text-base text-gray-900 leading-relaxed tracking-tight">
+              <p className="text-base text-gray-900 leading-relaxed tracking-tight font-semibold">
                 To simplify complex processes by creating intuitive and
                 efficient tech solutions that enhance productivity and growth.
               </p>
@@ -69,7 +69,7 @@ export default function VisionMission() {
             <div className="flex flex-row gap-3">
               <ArrowForwardRoundedIcon />
 
-              <p className="text-base text-gray-900 leading-relaxed tracking-tight">
+              <p className="text-base text-gray-900 leading-relaxed tracking-tight font-semibold">
                 To foster a collaborative environment where creativity,
                 reliability, and excellence drive every project we undertake.
               </p>

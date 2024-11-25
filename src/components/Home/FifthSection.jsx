@@ -7,13 +7,13 @@ import AnimBT from "../../ui/AnimBT.jsx";
 
 export default function FifthSection() {
   return (
-    <div className="flex flex-col mt-20 items-center font-poppins px-6 py-16 ">
+    <div className="flex flex-col mt-20 items-center font-poppins px-6 py-16 bg-white mb-10">
 
       <div className="mb-10 text-center">
         <div className="flex items-center w-full">
           <div className="flex-grow h-1 bg-gradient-to-r from-customGreen to-transparent"></div>
           <AnimTB>
-            <h1 className="mx-4 text-4xl md:text-5xl mb-5 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-customGreen via-black to-customGreen tracking-wide">
+            <h1 className="mx-4 text-4xl md:text-5xl mb-10 font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-customGreen via-black to-customGreen tracking-wide">
               Why Choose Us?
             </h1>
           </AnimTB>
@@ -42,14 +42,13 @@ export default function FifthSection() {
           <AnimBT key={index} delay={index * 0.3}>
             <div className="relative flex flex-col items-center p-8   bg-white transition-transform transform hover:-translate-y-4 hover:shadow-2xl duration-500">
               
-              
                <span className="absolute left-0 top-0 h-[100%] w-[5px] bg-black"></span>
                <span className="absolute left-0 top-0 w-[35%] h-[5px] bg-black"></span>
                <span className="absolute left-0 bottom-0 w-[100%] h-[5px] bg-black"></span>
                <span className="absolute right-0 bottom-0 h-[100%] w-[5px] bg-black"></span>
                <span className="absolute right-0 top-0 w-[35%] h-[5px] bg-black"></span>
 
-                <div className="w-20 h-20 rounded-full bg-gradient-to-tl from-customGreen via-black to-gray-800 flex items-center justify-center -mt-12 mb-4 shadow-lg">
+                <div className="absolute top-0  w-20 h-20 rounded-full  flex items-center justify-center -mt-12  shadow-lg">
                   <img
                     src={feature.icon}
                     alt={feature.title}
@@ -57,8 +56,7 @@ export default function FifthSection() {
                   />
                 </div>
             
-
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4  text-center mt-7">
                 {feature.title}
               </h2>
               <p className="text-gray-600 text-center text-sm leading-relaxed">

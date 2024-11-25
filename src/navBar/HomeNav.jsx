@@ -13,7 +13,7 @@ export default function HomeNav() {
   return (
     <div>
       <nav
-        className="py-4 px-8 shadow-md z-40 w-full max-w-full flex items-center justify-around fixed top-0 bg-white  "
+        className="py-4 px-6 shadow-md font-poppins z-40 w-full max-w-full flex items-center justify-around fixed top-0 bg-white  "
         style={{
           boxShadow: " rgba(0, 0, 0, 0.5) 0px 20px 40px -40px inset",
         }}
@@ -62,11 +62,10 @@ export default function HomeNav() {
                 isDropdownOpen &&
                 activeLink === item.element && (
                   <>
-                   <div className="absolute left-0 right-0 top-6 bg-transparent h-6 "/>
-                   <div className="absolute left-1/2 right-1/2 h-6 w-6 -translate-x-1/2 -translate-y-1/2 bg-white z-10 top-12 rotate-45"/>
+                    <div className="absolute left-0 right-0 top-6 bg-transparent h-6 " />
+                    <div className="absolute left-1/2 right-1/2 h-6 w-6 -translate-x-1/2 -translate-y-1/2 bg-white z-10 top-12 rotate-45" />
                   </>
                 )}
-             
 
               {item.hasDropdown &&
                 isDropdownOpen &&
@@ -78,7 +77,6 @@ export default function HomeNav() {
                       // borderRadius: "30px 0px 30px 0px",
                     }}
                   >
-
                     {dropdownLinks
                       .filter((subItem) => subItem.ref === activeLink)
                       .map((subItem) => (
@@ -92,16 +90,16 @@ export default function HomeNav() {
                             alt="icon"
                             className="h-10 w-10 mr-2 p-1 cursor-pointer bg-gradient-to-b from-gray-700 to-gray-800 rounded-full"
                           />
-                          <div className="flex flex-col">
+                          <div className="flex flex-col mx-2">
                             <Link
                               onClick={() => setIsDropdownOpen(false)}
                               to={subItem.path}
-                              className="text-gray-800 font-helvetica font-semibold px-2  transition-all duration-300 ease-in-out group-hover:text-gray-700"
+                              className="text-gray-800  font-semibold   transition-all duration-300 ease-in-out group-hover:text-gray-700"
                             >
                               {subItem.element}
                             </Link>
                             <Link to={subItem.path} className="mb-1">
-                              <p className="text-xs font-helvetica text-gray-600">
+                              <p className="text-xs font-semibold  text-gray-600">
                                 {subItem.des}
                               </p>
                             </Link>
@@ -109,15 +107,13 @@ export default function HomeNav() {
                         </li>
                       ))}
                   </ul>
-                  
                 )}
-
             </li>
           ))}
         </ul>
 
-        <div className="hidden lg:flex font-helvetica gap-4">
-          <button className="bg-gray-900  text-white  font-semibold px-5 py-1 rounded-lg border-2 border-gray-900 shadow-md hover:border-gray-900 hover:bg-white hover:text-black hover:shadow-lg transition-all duration-300 ease-in-out">
+        <div className="hidden lg:flex  gap-4 ">
+          <button className="bg-[#1c1c1c]  text-white  font-semibold px-5 py-1 rounded-lg border-2 border-gray-900 shadow-md hover:border-gray-900 hover:bg-white hover:text-black hover:shadow-lg transition-all duration-300 ease-in-out">
             Login
           </button>
           <button className="text-black px-5  py-1 font-semibold rounded-lg border-2 border-gray-900 hover:text-white hover:border-gray-900 hover:bg-gray-900 shadow-md transition-all duration-300 ease-in-out">

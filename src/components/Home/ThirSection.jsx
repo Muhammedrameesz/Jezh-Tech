@@ -7,7 +7,7 @@ import AnimRl from "../../ui/AnimRL.jsx";
 
 export default function ThirSection() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center font-poppins mt-20 mx-6 md:mx-20 lg:mx-32 overflow-hidden">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center bg-gray-100 font-poppins mt-20 px-6 md:px-20 lg:px-24 overflow-hidden">
       <Anim>
         <div className="flex justify-center md:justify-end relative ">
           <img
@@ -22,15 +22,16 @@ export default function ThirSection() {
       <AnimRl>
         <div className="flex flex-col items-start space-y-8 p-4 lg:p-6 relative overflow-hidden ">
           <div
-            className="absolute inset-0 bg-no-repeat bg-right-top   ml-96  -z-10 opacity-30"
+            className="absolute inset-0 bg-no-repeat bg-right-top   ml-72 rotate-45   opacity-20"
             style={{
               backgroundImage:
                 "url(https://img.freepik.com/free-vector/multicolor-squares-pattern-background_1195-312.jpg?uid=R121738979&ga=GA1.1.333942242.1728979190&semt=ais_hybrid)",
             }}
+            
           ></div>
 
           <div className="flex flex-row items-center justify-center space-x-4">
-            <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-r from-customGreen to-transparent"></span>
+            <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-b from-customGreen to-transparent"></span>
             <h1 className="text-black text-center text-xl md:text-2xl lg:text-2xl font-extrabold leading-tight tracking-tight mb-4 text-transparent bg-clip-text bg-gradient-to-tl from-customGreen via-black to-customGreen  ">
               Our Expertise in Innovation
             </h1>
