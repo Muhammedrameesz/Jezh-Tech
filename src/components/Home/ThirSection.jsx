@@ -22,7 +22,7 @@ export default function ThirSection() {
       <AnimRl>
         <div className="flex flex-col items-start space-y-8 p-4 lg:p-6 relative overflow-hidden ">
           <div
-            className="absolute inset-0 bg-no-repeat bg-right-top   ml-72 rotate-45   opacity-20"
+            className="absolute inset-0 bg-no-repeat bg-right-top   ml-80 rotate-45   opacity-20"
             style={{
               backgroundImage:
                 "url(https://img.freepik.com/free-vector/multicolor-squares-pattern-background_1195-312.jpg?uid=R121738979&ga=GA1.1.333942242.1728979190&semt=ais_hybrid)",
