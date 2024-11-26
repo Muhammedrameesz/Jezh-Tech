@@ -32,7 +32,7 @@ export default function ThirSection() {
 
           <div className="flex flex-row items-center justify-center space-x-4">
             <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-b from-customGreen to-transparent"></span>
-            <h1 className="text-black text-center text-xl md:text-2xl lg:text-2xl font-extrabold leading-tight tracking-tight mb-4 text-transparent bg-clip-text bg-gradient-to-tl from-customGreen via-black to-customGreen  ">
+            <h1 className="text-black text-center text-xl md:text-2xl lg:text-2xl font-extrabold leading-tight  mb-4  ">
               Our Expertise in Innovation
             </h1>
             <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-l from-customGreen to-transparent"></span>
@@ -48,7 +48,7 @@ export default function ThirSection() {
               <h2 className="text-xl md:text-xl font-semibold text-gray-800  mb-2">
                 Internet of Things (IoT)
               </h2>
-              <p className="text-sm text-gray-500 font-semibold tracking-normal">
+              <p className="text-sm text-gray-600 tracking-normal">
                 We specialize in connecting devices and systems to make your
                 home, business, or industrial environments smarter, safer, and
                 more efficient.
@@ -66,7 +66,7 @@ export default function ThirSection() {
               <h2 className="text-xl md:text-xl font-semibold text-gray-800 mb-2">
                 Artificial Intelligence (AI)
               </h2>
-              <p className="text-sm text-gray-500 font-semibold tracking-normal ">
+              <p className="text-sm text-gray-600  tracking-normal ">
                 Our AI solutions empower businesses to optimize processes,
                 improve decision-making, and drive automation through
                 intelligent systems.
@@ -84,7 +84,7 @@ export default function ThirSection() {
               <h2 className="text-xl md:text-xl font-semibold text-gray-800 mb-2">
                 Robotics & Automation
               </h2>
-              <p className="text-sm text-gray-500 font-semibold tracking-normal ">
+              <p className="text-sm text-gray-600  tracking-normal ">
                 We integrate robotics and automation technology to streamline
                 tasks, improve productivity, and ensure operational excellence
                 across industries.

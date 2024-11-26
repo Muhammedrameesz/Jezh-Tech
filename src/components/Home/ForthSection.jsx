@@ -7,12 +7,12 @@ import AnimRL from "../../ui/AnimRL.jsx";
 
 export default function ForthSection() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 bg-gray-100 gap-20 items-center pt-20 px-6 pd:px-20 lg:px-24 font-poppins">
+    <div className="grid grid-cols-1 md:grid-cols-2 bg-gray-100 gap-20 items-center pb-16 pt-20 px-6 pd:px-20 lg:px-24 font-poppins">
       <Anim>
       <div className="flex flex-col items-start space-y-8 p-4 lg:p-6 ">
         <div className="flex flex-row items-center justify-center space-x-4">
           <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-b from-customGreen to-transparent"></span>
-          <h1 className="text-slate-800 text-center text-xl md:text-xl lg:text-2xl font-extrabold leading-tight tracking-tight mb-4 text-transparent bg-clip-text bg-gradient-to-tl from-customGreen via-customBlue to-customGreen">
+          <h1 className="text-black text-center text-xl md:text-xl lg:text-2xl font-extrabold leading-tight  mb-4 ">
             Customized Solutions for Every Business
           </h1>
           <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-l from-customGreen to-transparent"></span>
@@ -29,7 +29,7 @@ export default function ForthSection() {
             <h2 className="text-xl md:text-xl font-semibold text-gray-800 mb-2 ">
               Built for Your Industry
             </h2>
-            <p className="text-sm text-gray-500 font-semibold tracking-normal ">
+            <p className="text-sm text-gray-600 tracking-normal ">
               Whether it&apos;s smart homes, e-commerce, healthcare, or
               manufacturing, we align our services to meet the specific needs of
               each industry
@@ -49,7 +49,7 @@ export default function ForthSection() {
             <h2 className="text-xl md:text-xl font-semibold text-gray-800 mb-2 ">
               Adaptable & Scalable
             </h2>
-            <p className="text-sm text-gray-500 font-semibold tracking-normal">
+            <p className="text-sm text-gray-600 tracking-normal">
               Our solutions grow with your business, with easy integration and
               scalability as your company evolves.
             </p>
@@ -67,7 +67,7 @@ export default function ForthSection() {
             <h2 className="text-xl md:text-xl font-semibold  text-gray-800 mb-2">
               Technology with a Personal Touch
             </h2>
-            <p className="text-sm text-gray-500 font-semibold tracking-normal">
+            <p className="text-sm text-gray-600 tracking-normal">
               Our team is dedicated to understanding your business’s unique
               requirements and delivering solutions that resonate with your
               goals.

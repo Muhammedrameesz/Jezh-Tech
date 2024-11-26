@@ -13,7 +13,7 @@ export default function FifthSection() {
         <div className="flex items-center w-full">
           <div className="flex-grow h-1 bg-gradient-to-r from-customGreen to-transparent"></div>
           <AnimTB>
-            <h1 className="mx-4 text-4xl md:text-5xl mb-10 font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-customGreen via-black to-customGreen tracking-wide">
+            <h1 className="mx-4 text-4xl md:text-5xl mb-10 font-extrabold text-black ">
               Why Choose Us?
             </h1>
           </AnimTB>

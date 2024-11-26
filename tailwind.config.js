@@ -29,7 +29,8 @@ export default {
         },
       },
       animation: {
-        'spin-slow': 'spinSlow 5s linear infinite',  // Adjusted time to 5s for better visibility
+        'spin-slow': 'spinSlow 5s linear infinite',
+        wave: 'waveAnimation 4s ease-in-out infinite'  
       },
     },
   },

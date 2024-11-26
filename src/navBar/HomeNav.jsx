@@ -10,6 +10,11 @@ export default function HomeNav() {
   const [activeLink, setActiveLink] = useState(null);
   const navigate = useNavigate();
   const params = useParams();
+
+  const handleLinkClick = ()=>{
+    setIsDropdownOpen(false)
+    setActiveLink("")
+  }
   return (
     <div>
       <nav
@@ -71,7 +76,7 @@ export default function HomeNav() {
                 isDropdownOpen &&
                 activeLink === item.element && (
                   <ul
-                    className="absolute  left-1/2 top-12 -translate-x-1/2 w-96 rounded-2xl bg-white p-2 py-3 border border-slate-300 "
+                    className="absolute  left-1/2 top-12 -translate-x-1/2 w-96 rounded-2xl bg-white p-2 py-3 "
                     style={{
                       boxShadow: "rgba(0, 0, 0, 0.56) 0px 20px 40px 4px",
                       // borderRadius: "30px 0px 30px 0px",
@@ -88,11 +93,11 @@ export default function HomeNav() {
                             onClick={() => navigate(`${subItem.path}`)}
                             src={subItem.icon}
                             alt="icon"
-                            className="h-10 w-10 mr-2 p-1 cursor-pointer bg-gradient-to-b from-gray-700 to-gray-800 rounded-full"
+                            className="h-10 w-10 mr-2 p-1 cursor-pointer rounded-full"
                           />
                           <div className="flex flex-col mx-2">
                             <Link
-                              onClick={() => setIsDropdownOpen(false)}
+                              onClick={handleLinkClick}
                               to={subItem.path}
                               className="text-gray-800  font-semibold   transition-all duration-300 ease-in-out group-hover:text-gray-700"
                             >
@@ -113,10 +118,10 @@ export default function HomeNav() {
         </ul>
 
         <div className="hidden lg:flex  gap-4 ">
-          <button className="bg-[#1c1c1c]  text-white  font-semibold px-5 py-1 rounded-lg border-2 border-gray-900 shadow-md hover:border-gray-900 hover:bg-white hover:text-black hover:shadow-lg transition-all duration-300 ease-in-out">
+          <button className="bg-customGreen  text-black  font-semibold px-5 py-1  border-2 border-black shadow-md hover:border-gray-900 hover:bg-white hover:text-black hover:shadow-lg transition-all duration-300 ease-in-out">
             Login
           </button>
-          <button className="text-black px-5  py-1 font-semibold rounded-lg border-2 border-gray-900 hover:text-white hover:border-gray-900 hover:bg-gray-900 shadow-md transition-all duration-300 ease-in-out">
+          <button className="text-black px-5  py-1 font-semibold  border-2 border-black hover:border-customGreen  shadow-md transition-all duration-300 ease-in-out">
             Sign Up
           </button>
         </div>

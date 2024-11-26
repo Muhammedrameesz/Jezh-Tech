@@ -20,11 +20,11 @@ export default function SecSection() {
      hover:rotate-0`;
 
   return (
-    <div className="w-full min-h-screen font-poppins pt-20 flex flex-col items-center  py-10 pb-20 overflow-hidden">
+    <div className="w-full min-h-screen font-poppins  flex flex-col items-center pt-24 py-20 overflow-hidden">
       {/* Header Section */}
       <div className="flex items-center justify-center mb-12 space-x-4">
         <div className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-r from-customGreen to-transparent"></div>
-        <h1 className="text-center text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-customGreen via-black to-customGreen">
+        <h1 className="text-center text-4xl md:text-5xl font-extrabold text-black">
           Industries We Serve
         </h1>
         <div className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-l from-customGreen to-transparent"></div>

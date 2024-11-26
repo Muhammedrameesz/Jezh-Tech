@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
-import Success1 from "../../assets/icons/success.png";
+// import Success1 from "../../assets/icons/success.png";
 import Client from "../../assets/images/Binumon.png";
 import AnimTB from "../../ui/AnimTB.jsx";
 import AnimBT from "../../ui/AnimBT.jsx";
@@ -17,13 +17,13 @@ export default function SeventhSection() {
 
   return (
     <motion.section
-      className="px-6 md:px-12 lg:px-20 py-16 bg-white font-poppins"
+      className="px-6 md:px-12 lg:px-20 py-16 mt-10 bg-white font-poppins"
       initial={{ opacity: 0, y: 20 }}
       animate={controls}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-1 gap-16 items-center relative">
           <AnimTB>
             <motion.div
               className="relative group w-full"
@@ -31,17 +31,17 @@ export default function SeventhSection() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              <div className="flex flex-row items-center justify-center space-x-4">
+              <div className="flex flex-row items-center justify-center space-x-4 ">
                 <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-r from-customGreen to-transparent"></span>
-                <h2 className="text-3xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-customGreen via-black to-customGreen tracking-tighter">
+                <h2 className="text-2xl md:text-3xl lg:text-5xl text-center font-extrabold text-black ">
                   Success Stories Straight from Our Clients
                 </h2>
                 <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-l from-customGreen to-transparent"></span>
               </div>
               <img
-                src={Success1}
+                src="https://img.freepik.com/premium-photo/business-handshake-finance-prosperity-money-technology-asset-background_31965-59921.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid"
                 alt="Success Story 1"
-                className="w-full max-w-md rounded-3xl  transition-transform duration-500 group-hover:scale-105"
+                className="relative md:absolute  max-w-lg z-10 mt-10 md:mt-52   "
               />
             </motion.div>
           </AnimTB>
@@ -53,8 +53,8 @@ export default function SeventhSection() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              <div className="space-y-4 mt-10">
-                <div className=" px-10 rounded-xl py-10 relative">
+              <div className="space-y-4 mt-5 ml:0 lg:ml-56">
+                <div className=" px-10 rounded-xl py-10 relative ">
                   <span className="absolute top-0 left-0 h-[100%] w-[5px] bg-black rounded-lg "></span>
                   <span className="absolute top-0 left-0 w-[92%] h-[5px] bg-black rounded-lg"></span>
                   <span className="absolute bottom-0 right-0 h-[95%] w-[5px] bg-black rounded-lg"></span>
@@ -65,8 +65,10 @@ export default function SeventhSection() {
                       alt="bird.jpg"
                       className="absolute -top-12 -right-8 w-20 h-20 "
                     />
+
+                    <div className="pl-0 lg:pl-[40%]">
                   
-                  <p className="text-gray-800 text-sm  leading-relaxed tracking-tight italic mb-6">
+                  <p className="text-green-800 text-sm  leading-relaxed tracking-tight italic mb-6">
                     “I take great pride in the exceptional work undertaken by
                     the team on the Dakshin Sahodaya Schools Complex website.
                     Their expertise shines through, delivering a polished and
@@ -96,6 +98,7 @@ export default function SeventhSection() {
                       alt="Profile"
                       className="h-20 w-20 rounded-full shadow-md transition-transform transform hover:scale-110 hover:shadow-xl duration-300 ease-in-out"
                     />
+                  </div>
                   </div>
 
                   <motion.div

@@ -16,7 +16,7 @@ export default function Footer() {
   return (
     <footer className="bg-black text-white">
       <AnimBT>
-        <div className="flex flex-col md:flex-row items-start justify-between py-12 px-6 md:px-12 lg:px-24 space-y-8 md:space-y-0">
+        <div className="flex sticky flex-col md:flex-row items-start justify-between py-12 px-6 md:px-12 lg:px-24 space-y-8 md:space-y-0">
           <div className="flex flex-col items-center md:items-start">
             <img src={Jezh} alt="JezhTechLogo" className="h-32 w-32 mb-4" />
             <p className="text-gray-400 text-sm text-center md:text-left">

@@ -14,6 +14,23 @@
   animation: appear 1s linear forwards;
 }
 
+.animate-wave {
+  animation: waveAnimation 4s ease-in-out infinite;
+}
+
+@keyframes waveAnimation {
+  0% {
+    d: path("M0,60 C30,80 40,40 70,60 C100,80 90,50 100,60 V100 H0 Z");
+  }
+  50% {
+    d: path("M0,60 C30,90 50,50 70,70 C90,90 80,60 100,60 V100 H0 Z");
+  }
+  100% {
+    d: path("M0,60 C30,80 40,40 70,60 C100,80 90,50 100,60 V100 H0 Z");
+  }
+}
+
+
 
 
 /* @keyframes appear {
