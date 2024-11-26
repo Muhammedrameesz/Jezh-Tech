@@ -13,7 +13,7 @@ export default function TestAnim() {
           <div
             key={i}
             className={`relative border  h-[320px] w-full max-w-[270px] overflow-hidden before:absolute before:top-[-50%] before:left-[-50%] before:right-[-50%] before:bottom-[-50%]
-              ${i % 2 === 0 ? "before:bg-[conic-gradient(from_0deg,_transparent,_transparent,_#8fd14f_75%)] bg-black" : "before:bg-[conic-gradient(from_0deg,_transparent,_transparent,_#000_75%)] bg-[#8fd14f]"}  
+              ${i % 2 === 0 ? "before:bg-[conic-gradient(from_0deg,_transparent,_transparent,_#b0b4ab_75%)] bg-black" : "before:bg-[conic-gradient(from_0deg,_transparent,_transparent,_#000_75%)] #b0b4ab"}  
               before:animate-spin-slow
             `}
           >

@@ -32,7 +32,7 @@ export default function Header() {
 
         {/* Waves  */}
 
-        <div className="absolute -left-12 top-8 w-[20%] h-[30%] rounded-full rotate-180 ">
+        <div className="absolute -left-14 top-6 w-[20%] h-[30%] rounded-full rotate-180 ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 100 100"
