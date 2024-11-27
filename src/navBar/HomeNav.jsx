@@ -93,7 +93,7 @@ export default function HomeNav() {
                             onClick={() => navigate(`${subItem.path}`)}
                             src={subItem.icon}
                             alt="icon"
-                            className="h-10 w-10 mr-2 p-1 cursor-pointer rounded-full"
+                            className="h-10 w-10 mr-2 p-1 bg-gradient-to-t from-gray-100 to-transparent cursor-pointer rounded-full"
                           />
                           <div className="flex flex-col mx-2">
                             <Link

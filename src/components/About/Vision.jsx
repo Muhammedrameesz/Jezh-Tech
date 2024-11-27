@@ -25,11 +25,11 @@ export default function TestAnim() {
             <Animated key={i}>
               <div
                 className={`relative border h-[350px] w-full max-w-[500px] overflow-hidden rounded-lg before:absolute before:top-[-50%] before:left-[-50%] before:right-[-50%] before:bottom-[-50%]
-              ${i === 1 ? "before:bg-[conic-gradient(from_0deg,_transparent,_transparent,_#7fad47_75%)] bg-black" : "before:bg-[conic-gradient(from_0deg,_transparent,_transparent,_#000_75%)] bg-[#7fad47]"}  
+              ${i === 1 ? "before:bg-[conic-gradient(from_0deg,_transparent,_transparent,_#000_75%)] bg-gray-300" : "before:bg-[conic-gradient(from_0deg,_transparent,_transparent,_#D1D5DB_75%)] bg-black"}  
               before:animate-spin-slow
             `}
               >
-                <div className="absolute inset-1 flex flex-col justify-center  bg-white px-6 space-y-6">
+                <div className="absolute inset-1 flex flex-col justify-center  bg-neutral-50  px-6 space-y-6">
                   {/* Icon and Title Row */}
                   <div className="flex items-center mb-4">
                     <img
