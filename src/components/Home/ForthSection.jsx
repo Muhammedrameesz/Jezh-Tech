@@ -22,7 +22,7 @@ export default function ForthSection() {
           <img
             src={Built}
             alt="Built.jpg"
-            className="w-14 h-14 bg-gray-800 rounded-2xl"
+            className="w-14 h-14  bg-gradient-to-b from-white to-gray-200 p-2 rounded-full"
           />
 
           <div className="flex flex-col">
@@ -42,7 +42,7 @@ export default function ForthSection() {
           <img
             src={Adaptable}
             alt="Adaptable.jpg"
-            className="w-14 h-14 bg-gray-800 rounded-2xl"
+            className="w-14 h-14 bg-gradient-to-b from-white to-gray-200 p-2 rounded-full"
           />
 
           <div className="flex flex-col">
@@ -60,7 +60,7 @@ export default function ForthSection() {
           <img
             src={Digital}
             alt="Digital.jpg"
-            className="w-14 h-14 bg-gray-800 rounded-2xl"
+            className="w-14 h-14  bg-gradient-to-b from-white to-gray-200 p-2 rounded-full"
           />
 
           <div className="flex flex-col">

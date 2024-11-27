@@ -1,7 +1,6 @@
 import { useEffect, useState, useRef } from "react";
-import Project from "../../assets/icons/project-management.png";
-import Users from "../../assets/icons/users.png";
-import Succes from "../../assets/icons/b6d8f0ab979930e320aaca1e0fcb71ea.png"
+import AssignmentOutlinedIcon from '@mui/icons-material/AssignmentOutlined';
+import GroupRemoveOutlinedIcon from '@mui/icons-material/GroupRemoveOutlined';
 
 export default function StatsSection() {
   const projectsRef = useRef(null);
@@ -73,11 +72,9 @@ export default function StatsSection() {
         ref={projectsRef}
         className="flex flex-row gap-5 text-center border-b-2 md:border-0 md:border-b-0 border-dotted border-gray-600 md:pl-8 md:pb-0 pb-4"
       >
-        <img
-          src={Project}
-          alt="project management"
-          className="h-10 w-10 mt-5"
-        />
+        <div className="flex justify-center items-center">
+        <AssignmentOutlinedIcon fontSize="large" className="text-gray-200"/>
+        </div>
 
         <div>
           <h1 className="text-6xl font-bold">{`${projectsCount}+`}</h1>
@@ -89,11 +86,9 @@ export default function StatsSection() {
         ref={customersRef}
         className="flex flex-row gap-5 text-center border-b-2 md:border-l-2 md:border-b-0 border-dotted border-gray-600 md:pl-8 md:pb-0 pb-4"
       >
-        <img
-          src={Succes}
-          alt="project management"
-          className="h-10 w-10 mt-5"
-        />
+        <div className="flex justify-center items-center">
+        <AssignmentOutlinedIcon  fontSize="large" className="text-gray-200"/>
+        </div>
         <div>
           <h1 className="text-6xl font-bold">{`${customersCount}+`}</h1>
           <p className="text-xl text-customGreen font-semibold">Projects</p>
@@ -104,11 +99,9 @@ export default function StatsSection() {
         ref={othersRef}
         className="flex flex-row gap-5 text-center border-b-2 md:border-l-2 md:border-b-0 border-dotted border-gray-600 md:pl-8 md:pb-0 pb-4"
       >
-        <img
-          src={Users}
-          alt="project management"
-          className="h-10 w-10 mt-5"
-        />
+         <div className="flex justify-center items-center">
+        <GroupRemoveOutlinedIcon fontSize="large" className="text-gray-200"/>
+        </div>
 
         <div>
           <h1 className="text-6xl font-bold">{`${othersCount}+`}</h1>

@@ -107,9 +107,9 @@ export default function SeventhSection() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.5, duration: 0.6, ease: "easeOut" }}
                   >
-                    <button className="mt-10">
+                    <span className="mt-10">
                       <HoverButton>Explore More Stories</HoverButton>
-                    </button>
+                    </span>
                   </motion.div>
                 </div>
               </div>

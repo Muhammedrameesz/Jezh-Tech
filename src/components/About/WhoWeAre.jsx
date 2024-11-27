@@ -28,9 +28,9 @@ export default function WhoWeAre() {
             unique needs. At Jezh Technologies, we are more than just a
             provider—we’re a trusted partner shaping the future of technology.
           </p>
-          <button>
+          <div className="mt-5">
             <HoverButton>View Services</HoverButton>
-          </button>
+          </div>
         </div>
         
       </AnimBT>

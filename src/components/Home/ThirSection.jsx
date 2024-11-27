@@ -42,7 +42,7 @@ export default function ThirSection() {
             <img
               src={Tech}
               alt="technology"
-              className="w-14 h-14 bg-gray-800 rounded-2xl"
+              className="w-14 h-14  bg-gradient-to-b from-white to-gray-200 p-2 rounded-full"
             />
             <div className="flex flex-col">
               <h2 className="text-xl md:text-xl font-semibold text-gray-800  mb-2">
@@ -60,7 +60,7 @@ export default function ThirSection() {
             <img
               src={Ai}
               alt="technology"
-              className="w-14 h-14 bg-gray-800 rounded-xl"
+              className="w-14 h-14  bg-gradient-to-b from-white to-gray-200 p-2 rounded-full"
             />
             <div className="flex flex-col">
               <h2 className="text-xl md:text-xl font-semibold text-gray-800 mb-2">
@@ -78,7 +78,7 @@ export default function ThirSection() {
             <img
               src={Robot}
               alt="technology"
-              className="w-14 h-14 bg-gray-800 rounded-2xl"
+              className="w-14 h-14  bg-gradient-to-b from-white to-gray-200 p-2 rounded-full"
             />
             <div className="flex flex-col">
               <h2 className="text-xl md:text-xl font-semibold text-gray-800 mb-2">

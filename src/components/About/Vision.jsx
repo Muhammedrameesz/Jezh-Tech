@@ -1,81 +1,63 @@
-import VisionImage from "../../assets/icons/Core.png";
-import MissionImage from "../../assets/icons/cpu_1104950.png";
+import VisionMission from "./visionMissionContent"; // Ensure this file exports the content array
 import Anim from "../../ui/Anim.jsx";
+import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
 import AnimRL from "../../ui/AnimRL.jsx";
 import AnimZF from "../../ui/AnimZF.jsx";
-import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
 
-export default function VisionMission() {
+export default function TestAnim() {
   return (
-    <div className="font-poppins  py-12  bg-gray-100 px-12 md:px-20 lg:px-28 rounded-lg  mb-10 mt-20">
-      <div className="text-center mb-12">
-        <AnimZF>
-          <h1 className="text-4xl md:text-5xl mb-5 tracking-tight font-extrabold text-black ">
-            Empowering Innovation: Our Vision and Mission
-          </h1>
-        </AnimZF>
+    <div className="py-20 font-poppins bg-gray-100">
+      <AnimZF>
+      <div className="flex flex-row py-16 items-center justify-center space-x-4">
+        <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-b from-customGreen to-transparent"></span>
+        <h1 className="text-4xl  md:text-5xl mb-5 tracking-tight text-center max-w-xl font-extrabold text-black">
+          Empowering Innovation: Our Vision and Mission
+        </h1>
+        <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-l from-customGreen to-transparent"></span>
       </div>
+        
+      </AnimZF>
 
-      <div className="flex flex-col md:flex-row items-start justify-center space-y-6 md:space-y-0 md:space-x-12">
-        <Anim>
-          <div className=" space-y-6 border-[5px] border-black p-5">
-            <h2 className="text-2xl font-bold text-gray-900 flex items-center">
-              <img
-                src={VisionImage}
-                alt="Vision Icon"
-                className="w-10 h-10 mr-3 bg-gray-900 rounded-lg"
-              />
-              Vision
-            </h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-16 justify-center items-center">
+        {VisionMission?.map((item, i) => {
+          const Animated = i === 0 ? Anim : AnimRL;
+          return (
+            <Animated key={i}>
+              <div
+                className={`relative border h-[350px] w-full max-w-[500px] overflow-hidden rounded-lg before:absolute before:top-[-50%] before:left-[-50%] before:right-[-50%] before:bottom-[-50%]
+              ${i === 1 ? "before:bg-[conic-gradient(from_0deg,_transparent,_transparent,_#7fad47_75%)] bg-black" : "before:bg-[conic-gradient(from_0deg,_transparent,_transparent,_#000_75%)] bg-[#7fad47]"}  
+              before:animate-spin-slow
+            `}
+              >
+                <div className="absolute inset-1 flex flex-col justify-center  bg-white px-6 space-y-6">
+                  {/* Icon and Title Row */}
+                  <div className="flex items-center mb-4">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-10 h-10 mr-4 "
+                    />
+                    <h2 className="text-2xl font-bold text-gray-900">
+                      {item.title}
+                    </h2>
+                  </div>
 
-            <div className="flex flex-row gap-3">
-              <ArrowForwardRoundedIcon />
-              <p className="text-base text-gray-800 leading-relaxed  font-semibold">
-                To be a leader in driving digital transformation by delivering
-                innovative, user-centric technology solutions.
-              </p>
-            </div>
-
-            <div className="flex flex-row gap-3">
-              <ArrowForwardRoundedIcon />
-              <p className="text-base text-gray-800 leading-relaxed  font-semibold">
-                To empower businesses and individuals with accessible,
-                cutting-edge technology that shapes a smarter, more efficient
-                future.
-              </p>
-            </div>
-          </div>
-        </Anim>
-        <AnimRL>
-          <div className="space-y-6 border-[5px] border-black p-5">
-            <h2 className="text-2xl font-bold text-gray-900 flex items-center">
-              <img
-                src={MissionImage}
-                alt="Mission Icon"
-                className="w-10 h-10 mr-3 bg-gray-900 rounded-lg"
-
-              />
-              Mission
-            </h2>
-            <div className="flex flex-row gap-3">
-              <ArrowForwardRoundedIcon />
-
-              <p className="text-base text-gray-800 leading-relaxed  font-semibold">
-                To simplify complex processes by creating intuitive and
-                efficient tech solutions that enhance productivity and growth.
-              </p>
-            </div>
-
-            <div className="flex flex-row gap-3">
-              <ArrowForwardRoundedIcon />
-
-              <p className="text-base text-gray-800 leading-relaxed  font-semibold">
-                To foster a collaborative environment where creativity,
-                reliability, and excellence drive every project we undertake.
-              </p>
-            </div>
-          </div>
-        </AnimRL>
+                  {/* List of Points */}
+                  <div className="space-y-4">
+                    {item.items?.map((point, idx) => (
+                      <div key={idx} className="flex items-start gap-3">
+                        <ArrowForwardRoundedIcon className="text-gray-800 mt-1" />
+                        <p className="text-gray-700 leading-relaxed font-semibold">
+                          {point.text}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </Animated>
+          );
+        })}
       </div>
     </div>
   );

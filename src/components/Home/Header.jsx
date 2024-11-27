@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import Anim from "../../ui/Anim.jsx";
 import AnimRl from "../../ui/AnimRL.jsx";
 import AnimBT from "../../ui/AnimZF.jsx";
-// import BG from "../../assets/images/15364601_5585459.jpg";
+import BackgroundBeamsWithCollision from "../../ui/Aceternity/Background1.jsx"
 import HoverButton from "../../ui/HoverButton.jsx";
 import "./header.css";
 
@@ -11,27 +11,16 @@ export default function Header() {
   const handleClick = () => {
     navigate("/services");
   };
+  const url ="https://img.freepik.com/free-vector/white-background-with-hexagonal-line-pattern-design_1017-28442.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid"
 
   return (
     <>
+    <BackgroundBeamsWithCollision url={url} className="relative custom-class">
       <div
         id="hero-section"
-        className="relative font-poppins bg-white text-black min-h-screen flex items-center justify-center overflow-hidden "
+        className=" font-poppins bg-white text-black min-h-screen flex items-center justify-center overflow-hidden "
       >
-        <div
-          className="absolute inset-0 z-0 bg-cover bg-center"
-          style={{
-            backgroundImage: `url(https://img.freepik.com/free-vector/white-background-with-hexagonal-line-pattern-design_1017-28442.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid)`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundAttachment: "fixed",
-            // filter: "blur(2px)",
-          }}
-        ></div>
-
-        {/* Waves  */}
-
+        
         <div className="absolute -left-14 top-6 w-[20%] h-[30%] rounded-full rotate-180 ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -60,12 +49,13 @@ export default function Header() {
             </p>
           </AnimRl>
           <AnimBT>
-            <button onClick={handleClick}>
+            <span onClick={handleClick}>
               <HoverButton>Get Started</HoverButton>
-            </button>
+            </span>
           </AnimBT>
         </div>
       </div>
+      </BackgroundBeamsWithCollision>
     </>
   );
 }

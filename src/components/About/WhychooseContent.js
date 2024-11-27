@@ -1,9 +1,13 @@
+import image1 from "../../assets/images/7fcfe882-7166-4a77-976d-76d4868f0050.png"
+import solutions from "../../assets/images/innovative solution.png"
+import web from "../../assets/images/web3.o.png"
+import result from "../../assets/images/proven_result.png"
 
 
-const img1="https://img.freepik.com/free-photo/bottom-view-ideaslight-bulb-notepad-yellow-black-markers-binder-clips-black-background_140725-112108.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid"
-const img4 = "https://img.freepik.com/free-vector/modern-web-design-concept-with-flat-design_23-2147858013.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid"
-const img2 = "https://img.freepik.com/free-photo/shiny-bulb-businessman-s-hand_1232-148.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid"
-const img3 = "https://img.freepik.com/premium-vector/point-view-hand-typing-modern-keyboard_82984-432.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid"
+const img1=image1
+const img2 = solutions
+const img3 = web
+const img4 = result
 const WhyChoose =[
     {
       icon: img1,

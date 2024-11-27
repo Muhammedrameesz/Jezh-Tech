@@ -18,11 +18,11 @@ export default function LastSection() {
       </Anim>
 
       <Anim delay={0.6}>
-        <button >
+        <span >
           <HoverButton>
           Schedule Your Appointment Today
           </HoverButton>
-        </button>
+        </span>
       </Anim>
     </div>
   );
