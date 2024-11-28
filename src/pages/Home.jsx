@@ -7,6 +7,7 @@ import SixthSection from "../components/Home/SixthSection.jsx";
 import SeventhSection from "../components/Home/SeventhSection.jsx";
 import LastSection from "../components/Home/LastSection.jsx";
 import Footer from "../components/Footer.jsx";
+import { Divider } from "@mui/material";
 
 
 
@@ -17,12 +18,13 @@ export default function Home() {
       <SecSection />
    
       <ThirSection />
+      <Divider sx={{marginX:'10%',}} className=" bg-neutral-400"/>
       <ForthSection />
       <FifthSection />
 
       <SixthSection />
       <SeventhSection />
-      {/* <Divider sx={{marginX:'10%'}}/> */}
+      
       <LastSection />
       <Footer />
     </>

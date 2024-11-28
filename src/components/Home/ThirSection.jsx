@@ -7,7 +7,7 @@ import AnimRl from "../../ui/AnimRL.jsx";
 
 export default function ThirSection() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center bg-gray-100 font-poppins mt-20 px-6 md:px-20 lg:px-24 overflow-hidden">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center bg-gray-100 font-poppins mt-20 px-6 md:px-20 lg:px-24 overflow-hidden pb-20">
       <Anim>
         <div className="flex justify-center md:justify-end relative ">
           <img
