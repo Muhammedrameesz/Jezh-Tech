@@ -28,7 +28,7 @@ const My3DCard = () => {
             return (
               
                 <CardContainer key={i} containerClassName="h-full w-full ">
-                  <CardBody className="bg-white rounded-lg hover:shadow-2xl border p-6 w-72 h-96">
+                  <CardBody className="bg-white rounded-lg hover:shadow-2xl p-6 w-72 h-96">
                     {" "}
                     {/* Set custom width and height */}
                     <CardItem

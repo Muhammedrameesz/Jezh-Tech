@@ -25,7 +25,7 @@ export default function TestAnim() {
             <Animated key={i}>
               <div
                 className={`relative border h-[350px] w-full max-w-[500px] overflow-hidden rounded-lg before:absolute before:top-[-50%] before:left-[-50%] before:right-[-50%] before:bottom-[-50%]
-              ${i === 1 ? "before:bg-[conic-gradient(from_0deg,_transparent,_transparent,_#000_75%)] bg-gray-300" : "before:bg-[conic-gradient(from_0deg,_transparent,_transparent,_#D1D5DB_75%)] bg-black"}  
+              ${i === 1 ? "before:bg-[conic-gradient(from_0deg,_transparent,_transparent,_#D1D5DB_75%)] bg-black" : "before:bg-[conic-gradient(from_0deg,_transparent,_transparent,_#000_75%)] bg-gray-300"}  
               before:animate-spin-slow
             `}
               >
