@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { cn } from "../../lib/utils";
 import PropTypes from "prop-types";
 
@@ -29,24 +30,37 @@ export const BentoGridItem = ({
   header,
   icon,
   image,
-  imageAlt
+  imageAlt,
 }) => {
   return (
     <div
       className={cn(
-        "row-span-1 rounded-xl  group hover:shadow-xl transition-shadow duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border hover:border-transparent flex flex-col space-y-4",
+        "row-span-1  rounded-xl  group hover:shadow-xl transition-shadow duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border hover:border-transparent flex flex-col space-y-4",
         className
       )}
     >
       {header}
       {image && (
-        <div className="flex justify-center my-4">
-          <img
+        <motion.div className="flex justify-center my-4">
+          <motion.img
+            whileHover={{
+              rotateY: 15,
+              rotateX: -10,
+              scale: 1.1,
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 400,
+              damping: 10,
+            }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
             src={image}
             alt={imageAlt}
             className="w-96 h-52 object-cover rounded-md"
           />
-        </div>
+        </motion.div>
       )}
       <div className="transform group-hover:translate-x-2 transition-transform duration-300 px-5 md:px-8 py-3">
         {icon}
@@ -64,7 +78,7 @@ export const BentoGridItem = ({
 // PropTypes for BentoGridItem
 BentoGridItem.propTypes = {
   className: PropTypes.string,
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   description: PropTypes.string,
   header: PropTypes.node,
   icon: PropTypes.node,

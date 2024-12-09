@@ -5,8 +5,9 @@ import AnimTB from "../../ui/AnimTB.jsx";
 import AnimBT from "../../ui/AnimBT.jsx";
 import JezhLogo from "../../assets/images/jezhLogo.png";
 import HoverButton from "../../ui/HoverButton.jsx";
+import ToonImage from "../../assets/images/toon-showing-blank-placard.png";
 
-export default function SeventhSection() {
+export default function SeventhTest() {
   const controls = useAnimation();
 
   useEffect(() => {
@@ -21,14 +22,7 @@ export default function SeventhSection() {
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <div className="max-w-7xl mx-auto">
-        <div className="flex items-center space-x-4 justify-center lg:justify-start mb-10">
-          <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-r from-customGreen to-transparent"></span>
-          <h2 className="text-2xl md:text-3xl lg:text-5xl font-extrabold text-black text-center">
-            Success Stories Straight from Our Clients
-          </h2>
-          <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-l from-customGreen to-transparent"></span>
-        </div>
-        <div className="grid gap-16 items-center lg:grid-cols-2 relative">
+        <div className="grid  relative grid-cols-2">
           {/* Left Section */}
           <AnimTB>
             <motion.div
@@ -37,12 +31,16 @@ export default function SeventhSection() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              <div className="flex flex-col items-center text-center space-y-6 lg:items-center lg:text-left">
+              <div className="relative flex flex-col items-center text-center space-y-6 lg:items-center lg:text-left">
                 <img
-                  src="https://img.freepik.com/free-photo/business-background-design_1156-861.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid"
+                  src={ToonImage}
                   alt="Success Story 1"
-                  className="max-w-full w-[500px] h-[500px] rounded-lg shadow-lg"
+                  className="max-w-full w-[600px] h-[500px] rounded-lg  mt-10"
                 />
+
+                <h1 className="absolute top-[28%] text-neutral-800  text-xl font-bold leading-relaxed tracking-tighter max-w-36 italic ">
+                  Success Stories Straight from Our Clients
+                </h1>
               </div>
             </motion.div>
           </AnimTB>
@@ -57,12 +55,6 @@ export default function SeventhSection() {
             >
               <div className="space-y-6">
                 <div className="relative px-4 md:px-8 lg:px-12 py-10 bg-neutral-50 rounded-xl shadow-lg">
-                  {/* Border lines */}
-                  {/* <span className="absolute top-0 left-0 h-full w-1 bg-black rounded-lg"></span> */}
-                  <span className="absolute top-0 left-0 w-[90%] h-1 bg-black rounded-lg"></span>
-                  <span className="absolute bottom-0 right-0 h-[95%] w-1 bg-black rounded-lg"></span>
-                  <span className="absolute bottom-0 right-0 w-full h-1 bg-black rounded-lg"></span>
-
                   {/* Logo */}
                   <img
                     src={JezhLogo}
@@ -107,7 +99,7 @@ export default function SeventhSection() {
 
                   {/* Explore More Button */}
                   <motion.div
-                    className="pt-4 flex justify-end"
+                    className="pt-4 flex justify-end mt-10"
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.5, duration: 0.6, ease: "easeOut" }}

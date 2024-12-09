@@ -25,7 +25,7 @@ export default function Footer() {
           </div>
 
           <div className="grid grid-cols-1 gap-5">
-            <h1 className="text-slate-100 font-semibold text-xl mb-3">
+            <h1 className="text-slate-100 font-semibold text-xl mb-3 ">
               Company
             </h1>
             <Link to="/about-us" className={linkStyle}>

@@ -11,14 +11,14 @@ export default function HomeNav() {
   const navigate = useNavigate();
   const params = useParams();
 
-  const handleLinkClick = ()=>{
-    setIsDropdownOpen(false)
-    setActiveLink("")
-  }
+  const handleLinkClick = () => {
+    setIsDropdownOpen(false);
+    setActiveLink("");
+  };
   return (
     <div>
       <nav
-        className="py-4 px-6 shadow-md font-poppins z-40 w-full max-w-full flex items-center justify-around fixed top-0 bg-white  "
+        className="py-4 px-6 shadow-md font-poppins z-50 w-full max-w-full flex items-center justify-around fixed top-0 bg-white  "
         style={{
           boxShadow: " rgba(0, 0, 0, 0.5) 0px 20px 40px -40px inset",
         }}
@@ -31,7 +31,7 @@ export default function HomeNav() {
           />
         </Link>
 
-        <ul className="hidden lg:flex font-helvetica lg:gap-4 gap-8 justify-center items-center list-none ml-32">
+        <ul className="hidden lg:flex font-helvetica lg:gap-4 gap-8 justify-center items-center list-none ml-32 shadow-2xl">
           {navLinks.map((item) => (
             <li
               key={item.element}
@@ -63,55 +63,54 @@ export default function HomeNav() {
                   />
                 )}
               </Link>
-              {item.hasDropdown &&
-                isDropdownOpen &&
-                activeLink === item.element && (
-                  <>
-                    <div className="absolute left-0 right-0 top-6 bg-transparent h-6 " />
-                    <div className="absolute left-1/2 right-1/2 h-6 w-6 -translate-x-1/2 -translate-y-1/2 bg-white z-10 top-12 rotate-45" />
-                  </>
-                )}
 
               {item.hasDropdown &&
                 isDropdownOpen &&
                 activeLink === item.element && (
-                  <ul
-                    className="absolute  left-1/2 top-12 -translate-x-1/2 w-96 rounded-2xl bg-white p-2 py-3 "
-                    style={{
-                      boxShadow: "rgba(0, 0, 0, 0.56) 0px 20px 40px 4px",
-                      // borderRadius: "30px 0px 30px 0px",
-                    }}
-                  >
-                    {dropdownLinks
-                      .filter((subItem) => subItem.ref === activeLink)
-                      .map((subItem) => (
-                        <li
-                          key={subItem.element}
-                          className="flex items-center px-4 py-2  transition-transform duration-500 hover:translate-x-2 group relative"
-                        >
-                          <img
-                            onClick={() => navigate(`${subItem.path}`)}
-                            src={subItem.icon}
-                            alt="icon"
-                            className="h-10 w-10 mr-2 p-1 bg-gradient-to-t from-gray-100 to-transparent cursor-pointer rounded-full"
-                          />
-                          <div className="flex flex-col mx-2">
-                            <Link
-                              onClick={handleLinkClick}
-                              to={subItem.path}
-                              className="text-gray-800  font-semibold   transition-all duration-300 ease-in-out group-hover:text-gray-700"
-                            >
-                              {subItem.element}
-                            </Link>
-                            <Link to={subItem.path} className="mb-1">
-                              <p className="text-xs font-semibold  text-gray-600">
-                                {subItem.des}
-                              </p>
-                            </Link>
-                          </div>
-                        </li>
-                      ))}
-                  </ul>
+                  <>
+                  
+                    <div className="absolute left-0 right-0 top-6 bg-transparent h-6 " />
+                    <div className="absolute left-1/2 right-1/2 h-6 w-6 -translate-x-1/2 -translate-y-1/2 bg-white z-10 top-12 rotate-45" />
+                   
+                    <ul
+                      className="absolute  left-1/2 top-12 -translate-x-1/2 w-96 rounded-2xl bg-white p-2 py-3 "
+                      style={{
+                        boxShadow: "rgba(0, 0, 0, 0.56) 0px 20px 40px 4px",
+                        // borderRadius: "30px 0px 30px 0px",
+                      }}
+                    >
+                      {dropdownLinks
+                        .filter((subItem) => subItem.ref === activeLink)
+                        .map((subItem) => (
+                          <li
+                            key={subItem.element}
+                            className="flex items-center px-4 py-2  transition-transform duration-500 hover:translate-x-2 group relative"
+                          >
+                            <img
+                              onClick={() => navigate(`${subItem.path}`)}
+                              src={subItem.icon}
+                              alt="icon"
+                              className="h-10 w-10 mr-2 p-1 bg-gradient-to-t from-gray-100 to-transparent cursor-pointer rounded-full"
+                            />
+                            <div className="flex flex-col mx-2">
+                              <Link
+                                onClick={handleLinkClick}
+                                to={subItem.path}
+                                className="text-gray-800  font-semibold   transition-all duration-300 ease-in-out group-hover:text-gray-700"
+                              >
+                                {subItem.element}
+                              </Link>
+                              <Link to={subItem.path} className="mb-1">
+                                <p className="text-xs font-semibold  text-gray-600">
+                                  {subItem.des}
+                                </p>
+                              </Link>
+                            </div>
+                          </li>
+                        ))}
+                    </ul>
+                    
+                  </>
                 )}
             </li>
           ))}

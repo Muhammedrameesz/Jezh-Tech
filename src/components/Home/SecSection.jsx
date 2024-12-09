@@ -3,6 +3,8 @@ import HomeWorkOutlinedIcon from "@mui/icons-material/HomeWorkOutlined";
 import LanguageRoundedIcon from "@mui/icons-material/LanguageRounded";
 import Anim from "../../ui/Anim.jsx"
 import AnimRL from "../../ui/AnimRL.jsx"
+import IndustrialAuto from "../../assets/images/3d-character-illustration-design-landing-page.png"
+import DigitalPresence from "../../assets/icons/dda5860b-3c49-438c-a2a4-8eeaf5bb27a4.png"
 
 const App = () => {
   return (
@@ -19,13 +21,8 @@ const App = () => {
         <BentoGridItem
           title="Home & Industrial Automation"
           description="Need a smarter space? We’ve got the tech! JEZH Technologies specializes in IoT automation that makes homes smarter and industries more efficient. From boosting security to automating daily tasks, we create solutions that simplify life and streamline operations."
-          header={
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-center">
-              Home & <br /> Industrial Automation
-            </h2>
-          }
           icon={<HomeWorkOutlinedIcon className="text-neutral-800" />}
-          image="https://img.freepik.com/free-vector/person-controlling-smart-home-with-tablet_1284-54597.jpg"
+          image={IndustrialAuto}
           imageAlt="Home Automation Image"
         />
         </Anim>
@@ -33,13 +30,8 @@ const App = () => {
         <BentoGridItem
           title="Website Development & Digital Presence"
           description="Need a powerful online presence? JEZH Technologies specializes in designing and developing custom websites that are not only visually engaging but also optimized for user experience and functionality. We make sure your site is ready to engage and convert visitors seamlessly."
-          header={
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-center">
-              Website Development & <br /> Digital Presence
-            </h2>
-          }
           icon={<LanguageRoundedIcon className="text-neutral-800" />}
-          image="https://img.freepik.com/premium-photo/web-development-coding-programming-internet-technology-business-concept_1296497-282.jpg"
+          image={DigitalPresence}
           imageAlt="Web Development Image"
         />
         </AnimRL>

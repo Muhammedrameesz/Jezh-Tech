@@ -3,16 +3,21 @@ import AnimRL from "../../ui/AnimRL.jsx";
 import AnimZF from "../../ui/AnimZF.jsx";
 import HoverButton from "../../ui/HoverButton.jsx";
 
-// import { Boxes } from "../../ui/Aceternity/Background2.jsx";
-
 export default function Header() {
   return (
-    <div className="relative top-14 flex bg-gray-100 flex-col justify-center min-h-screen items-center font-poppins px-4 overflow-hidden">
-      {/* Background Animation */}
-      {/* <Boxes /> */}
-
+    <div
+      className="relative top-14 flex flex-col justify-center items-center bg-gray-100 min-h-screen font-poppins px-4 overflow-hidden"
+      style={{
+        backgroundImage:
+          "url(https://img.freepik.com/premium-vector/modern-abstract-white-background-template-design-black-with-lighting-illustration_1044505-617.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid)",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundAttachment: "fixed", 
+      }}
+    >
       {/* Content */}
-      <div className="relative z-10 text-center max-w-xl mt-0 bg-[rgba(255,255,255,0.5)] p-10">
+      <div className="relative z-10 text-center max-w-xl mt-0 bg-[rgba(255,255,255,0.5)] p-10 rounded-lg shadow-md">
         <Anim key="anim-header">
           <h1 className="text-4xl md:text-6xl font-extrabold text-black mb-8">
             About Us
@@ -26,9 +31,8 @@ export default function Header() {
         </AnimRL>
 
         <AnimZF key="anim-button">
-          {/* Removed the outer <button> tag */}
-          <div >
-          <HoverButton >Contact Us Now</HoverButton>
+          <div>
+            <HoverButton>Contact Us Now</HoverButton>
           </div>
         </AnimZF>
       </div>

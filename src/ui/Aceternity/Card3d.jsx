@@ -99,7 +99,7 @@ export const CardItem = ({
 
   useEffect(() => {
     handleAnimations();
-  }, [isMouseEntered]); // Ensures only updates when isMouseEntered changes.
+  }, [isMouseEntered]); 
 
   const handleAnimations = () => {
     if (!ref.current) return;

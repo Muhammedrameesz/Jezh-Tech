@@ -44,11 +44,11 @@ export default function Header() {
               Discover reliable solutions that simplify technology and accelerate your growth.
             </p>
           </AnimRl>
-          <AnimBT>
+          <Anim>
             <div onClick={handleClick} className="flex justify-center sm:justify-start items-center mt-0 md:mt-16 ml-0 lg:ml-14">
               <HoverButton>Get Started</HoverButton>
             </div>
-          </AnimBT>
+          </Anim>
         </div>
       </div>
     </BackgroundBeamsWithCollision>

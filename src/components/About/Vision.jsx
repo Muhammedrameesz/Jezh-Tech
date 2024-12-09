@@ -6,7 +6,7 @@ import AnimZF from "../../ui/AnimZF.jsx";
 
 export default function TestAnim() {
   return (
-    <div className="py-20 font-poppins bg-gray-100">
+    <div className="pb-20 pt-10 font-poppins bg-gray-100">
       <AnimZF>
       <div className="flex flex-row py-16 items-center justify-center space-x-4">
         <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-b from-customGreen to-transparent"></span>
@@ -24,12 +24,12 @@ export default function TestAnim() {
           return (
             <Animated key={i}>
               <div
-                className={`relative border h-[350px] w-full max-w-[500px] overflow-hidden rounded-lg before:absolute before:top-[-50%] before:left-[-50%] before:right-[-50%] before:bottom-[-50%]
-              ${i === 1 ? "before:bg-[conic-gradient(from_0deg,_transparent,_transparent,_#D1D5DB_75%)] bg-black" : "before:bg-[conic-gradient(from_0deg,_transparent,_transparent,_#000_75%)] bg-gray-300"}  
+                className={`relative border h-[350px] w-full max-w-[500px] overflow-hidden rounded-lg before:absolute before:top-[-50%] before:left-[-50%] before:right-[-50%] before:bottom-[-50%] shadow-2xl
+              ${i === 1 ? "before:bg-[conic-gradient(from_0deg,_transparent,_transparent,_#E5E7EB_75%)] bg-white" : "before:bg-[conic-gradient(from_0deg,_transparent,_transparent,_#fff_75%)] bg-gray-200"}  
               before:animate-spin-slow
             `}
               >
-                <div className="absolute inset-1 flex flex-col justify-center  bg-neutral-50  px-6 space-y-6">
+                <div className="absolute inset-1 flex flex-col justify-center bg-gray-200 shadow-lg  px-6 space-y-6">
                   {/* Icon and Title Row */}
                   <div className="flex items-center mb-4">
                     <img

@@ -24,11 +24,11 @@ const My3DCard = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-6 p-6">
         {Content &&
-          Content.slice(0, 4).map((item, i) => {
+          Content.map((item, i) => {
             return (
               
                 <CardContainer key={i} containerClassName="h-full w-full ">
-                  <CardBody className="bg-white rounded-lg hover:shadow-2xl p-6 w-72 h-96">
+                  <CardBody className="bg-white rounded-lg shadow-lg hover:shadow-2xl p-6 w-72 h-96">
                     {" "}
                     {/* Set custom width and height */}
                     <CardItem
