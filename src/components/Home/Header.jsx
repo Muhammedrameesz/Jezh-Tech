@@ -35,7 +35,7 @@ export default function Header() {
         </div>
 
         {/* Content */}
-        <div className="relative  grid grid-cols-1 md:grid-cols-2  md:text-left max-w-screen-xl h-auto  px-4 md:px-5 rounded-lg mt-20 md:mt-20">
+        <div className="relative  grid grid-cols-1 md:grid-cols-2  md:text-left max-w-screen-lg h-auto  px-4 md:px-5 rounded-lg mt-20 md:mt-20">
           {/* Left: Animated Text */}
           <div className="flex flex-col justify-center space-y-6">
             <motion.div
