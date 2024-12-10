@@ -4,6 +4,7 @@ import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import ContactPhoneOutlinedIcon from "@mui/icons-material/ContactPhoneOutlined";
 import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
 import AnimBT from "../ui/AnimBT.jsx";
+import ANim from "../ui/Anim.jsx";
 
 export default function Footer() {
   const linkStyle = "text-gray-400 hover:text-customGreen transition";
@@ -100,51 +101,68 @@ export default function Footer() {
 
       <div className="py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 md:px-12 lg:px-24 justify-center items-center">
-          <div className="border border-gray-600 p-4 rounded text-center">
-            <h2 className="text-white text-lg font-semibold mb-2">
-              India - Kanyakumari
-            </h2>
-            <p className="text-gray-400 text-sm">
-              Sri Sai Complex,
-              <br />
-              Nagercoil, India, 629001
-            </p>
-            <p className="text-gray-400 text-sm mt-2">
-              <a href="mailto:info@jezhtechnologies.com" className={linkStyle}>
-                info@jezhtechnologies.com
-              </a>
-            </p>
-          </div>
+          <ANim delay={0.3}>
+            <div className="border border-gray-600 p-4 rounded text-center">
+              <h2 className="text-white text-lg font-semibold mb-2">
+                India - Kanyakumari
+              </h2>
+              <p className="text-gray-400 text-sm">
+                Sri Sai Complex,
+                <br />
+                Nagercoil, India, 629001
+              </p>
+              <p className="text-gray-400 text-sm mt-2">
+                <a
+                  href="mailto:info@jezhtechnologies.com"
+                  className={linkStyle}
+                >
+                  info@jezhtechnologies.com
+                </a>
+              </p>
+            </div>
+          </ANim>
 
-          <div className="border border-gray-600 p-4 rounded text-center">
-            <h2 className="text-white text-lg font-semibold mb-2">
-              India - Coimbatore
-            </h2>
-            <p className="text-gray-400 text-sm">
-              Nava India, Avinashi Rd,
-              <br />
-              Coimbatore, India - 641006
-            </p>
-            <p className="text-gray-400 text-sm mt-2">
-              <a href="mailto:info@jezhtechnologies.com" className={linkStyle}>
-                info@jezhtechnologies.com
-              </a>
-            </p>
-          </div>
+          <ANim delay={0.4}>
+            <div className="border border-gray-600 p-4 rounded text-center">
+              <h2 className="text-white text-lg font-semibold mb-2">
+                India - Coimbatore
+              </h2>
+              <p className="text-gray-400 text-sm">
+                Nava India, Avinashi Rd,
+                <br />
+                Coimbatore, India - 641006
+              </p>
+              <p className="text-gray-400 text-sm mt-2">
+                <a
+                  href="mailto:info@jezhtechnologies.com"
+                  className={linkStyle}
+                >
+                  info@jezhtechnologies.com
+                </a>
+              </p>
+            </div>
+          </ANim>
 
-          <div className="border border-gray-600 p-4 rounded text-center">
-            <h2 className="text-white text-lg font-semibold mb-2">Dubai</h2>
-            <p className="text-gray-400 text-sm">
-              Sapphire Tower Deira,
-              <br />
-              780610, UAE
-            </p>
-            <p className="text-gray-400 text-sm mt-2">
-              <a href="mailto:info@jezhtechnologies.com" className={linkStyle}>
-                info@jezhtechnologies.com
-              </a>
-            </p>
-          </div>
+          <ANim delay={0.5}>
+            <div className="border border-gray-600 p-4 rounded text-center">
+              <h2 className="text-white text-lg font-semibold mb-2">Dubai</h2>
+              <p className="text-gray-400 text-sm">
+                Sapphire Tower Deira,
+                <br />
+                780610, UAE
+              </p>
+              <p className="text-gray-400 text-sm mt-2">
+                <a
+                  href="mailto:info@jezhtechnologies.com"
+                  className={linkStyle}
+                >
+                  info@jezhtechnologies.com
+                </a>
+              </p>
+            </div>
+          </ANim>
+
+
         </div>
       </div>
 

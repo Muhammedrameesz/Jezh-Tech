@@ -1,5 +1,5 @@
-import defaultTheme from 'tailwindcss/defaultTheme';
-import colors from 'tailwindcss/colors';
+// import defaultTheme from 'tailwindcss/defaultTheme';
+// import colors from 'tailwindcss/colors';
 import { default as flattenColorPalette } from 'tailwindcss/lib/util/flattenColorPalette';
 
 /** @type {import('tailwindcss').Config} */
@@ -32,15 +32,26 @@ export default {
           '0%': { transform: 'rotate(0deg)' },
           '100%': { transform: 'rotate(360deg)' },
         },
+        scroll: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
       },
       animation: {
         'spin-slow': 'spinSlow 5s linear infinite',
         wave: 'waveAnimation 4s ease-in-out infinite',
+        scroll: 'scroll 10s linear infinite',
+        'fade-in': 'fadeIn 0.5s ease forwards',
       },
+      
     },
   },
   plugins: [
-    addVariablesForColors,  // Add the custom color variables plugin here
+    addVariablesForColors,  
   ],
 };
 

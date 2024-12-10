@@ -3,7 +3,7 @@ import Built from "../../assets/icons/sustainable-energy_10633778.png";
 import Adaptable from "../../assets/icons/cpu_1104950.png";
 import Digital from "../../assets/icons/intelligence_11764993.png";
 import Anim from "../../ui/Anim.jsx";
-import AnimatedImage from "./Animated-Images/Animation2.jsx"
+import AnimatedImage from "./Animated-Images/AnimatedImages3.jsx"
 
 export default function ForthSection() {
   return (
@@ -11,7 +11,7 @@ export default function ForthSection() {
       <Anim>
       <div className="flex flex-col items-start space-y-8 p-4  lg:p-6 rounded-md  ">
         <div className="flex flex-row items-center justify-center space-x-4">
-          <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-b from-customGreen to-transparent"></span>
+          <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-r from-customGreen to-transparent"></span>
           <h1 className="text-black text-center text-xl md:text-xl lg:text-2xl font-extrabold leading-tight  mb-4 ">
             Customized Solutions for Every Business
           </h1>

@@ -30,7 +30,7 @@ export default function Animation1() {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
-          delay: index * 0.3, 
+          delay: index * 0.2, 
           duration: 0.8,
           ease: "easeOut",
         }}

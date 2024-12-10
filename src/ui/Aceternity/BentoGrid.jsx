@@ -50,7 +50,7 @@ export const BentoGridItem = ({
             }}
             transition={{
               type: "spring",
-              stiffness: 400,
+              stiffness: 300,
               damping: 10,
             }}
             initial={{ opacity: 0 }}
@@ -58,7 +58,7 @@ export const BentoGridItem = ({
             exit={{ opacity: 0 }}
             src={image}
             alt={imageAlt}
-            className="w-96 h-52 object-cover rounded-md"
+            className="w-96 h-52 object-cover rounded-md cursor-text"
           />
         </motion.div>
       )}
