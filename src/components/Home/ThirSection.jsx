@@ -1,6 +1,6 @@
 // import Tech from "../../assets/icons/internet-things_10019258.png";
 // import Ai from "../../assets/icons/artificial-intelligence_18067159.png";
-import Robot from "../../assets/icons/robotics_1129358.png";
+// import Robot from "../../assets/icons/robotics_1129358.png";
 import AnimRl from "../../ui/AnimRL.jsx";
 import AnimatedImage from "./Animated-Images/Animation1.jsx";
 import ServiceLeft from "../../assets/images/imageset1/service-left-main-pic.62057aa2.png";
@@ -58,7 +58,7 @@ export default function ThirSection() {
                 Internet of Things (IoT)
               </h2>
               <p
-                className={`text-xs text-gray-500 tracking-normal group-hover:text-gray-100 transition-all duration-700 ease-in-out ${
+                className={`text-xs md:sm text-gray-500 tracking-normal group-hover:text-gray-100 transition-all duration-700 ease-in-out ${
                   hover === "Internet"
                     ? "opacity-100 max-h-[500px] translate-y-0"
                     : "opacity-0 max-h-0 -translate-y-3"
@@ -85,7 +85,7 @@ export default function ThirSection() {
                 Artificial Intelligence (AI)
               </h2>
               <p
-                className={`text-xs text-gray-500 tracking-normal group-hover:text-gray-100 transition-all duration-700 ease-in-out ${
+                className={`text-xs md:sm text-gray-500 tracking-normal group-hover:text-gray-100 transition-all duration-700 ease-in-out ${
                   hover === "Artificial"
                     ? "opacity-100 max-h-[500px] translate-y-0"
                     : "opacity-0 max-h-0 -translate-y-3"
@@ -112,7 +112,7 @@ export default function ThirSection() {
                 Robotics & Automation
               </h2>
               <p
-                className={`text-xs text-gray-500 tracking-normal group-hover:text-gray-100 transition-all duration-700 ease-in-out ${
+                className={`text-xs md:sm text-gray-500 tracking-normal group-hover:text-gray-100 transition-all duration-700 ease-in-out ${
                   hover === "Robotics"
                     ? "opacity-100 max-h-[500px] translate-y-0"
                     : "opacity-0 max-h-0 -translate-y-3"
