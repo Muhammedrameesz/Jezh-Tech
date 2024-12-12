@@ -12,7 +12,7 @@ const My3DCard = () => {
     <>
       <AnimZF>
         <div className="flex flex-row pt-20 items-center justify-center space-x-4">
-          <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-b from-customGreen to-transparent"></span>
+          <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-r from-customGreen to-transparent"></span>
 
           <h1 className="text-3xl md:text-4xl lg:text-5xl  text-center font-extrabold text-black">
             Why Choose Us
@@ -28,7 +28,7 @@ const My3DCard = () => {
             return (
               
                 <CardContainer key={i} containerClassName="h-full w-full ">
-                  <CardBody className="bg-white rounded-lg shadow-lg hover:shadow-2xl p-6 w-72 h-96">
+                  <CardBody className="bg-white border  rounded-lg shadow-lg hover:shadow-2xl p-6 w-72 h-96">
                     {" "}
                     {/* Set custom width and height */}
                     <CardItem
@@ -43,7 +43,7 @@ const My3DCard = () => {
                       <img
                         src={item.icon}
                         alt={item.title}
-                        className="w-full h-44 mb-8 rounded-lg" // Adjust image size
+                        className="w-full h-44 mb-8 rounded-lg " 
                       />
                       </AnimZF>
                       <AnimZF delay={i*0.3}>

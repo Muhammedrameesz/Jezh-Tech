@@ -16,20 +16,21 @@ import TeaCup from "../../../assets/images/imageset3/tea-cup.6956e3ff.png"
 
 
 const images = [
-    { src: Carpet, alt: "monitor", className: " w-[470px] h-[220px] bottom-10 " },
-    { src: Flower1, alt: "target", className: "z-30 w-[70px] h-[130px] top-[45%] left-[8%]" },
-    { src: Man, alt: "target", className: "z-20 w-[250px] h-[250px]  bottom-8 left-16" },
-    { src: Keyboard, alt: "target", className: "z-10 w-[100px] h-[50px]  top-[45%] left-[50%]" },
-    { src: Desktop, alt: "target", className: "z-10 w-[70px] h-[100px]  top-[25%] left-[60%]" },
-    { src: Book, alt: "flower", className: "z-10 w-[50px] h-[40px] top-[22%] left-[38%]" },
-    { src: Pen, alt: "target", className: "z-10 w-[30px] h-[40px]  top-[30%] right-[40%]" },
-    { src: Headphone, alt: "target", className: "z-10 w-[40px] h-[25px]  top-[35%] right-[48%]" },
-    { src: Flower2, alt: "target", className: "z-10 w-[25px] h-[40px]  top-[40%] right-[18%]" },
-    { src: TeaCup, alt: "target", className: "z-10 w-[20px] h-[40px]  top-[51%] left-[59%]" },
-    { src: Bin, alt: "developer", className: "z-10 w-[80px] h-[100px] bottom-8 right-[15%] " },
-    { src: Table, alt: "target", className: "w-[350px] h-[250px]  top-[24%] left-[18%]" },
-    { src: Code, alt: "table", className: "z-10 w-[50px] h-[50px] top-5 right-[40%] " },
-    { src: Dot, alt: "target", className: " w-[40px] h-[40px]  top-20 right-[20%]" },
+    { src: Carpet, alt: "Carpet", className: " w-[470px] h-[220px] bottom-10 " },
+    { src: Flower1, alt: "Flower1", className: "z-30 w-[70px] h-[130px] top-[45%] left-[8%]" },
+    { src: Man, alt: "Man", className: "z-20 w-[250px] h-[250px]  bottom-8 left-16" },
+    { src: Table, alt: "Table", className: "w-[350px] h-[250px]  top-[24%] left-[18%]" },
+    { src: Keyboard, alt: "Keyboard", className: "z-10 w-[100px] h-[50px]  top-[45%] left-[50%]" },
+    { src: Desktop, alt: "Desktop", className: "z-10 w-[70px] h-[100px]  top-[25%] left-[60%]" },
+    { src: Book, alt: "Book", className: "z-10 w-[50px] h-[40px] top-[22%] left-[38%]" },
+    { src: Pen, alt: "Pen", className: "z-10 w-[30px] h-[40px]  top-[30%] right-[40%]" },
+    { src: Headphone, alt: "Headphone", className: "z-10 w-[40px] h-[25px]  top-[35%] right-[48%]" },
+    { src: Flower2, alt: "Flower2", className: "z-10 w-[25px] h-[40px]  top-[40%] right-[18%]" },
+    { src: TeaCup, alt: "TeaCup", className: "z-10 w-[20px] h-[40px]  top-[51%] left-[59%]" },
+    { src: Bin, alt: "Bin", className: "z-10 w-[80px] h-[100px] bottom-8 right-[15%] " },
+    
+    { src: Code, alt: "Code", className: "z-10 w-[50px] h-[50px] top-5 right-[40%] " },
+    { src: Dot, alt: "Dot", className: " w-[40px] h-[40px]  top-20 right-[20%]" },
     
   ];
 

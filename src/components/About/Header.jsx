@@ -1,36 +1,33 @@
 import { motion } from "framer-motion";
 import Anim from "../../ui/Anim.jsx";
-import AnimZF from "../../ui/AnimZF.jsx";
 import HoverButton from "../../ui/HoverButton.jsx";
 
 export default function Header() {
+  const Video =
+    "https://media.istockphoto.com/id/612776052/video/empty-office-sunny-morning-3d-rendering.mp4?s=mp4-640x640-is&k=20&c=ED_qdXetqWAW5OvUpLZxnv7Pnt4h3_6qixfCwfmCHYI=";
+
   const sentence = " Trust us to simplify tech and drive success";
 
   return (
-    <div
-      className="relative top-14 flex flex-col justify-center items-center bg-gray-100 min-h-screen font-poppins px-4 overflow-hidden"
-      style={{
-        backgroundImage:
-          "url(https://img.freepik.com/premium-vector/modern-abstract-white-background-template-design-black-with-lighting-illustration_1044505-617.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid)",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundAttachment: "fixed",
-      }}
-    >
+    <div className="relative top-14 flex flex-col justify-center items-center  min-h-screen font-poppins px-4 overflow-hidden">
+      <video
+        autoPlay
+        loop
+        muted
+        className="absolute w-full h-full object-cover opacity-50 z-[-1]"
+        poster="fallback-image.jpg"
+      >
+        <source src={Video} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       {/* Content */}
-      <div className="relative z-10 text-center max-w-xl mt-0 bg-[rgba(255,255,255,0.5)] p-10 rounded-lg shadow-md">
+      <div className="relative z-10 text-center max-w-xl mt-0 bg-[rgba(80,79,79,0.5)] p-10 rounded-lg shadow-md">
         <Anim key="anim-header">
           <h1 className="text-4xl md:text-6xl font-extrabold text-black mb-8">
             About Us
           </h1>
         </Anim>
 
-        {/* <AnimRL key="anim-description">
-          <div className="text-lg md:text-xl text-black mb-10 leading-relaxed ">
-            Trust us to simplify tech and drive success.
-          </div>
-        </AnimRL> */}
         <motion.div
           className="text-lg md:text-xl text-gray-800 mb-10 leading-relaxed"
           initial="hidden"
@@ -40,7 +37,8 @@ export default function Header() {
             visible: {
               opacity: 1,
               transition: {
-                staggerChildren: 0.05, 
+                staggerChildren: 0.05,
+                delayChildren: 1,
               },
             },
           }}
@@ -48,7 +46,7 @@ export default function Header() {
           {sentence.split("").map((char, index) => (
             <motion.span
               key={index}
-              className="inline-block"
+              className="inline-block font-montserrat"
               variants={{
                 hidden: { opacity: 0, y: -10 },
                 visible: { opacity: 1, y: 0 },
@@ -59,11 +57,11 @@ export default function Header() {
           ))}
         </motion.div>
 
-        <AnimZF key="anim-button">
+        <Anim key="anim-button" delay={3}>
           <div>
             <HoverButton>Contact Us Now</HoverButton>
           </div>
-        </AnimZF>
+        </Anim>
       </div>
     </div>
   );

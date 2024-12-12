@@ -29,13 +29,13 @@ export default function TestAnim() {
               before:animate-spin-slow
             `}
               >
-                <div className="absolute inset-1 flex flex-col justify-center bg-gray-950 shadow-xl  px-6 space-y-6 ">
+                <div className="absolute inset-1 flex flex-col justify-center bg-black shadow-xl  px-6 space-y-3 md:space-y-6 ">
                   {/* Icon and Title Row */}
                   <div className="flex items-center mb-4">
                     <img
                       src={item.image}
                       alt={item.title}
-                      className="w-12 h-12 mr-4   "
+                      className="h-10 w-10 md:w-12 md:h-12 mr-4   "
                     />
                     <h2 className="text-2xl font-bold text-gray-200">
                       {item.title}
@@ -47,7 +47,7 @@ export default function TestAnim() {
                     {item.items?.map((point, idx) => (
                       <div key={idx} className="flex items-start gap-3">
                         <ArrowForwardRoundedIcon className="text-gray-300 mt-1" />
-                        <p className="text-gray-300 leading-relaxed font-medium">
+                        <p className="text-gray-300 leading-relaxed text-sm md:text-base md:font-medium ">
                           {point.text}
                         </p>
                       </div>

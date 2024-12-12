@@ -22,7 +22,7 @@ export default function SeventhSection() {
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <div className="max-w-7xl mx-auto">
-        <div className="grid  relative grid-cols-2">
+        <div className="grid  relative grid-cols-1 md:grid-cols-2">
           {/* Left Section */}
           <Anim>
             <motion.div

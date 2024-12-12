@@ -15,7 +15,7 @@ const images = [
     { src: smallTop, alt: "smallflower", className: "w-[50px] h-[80px] bottom-28 left-[85%]" },
     { src: table, alt: "table", className: "w-[400px] h-[120px] bottom-0 left-[20%] " },
     { src: target, alt: "target", className: "w-[70px] h-[70px] top-0 right-5" },
-    { src: windowOut, alt: "target", className: "w-[250px] h-[150px] absolute top-7 left-[8%]" },
+    { src: windowOut, alt: "windowOut", className: "w-[250px] h-[150px] absolute top-7 left-[8%]" },
   ];
 
 export default function Animation1() {
@@ -30,7 +30,7 @@ export default function Animation1() {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
-          delay: index * 0.2, 
+          delay: index * 0.3, 
           duration: 0.8,
           ease: "easeOut",
         }}
