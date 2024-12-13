@@ -14,7 +14,7 @@ export default function ThirSection() {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-20 items-center bg-gray-100 font-poppins mt-20 px-6 md:px-20 lg:px-24 overflow-hidden pb-20">
-      <div className="flex justify-center items-center mt-[20%] md:mt-[50%]">
+      <div className="flex justify-center items-center mt-[20%] md:mt-[30%]">
         <div className="block md:hidden">
           <AnimRl>
             <img
@@ -41,7 +41,7 @@ export default function ThirSection() {
 
           <div className="flex flex-row items-center justify-center space-x-4 ">
             <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-r from-customGreen to-transparent"></span>
-            <h1 className="text-black text-center text-xl md:text-2xl lg:text-2xl font-extrabold leading-tight  mb-4  ">
+            <h1 className="text-[#0E314C] text-center text-xl md:text-2xl lg:text-2xl font-extrabold leading-tight  mb-4  ">
               Our Expertise in Innovation
             </h1>
             <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-l from-customGreen to-transparent"></span>

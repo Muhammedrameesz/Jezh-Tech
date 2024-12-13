@@ -7,6 +7,11 @@ import JezhLogo from "../../assets/images/jezhLogo.png";
 import HoverButton from "../../ui/HoverButton.jsx";
 import ToonImage from "../../assets/images/toon-showing-blank-placard.png";
 
+function getRandomColor() {
+  const colors = ["#FF5733", "#33FF57", "#3357FF", "#F0FF33", "#FF33F0"];
+  return colors[Math.floor(Math.random() * colors.length)];
+}
+
 export default function SeventhSection() {
   const controls = useAnimation();
 
@@ -26,19 +31,51 @@ export default function SeventhSection() {
           {/* Left Section */}
           <Anim>
             <motion.div
-              className="relative group"
-              initial={{ opacity: 0, x: -40 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
+              className="relative flex items-center justify-center bg-white min-h-screen  "
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 2, ease: "easeOut" }}
             >
-              <div className="relative flex flex-col items-center text-center space-y-6 lg:items-center lg:text-left">
+              {/* Rotating Circles */}
+              <div className="absolute w-[400px] h-[800px] rounded-full bottom-0  ">
+                {Array.from({ length: 12 }).map((_, i) => (
+                  <>
+                  <motion.div
+                    key={i}
+                    className="absolute w-1 h-1 rounded-full "
+                    style={{
+                      backgroundColor: getRandomColor(),
+                      top: "90%",
+                      left: "50%",
+                      transformOrigin: "0 -200px", // Circle radius (distance from the center)
+                    }}
+                    initial={{
+                      rotate: i * 30, // Divide the circle into 12 parts
+                    }}
+                    animate={{
+                      rotate: [i * 30, i * 30 + 360], // Full rotation (to simulate movement along the border)
+                    }}
+                    transition={{
+                      repeat: Infinity,
+                      duration: 10, // Increased speed (lower duration)
+                      ease: "linear",
+                    }}
+                  />
+                  
+                </>
+                ))}
+              </div>
+
+              {/* Content Inside the Circle */}
+              <div className="relative flex flex-col items-center text-center space-y-6 z-10">
+                {/* Image */}
                 <img
                   src={ToonImage}
                   alt="Success Story 1"
-                  className="max-w-full w-[600px] h-[500px] rounded-lg  mt-10"
+                  className="w-[600px] h-[500px] rounded-lg z-10"
                 />
-
-                <h1 className="absolute top-[28%] text-neutral-800  text-xl font-bold leading-relaxed tracking-tighter max-w-36 italic ">
+                {/* Content */}
+                <h1 className="absolute top-28 z-10 text-center max-w-36 text-neutral-800 text-xl font-bold leading-relaxed tracking-tighter italic">
                   Success Stories Straight from Our Clients
                 </h1>
               </div>

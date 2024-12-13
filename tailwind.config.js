@@ -15,6 +15,9 @@ export default {
         customGray: "#B5BDBC",
         oracleGray: "#abb8c3",
       },
+      fontWeight: {
+        custom: '450', // Add a custom weight
+      },
       fontFamily: {
         sans: ["Roboto", "sans-serif"],
         serif: ["Playfair Display", "serif"],

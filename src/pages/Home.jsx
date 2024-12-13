@@ -8,6 +8,7 @@ import LastSection from "../components/Home/LastSection.jsx";
 import { Divider } from "@mui/material";
 import SeventhSection from "../components/Home/SeventhSection.jsx";
 import Service from "../components/Home/Service.jsx"
+import OurFeatures from "../components/Home/OurFeatures.jsx";
 
 
 
@@ -21,6 +22,7 @@ export default function Home() {
       <Divider sx={{ marginX: "10%" }} className=" bg-neutral-400" />
       <ForthSection />
       <FifthSection />
+      <OurFeatures/>
       <SixthSection />
       <SeventhSection />
       <LastSection />
