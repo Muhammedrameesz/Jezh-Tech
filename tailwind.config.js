@@ -1,6 +1,7 @@
 // import defaultTheme from 'tailwindcss/defaultTheme';
 // import colors from 'tailwindcss/colors';
 import { default as flattenColorPalette } from 'tailwindcss/lib/util/flattenColorPalette';
+import scrollbarHide from 'tailwind-scrollbar-hide';
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -54,7 +55,8 @@ export default {
     },
   },
   plugins: [
-    addVariablesForColors,  
+    addVariablesForColors, 
+    scrollbarHide, 
   ],
 };
 

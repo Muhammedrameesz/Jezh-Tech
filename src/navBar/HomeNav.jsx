@@ -126,10 +126,10 @@ export default function HomeNav() {
         </ul>
 
         <div className="hidden lg:flex  gap-4 ">
-          <button className="bg-customGreen  text-black  font-medium px-5 py-1  border-2 border-customGreen shadow-md hover:border-gray-900 hover:bg-white hover:text-black hover:shadow-lg transition-all duration-300 ease-in-out">
+          <button className="bg-customGreen rounded-lg  text-black  font-medium px-5 py-1  border-2 border-customGreen shadow-md hover:border-gray-900 hover:bg-white hover:text-black hover:shadow-lg transition-all duration-300 ease-in-out">
             Login
           </button>
-          <button className="text-black px-5  py-1 font-medium  border-2 border-black hover:border-customGreen  shadow-md transition-all duration-300 ease-in-out">
+          <button className="text-black px-5 rounded-lg py-1 font-medium  border-2 border-black hover:border-customGreen  shadow-md transition-all duration-300 ease-in-out">
             Sign Up
           </button>
         </div>

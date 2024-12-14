@@ -21,7 +21,7 @@ export default function SeventhSection() {
 
   return (
     <motion.section
-      className="px-4 md:px-8 lg:px-16 py-12 mt-8 bg-white font-poppins"
+      className="px-4 md:px-8 lg:px-16 py-12 mt-8 bg-gray-100 font-poppins"
       initial={{ opacity: 0, y: 20 }}
       animate={controls}
       transition={{ duration: 0.8, ease: "easeOut" }}
@@ -31,7 +31,7 @@ export default function SeventhSection() {
           {/* Left Section */}
           <Anim>
             <motion.div
-              className="relative flex items-center justify-center bg-white min-h-screen  "
+              className="relative flex items-center justify-center bg-gray-100 min-h-screen  "
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 2, ease: "easeOut" }}

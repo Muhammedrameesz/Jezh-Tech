@@ -12,8 +12,8 @@ export default function FifthSection() {
           <div className="flex-grow h-1 bg-gradient-to-r from-customGreen to-transparent"></div>
           <AnimTB>
           <div className="flex flex-row items-center justify-center space-x-4">
-          <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-b from-customGreen to-transparent"></span>
-          <h1 className="text-black text-center text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight   ">
+          <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-r from-customGreen to-transparent"></span>
+          <h1 className="text-[#0E314C] text-center text-3xl md:text-4xl  font-extrabold leading-tight   ">
             Why Choose Us?
           </h1>
           <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-l from-customGreen to-transparent"></span>
@@ -42,7 +42,7 @@ export default function FifthSection() {
                   />
                 </div>
             
-              <h2 className="text-2xl font-semibold text-gray-800 mb-4  text-center mt-7">
+              <h2 className="text-xl font-semibold text-gray-800 mb-4  text-center mt-7">
                 {feature.title}
               </h2>
               <p className="text-gray-600 text-center text-sm leading-relaxed">

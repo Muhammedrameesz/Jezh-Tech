@@ -9,8 +9,8 @@ import { Divider } from "@mui/material";
 import SeventhSection from "../components/Home/SeventhSection.jsx";
 import Service from "../components/Home/Service.jsx"
 import OurFeatures from "../components/Home/OurFeatures.jsx";
-
-
+import StickyScrollRevealDemo from "../ui/Aceternity/stickyScroll/StckyScrollRevealDemo.jsx";
+import RecentWorks from "../components/Home/RecentWorks.jsx"
 
 export default function Home() {
   return (
@@ -23,7 +23,9 @@ export default function Home() {
       <ForthSection />
       <FifthSection />
       <OurFeatures/>
+      <StickyScrollRevealDemo/>
       <SixthSection />
+      <RecentWorks/>
       <SeventhSection />
       <LastSection />
     </>

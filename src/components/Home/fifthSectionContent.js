@@ -17,7 +17,7 @@ export const FifthContent = [
       image:client,
       icon: CustomerCen,
       title: "Client-Centric Approach",
-      text: "Your satisfaction is our top priority. We believe in working as an extension of your team, maintaining open communication, and providing exceptional support at every step.",
+      text: "Your satisfaction is our top priority. We believe in working as an extension of your team, maintaining open communication, fostering trust, delivering value, and providing exceptional support at every step.",
     },
     {
       image:innovation,

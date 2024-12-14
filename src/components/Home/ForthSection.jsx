@@ -15,7 +15,15 @@ export default function ForthSection() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 bg-gray-100 gap-20 items-center pb-16 pt-20 px-6 pd:px-20 lg:px-24  font-poppins">
       <Anim>
-        <div className="flex flex-col items-start space-y-8 p-4  lg:p-6 rounded-md  ">
+        <div className="relative flex flex-col items-start space-y-8 p-4  lg:p-6 rounded-md  ">
+        <div
+            className="absolute  inset-0 bg-no-repeat bg-cover rotate-180 top-10  opacity-10"
+            style={{
+              backgroundImage:
+                "url(https://img.freepik.com/free-vector/coloured-background-design_1164-257.jpg?t=st=1734158786~exp=1734162386~hmac=81d7c5903a0022540b6ecc7bdbc30fc04f7ecc3accd3c2e7dd7716c9ca84fb44&w=740)",
+            }}
+          ></div>
+          
           <div className="flex flex-row items-center justify-center space-x-4">
             <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-r from-customGreen to-transparent"></span>
             <h1 className="text-[#0E314C] text-center text-xl md:text-xl lg:text-2xl font-extrabold leading-tight  mb-4 ">
@@ -110,13 +118,7 @@ export default function ForthSection() {
       </Anim>
 
       <div className=" mt-[10%] md:mt-[10%] relative overflow-hidden  ">
-        <div
-          className="absolute inset-0 bg-no-repeat bg-right-top   ml-72 rotate-45   opacity-20"
-          style={{
-            backgroundImage:
-              "url(https://img.freepik.com/free-vector/multicolor-squares-pattern-background_1195-312.jpg?uid=R121738979&ga=GA1.1.333942242.1728979190&semt=ais_hybrid)",
-          }}
-        ></div>
+        
         <div className="block md:hidden">
           <AnimRL>
             <img
