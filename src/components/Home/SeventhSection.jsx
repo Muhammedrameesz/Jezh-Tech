@@ -21,7 +21,7 @@ export default function SeventhSection() {
 
   return (
     <motion.section
-      className="px-4 md:px-8 lg:px-16 py-12 mt-8 bg-gray-100 font-poppins"
+      className="px-4 md:px-8 lg:px-16 py-12 mt-8 bg-white font-poppins"
       initial={{ opacity: 0, y: 20 }}
       animate={controls}
       transition={{ duration: 0.8, ease: "easeOut" }}
@@ -31,7 +31,7 @@ export default function SeventhSection() {
           {/* Left Section */}
           <Anim>
             <motion.div
-              className="relative flex items-center justify-center bg-gray-100 min-h-screen  "
+              className="relative flex items-center justify-center  min-h-screen  "
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 2, ease: "easeOut" }}
@@ -67,12 +67,12 @@ export default function SeventhSection() {
               </div>
 
               {/* Content Inside the Circle */}
-              <div className="relative flex flex-col items-center text-center space-y-6 z-10">
+              <div className="relative flex flex-col items-center text-center space-y-6 z-10 ">
                 {/* Image */}
                 <img
                   src={ToonImage}
                   alt="Success Story 1"
-                  className="w-[600px] h-[500px] rounded-lg z-10"
+                  className="w-[600px] h-[500px] rounded-lg z-10 "
                 />
                 {/* Content */}
                 <h1 className="absolute top-28 z-10 text-center max-w-36 text-neutral-800 text-xl font-bold leading-relaxed tracking-tighter italic">

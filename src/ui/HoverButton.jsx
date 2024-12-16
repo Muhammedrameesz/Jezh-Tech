@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import ArrowForwardOutlinedIcon from "@mui/icons-material/ArrowForwardOutlined";
 import PropTypes from "prop-types";
 
-const HoverButton = ({ children }) => {
+const HoverButton = ({ children,textColor }) => {
   return (
     <motion.button
       initial={{
@@ -18,9 +18,11 @@ const HoverButton = ({ children }) => {
         duration: 0.2,
         ease: "easeInOut",
       }}
-      className="relative text-black font-semibold py-3 px-8  shadow-lg 
-             hover:text-black border-2 border-customGreen transition-all duration-700 
-             focus:outline-none focus:ring-2 focus:ring-customGreen "
+      className={`relative font-semibold py-3 px-8 shadow-lg 
+        border-2 border-customGreen transition-all duration-700 
+        focus:outline-none focus:ring-2 focus:ring-customGreen ${
+          textColor ? `${textColor} hover:text-black` : "text-black hover:text-black"
+        }`}
     >
       <ArrowForwardOutlinedIcon
         fontSize="medium"
@@ -33,6 +35,7 @@ const HoverButton = ({ children }) => {
 
 HoverButton.propTypes = {
   children: PropTypes.node.isRequired,
+  textColor:PropTypes.string,
 };
 
 export default HoverButton;

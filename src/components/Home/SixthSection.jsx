@@ -148,20 +148,19 @@ export default function StatsSection() {
           </div>
         </div>
       </div>
-<Anim>
-      <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 my-10 border-2 border-dotted border-gray-400 mx-10 md:mx-52 lg:mx-72 p-5 md:p-8">
-        
-        <div>
-          <h1 className="text-[#0E314C] text-lg md:text-xl font-semibold">
-            Have any question about us?
-          </h1>
-          <p className="text-sm text-gray-500">
-            Don&apos;t hesitate to contact us
-          </p>
+      <Anim>
+        <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 my-10 border-2 border-dotted border-gray-300 mx-10 md:mx-52 lg:mx-72 p-5 md:p-8">
+          <div>
+            <h1 className="text-[#0E314C] text-lg md:text-xl font-semibold">
+              Have any question about us?
+            </h1>
+            <p className="text-sm text-gray-500">
+              Don&apos;t hesitate to contact us
+            </p>
+          </div>
+
+          <HoverButton>Contact Us</HoverButton>
         </div>
-      
-        <HoverButton>Contact Us</HoverButton>
-      </div>
       </Anim>
     </div>
   );

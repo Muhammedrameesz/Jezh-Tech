@@ -11,6 +11,8 @@ import Service from "../components/Home/Service.jsx"
 import OurFeatures from "../components/Home/OurFeatures.jsx";
 import StickyScrollRevealDemo from "../ui/Aceternity/stickyScroll/StckyScrollRevealDemo.jsx";
 import RecentWorks from "../components/Home/RecentWorks.jsx"
+import WhatUsersSaying from "../components/Home/WhatUsersSaying.jsx";
+import News from "../components/Home/News.jsx"
 
 export default function Home() {
   return (
@@ -26,8 +28,10 @@ export default function Home() {
       <StickyScrollRevealDemo/>
       <SixthSection />
       <RecentWorks/>
+      <WhatUsersSaying/>
       <SeventhSection />
       <LastSection />
+      <News/>
     </>
   );
 }
