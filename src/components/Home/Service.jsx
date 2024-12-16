@@ -7,13 +7,24 @@ import AnimRL from "../../ui/AnimRL.jsx";
 
 export default function Service() {
   return (
-    <div className="">
-      <div className="flex items-center justify-center mt-20 mb-10 space-x-4 ">
-        <div className="h-1 w-16 sm:w-24 lg:w-32 bg-gradient-to-r from-customGreen to-transparent"></div>
-        <h1 className="text-center text-3xl sm:text-4xl  font-extrabold text-[#0E314C] dark:text-white">
-          Industries We Serve
-        </h1>
-        <div className="h-1 w-16 sm:w-24 lg:w-32 bg-gradient-to-l from-customGreen to-transparent"></div>
+    <div className=" font-poppins">
+    
+      <div className="flex flex-col justify-center items-center mt-20 mb-10 space-x-4">
+        <div className="flex flex-row items-center justify-center space-x-4">
+          <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-r from-customGreen to-transparent"></span>
+          <Anim>
+            <h1 className="text-[#0E314C] text-center text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4 ">
+            Industries We Serve
+            </h1>
+          </Anim>
+          <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-l from-customGreen to-transparent"></span>
+        </div>
+        <Anim delay={0.4}>
+          <p className="text-sm text-gray-500 text-center max-w-lg">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </Anim>
       </div>
       <div className=" flex justify-center items-center bg-white mx-5 md:mx-0">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl">

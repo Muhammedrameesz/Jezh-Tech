@@ -1,5 +1,4 @@
 import Header from "../components/Home/Header.jsx";
-// import SecSection from "../components/Home/SecSection.jsx";
 import ThirSection from "../components/Home/ThirSection.jsx";
 import ForthSection from "../components/Home/ForthSection.jsx";
 import FifthSection from "../components/Home/FifthSection.jsx";
@@ -18,7 +17,6 @@ export default function Home() {
   return (
     <>
       <Header />
-      {/* <SecSection /> */}
       <Service/>
       <ThirSection />
       <Divider sx={{ marginX: "10%" }} className=" bg-neutral-400" />
