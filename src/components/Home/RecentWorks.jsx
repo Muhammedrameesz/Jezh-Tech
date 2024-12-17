@@ -149,7 +149,7 @@ const ScrollingCards = () => {
                 initial={{ opacity: 0 }}
                 animate={hover === index ? { opacity: 1 } : { opacity: 0 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
-                className="absolute inset-0 bg-gradient-to-t from-green-500/70 to-customGreen/60 bg-opacity-50 flex flex-col justify-evenly p-4"
+                className="absolute inset-0 bg-gradient-to-t from-green-500/70 to-customGreen/70 bg-opacity-50 flex flex-col justify-evenly p-4"
               >
                 
 

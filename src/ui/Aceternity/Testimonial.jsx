@@ -31,7 +31,7 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
   };
 
   return (
-    <div className="max-w-sm md:max-w-4xl mx-auto antialiased font-poppins px-4 md:px-8 lg:px-12 py-20 border-2 border-neutral-200 rounded-xl" 
+    <div className="max-w-sm md:max-w-4xl mx-auto antialiased font-poppins px-4 md:px-8 lg:px-12 py-20  shadow-[0px_5px_15px_rgba(0,0,0,0.35)] rounded-xl" 
    
     >
       <div className="relative grid grid-cols-1 md:grid-cols-2 gap-20">
@@ -102,13 +102,13 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
               ease: "easeInOut",
             }}
           >
-            <h3 className="text-2xl font-bold dark:text-white text-black">
+            <h3 className="text-2xl font-bold dark:text-white text-[#0E314C]">
               {testimonials[active].name}
             </h3>
             <p className="text-sm text-gray-500 dark:text-neutral-500">
               {testimonials[active].designation}
             </p>
-            <motion.p className="text-lg text-gray-500 mt-8 dark:text-neutral-300">
+            <motion.p className="text-base text-gray-500 mt-8 dark:text-neutral-300">
               {testimonials[active].quote.split(" ").map((word, index) => (
                 <motion.span
                   key={index}

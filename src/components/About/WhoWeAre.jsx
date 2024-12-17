@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 
 export default function WhoWeAre() {
   return (
-    <div className=" flex flex-col  items-center justify-center  min-h-screen px-6 py-12 mx-6 md:mx-12 lg:mx-20 mt-28 font-poppins">
-      <div className="relative text-center md:text-left space-y-6 max-w-2xl p-10 border-[5px] bg-white border-gray-600">
+    <div className=" flex flex-col  items-center justify-center  min-h-screen px-6 py-12 mt-28 font-poppins bg-gray-100">
+      <div className="relative text-center md:text-left space-y-6 max-w-2xl mx-6 md:mx-12 lg:mx-20 bg-white p-10 border-[5px] bg- border-gray-600">
         <motion.div   className="absolute left-[60%] -translate-y-1/2 z-10 w-56 h-56 bg-white rounded-full hidden md:block">
           <motion.img
             initial={{ opacity: 0, y: 70 }}

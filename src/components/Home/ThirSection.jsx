@@ -50,7 +50,7 @@ export default function ThirSection() {
           <div
             onMouseEnter={() => setHover("Internet")}
             onMouseLeave={() => setHover("")}
-            className="flex flex-col md:flex-row gap-5 bg-white p-2 rounded-lg shadow-lg transform hover:-translate-y-3 transition-transform duration-700 hover:bg-gradient-to-tl from-customGreen to-green-500 group"
+            className="flex flex-col md:flex-row gap-5 bg-gray-50 p-2 rounded-lg shadow-xl transform hover:-translate-y-3 transition-transform duration-700 hover:bg-gradient-to-tl from-customGreen to-green-500 group"
           >
             <SettingsInputAntennaOutlinedIcon className="mt-[2px] text-customGreen group-hover:text-white transition-colors duration-700 ease-in-out" />
             <div className="flex flex-col">
@@ -77,7 +77,7 @@ export default function ThirSection() {
           <div
             onMouseEnter={() => setHover("Artificial")}
             onMouseLeave={() => setHover("")}
-            className="flex flex-col md:flex-row gap-5 bg-white p-2 rounded-lg shadow-lg transform hover:-translate-y-3 transition-transform duration-700 hover:bg-gradient-to-tl from-customGreen to-green-500 group"
+            className="flex flex-col md:flex-row gap-5 bg-gray-50 p-2 rounded-lg shadow-xl transform hover:-translate-y-3 transition-transform duration-700 hover:bg-gradient-to-tl from-customGreen to-green-500 group"
           >
             <AutoAwesomeIcon className="mt-[2px] text-customGreen group-hover:text-white transition-colors duration-700 ease-in-out" />
             <div className="flex flex-col">
@@ -104,7 +104,7 @@ export default function ThirSection() {
           <div
             onMouseEnter={() => setHover("Robotics")}
             onMouseLeave={() => setHover("")}
-            className="flex flex-col md:flex-row gap-5 bg-white p-2 rounded-lg shadow-lg transform transition-transform duration-700 hover:-translate-y-3 hover:bg-gradient-to-tl from-customGreen to-green-500 group"
+            className="flex flex-col md:flex-row gap-5 bg-gray-50 p-2 rounded-lg shadow-xl transform transition-transform duration-700 hover:-translate-y-3 hover:bg-gradient-to-tl from-customGreen to-green-500 group"
           >
             <SmartToyIcon className="mt-[2px] text-customGreen group-hover:text-white transition-colors duration-700 ease-in-out" />
             <div className="flex flex-col">
