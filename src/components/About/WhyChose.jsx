@@ -12,7 +12,6 @@ const My3DCard = () => {
   return (
     <>
       
-       
 
         <div className="flex flex-col pt-20 items-center justify-center space-x-4">
         <div className="flex flex-row items-center justify-center space-x-4">
@@ -62,7 +61,7 @@ const My3DCard = () => {
                         <h1 className="text-lg font-semibold mb-2 text-center text-gray-700">
                           {item.title}
                         </h1>
-                        <p className="text-gray-700 text-sm leading-5">{item.text}</p>
+                        <p className="text-gray-500 text-sm leading-5">{item.text}</p>
                       </div>
                       </AnimZF>
                     </CardItem>

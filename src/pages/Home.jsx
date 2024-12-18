@@ -6,16 +6,30 @@ import SixthSection from "../components/Home/SixthSection.jsx";
 import LastSection from "../components/Home/LastSection.jsx";
 import { Divider } from "@mui/material";
 import SeventhSection from "../components/Home/SeventhSection.jsx";
-import Service from "../components/Home/Service.jsx"
+import Service from "../components/Home/Service.jsx";
 import OurFeatures from "../components/Home/OurFeatures.jsx";
 import StickyScrollRevealDemo from "../ui/Aceternity/stickyScroll/StckyScrollRevealDemo.jsx";
 import RecentWorks from "../components/Home/RecentWorks.jsx"
 import WhatUsersSaying from "../components/Home/WhatUsersSaying.jsx";
-import News from "../components/Home/News.jsx"
+import News from "../components/Home/News.jsx";
+import { Helmet } from "react-helmet-async";
 
 export default function Home() {
   return (
     <>
+
+    {/* Meta Tags */}
+    <Helmet>
+        <title>Jezh Technologies | Your Digital Innovation Partner</title>
+        <meta
+          name="description"
+          content="Elevate your digital future with Jezh Technologies. We offer cutting-edge solutions in web development, IoT, AI, e-commerce, R&D, and AI/Robotics workshops."
+        />
+        <meta name="keywords" content="Web Development, IoT, AI, E-commerce, Robotics, Innovation" />
+        <meta name="author" content="Jezh Technologies" />
+      </Helmet>
+
+      
       <Header />
       <Service/>
       <ThirSection />

@@ -31,7 +31,7 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
   };
 
   return (
-    <div className="max-w-sm md:max-w-4xl mx-auto antialiased font-poppins px-4 md:px-8 lg:px-12 py-20  shadow-[0px_5px_15px_rgba(0,0,0,0.35)] rounded-xl" 
+    <div className="bg-white max-w-sm md:max-w-4xl mx-auto antialiased font-poppins px-4 md:px-8 lg:px-12 py-20  shadow-[0px_5px_15px_rgba(0,0,0,0.35)] rounded-xl" 
    
     >
       <div className="relative grid grid-cols-1 md:grid-cols-2 gap-20">

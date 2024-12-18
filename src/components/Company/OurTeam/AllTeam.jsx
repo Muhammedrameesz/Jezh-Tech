@@ -2,10 +2,13 @@ import { CiFacebook } from "react-icons/ci";
 import { FiTwitter } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import Anim from "../../../ui/Anim.jsx";
+import AnimBT from "../../../ui/AnimBT.jsx";
+import { motion } from "framer-motion";
+import { useState } from "react";
+import Anim from "../../../ui/Anim.jsx"
 
 const IconStyle =
-  "h-4 w-4 cursor-pointer text-green-500 hover:text-violet-700 transform hover:-translate-y-2 transition-all duration-500";
+  "h-5 w-5 cursor-pointer text-violet-500 hover:text-gray-700 transform hover:-translate-y-2 transition-all duration-500";
 const content = [
   {
     title: "Name",
@@ -72,62 +75,125 @@ const content = [
     image:
       "https://img.freepik.com/free-photo/view-3d-girl-with-open-book_23-2150709876.jpg?t=st=1734178498~exp=1734182098~hmac=27401588a48d99bad9a7a4dda02ef1f7e3a2986fe11656a8b853bf7d8b7ff801&w=740",
   },
+  {
+    title: "Name",
+    role: "UI/UX Designer",
+    media: [
+      {
+        faceBook: <CiFacebook className={IconStyle} />,
+        Twitter: <FiTwitter className={IconStyle} />,
+        Linkidin: <FaInstagram className={IconStyle} />,
+        github: <FaGithub className={IconStyle} />,
+      },
+    ],
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+    image:
+      "https://img.freepik.com/free-photo/3d-portrait-people_23-2150793856.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid",
+  },
+  {
+    title: "Name",
+    role: "UI/UX Designer",
+    media: [
+      {
+        faceBook: <CiFacebook className={IconStyle} />,
+        Twitter: <FiTwitter className={IconStyle} />,
+        Linkidin: <FaInstagram className={IconStyle} />,
+        github: <FaGithub className={IconStyle} />,
+      },
+    ],
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+    image:
+      "https://img.freepik.com/free-photo/view-3d-man-using-laptop_23-2150709796.jpg?t=st=1734533673~exp=1734537273~hmac=1e290ff0f1ea4d1db8d72fd1c4ec1a75a63c7a91a5327c8865252d7c72f7fa7a&w=740",
+  },
 ];
 
 export default function AllTeam() {
+  const [hover, setHover] = useState(null);
   return (
-    <div className="bg-gray-100 py-20">
-      <h2 className="text-3xl font-semibold text-center text-gray-800 mb-36">
-        Meet Our Team
-      </h2>
-
+    <div className="bg-white py-20 font-poppins">
+      <div className="flex flex-col pb-10 md:pb-20 items-center justify-center space-x-4">
+        <div className="flex flex-row items-center justify-center space-x-4">
+          <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-r from-customGreen to-transparent"></span>
+          <Anim>
+            <h1 className="text-[#0E314C] text-center text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4 ">
+            Meet Our Team
+            </h1>
+          </Anim>
+          <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-l from-customGreen to-transparent"></span>
+        </div>
+        <Anim delay={0.4}>
+          <p className="text-sm text-gray-500 text-center max-w-lg leading-6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </Anim>
+      </div>
+       
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-8">
         {content?.map((data, i) => (
-          <>
-          
-            <div
-              key={i}
-              className="relative mb-32 flex flex-col items-center text-center bg-white rounded-lg shadow-md  hover:shadow-2xl group transition-shadow duration-500"
-            >
+          <AnimBT key={i} delay={0.2*i}>
+          <motion.div
+            onMouseEnter={() => setHover(i)}
+            onMouseLeave={() => setHover(null)}
+            className="relative  flex flex-col items-center text-center bg-gradient-to-tr from-green-500/60 to-customGreen/10 rounded-lg   group   "
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: i * 0.2 }}
+          >
+            <motion.div
+              className="absolute top-28 w-full bg-white "
+              initial={{ opacity: 1, height: "10px" }} 
+              animate={{
+                opacity: hover === i ? 0 : 1, 
+                height: hover === i ? 0 : "10px", 
+              }}
+              exit={{ opacity: 0, height: 0 }} 
+              transition={{ duration: 0.7 }} 
+            />
 
-                <div className="absolute h-[100px] -top-28 w-full bg-white group-hover:pb-10"/>
-              {/* Image Section */}
-              
-                <img
-                  src={data.image}
-                  alt={data.title}
-                  className="absolute left-1/2 right-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-[100px] h-[100px] object-cover rounded-full"
-                />
-                {/* <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-50"></div> */}
-              
+            {/* Image Section */}
+            <motion.img
+              src={data.image}
+              alt={data.title}
+              className=" z-10 w-[130px] h-[130px] object-cover mt-10 p-1 rounded-full border border-customGreen group-hover:border-2  group-hover:border-customGreen transition-all duration-200"
+              // whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.3 }}
+            />
 
-              {/* Content Section */}
-              <div className="p-6 mt-10">
-                <h3 className="text-xl font-semibold text-gray-800">
+            {/* Content Section */}
+            <div className="p-6 ">
+              <div className=" mb-6 bg-gradient-to-tr from-gray-900 to-neutral-700  py-2 px-4 rounded-3xl group-hover:rounded-none transition-all duration-700">
+                <h3 className="text-lg tracking-wider font-semibold text-gray-200">
                   {data.title}
                 </h3>
-                <p className="text-sm text-green-500 font-medium mb-3">
+                <p className="text-sm text-gray-300 font-medium ">
                   {data.role}
                 </p>
-                <p className="text-gray-600 text-sm mb-4">{data.description}</p>
-
-                {/* Social Media Icons */}
-                <div className="flex justify-center space-x-4">
-                  {data.media.map((icon, idx) => (
-                    <div
-                      key={idx}
-                      className="flex gap-2 transition-transform duration-300"
-                    >
-                      {icon.Linkidin}
-                      {icon.Twitter}
-                      {icon.faceBook}
-                      {icon.github}
-                    </div>
-                  ))}
-                </div>
               </div>
+
+              {/* Social Media Icons */}
+              <div className="flex justify-center space-x-4 mb-5">
+                {data.media.map((icon, idx) => (
+                  <div
+                    key={idx}
+                    className="flex gap-2 transition-transform duration-300"
+                  >
+                    {icon.Linkidin}
+                    {icon.Twitter}
+                    {icon.faceBook}
+                    {icon.github}
+                  </div>
+                ))}
+              </div>
+
+              <p className="text-gray-700 leading-5 text-sm mb-4">
+                {data.description}
+              </p>
             </div>
-          </>
+          </motion.div>
+           </AnimBT>
         ))}
       </section>
     </div>

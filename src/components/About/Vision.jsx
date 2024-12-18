@@ -40,7 +40,7 @@ export default function TestAnim() {
                     "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset",
                 }}
                 className={`relative h-[350px] w-full  max-w-[500px] overflow-hidden bg-[#000] rounded-lg before:absolute before:top-[-50%] before:left-[-50%] before:right-[-50%] before:bottom-[-50%] shadow-2xl
-              ${i === 1 ? "before:bg-[conic-gradient(from_0deg,_transparent,_transparent,_#8fd14f_75%)] bg-red-500" : "before:bg-[conic-gradient(from_0deg,_transparent,_transparent,_#EF4444_75%)] bg-customGreen"}  
+              ${i === 0  ? "before:bg-[conic-gradient(from_0deg,_transparent,_transparent,_#afafaf_75%)] " : "before:bg-[conic-gradient(from_0deg,_transparent,_transparent,_#afafaf_75%)] "}  
               before:animate-spin-slow
             `}
               >

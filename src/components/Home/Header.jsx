@@ -63,7 +63,7 @@ export default function Header() {
 
             <Anim delay={5.5}>
               <div onClick={handleClick} className="mt-0 md:mt-5">
-                <HoverButton>Get Started</HoverButton>
+                <HoverButton>Learn More </HoverButton>
               </div>
             </Anim>
           </div>

@@ -1,6 +1,11 @@
+import Header from "../../components/Company/Partners/Header"
+import Partner from "../../components/Company/Partners/Partners"
 
 export default function Partners() {
   return (
-    <div>Partners</div>
+    <>
+    <Header/>
+    <Partner/>
+    </>
   )
 }

@@ -1,6 +1,4 @@
-import CustomerCen from "../../assets/icons/team-building.png";
-import Deal from "../../assets/icons/tolerance.png";
-import Innovation from "../../assets/icons/intelligence_11764993.png";
+
 import Diversity2OutlinedIcon from '@mui/icons-material/Diversity2Outlined';
 import InventoryOutlinedIcon from '@mui/icons-material/InventoryOutlined';
 import SmartToyOutlinedIcon from '@mui/icons-material/SmartToyOutlined';

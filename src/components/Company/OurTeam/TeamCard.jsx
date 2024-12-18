@@ -36,13 +36,13 @@ const MyComponent = () => {
   ];
 
   return (
-    <div className="py-20 font-poppins">
+    <div className="py-20 font-poppins bg-gray-100">
       <div className="flex flex-col pb-10 md:pb-20 items-center justify-center space-x-4">
         <div className="flex flex-row items-center justify-center space-x-4">
           <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-r from-customGreen to-transparent"></span>
           <Anim>
             <h1 className="text-[#0E314C] text-center text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4 ">
-              Our Team
+              Meet Our Leaders
             </h1>
           </Anim>
           <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-l from-customGreen to-transparent"></span>
