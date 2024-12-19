@@ -31,7 +31,7 @@ export default function News() {
             src="https://img.freepik.com/free-photo/business-partners-negotiating-about-strategies-using-laptop_1163-4774.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_tags_boosted"
             alt="image"
           />
-          <div className="absolute top-[45%] left-5 bg-gradient-to-t from-green-500 to-customGreen p-2 rounded-3xl flex gap-2">
+          <div className="absolute top-[46%] left-5 bg-gradient-to-t from-green-500 to-customGreen p-2 rounded-3xl flex gap-2">
             <CalendarTodayOutlinedIcon sx={{fontSize:12,color:"#FFF",mt:'2px'}}/>
           <span className="text-xs text-white">March 15, 2022</span>
           </div>
@@ -63,7 +63,7 @@ export default function News() {
             src="https://img.freepik.com/free-photo/workers-long-wooden-table_1262-810.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_tags_boosted"
             alt="image"
           />
-          <div className="absolute top-[45%] left-5 bg-gradient-to-t from-green-500 to-customGreen p-2 rounded-3xl flex gap-2">
+          <div className="absolute top-[46%] left-5 bg-gradient-to-t from-green-500 to-customGreen p-2 rounded-3xl flex gap-2">
             <CalendarTodayOutlinedIcon sx={{fontSize:12,color:"#FFF",mt:'2px'}}/>
           <span className="text-xs text-white">March 17, 2022</span>
           </div>
@@ -95,7 +95,7 @@ export default function News() {
             src="https://img.freepik.com/free-photo/creative-people-working-office_23-2147656715.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_tags_boosted"
             alt="image"
           />
-          <div className="absolute top-[45%] left-5 bg-gradient-to-t from-green-500 to-customGreen p-2 rounded-3xl flex gap-2">
+          <div className="absolute top-[46%] left-5 bg-gradient-to-t from-green-500 to-customGreen p-2 rounded-3xl flex gap-2">
             <CalendarTodayOutlinedIcon sx={{fontSize:12,color:"#FFF",mt:'2px'}}/>
           <span className="text-xs text-white">March 19, 2022</span>
           </div>
