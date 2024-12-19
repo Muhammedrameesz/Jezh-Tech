@@ -63,7 +63,7 @@ export default function ForthSection() {
           </div>
 
           {/* Expertise Sections */}
-          <div className="grid grid-cols-1 gap-5 mx-5">
+          <div className="grid grid-cols-1 gap-5 mx-5 w-full">
             {content.map((item) => (
               <div
                 key={item.key}
@@ -83,7 +83,7 @@ export default function ForthSection() {
             ))}
 
             {/* Description Section */}
-            <section className="mt-3 h-[60px] flex gap-3 items-start justify-center">
+            <section className="mt-3 h-[60px] flex gap-3 items-start justify-center w-full">
               {content.map((item, i) => {
                 if (item.key === hover) {
                   return (
