@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import Anim from "../../ui/Anim.jsx";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import RandomPatterns from "../../ui/RandomPatterns.jsx"
+import Underline from "../../ui/Underline.jsx";
 
 // Sample client data
 const clients = [
@@ -85,18 +87,16 @@ export default function WhatUsersSaying() {
   const displayedImages = getDisplayedImages();
 
   return (
-    <div className="font-poppins overflow-hidden py-20 bg-gray-100">
+    <div className="relative font-poppins overflow-hidden py-20 bg-gray-100">
+      <RandomPatterns/>
       {/* Heading */}
       <div className="flex flex-col justify-center items-center mb-14">
-        <div className="flex flex-row items-center justify-center space-x-4">
-          <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-r from-customGreen to-transparent"></span>
-          <Anim>
+        
             <h1 className="text-[#0E314C] text-center text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4">
               What Users Are Saying
             </h1>
-          </Anim>
-          <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-l from-customGreen to-transparent"></span>
-        </div>
+            <Underline/>
+         
         <Anim delay={0.4}>
           <p className="text-sm text-gray-500 text-center max-w-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -108,7 +108,10 @@ export default function WhatUsersSaying() {
       {/* Card */}
 
       <section className="flex justify-center items-center mb-20">
-        <div className="flex  flex-col sm:flex-row items-center bg-gradient-to-br from-white to-transparent  rounded-lg p-6 sm:p-8 w-full max-w-[90%] md:max-w-[80%] lg:max-w-[60%] space-y-0 sm:space-y-0 sm:space-x-6">
+        <div className=" relative flex  flex-col sm:flex-row items-center bg-white  rounded-lg p-6 sm:p-8 w-full max-w-[90%] md:max-w-[80%] lg:max-w-[60%] space-y-0 sm:space-y-0 sm:space-x-6">
+          
+        <div className="absolute w-10 h-10 bg-white bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 rotate-45" />
+
           {/* Profile Image */}
           <div className="border-2 border-customGreen rounded-full p-1 flex-shrink-0 -mt-20">
             <img

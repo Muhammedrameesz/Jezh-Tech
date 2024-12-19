@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 import BookSelf from "../../../assets/images/imageset2/book-self.4c1ba03b.png"
 import Boxes from "../../../assets/images/imageset2/box.724faf96.png"
 import Chair from "../../../assets/images/imageset2/chair.3a6c5b0e.png"
-// import Cloud from "../../../assets/images/imageset2/cloud.b697388c.png"
+import Cloud from "../../../assets/images/imageset2/cloud.b697388c.png"
 import Cup from "../../../assets/images/imageset2/cup.9f4640ff.png"
 import Flower from "../../../assets/images/imageset2/flower-top.05493867.png"
 import Headphone from "../../../assets/images/imageset2/head-phone.08e4ffaa.png"
@@ -18,7 +18,6 @@ const images = [
     { src: BookSelf, alt: "BookSelf", className: "z-10 w-[150px] h-[150px] top-0 left-[10%] " },
     { src: Boxes, alt: " Boxes", className: " w-[450px] h-[250px] bottom-0 left-[2%]" },
     { src: Chair, alt: "Chair", className: "z-20 w-[60px] h-[120px] top-[26%] left-[42%]" },
-    // { src: Cloud, alt: "smallflower", className: "w-[100px] h-[100px] bottom-0 right-20 z-20" },
     { src: Cup, alt: "Cup", className: "z-10 w-[65px] h-[60px]  top-[40%] right-[20%] " },
     { src: Headphone, alt: "Headphone", className: "z-10 w-[20px] h-[20px]  top-8 right-[42%]" },
     { src: Flower, alt: "Flower", className: "z-10 w-[30px] h-[60px]  top-[40%] left-[20%]" },
@@ -26,6 +25,8 @@ const images = [
     { src: Table, alt: "Table", className: "w-[150px] h-[150px]  top-5 right-[20%]" },
     { src: Tissue, alt: "Tissue", className: "z-10 w-[30px] h-[50px] top-6 left-[16%]" },
     { src: Waterbottle, alt: "Waterbottle", className: "z-10 w-[15px] h-[40px]  top-12 right-[23%]" },
+    { src: Cloud, alt: "smallflower", className: "w-[120px] h-[120px] -top-20 left-44 z-20" },
+
     { src: Wifi, alt: "Wifi", className: "z-10 w-[40px] h-[40px]  top-2 left-[25%]" },
     { src: Mugg, alt: "Mugg", className: "z-10 w-[15px] h-[20px]  top-[29%] right-[28%]" },
 

@@ -4,15 +4,15 @@ import ForthSection from "../components/Home/ForthSection.jsx";
 import FifthSection from "../components/Home/FifthSection.jsx";
 import SixthSection from "../components/Home/SixthSection.jsx";
 import LastSection from "../components/Home/LastSection.jsx";
-import { Divider } from "@mui/material";
-import SeventhSection from "../components/Home/SeventhSection.jsx";
+// import { Divider } from "@mui/material";
+// import SeventhSection from "../components/Home/SeventhSection.jsx";
 import Service from "../components/Home/Service.jsx";
 import OurFeatures from "../components/Home/OurFeatures.jsx";
-import StickyScrollRevealDemo from "../ui/Aceternity/stickyScroll/StckyScrollRevealDemo.jsx";
-import RecentWorks from "../components/Home/RecentWorks.jsx"
+// import RecentWorks from "../components/Home/RecentWorks.jsx"
 import WhatUsersSaying from "../components/Home/WhatUsersSaying.jsx";
 import News from "../components/Home/News.jsx";
 import { Helmet } from "react-helmet-async";
+import Team from "../components/Home/Team.jsx"
 
 export default function Home() {
   return (
@@ -33,15 +33,15 @@ export default function Home() {
       <Header />
       <Service/>
       <ThirSection />
-      <Divider sx={{ marginX: "10%" }} className=" bg-neutral-400" />
+      {/* <Divider sx={{ marginX: "10%" }} className=" bg-neutral-400" /> */}
       <ForthSection />
-      <FifthSection />
       <OurFeatures/>
-      <StickyScrollRevealDemo/>
+      <FifthSection />
+      <Team/>
       <SixthSection />
-      <RecentWorks/>
+      {/* <RecentWorks/> */}
       <WhatUsersSaying/>
-      <SeventhSection />
+      {/* <SeventhSection /> */}
       <LastSection />
       <News/>
     </>

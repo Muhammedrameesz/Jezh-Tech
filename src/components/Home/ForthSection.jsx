@@ -1,123 +1,116 @@
-// import Built from "../../assets/icons/sustainable-energy_10633778.png";
-// import Adaptable from "../../assets/icons/cpu_1104950.png";
-// import Digital from "../../assets/icons/intelligence_11764993.png";
 import Anim from "../../ui/Anim.jsx";
 import AnimatedImage from "./Animated-Images/AnimatedImages3.jsx";
 import MainPic from "../../assets/images/imageset3/main-pic.52b102d9.png";
 import AnimRL from "../../ui/AnimRL.jsx";
 import SyncAltIcon from "@mui/icons-material/SyncAlt";
 import AndroidIcon from "@mui/icons-material/Android";
-import { useState } from "react";
 import TonalityOutlinedIcon from "@mui/icons-material/TonalityOutlined";
+import { useState } from "react";
+import Underline from "../../ui/Underline.jsx";
 
 export default function ForthSection() {
   const [hover, setHover] = useState("");
+
+  const hoverDescriptions = {
+    Industry:
+      "Whether it's smart homes, e-commerce, healthcare, or manufacturing, we align our services to meet the specific needs of each industry.",
+    Adaptable:
+      "Our solutions grow with your business, with easy integration and scalability as your company evolves.",
+    Touch:
+      "Our team is dedicated to understanding your business’s unique requirements and delivering solutions that resonate with your goals.",
+    default:
+      "Explore our tailored solutions designed to enhance your business efficiency and growth .",
+  };
+
+  const content = [
+    {
+      key: "Industry",
+      icon: <SyncAltIcon />,
+      title: "Built for Your Industry",
+    },
+    {
+      key: "Adaptable",
+      icon: <TonalityOutlinedIcon />,
+      title: "Adaptable & Scalable",
+    },
+    {
+      key: "Touch",
+      icon: <AndroidIcon />,
+      title: "Technology with a Personal Touch",
+    },
+  ];
+
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 bg-gray-100 gap-20 items-center pb-16 pt-20 px-6 pd:px-20 lg:px-24  font-poppins">
+    <div className="grid grid-cols-1 md:grid-cols-2 bg-white gap-20 items-center pb-16 pt-20 px-6 pd:px-20 lg:px-24 font-poppins">
+      {/* Left Section */}
       <Anim>
-        <div className="relative flex flex-col items-start space-y-8 p-4  lg:p-6 rounded-md  ">
+        <div className="relative flex flex-col items-start space-y-8 p-4 lg:p-6 rounded-md">
+          {/* Background Image */}
           <div
-            className="absolute  inset-0 bg-no-repeat bg-cover rotate-180 top-10  opacity-10"
+            className="absolute inset-0 bg-no-repeat bg-cover  top-10 opacity-5"
             style={{
               backgroundImage:
                 "url(https://img.freepik.com/free-vector/coloured-background-design_1164-257.jpg?t=st=1734158786~exp=1734162386~hmac=81d7c5903a0022540b6ecc7bdbc30fc04f7ecc3accd3c2e7dd7716c9ca84fb44&w=740)",
             }}
           ></div>
 
-          <div className="flex flex-row items-center justify-center space-x-4">
-            <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-r from-customGreen to-transparent"></span>
-            <h1 className="text-[#0E314C] text-center text-xl md:text-xl lg:text-2xl font-extrabold leading-tight  mb-4 ">
+          {/* Header */}
+          <div className="mx-5">
+            <h1 className="text-[#0E314C]  text-xl md:text-xl lg:text-2xl font-extrabold leading-tight mb-4">
               Customized Solutions for Every Business
             </h1>
-            <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-l from-customGreen to-transparent"></span>
+            <Underline />
           </div>
 
-          <div
-            onMouseEnter={() => setHover("Industry")}
-            onMouseLeave={() => setHover("")}
-            className="flex flex-col md:flex-row gap-5 bg-gray-50 p-2 rounded-lg shadow-xl transform hover:-translate-y-3 transition-transform duration-700 hover:bg-gradient-to-tl from-customGreen to-green-500 group"
-          >
-            <SyncAltIcon className="mt-[0px] text-customGreen group-hover:text-white transition-colors duration-700 ease-in-out" />
-
-            <div className="flex flex-col">
-              <h2 className="text-sm md:text-lg  font-normal text-gray-800 mb-2 group-hover:text-white transition-colors duration-700 ease-in-out">
-                Built for Your Industry
-              </h2>
-              <p
-                className={`text-xs md:text-sm text-gray-500 tracking-normal group-hover:text-gray-100 transition-all duration-700 ease-in-out ${
-                  hover === "Industry"
-                    ? "opacity-100 max-h-[500px] translate-y-0"
-                    : "opacity-0 max-h-0 -translate-y-3"
-                }`}
-                style={{
-                  overflow: "hidden",
-                }}
+          {/* Expertise Sections */}
+          <div className="grid grid-cols-1 gap-5 mx-5">
+            {content.map((item) => (
+              <div
+                key={item.key}
+                onMouseEnter={() => setHover(item.key)}
+                onMouseLeave={() => setHover("")}
+                className="flex flex-col md:flex-row gap-5 bg-white p-2 shadow-lg shadow-slate-200 rounded-md transform hover:-translate-y-2 transition-transform duration-700 hover:bg-gradient-to-tl from-customGreen to-green-500 group"
               >
-                Whether it&apos;s smart homes, e-commerce, healthcare, or
-                manufacturing, we align our services to meet the specific needs
-                of each industry
-              </p>
-            </div>
-          </div>
+                <div className="text-customGreen group-hover:text-white transition-colors duration-700 ease-in-out">
+                  {item.icon}
+                </div>
+                <div className="flex flex-col">
+                  <h2 className="text-sm  font-semibold text-gray-600  mb-2 group-hover:text-white transition-colors duration-700 ease-in-out">
+                    {item.title}
+                  </h2>
+                </div>
+              </div>
+            ))}
 
-          <div
-            onMouseEnter={() => setHover(" Adaptable")}
-            onMouseLeave={() => setHover("")}
-            className="flex flex-col md:flex-row gap-5 bg-gray-50 p-2 rounded-lg shadow-xl transform hover:-translate-y-3 transition-transform duration-700 hover:bg-gradient-to-tl from-customGreen to-green-500 group"
-          >
-            <TonalityOutlinedIcon className="mt-[2px] text-customGreen group-hover:text-white transition-colors duration-700 ease-in-out" />
-
-            <div className="flex flex-col">
-              <h2 className="text-sm md:text-lg font-medium text-gray-800 mb-2 group-hover:text-white transition-colors duration-700 ease-in-out ">
-                Adaptable & Scalable
-              </h2>
+            {/* Description Section */}
+            <section className="mt-3 h-[60px] flex gap-3 items-start justify-center">
+              {content.map((item, i) => {
+                if (item.key === hover) {
+                  return (
+                    <div key={i} className=" text-neutral-700">
+                      {item.icon}
+                    </div>
+                  );
+                }
+                return null;
+              })}
               <p
-                className={`text-xs md:text-sm text-gray-500 tracking-normal group-hover:text-gray-100 transition-all duration-700 ease-in-out ${
-                  hover === " Adaptable"
-                    ? "opacity-100 max-h-[500px] translate-y-0"
-                    : "opacity-0 max-h-0 -translate-y-3"
+                className={`text-sm   tracking-normal transition-all duration-700 ease-in-out ${
+                  hover
+                    ? "opacity-100 max-h-[500px] translate-y-0 text-neutral-700"
+                    : "opacity-0 text-neutral-500 text-center translate-y-10"
                 }`}
-                style={{
-                  overflow: "hidden",
-                }}
+                style={{ overflow: "hidden" }}
               >
-                Our solutions grow with your business, with easy integration and
-                scalability as your company evolves.
+                {hoverDescriptions[hover] || hoverDescriptions.default}
               </p>
-            </div>
-          </div>
-
-          <div
-            onMouseEnter={() => setHover("Touch")}
-            onMouseLeave={() => setHover("")}
-            className="flex flex-col md:flex-row gap-5 bg-gray-50 p-2 rounded-lg shadow-xl transform hover:-translate-y-3 transition-transform duration-700 hover:bg-gradient-to-tl from-customGreen to-green-500 group"
-          >
-            <AndroidIcon className="mt-[2px] text-customGreen group-hover:text-white transition-colors duration-700 ease-in-out" />
-
-            <div className="flex flex-col">
-              <h2 className="text-sm md:text-lg font-medium text-gray-800 mb-2 group-hover:text-white transition-colors duration-700 ease-in-out ">
-                Technology with a Personal Touch
-              </h2>
-              <p
-                className={`text-xs md:text-sm text-gray-500 tracking-normal group-hover:text-gray-100 transition-all duration-700 ease-in-out ${
-                  hover === "Touch"
-                    ? "opacity-100 max-h-[500px] translate-y-0"
-                    : "opacity-0 max-h-0 -translate-y-3"
-                }`}
-                style={{
-                  overflow: "hidden",
-                }}
-              >
-                Our team is dedicated to understanding your business’s unique
-                requirements and delivering solutions that resonate with your
-                goals.
-              </p>
-            </div>
+            </section>
           </div>
         </div>
       </Anim>
 
-      <div className=" mt-[10%] md:mt-[10%] relative overflow-hidden  ">
+      {/* Right Section */}
+      <div className="mt-[10%] md:mt-[10%] relative overflow-hidden">
         <div className="block md:hidden">
           <AnimRL>
             <img

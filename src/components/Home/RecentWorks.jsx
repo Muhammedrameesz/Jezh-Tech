@@ -7,6 +7,7 @@ import { IoBookOutline } from "react-icons/io5";
 import { MdInsertChartOutlined } from "react-icons/md";
 import { TiChartPieOutline } from "react-icons/ti";
 import { TiThLargeOutline } from "react-icons/ti";
+import Underline from "../../ui/Underline.jsx";
 
 const ScrollingCards = () => {
   const scrollContainerRef = useRef(null);
@@ -77,7 +78,7 @@ const ScrollingCards = () => {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod enim sit amet.",
       title: "Title",
 
-      icon:  TiThLargeOutline ,
+      icon: TiThLargeOutline,
     },
     {
       image:
@@ -93,15 +94,11 @@ const ScrollingCards = () => {
   return (
     <div className="py-20 font-poppins">
       <div className="flex flex-col justify-center items-center mb-14">
-        <div className="flex flex-row items-center justify-center space-x-4">
-          <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-r from-customGreen to-transparent"></span>
-          <Anim>
-            <h1 className="text-[#0E314C] text-center text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4 ">
-              Our Recent Works
-            </h1>
-          </Anim>
-          <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-l from-customGreen to-transparent"></span>
-        </div>
+        <h1 className="text-[#0E314C] text-center text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4 ">
+          Our Recent Works
+        </h1>
+        <Underline />
+
         <Anim delay={0.4}>
           <p className="text-sm text-gray-500 text-center max-w-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -151,8 +148,6 @@ const ScrollingCards = () => {
                 transition={{ duration: 0.5, ease: "easeInOut" }}
                 className="absolute inset-0 bg-gradient-to-t from-green-500/70 to-customGreen/70 bg-opacity-50 flex flex-col justify-evenly p-4"
               >
-                
-
                 <motion.div
                   initial={{ opacity: 0, y: -20, x: 20 }}
                   animate={
@@ -168,7 +163,6 @@ const ScrollingCards = () => {
                   </span>
                 </motion.div>
 
-                
                 <motion.div
                   initial={{ opacity: 0, y: 50 }}
                   animate={

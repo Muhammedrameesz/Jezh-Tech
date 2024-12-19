@@ -14,7 +14,7 @@ const images = [
     { src: smallMon, alt: "monitor", className: "w-[100px] h-[100px] bottom-[40%] left-[65%] right-1/2" },
     { src: smallTop, alt: "smallflower", className: "w-[50px] h-[80px] bottom-28 left-[85%]" },
     { src: table, alt: "table", className: "w-[400px] h-[120px] bottom-0 left-[20%] " },
-    { src: target, alt: "target", className: "w-[70px] h-[70px] top-0 right-5" },
+    { src: target, alt: "target", className: "w-[70px] h-[70px] top-0 right-10" },
     { src: windowOut, alt: "windowOut", className: "w-[250px] h-[150px] absolute top-7 left-[8%]" },
   ];
 

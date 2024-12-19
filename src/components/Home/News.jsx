@@ -2,20 +2,19 @@ import Anim from "../../ui/Anim.jsx";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import CalendarTodayOutlinedIcon from '@mui/icons-material/CalendarTodayOutlined';
 import AnimBT from "../../ui/AnimBT.jsx"
+import Underline from "../../ui/Underline.jsx";
+
 
 export default function News() {
   return (
-    <div className="py-20 bg-white">
+    <div className="py-20 bg-white font-poppins">
       <div className="flex flex-col justify-center items-center ">
-        <div className="flex flex-row items-center justify-center space-x-4">
-          <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-r from-customGreen to-transparent"></span>
-          <Anim>
+       
             <h1 className="text-[#0E314C] text-center text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4">
-              Our Recent Works
+            The News from Our Blog
             </h1>
-          </Anim>
-          <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-l from-customGreen to-transparent"></span>
-        </div>
+            <Underline/>
+         
         <Anim delay={0.4}>
           <p className="text-sm text-gray-500 text-center max-w-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -32,7 +31,7 @@ export default function News() {
             src="https://img.freepik.com/free-photo/business-partners-negotiating-about-strategies-using-laptop_1163-4774.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_tags_boosted"
             alt="image"
           />
-          <div className="absolute top-[42%] left-5 bg-gradient-to-t from-green-500 to-customGreen p-2 rounded-3xl flex gap-2">
+          <div className="absolute top-[45%] left-5 bg-gradient-to-t from-green-500 to-customGreen p-2 rounded-3xl flex gap-2">
             <CalendarTodayOutlinedIcon sx={{fontSize:12,color:"#FFF",mt:'2px'}}/>
           <span className="text-xs text-white">March 15, 2022</span>
           </div>
@@ -64,7 +63,7 @@ export default function News() {
             src="https://img.freepik.com/free-photo/workers-long-wooden-table_1262-810.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_tags_boosted"
             alt="image"
           />
-          <div className="absolute top-[42%] left-5 bg-gradient-to-t from-green-500 to-customGreen p-2 rounded-3xl flex gap-2">
+          <div className="absolute top-[45%] left-5 bg-gradient-to-t from-green-500 to-customGreen p-2 rounded-3xl flex gap-2">
             <CalendarTodayOutlinedIcon sx={{fontSize:12,color:"#FFF",mt:'2px'}}/>
           <span className="text-xs text-white">March 17, 2022</span>
           </div>
@@ -96,7 +95,7 @@ export default function News() {
             src="https://img.freepik.com/free-photo/creative-people-working-office_23-2147656715.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_tags_boosted"
             alt="image"
           />
-          <div className="absolute top-[42%] left-5 bg-gradient-to-t from-green-500 to-customGreen p-2 rounded-3xl flex gap-2">
+          <div className="absolute top-[45%] left-5 bg-gradient-to-t from-green-500 to-customGreen p-2 rounded-3xl flex gap-2">
             <CalendarTodayOutlinedIcon sx={{fontSize:12,color:"#FFF",mt:'2px'}}/>
           <span className="text-xs text-white">March 19, 2022</span>
           </div>

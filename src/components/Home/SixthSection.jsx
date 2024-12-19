@@ -3,6 +3,7 @@ import AssignmentOutlinedIcon from "@mui/icons-material/AssignmentOutlined";
 import GroupRemoveOutlinedIcon from "@mui/icons-material/GroupRemoveOutlined";
 import HoverButton from "../../ui/HoverButton.jsx";
 import Anim from "../../ui/Anim.jsx";
+import Underline from "../../ui/Underline.jsx";
 
 export default function StatsSection() {
   const projectsRef = useRef(null);
@@ -70,7 +71,7 @@ export default function StatsSection() {
 
   return (
     <div
-      className="relative bg-gradient-to-t from-gray-50 to-gray-100 py-14 font-poppins
+      className="relative bg-gradient-to-t from-white py-14 font-poppins
     "
     >
       <div
@@ -81,15 +82,14 @@ export default function StatsSection() {
         }}
       ></div>
       <div className="flex flex-col justify-center items-center  mb-5">
-        <div className="flex flex-row items-center justify-center space-x-4">
-          <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-r from-customGreen to-transparent"></span>
-          <Anim>
+        
+          
             <h1 className="text-[#0E314C] text-center text-xl md:text-2xl lg:text-3xl max-w-lg font-semibold leading-tight  mb-4">
               We always try to understand users expectation
             </h1>
-          </Anim>
-          <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-l from-customGreen to-transparent"></span>
-        </div>
+            <Underline/>
+         
+         
         <Anim delay={0.4}>
           <p className="text-sm text-gray-500 text-center max-w-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -100,7 +100,7 @@ export default function StatsSection() {
       <div className="flex flex-col md:flex-row items-center gap-2 md:gap-6 justify-center md:space-x-12 space-y-8 md:space-y-0 p-10 ">
         <div
           ref={projectsRef}
-          className="flex flex-row gap-5 text-center border-b-2 md:border-0 md:border-b-0 border-dotted border-gray-600 md:pl-8 md:pb-0 pb-4"
+          className="flex bg-white z-40 flex-row gap-5 text-center border-b-2 md:border-0 md:border-b-0 border-dotted border-gray-600 md:pl-8 md:pb-0 pb-4"
         >
           <div className="flex justify-center items-center">
             <AssignmentOutlinedIcon
@@ -117,7 +117,7 @@ export default function StatsSection() {
 
         <div
           ref={customersRef}
-          className="flex flex-row gap-5 text-center border-b-2 md:border-l-2 md:border-b-0 border-dotted border-gray-400 md:pl-8 md:pb-0 pb-4"
+          className="flex bg-white z-40 flex-row gap-5 text-center border-b-2 md:border-l-2 md:border-b-0 border-dotted border-gray-400 md:pl-8 md:pb-0 pb-4"
         >
           <div className="flex justify-center items-center">
             <AssignmentOutlinedIcon
@@ -133,7 +133,7 @@ export default function StatsSection() {
 
         <div
           ref={othersRef}
-          className="flex flex-row gap-5 text-center border-b-2 md:border-l-2 md:border-b-0 border-dotted border-gray-400 md:pl-8 md:pb-0 pb-4"
+          className="flex bg-white z-40 flex-row gap-5 text-center border-b-2 md:border-l-2 md:border-b-0 border-dotted border-gray-400 md:pl-8 md:pb-0 pb-4"
         >
           <div className="flex justify-center items-center">
             <GroupRemoveOutlinedIcon

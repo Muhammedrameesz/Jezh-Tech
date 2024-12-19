@@ -3,6 +3,7 @@ import Anim from "../../ui/Anim.jsx";
 import { ServiceContent } from "./ServiceContent";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import Underline from "../../ui/Underline.jsx";
 
 export default function Service() {
   const [hover, setHover] = useState(null);
@@ -11,16 +12,13 @@ export default function Service() {
     <div className="flex flex-col  items-center font-poppins px-6 py-16 bg-gray-100  ">
       {/* Header Section */}
       <div className="flex flex-col justify-center items-center mb-10 md:mb-20">
-        <div className="flex flex-row items-center justify-center space-x-4">
-          <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-r from-customGreen to-transparent"></span>
-          <Anim>
+      
             <h1 className="text-[#0E314C] text-center text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4">
-              Why Choose Us?
+            Our Services
             </h1>
-          </Anim>
-          <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-l from-customGreen to-transparent"></span>
-        </div>
-        <Anim delay={0.4}>
+            <Underline/>
+         
+        <Anim >
           <p className="text-sm text-gray-500 text-center max-w-xl leading-6">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
             nesciunt corporis illo totam eos quis saepe odit autem laborum nobis
@@ -33,7 +31,7 @@ export default function Service() {
       {/* Features Section */}
       <section className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl ">
         {ServiceContent.map((feature, index) => (
-          <AnimBT key={index} delay={index * 0.3}>
+          <AnimBT key={index} >
             <div
               onMouseEnter={() => setHover(index)}
               onMouseLeave={() => setHover(null)}

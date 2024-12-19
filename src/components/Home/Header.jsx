@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import AnimatedImage from "./Animated-Images/Animation2.jsx";
 import ServiceMainImage from "../../assets/images/imageset2/service-right-main-pic.30fff806.png";
 import AnimRl from "../../ui/AnimRL.jsx";
+import RandomP2 from "../../ui/RandomPatterns.jsx"
 
 export default function Header() {
   const navigate = useNavigate();
@@ -23,6 +24,7 @@ export default function Header() {
 
   return (
     <BackgroundBeamsWithCollision url={url} className="relative custom-class">
+      <RandomP2/>
       <div className="font-poppins bg-white text-black  flex items-center justify-center overflow-hidden ">
         <div className="relative grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-5 max-w-screen-lg  px-4 md:px-5 rounded-lg mt-20 md:mt-20">
           <div className="flex flex-col justify-center space-y-6">
@@ -69,7 +71,7 @@ export default function Header() {
           </div>
 
           {/* Right: Conditional Image Rendering */}
-          <div className="flex justify-center items-center mt-5 md:mt-24">
+          <div className="flex justify-center items-center mt-5 md:mt-32">
             <AnimRl>
               <div className="block md:hidden">
                 <img

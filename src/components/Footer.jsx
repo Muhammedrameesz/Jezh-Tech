@@ -5,6 +5,7 @@ import ContactPhoneOutlinedIcon from "@mui/icons-material/ContactPhoneOutlined";
 import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
 import AnimBT from "../ui/AnimBT.jsx";
 import ANim from "../ui/Anim.jsx";
+import RandomPatterns2 from "../ui/RandomPatterns2.jsx"
 
 export default function Footer() {
   const linkStyle = "text-gray-400 hover:text-customGreen transition";
@@ -15,7 +16,8 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-black text-white">
+    <footer className="bg-black text-white relative">
+      <RandomPatterns2/>
       <AnimBT>
         <div className="flex sticky flex-col md:flex-row items-start justify-between py-12 px-6 md:px-12 lg:px-24 space-y-8 md:space-y-0">
           <div className="flex flex-col items-center md:items-start">

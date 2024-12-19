@@ -3,6 +3,7 @@ import Anim from "../../ui/Anim.jsx";
 import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
 import AnimRL from "../../ui/AnimRL.jsx";
 import AnimZF from "../../ui/AnimZF.jsx";
+import Underline from "../../ui/Underline.jsx";
 
 
 export default function TestAnim() {
@@ -11,15 +12,12 @@ export default function TestAnim() {
       <AnimZF>
        
         <div className="flex flex-col justify-center items-center my-16  space-x-4">
-        <div className="flex flex-row items-center justify-center space-x-4">
-          <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-r from-customGreen to-transparent"></span>
-          <Anim>
+       
             <h1 className="text-gray-200 text-center text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4 ">
             Empowering Innovation: Our Vision and Mission
             </h1>
-          </Anim>
-          <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-l from-customGreen to-transparent"></span>
-        </div>
+            <Underline/>
+          
         <Anim delay={0.4}>
           <p className="text-sm text-gray-400 text-center max-w-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

@@ -4,6 +4,7 @@ import { FiTwitter } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import Anim from "../../Anim.jsx"
+import Underline from "../../Underline.jsx";
 
 const IconStyle =
   "h-4 w-4 cursor-pointer text-green-500 hover:text-violet-700 transform hover:-translate-y-2 transition-all duration-500";
@@ -107,15 +108,12 @@ export default function StickyScrollRevealDemo() {
   return (
     <div className="p-10 font-poppins my-10">
       <div className="flex flex-col justify-center items-center  mb-20">
-        <div className="flex flex-row items-center justify-center space-x-4">
-          <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-r from-customGreen to-transparent"></span>
-          <Anim>
+        
           <h1 className="text-[#0E314C] text-center text-xl md:text-2xl lg:text-3xl font-semibold leading-tight  mb-4">
             Our Awesome Team
           </h1>
-          </Anim>
-          <span className="h-1 w-16 md:w-24 lg:w-32 bg-gradient-to-l from-customGreen to-transparent"></span>
-        </div>
+          <Underline/>
+          
         <Anim delay={0.4}>
         <p className="text-sm text-gray-500 text-center max-w-lg">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

@@ -2,6 +2,7 @@
 import Anim from "../../ui/Anim.jsx";
 import AnimRL from "../../ui/AnimRL.jsx";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
+import Underline from "../../ui/Underline.jsx";
 
 const contentArray = [
   {
@@ -33,10 +34,10 @@ export default function AboutUs() {
             <p className="bg-purple-300 w-fit py-1 px-2 rounded-3xl text-xs text-gray-500 mb-3">
               Who We Are?
             </p>
-            <h1 className="text-[#0E314C] text-start text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-2 ">
+            <h1 className="text-[#0E314C] text-start text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-5 ">
               Serving Since 2021
             </h1>
-            <div className="bg-gradient-to-tr from-customGreen to-transparent w-32 h-1 mb-5"></div>
+            <Underline/>
 
             <p className="text-sm text-gray-500 leading-6 mb-4">
               Jezh Technologies is a forward-thinking company focused on
