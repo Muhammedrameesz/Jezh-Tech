@@ -18,7 +18,7 @@ const PatternShapes = () => {
   };
 
   return (
-    <div className="absolute w-full h-[400px] overflow-hidden opacity-20">
+    <div className="absolute w-full h-[400px] overflow-hidden opacity-10">
       {/* Loop through patterns and render them with animations */}
       {patterns.map((pattern, index) => {
         let patternElement = null;
