@@ -13,6 +13,7 @@ import WhatUsersSaying from "../components/Home/WhatUsersSaying.jsx";
 import News from "../components/Home/News.jsx";
 import { Helmet } from "react-helmet-async";
 import Team from "../components/Home/Team.jsx"
+import PricingPlans from "../components/Home/PricinPlans.jsx"
 
 export default function Home() {
   return (
@@ -40,6 +41,7 @@ export default function Home() {
       <Team/>
       <SixthSection />
       {/* <RecentWorks/> */}
+      <PricingPlans/>
       <WhatUsersSaying/>
       {/* <SeventhSection /> */}
       <LastSection />

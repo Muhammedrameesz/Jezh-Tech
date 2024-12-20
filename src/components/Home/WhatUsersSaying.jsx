@@ -3,8 +3,9 @@ import { motion } from "framer-motion";
 import Anim from "../../ui/Anim.jsx";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import RandomPatterns from "../../ui/RandomPatterns.jsx"
+import RandomPatterns from "../../ui/RandomPatterns3.jsx"
 import Underline from "../../ui/Underline.jsx";
+
 
 // Sample client data
 const clients = [
@@ -89,6 +90,7 @@ export default function WhatUsersSaying() {
   return (
     <div className="relative font-poppins overflow-hidden py-20 bg-gray-100">
       <RandomPatterns/>
+      
       {/* Heading */}
       <div className="flex flex-col justify-center items-center mb-14">
         

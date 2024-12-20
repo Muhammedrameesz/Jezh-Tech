@@ -29,7 +29,7 @@ const RandomShapes = () => {
             shapeElement = (
                 <motion.div
                 key={index}
-                className="w-10 h-10 bg-blue-500 absolute"
+                className="w-8 h-8 bg-blue-500 absolute"
                 style={{
                   backgroundColor: randomColor(),
                   left: `${Math.random() * 100}%`,
@@ -44,7 +44,7 @@ const RandomShapes = () => {
             shapeElement = (
                 <motion.div
                 key={index}
-                className="w-14 h-14 rounded-full absolute"
+                className="w-10 h-10 rounded-full absolute"
                 style={{
                   backgroundColor: randomColor(),
                   left: `${Math.random() * 100}%`,
@@ -63,9 +63,9 @@ const RandomShapes = () => {
                   style={{
                     width: 0,
                     height: 0,
-                    borderLeft: '20px solid transparent', 
-                    borderRight: '20px solid transparent', 
-                    borderBottom: `40px solid ${randomColor()}`, 
+                    borderLeft: '10px solid transparent', 
+                    borderRight: '10px solid transparent', 
+                    borderBottom: `25px solid ${randomColor()}`, 
                     left: `${Math.random() * 100}%`,
                     top: `${Math.random() * 100}%`,
                   }}
@@ -84,11 +84,11 @@ const RandomShapes = () => {
                 style={{ left: `${Math.random() * 100}%`, top: `${Math.random() * 100}%` }}
               >
                 <div
-                  className="w-10 h-2 bg-green-500 absolute"
+                  className="w-8 h-2 bg-green-500 absolute"
                   style={{ backgroundColor: randomColor() }}
                 />
                 <div
-                  className="w-2 h-10 bg-green-500 absolute"
+                  className="w-2 h-8 bg-green-500 absolute"
                   style={{ backgroundColor: randomColor() }}
                 />
               </motion.div>

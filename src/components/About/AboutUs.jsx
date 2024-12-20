@@ -4,6 +4,7 @@ import AnimRL from "../../ui/AnimRL.jsx";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import Underline from "../../ui/Underline.jsx"
 
+
 const contentArray = [
   {
     title: "Our History",

@@ -18,7 +18,7 @@ const PatternShapes = () => {
   };
 
   return (
-    <div className="absolute w-full h-[400px] overflow-hidden opacity-10">
+    <div className="absolute w-full h-[400px] overflow-hidden opacity-20">
       {/* Loop through patterns and render them with animations */}
       {patterns.map((pattern, index) => {
         let patternElement = null;
@@ -32,9 +32,9 @@ const PatternShapes = () => {
                 style={{
                   width: 0,
                   height: 0,
-                  borderLeft: '20px solid transparent',
-                  borderRight: '20px solid transparent',
-                  borderBottom: `40px solid ${randomColor()}`,
+                  borderLeft: '10px solid transparent',
+                  borderRight: '10px solid transparent',
+                  borderBottom: `20px solid ${randomColor()}`,
                   left: `${Math.random() * 100}%`,
                   top: `${Math.random() * 100}%`,
                 }}
@@ -51,10 +51,10 @@ const PatternShapes = () => {
                 style={{
                   width: 0,
                   height: 0,
-                  borderLeft: '20px solid transparent',
-                  borderRight: '20px solid transparent',
-                  borderBottom: `40px solid ${randomColor()}`,
-                  borderTop: `50px solid ${randomColor()}`,
+                  borderLeft: '10px solid transparent',
+                  borderRight: '10px solid transparent',
+                  borderBottom: `20px solid ${randomColor()}`,
+                  borderTop: `25px solid ${randomColor()}`,
                   left: `${Math.random() * 100}%`,
                   top: `${Math.random() * 100}%`,
                 }}
@@ -69,8 +69,8 @@ const PatternShapes = () => {
                 key={index}
                 className="absolute"
                 style={{
-                  width: '30px',
-                  height: '30px',
+                  width: '10px',
+                  height: '10px',
                   backgroundColor: randomColor(),
                   transform: 'rotate(45deg)',
                   left: `${Math.random() * 100}%`,
@@ -89,10 +89,10 @@ const PatternShapes = () => {
                 style={{
                   width: 0,
                   height: 0,
-                  borderLeft: '20px solid transparent',
-                  borderRight: '20px solid transparent',
-                  borderBottom: '40px solid transparent',
-                  borderTop: '50px solid transparent',
+                  borderLeft: '10px solid transparent',
+                  borderRight: '10px solid transparent',
+                  borderBottom: '20px solid transparent',
+                  borderTop: '25px solid transparent',
                   left: `${Math.random() * 100}%`,
                   top: `${Math.random() * 100}%`,
                   clipPath: 'polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)',

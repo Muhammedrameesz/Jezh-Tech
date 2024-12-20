@@ -15,6 +15,7 @@ export default {
         customBg: "#A4A4A4",
         customGray: "#B5BDBC",
         oracleGray: "#abb8c3",
+        "custom-purple": '#6a0fbe',
       },
       fontWeight: {
         custom: '450', // Add a custom weight
@@ -50,6 +51,9 @@ export default {
         wave: 'waveAnimation 4s ease-in-out infinite',
         scroll: 'scroll 10s linear infinite',
         'fade-in': 'fadeIn 0.5s ease forwards',
+      },
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(135deg, #23bdb8, #43e794)',
       },
       
     },

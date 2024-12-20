@@ -27,7 +27,7 @@ const contentArray = [
 
 export default function AboutUs() {
   return (
-    <div className="bg-gray-100  py-20 font-poppins  ">
+    <div className="bg-gray-50  py-20 font-poppins  ">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mx-10 md:mx-20">
         <Anim>
           <section className="mt-5 md:mt-20">
@@ -68,7 +68,7 @@ export default function AboutUs() {
       <div className="grid grid-cols-1 md:grid-cols-3 justify-between items-center mx-10 md:mx-20 gap-5 mt-10 md:mt-20">
         {contentArray?.map((data, i) => (
           <Anim key={i} delay={i * 0.2}>
-            <div className="flex flex-col gap-3 group bg-gradient-to-tl from-gray-50 to-transparent p-2 rounded-lg hover:bg-gray-100 hover:shadow-xl transform hover:-translate-y-2 transition-all duration-500">
+            <div className="flex flex-col gap-3 group bg-white p-2 rounded-lg hover:bg-white hover:shadow-xl transform hover:-translate-y-2 transition-all duration-500">
               <div className="flex flex-row gap-2">
                 <data.icon
                   className={`rounded-full p-1 

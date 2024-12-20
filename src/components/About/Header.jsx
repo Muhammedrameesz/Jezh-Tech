@@ -1,16 +1,17 @@
 import { motion } from "framer-motion";
 import Anim from "../../ui/Anim.jsx";
 import HoverButton from "../../ui/HoverButton.jsx";
+import Background from "../../assets/image2/background/banner-bg.jpg"
+import Patterns from "../../ui/RandomPatterns3.jsx"
 
 export default function Header() {
-  const Video =
-    "https://media.istockphoto.com/id/612776052/video/empty-office-sunny-morning-3d-rendering.mp4?s=mp4-640x640-is&k=20&c=ED_qdXetqWAW5OvUpLZxnv7Pnt4h3_6qixfCwfmCHYI=";
+  
 
   const sentence = " Trust us to simplify tech and drive success";
 
   return (
     <div className="relative top-14 flex flex-col justify-center items-center  min-h-screen font-poppins px-4 overflow-hidden">
-      <video
+      {/* <video
         autoPlay
         loop
         muted
@@ -19,9 +20,13 @@ export default function Header() {
       >
         <source src={Video} type="video/mp4" />
         Your browser does not support the video tag.
-      </video>
+      </video> */}
       {/* Content */}
-      <div className="relative z-10 text-center max-w-xl mt-0 bg-[rgba(80,79,79,0.5)] p-10 rounded-lg shadow-md">
+      <div className="absolute w-full h-full object-cover  z-[-1]">
+        <img src={Background} alt="" />
+      </div>
+      <Patterns/>
+      <div className="relative z-10 text-center max-w-xl mt-0  p-10 rounded-lg ">
         <Anim key="anim-header">
           <h1 className="text-4xl md:text-6xl font-extrabold text-black mb-8">
             About Us
