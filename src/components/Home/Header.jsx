@@ -21,7 +21,7 @@ export default function Header() {
     "Discover reliable solutions that simplify technology and accelerate your growth.";
 
   return (
-    <div className="font-poppins bg-white text-black  flex items-center justify-center overflow-hidden relative ">
+    <div className="font-poppins min-h-screen bg-white text-black  flex items-center justify-center overflow-hidden relative ">
     
        <RandomP2/>
       <div className="absolute w-full h-full object-cover  ">
