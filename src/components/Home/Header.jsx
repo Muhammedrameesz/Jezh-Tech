@@ -23,12 +23,12 @@ export default function Header() {
   return (
     <div className="font-poppins bg-white text-black  flex items-center justify-center overflow-hidden relative ">
     
-
+       <RandomP2/>
       <div className="absolute w-full h-full object-cover  ">
         <img src={Background} alt="img" />
       </div>
       <div className="relative grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-5 max-w-screen-lg  px-4 md:px-5 rounded-lg mt-20 md:mt-20">
-      <RandomP2/>
+     
         <div className="flex flex-col justify-center space-y-6">
           <Anim>
             <h1 className="text-2xl sm:text-4xl max-w-full md:max-w-2xl tracking-tight md:text-5xl text-start font-extrabold text-[#0E314C] leading-snug mb-2 mt-10 md:mb-4">
