@@ -1,31 +1,27 @@
 import { motion } from "framer-motion";
 import AnimatedButton from "../../ui/HoverButton.jsx";
 import ANim from "../../ui/Anim.jsx";
+import Background from "../../assets/image2/background/banner-bg1.jpg";
+import Pattern from "../../ui/RandomPatterns3.jsx"
 
 function Header() {
   const sentence =
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit corporis iusto hic quam eveniet culpa nam harum nihil iste magnam adipisci.";
 
   return (
-    <div
-      style={{
-        backgroundImage:
-          "url(https://img.freepik.com/free-vector/isometric-web-hosting-support-composition-with-tech-support-online-clients_1284-54457.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid)",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        backgroundAttachment: "fixed",
-      }}
-      className="relative min-h-screen flex flex-col justify-center items-center gap-10 font-poppins  overflow-hidden"
-    >
-      <div className="flex flex-col items-center justify-center p-6 gap-6 mt-20 text-neutral-950  bg-gray-100/90">
+    <div className="relative min-h-screen flex flex-col justify-center items-center gap-10 font-poppins  overflow-hidden">
+      <div className="absolute w-full h-full -z-10">
+        <img src={Background} alt="" />
+      </div>
+      <Pattern/>
+      <div className="flex flex-col items-center justify-center p-6 gap-6 mt-20 text-neutral-900 z-10 ">
         <ANim>
-          <h1 className="text-2xl md:text-4xl lg:text-6xl font-extrabold ">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold ">
             Our Services
           </h1>
         </ANim>
         <motion.div
-          className="text-lg md:text-xl max-w-3xl text-center text-gray-600 leading-relaxed"
+          className="text-lg md:text-xl max-w-2xl text-center text-gray-600 leading-6 z-10 "
           initial="hidden"
           animate="visible"
           variants={{
@@ -42,7 +38,7 @@ function Header() {
           {sentence.split("").map((char, index) => (
             <motion.span
               key={index}
-              className="inline-block font-montserrat"
+              className="inline-block font-montserrat "
               variants={{
                 hidden: { opacity: 0, y: -10 },
                 visible: { opacity: 1, y: 0 },

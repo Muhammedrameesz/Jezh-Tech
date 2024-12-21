@@ -1,13 +1,13 @@
 // import { GoogleGeminiEffect } from "../../../ui/Aceternity/Gemini.jsx";
 import { motion } from "framer-motion";
-import AnimatedButton from "../../../ui/HoverButton.jsx";
-import ANim from "../../../ui/Anim.jsx";
-import Background from "../../../assets/image2/background/banner-bg1.jpg"
-import Pattern from "../../../ui/RandomPatterns3.jsx"
+import ANim from "../../ui/Anim.jsx";
+import Background from "../../assets/image2/background/banner-bg1.jpg"
+import Pattern from "../../ui/RandomPatterns3.jsx"
 
 function App() {
   const sentence =
-    " Our team is a dynamic, collaborative group focused on innovation,excellence, and continuous learning in a supportive and inclusive environment.";
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam explicabo quasi ea inventore aperiam ."
+    
 
   return (
     <div className="relative min-h-screen flex flex-col justify-center items-center gap-10 font-poppins  overflow-hidden">
@@ -18,7 +18,7 @@ function App() {
       <div className="flex flex-col items-center justify-center p-6 gap-6 mt-20 text-neutral-900 ">
         <ANim>
           <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold ">
-            Our Team
+          Contact Us
           </h1>
         </ANim>
         <motion.div
@@ -49,9 +49,6 @@ function App() {
             </motion.span>
           ))}
         </motion.div>
-        <ANim delay={5}>
-          <AnimatedButton>Know More</AnimatedButton>
-        </ANim>
       </div>
     </div>
   );

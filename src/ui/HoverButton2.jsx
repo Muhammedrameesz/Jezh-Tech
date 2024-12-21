@@ -7,7 +7,7 @@ const HoverButton = ({ children,textColor }) => {
     <motion.button
       initial={{
         backgroundImage:
-          "linear-gradient(to right, #6a0fbe 50%, transparent 50%)",
+          "linear-gradient(to right, #8fd14f 50%, transparent 50%)",
         backgroundSize: "200% 100%",
         backgroundPosition: "57% 0",
       }}
@@ -19,8 +19,8 @@ const HoverButton = ({ children,textColor }) => {
         ease: "easeInOut",
       }}
       className={`relative font-semibold py-3 px-8 shadow-lg rounded-full
-        border-2 border-custom-purple transition-all duration-700 
-        focus:outline-none focus:ring-2 focus:ring-custom-purple ${
+        border-2  transition-all duration-700 
+        focus:outline-none focus:ring-2 focus:ring-customGreen ${
           textColor ? `${textColor} hover:text-white` : "text-white hover:text-white"
         }`}
     >

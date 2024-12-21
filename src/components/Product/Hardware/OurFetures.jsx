@@ -4,8 +4,8 @@ import DashboardOutlinedIcon from "@mui/icons-material/DashboardOutlined";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
 import ViewInArOutlinedIcon from "@mui/icons-material/ViewInArOutlined";
-import AnimBT from "../../ui/AnimBT.jsx";
-import Underline from "../../ui/Underline.jsx";
+import AnimBT from "../../../ui/AnimBT.jsx";
+import Underline from "../../../ui/Underline.jsx";
 
 export default function OurFeatures() {
   return (
@@ -45,10 +45,10 @@ export default function OurFeatures() {
           </AnimBT>
 
           <AnimBT>
-            <div className="flex flex-col md:flex-row gap-5 bg-white rounded-lg p-5 group hover:bg-white hover:shadow-custom transform hover:-translate-y-3 transition-all duration-700">
+            <div className="flex flex-col md:flex-row gap-5 rounded-lg bg-white p-5 group hover:bg-white hover:shadow-custom transform hover:-translate-y-3 transition-all duration-700">
               <span className="flex items-center justify-center bg-fuchsia-200 group-hover:bg-fuchsia-500 transition-all duration-500 rounded-full h-12 p-5 w-12">
                 <DashboardOutlinedIcon
-                  sx={{ transition: "all 0.5s ease" }}
+                  sx={{ transition: "all 0.5s " }}
                   className="text-fuchsia-700 text-lg group-hover:text-white transition-all duration-500"
                 />
               </span>
@@ -66,7 +66,7 @@ export default function OurFeatures() {
           </AnimBT>
 
           <AnimBT>
-            <div className="flex flex-col md:flex-row gap-5 bg-white rounded-lg p-5 group hover:bg-white hover:shadow-custom transform hover:-translate-y-3 transition-all duration-700">
+            <div className="flex flex-col md:flex-row gap-5 rounded-lg bg-white p-5 group hover:bg-white hover:shadow-custom transform hover:-translate-y-3 transition-all duration-700">
               <span className="flex items-center justify-center bg-orange-200 group-hover:bg-orange-500 transition-all duration-500 rounded-full h-12 p-5 w-12">
                 <ViewInArOutlinedIcon
                   sx={{ transition: "all 0.5s ease" }}
@@ -88,7 +88,7 @@ export default function OurFeatures() {
 
         <section className="flex flex-col items-center justify-center gap-5 ">
           <AnimBT delay={0.3}>
-            <div className="flex flex-col md:flex-row gap-5 bg-white rounded-lg p-5 group hover:bg-white hover:shadow-custom transform hover:-translate-y-3 transition-all duration-700">
+            <div className="flex flex-col md:flex-row gap-5 rounded-lg bg-white p-5 group hover:bg-white hover:shadow-custom transform hover:-translate-y-3 transition-all duration-700">
               <span className="flex items-center justify-center bg-green-200 group-hover:bg-green-500 transition-all duration-500 rounded-full h-12 p-5 w-12">
                 <EmailOutlinedIcon
                   sx={{ transition: "all 0.5s ease" }}
@@ -108,7 +108,7 @@ export default function OurFeatures() {
           </AnimBT>
 
           <AnimBT delay={0.3}>
-            <div className="flex flex-col md:flex-row gap-5 bg-white rounded-lg p-5 group hover:bg-white hover:shadow-custom transform hover:-translate-y-3 transition-all duration-700">
+            <div className="flex flex-col md:flex-row gap-5 rounded-lg bg-white p-5 group hover:bg-white hover:shadow-custom transform hover:-translate-y-3 transition-all duration-700">
               <span className="flex items-center justify-center bg-fuchsia-200 group-hover:bg-fuchsia-500 transition-all duration-500 rounded-full h-12 p-5 w-12">
                 <InfoOutlinedIcon
                   sx={{ transition: "all 0.5s ease" }}
@@ -128,7 +128,7 @@ export default function OurFeatures() {
           </AnimBT>
 
           <AnimBT delay={0.3}>
-            <div className="flex flex-col md:flex-row gap-5 bg-white rounded-lg p-5 group hover:bg-white hover:shadow-custom transform hover:-translate-y-3 transition-all duration-700">
+            <div className="flex flex-col md:flex-row gap-5 rounded-lg bg-white p-5 group hover:bg-white hover:shadow-custom transform hover:-translate-y-3 transition-all duration-700">
               <span className="flex items-center justify-center bg-orange-200 group-hover:bg-orange-500 transition-all duration-500 rounded-full h-12 p-5 w-12">
                 <NotificationsNoneOutlinedIcon
                   sx={{ transition: "all 0.5s ease" }}

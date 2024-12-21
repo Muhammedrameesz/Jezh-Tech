@@ -2,8 +2,11 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Star, StarBorder } from "@mui/icons-material"; // MUI icons for rating
+import "../../css/CustomSlickSlide.css"
+import { Star, StarBorder } from "@mui/icons-material"; 
 import Underline from "../../ui/Underline.jsx";
+import Pattern from "../../ui/RandomPatterns3.jsx"
+
 
 const ScrollableCards = () => {
   const settings = {
@@ -69,9 +72,10 @@ const ScrollableCards = () => {
   };
 
   return (
-    <div className="bg-gray-50 py-20 font-poppins">
+    <div className="bg-gray-50 py-20 font-poppins relative">
+      <Pattern/>
     <div className="max-w-screen-lg mx-auto">
-      <div className="max-w-screen-lg mx-auto p-4 mb-5">
+      <div className="max-w-screen-lg mx-auto p-4 mb-5 ">
         <section className="flex flex-col items-center justify-center text-center ">
           <h1 className="text-[#0E314C] text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-5">
           Our Clients Feedback
@@ -86,8 +90,8 @@ const ScrollableCards = () => {
 
         <Slider {...settings}>
           {cards.map((card) => (
-            <div key={card.id} className="p-2">
-              <div className="bg-white shadow-md rounded-lg hover:shadow-xl transition-shadow duration-300 flex">
+            <div key={card.id} className="p-2 ">
+              <div className="bg-white shadow-md rounded-lg hover:shadow-xl  transition-shadow duration-300 flex ">
                 {/* First Column: Image, Title, Subtitle */}
                 <div className="w-1/2 p-4 flex flex-col items-center">
                   <img

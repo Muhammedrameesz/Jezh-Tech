@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Anim from "../../ui/Anim.jsx";
 import HoverButton from "../../ui/HoverButton.jsx";
-import Background from "../../assets/image2/background/banner-bg.jpg"
+import Background from "../../assets/image2/background/banner-bg1.jpg"
 import Patterns from "../../ui/RandomPatterns3.jsx"
 
 export default function Header() {
@@ -28,13 +28,13 @@ export default function Header() {
       <Patterns/>
       <div className="relative z-10 text-center max-w-xl mt-0  p-10 rounded-lg ">
         <Anim key="anim-header">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-black mb-8">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-neutral-900 mb-8">
             About Us
           </h1>
         </Anim>
 
         <motion.div
-          className="text-lg md:text-xl text-gray-800 mb-10 leading-relaxed"
+          className="text-lg md:text-xl text-gray-600 mb-10 leading-relaxed"
           initial="hidden"
           animate="visible"
           variants={{

@@ -28,7 +28,7 @@ const RandomShapes = () => {
   };
 
   return (
-    <div className="absolute w-full h-screen overflow-hidden opacity-50">
+    <div className="absolute w-full h-screen overflow-hidden opacity-50 ">
       
       {shapes.map((shape, index) => {
         let shapeElement = null;

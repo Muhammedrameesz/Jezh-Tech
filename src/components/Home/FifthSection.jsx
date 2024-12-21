@@ -16,12 +16,8 @@ export default function FifthSection() {
           <h1 className="text-[#0E314C] text-center text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4">
             Why Choose Us?
           </h1>
-
-          
-            <Underline />
-         
+          <Underline />
         </Anim>
-
         <Anim delay={0.4}>
           <p className="text-sm text-gray-500 text-center max-w-xl leading-6">
             At our core, we prioritize quality and client satisfaction. Our
@@ -40,9 +36,9 @@ export default function FifthSection() {
             <div
               onMouseEnter={() => setHover(index)}
               onMouseLeave={() => setHover(null)}
-              className="relative flex flex-col  p-4 
+              className="relative flex flex-col h-[280px] w-auto p-4 
               shadow-lg rounded-lg
-                transition-all duration-300 transform group
+                transition-all duration-500 transform group
                 hover:-translate-y-4 hover:bg-white hover:shadow-2xl"
             >
               <feature.icon

@@ -9,7 +9,7 @@ export default function Service() {
   const [hover, setHover] = useState(null);
 
   return (
-    <div className="flex flex-col  items-center font-poppins px-6 py-16 bg-gray-100  ">
+    <div className="flex flex-col  items-center font-poppins px-6 py-16 bg-green-50  ">
       {/* Header Section */}
       <div className="flex flex-col justify-center items-center mb-10 md:mb-20">
       
@@ -29,42 +29,27 @@ export default function Service() {
       </div>
 
       {/* Features Section */}
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl ">
+      <section className="grid grid-cols-1 md:grid-cols-3 gap-7 w-full max-w-6xl  ">
         {ServiceContent.map((feature, index) => (
           <AnimBT key={index} >
             <div
               onMouseEnter={() => setHover(index)}
               onMouseLeave={() => setHover(null)}
               className="relative flex flex-col  p-8 
-               rounded-lg bg-white/80 
+               rounded-lg bg-white/80 justify-center items-center
                 transition-all duration-500 transform group
-                hover:-translate-y-3 hover:bg-white hover:shadow-2xl"
+                 "
             >
-              <feature.icon
-                style={{ fontSize: 50, transition: "all 0.3s linear" }}
-                className={`rounded-full p-3
-                    ${
-                      (index === 0 || index === 1 || index === 2) &&
-                      "bg-green-200 text-green-500 group-hover:bg-green-500 group-hover:text-white"
-                    }
-                    ${
-                      (index === 3 || index === 4 || index === 5) &&
-                      "bg-red-200 text-red-500 group-hover:bg-red-500 group-hover:text-white"
-                    }
-                    ${
-                      (index === 6 || index === 7 || index === 8) &&
-                      "bg-purple-200 text-purple-500 group-hover:bg-purple-500 group-hover:text-white"
-                    }
-                  `}
-                  
-              />
+              <div >
+                <img src={feature.image} alt={feature.title} />
+              </div>
 
               <h2 className="text-lg font-semibold text-gray-700 mb-3   mt-7 hover:text-customGreen cursor-pointer w-fit transition-colors duration-300">
                 {feature.title}
               </h2>
 
               {/* Description */}
-              <p className="text-gray-500  text-sm leading-relaxed">
+              <p className="text-gray-500 text-center  text-sm leading-relaxed">
                 {feature.text}
               </p>
 
@@ -74,14 +59,14 @@ export default function Service() {
                   <motion.div
                     initial={{ width: 0 }}
                     animate={{ width: "50%" }}
-                    transition={{ duration: 0.4 }}
-                    className="absolute bottom-0 left-0 h-1 bg-customGreen"
+                    transition={{ duration: 0.5 }}
+                    className="absolute bottom-0 left-0 h-1 bg-green-500"
                   />
                   <motion.div
                     initial={{ width: 0 }}
                     animate={{ width: "50%" }}
-                    transition={{ duration: 0.4 }}
-                    className="absolute bottom-0 right-0 h-1 bg-customGreen"
+                    transition={{ duration: 0.5 }}
+                    className="absolute bottom-0 right-0 h-1 bg-green-500"
                   />
                 </>
               )}

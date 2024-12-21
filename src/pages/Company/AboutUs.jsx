@@ -8,6 +8,7 @@ import WhoAreWe from "../../components/About/WhoAreWe.jsx"
 import DefoultFeature from "../../components/Home/SixthSection.jsx"
 import Team from "../../components/Home/Team.jsx"
 import OurClientFeedBack from "../../components/About/OurClientsFeedBack.jsx"
+import LogoHover from "../../components/About/LogoHover.jsx"
 
 
 export default function AboutUs() {
@@ -22,6 +23,7 @@ export default function AboutUs() {
     {/* <Vision/> */}
     {/* <WhyChoose/> */}
    <DefoultFeature/>
+   <LogoHover/>
     
     </>
   )

@@ -1,9 +1,8 @@
-
 import { CardData } from "../../../json/teamcard";
 import "../../../css/cardflip.css";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import Anim from "../../../ui/Anim.jsx"
+import Anim from "../../../ui/Anim.jsx";
 import Underline from "../../../ui/Underline.jsx";
 
 export default function Partners() {
@@ -29,13 +28,12 @@ export default function Partners() {
 
   return (
     <div className="relative w-full h-full overflow-hidden font-poppins bg-gray-100 py-10 md:py-20">
-       <div className="flex flex-col pb-10  items-center justify-center space-x-4">
-        
-            <h1 className="text-[#0E314C] text-center text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4 ">
-              Our Partners
-            </h1>
-            <Underline/>
-        
+      <div className="flex flex-col pb-10  items-center justify-center space-x-4">
+        <h1 className="text-[#0E314C] text-center text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4 ">
+          Our Partners
+        </h1>
+        <Underline />
+
         <Anim delay={0.4}>
           <p className="text-sm text-gray-500 text-center max-w-lg leading-6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -63,17 +61,27 @@ export default function Partners() {
                 style={{ transformStyle: "preserve-3d" }}
               >
                 {/* Front Side */}
-                <div className="absolute w-full h-full bg-white  border-none border-gray-400 rounded-xl backface-hidden flex flex-col items-center justify-center shadow-xl">
-                  {/* <h3 className="text-xl font-bold text-center">Hover Me</h3> */}
-                  {/* <p className="text-sm text-gray-700 text-center px-4">
-                    {item.description}
-                  </p> */}
-                  <img src={item.image} alt={item.name} className="w-full h-[300px] object-cover "/>
+                <div className="absolute w-full h-full bg-white border-none border-gray-400 rounded-xl backface-hidden flex flex-col items-center justify-center shadow-xl overflow-hidden">
+                  {/* Blurred Image */}
+                  <div className="absolute inset-0 w-full h-full">
+                    <img
+                      src={item.image}
+                      alt={item.name}
+                      className="w-full h-full object-cover "
+                    />
+                    {/* Overlay for better text contrast */}
+                    <div className="absolute inset-0 bg-black bg-opacity-70"></div>
+                  </div>
+
+                  {/* Visible Text */}
+                  <h1 className="relative text-white text-2xl font-semibold z-10">
+                    Our Trusted Partners
+                  </h1>
                 </div>
 
                 {/* Back Side */}
                 <div
-                  className="absolute w-full h-full gap-3 bg-neutral-950 bg-cover bg-center rounded-xl border-none border-black backface-hidden flex flex-col items-start justify-center shadow-xl"
+                  className="absolute w-full h-full gap-3 bg-white  bg-cover bg-center rounded-xl border-none border-black backface-hidden flex flex-col items-center justify-center shadow-2xl"
                   style={{
                     transform: "rotateY(180deg)",
                     // backgroundImage: `url(${item.image})`,
@@ -82,7 +90,7 @@ export default function Partners() {
                   <h3 className="text-xl font-bold  text-customGreen px-4">
                     {item.name}
                   </h3>
-                  <p className="text-sm text-gray-400 px-4">
+                  <p className="text-sm text-gray-500 text-center px-4">
                     {item.description}
                   </p>
                 </div>

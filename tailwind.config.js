@@ -55,6 +55,9 @@ export default {
       backgroundImage: {
         'custom-gradient': 'linear-gradient(135deg, #23bdb8, #43e794)',
       },
+      boxShadow: {
+        custom: '0px 7px 29px 0px rgba(100, 100, 111, 0.2)',
+      },
       
     },
   },

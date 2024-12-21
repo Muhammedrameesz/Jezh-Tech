@@ -2,63 +2,67 @@
 import Diversity2OutlinedIcon from '@mui/icons-material/Diversity2Outlined';
 import InventoryOutlinedIcon from '@mui/icons-material/InventoryOutlined';
 import SmartToyOutlinedIcon from '@mui/icons-material/SmartToyOutlined';
+import image1 from "../../assets/image2/SevicePageImg/service-image1.966c20cc.png"
+import image2 from "../../assets/image2/SevicePageImg/service-image3.2f20023b.png"
+import image3 from "../../assets/image2/SevicePageImg/service-image4.a853b540.png"
+import image4 from "../../assets/image2/SevicePageImg/service-image2.9d30be55.png"
+import image5 from "../../assets/image2/SevicePageImg/service-image5.0eed01bc.png"
+import image6 from "../../assets/image2/SevicePageImg/service-image6.1675a759.png"
 
 
-const commit ="https://img.freepik.com/free-photo/standard-quality-control-collage-concept_23-2149595843.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid"
-const client = "https://img.freepik.com/premium-photo/businessman-touch-growth-data-chart-arrow-with-diagram-2025-budget-businessman-pointing-arrow-graph_1126722-12580.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid"
-const innovation ="https://img.freepik.com/premium-photo/businessman-suit-with-light-bulbs-falling_28629-1584.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid"
+
 
 export const ServiceContent = [
     {
-      image:commit,
+      image:image1,
       icon: InventoryOutlinedIcon,
       title: "Title",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nesciunt corporis illo totam eos quis saepe odit autem laborum nobis fugiat",
     },
     {
-      image:client,
+      image:image2,
       icon: Diversity2OutlinedIcon,
       title: "Title",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nesciunt corporis illo totam eos quis saepe odit autem laborum nobis fugiat",
     },
     {
-      image:innovation,
+      image:image3,
       icon: SmartToyOutlinedIcon,
       title: "Title",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nesciunt corporis illo totam eos quis saepe odit autem laborum nobis fugiat",
     },
     {
-        image:commit,
+        image:image4,
         icon: InventoryOutlinedIcon,
         title: "Title",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nesciunt corporis illo totam eos quis saepe odit autem laborum nobis fugiat",
       },
       {
-        image:client,
+        image:image5,
         icon: Diversity2OutlinedIcon,
         title: "Title",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nesciunt corporis illo totam eos quis saepe odit autem laborum nobis fugiat",
       },
       {
-        image:innovation,
+        image:image6,
         icon: SmartToyOutlinedIcon,
         title: "Title",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nesciunt corporis illo totam eos quis saepe odit autem laborum nobis fugiat",
       },
       {
-        image:commit,
+        image:image1,
         icon: InventoryOutlinedIcon,
         title: "Title",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nesciunt corporis illo totam eos quis saepe odit autem laborum nobis fugiat",
       },
       {
-        image:client,
+        image:image2,
         icon: Diversity2OutlinedIcon,
         title: "Title",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nesciunt corporis illo totam eos quis saepe odit autem laborum nobis fugiat",
       },
       {
-        image:innovation,
+        image:image3,
         icon: SmartToyOutlinedIcon,
         title: "Title",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nesciunt corporis illo totam eos quis saepe odit autem laborum nobis fugiat",

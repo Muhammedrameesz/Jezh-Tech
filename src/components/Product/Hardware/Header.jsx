@@ -1,28 +1,29 @@
-// import { GoogleGeminiEffect } from "../../../ui/Aceternity/Gemini.jsx";
+
 import { motion } from "framer-motion";
 import AnimatedButton from "../../../ui/HoverButton.jsx";
 import ANim from "../../../ui/Anim.jsx";
-import Background from "../../../assets/image2/background/banner-bg1.jpg"
 import Pattern from "../../../ui/RandomPatterns3.jsx"
+import Background from "../../../assets/image2/background/banner-bg1.jpg"
 
-function App() {
+function Header() {
   const sentence =
-    " Our team is a dynamic, collaborative group focused on innovation,excellence, and continuous learning in a supportive and inclusive environment.";
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit corporis iusto hic quam eveniet culpa nam harum nihil iste magnam adipisci .";
 
   return (
-    <div className="relative min-h-screen flex flex-col justify-center items-center gap-10 font-poppins  overflow-hidden">
-       <div className="absolute w-full h-full object-cover  z-[-1]">
+    <div 
+    className="relative min-h-screen flex flex-col justify-center items-center gap-10 font-poppins  overflow-hidden">
+      <div className="absolute w-full h-full object-cover  z-[-1]">
         <img src={Background} alt="" />
       </div>
       <Pattern/>
-      <div className="flex flex-col items-center justify-center p-6 gap-6 mt-20 text-neutral-900 ">
+      <div className="flex flex-col items-center justify-center p-6 gap-6 mt-20 text-neutral-900  bg-[rgba(250,250,250,0.5)]">
         <ANim>
           <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold ">
-            Our Team
+            Hardware
           </h1>
         </ANim>
         <motion.div
-          className="text-lg md:text-xl max-w-2xl text-center text-gray-600 leading-6"
+          className="text-lg md:text-xl max-w-2xl text-center text-gray-600 leading-relaxed"
           initial="hidden"
           animate="visible"
           variants={{
@@ -57,4 +58,6 @@ function App() {
   );
 }
 
-export default App;
+export default Header;
+
+

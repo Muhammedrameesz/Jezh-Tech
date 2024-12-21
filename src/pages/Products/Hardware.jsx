@@ -1,8 +1,14 @@
-
+import Header from "../../components/Product/Hardware/Header.jsx"
+import OurFeatures from "../../components/Product/Hardware/OurFetures.jsx"
+import ThirdSection from "../../components/Product/Hardware/ThirdSection.jsx"
 
 export default function Hardware() {
   return (
-    <div>Hardware</div>
+   <>
+   <Header/>
+   <OurFeatures/>
+   <ThirdSection/>
+   </>
   )
 }
 

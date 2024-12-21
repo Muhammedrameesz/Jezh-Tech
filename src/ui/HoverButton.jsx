@@ -18,7 +18,7 @@ const HoverButton = ({ children,textColor }) => {
         duration: 0.2,
         ease: "easeInOut",
       }}
-      className={`relative font-semibold py-3 px-8 shadow-lg 
+      className={`relative font-semibold py-3 px-8 shadow-lg z-20
         border-2 border-customGreen transition-all duration-700 
         focus:outline-none focus:ring-2 focus:ring-customGreen ${
           textColor ? `${textColor} hover:text-black` : "text-black hover:text-black"

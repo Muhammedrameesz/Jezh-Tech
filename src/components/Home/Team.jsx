@@ -200,7 +200,7 @@ export default function AllTeam() {
                 className="w-[130px] h-[130px] z-10 object-cover mt-4 rounded-full border-2 border-green-200 group-hover:border-green-500 transition-all duration-500"
                 transition={{ duration: 0.3 }}
               />
-              <div className="mt-6 bg-gradient-to-tr from-green-500 to-customGreen py-2 px-16 rounded-3xl group-hover:rounded-none transition-all duration-700">
+              <div className="mt-6 bg-custom-gradient py-2 px-16 rounded-3xl group-hover:rounded-none transition-all duration-700">
                 <h3 className="text-base tracking-wider font-semibold text-white">
                   {data.title}
                 </h3>
