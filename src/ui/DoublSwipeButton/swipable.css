@@ -1,0 +1,31 @@
+/* Custom Swipe Button Styles */
+.double-swipe-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.double-swipe-btn .swipe-left,
+.double-swipe-btn .swipe-right {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background-color: #8fd14f; /* Green color for the swipe */
+  transition: transform 0.5s ease;
+}
+
+.double-swipe-btn .swipe-left {
+  left: -100%;
+}
+
+.double-swipe-btn .swipe-right {
+  right: -100%;
+}
+
+.double-swipe-btn.group:hover .swipe-left {
+  transform: translateX(100%);
+}
+
+.double-swipe-btn.group:hover .swipe-right {
+  transform: translateX(-100%);
+}

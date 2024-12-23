@@ -16,7 +16,9 @@ export default function FifthSection() {
           <h1 className="text-[#0E314C] text-center text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4">
             Why Choose Us?
           </h1>
+          <div className="flex items-center justify-center">
           <Underline />
+          </div>
         </Anim>
         <Anim delay={0.4}>
           <p className="text-sm text-gray-500 text-center max-w-xl leading-6">

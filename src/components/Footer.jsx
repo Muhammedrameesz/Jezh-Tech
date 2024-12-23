@@ -1,29 +1,26 @@
 import { Link } from "react-router-dom";
-import Jezh from "../assets/JezhLogo/Removal-40.png";
+import Jezh from "../assets/icons/[removal.ai]_abada9aa-5991-43bc-beb5-8f7be43142e9-jezh (1).png";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import ContactPhoneOutlinedIcon from "@mui/icons-material/ContactPhoneOutlined";
 import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
 import AnimBT from "../ui/AnimBT.jsx";
 import ANim from "../ui/Anim.jsx";
-import RandomPatterns2 from "../ui/RandomPatterns4.jsx";
+// import RandomPatterns2 from "../ui/RandomPatterns4.jsx";
+import { CiLinkedin,CiTwitter,CiFacebook } from "react-icons/ci";
+import { FaInstagram } from "react-icons/fa";
+
 
 export default function Footer() {
-  const linkStyle = "text-gray-600 hover:text-green-600 transition";
+  const linkStyle = "text-gray-400 hover:text-green-600 transition";
   const iconStyle = { marginRight: "8px", color: "rgb(156, 163, 175)" };
 
   return (
-    <footer className="relative font-poppins bg-gradient-to-br from-green-50 via-white to-green-50">
+    <footer className="relative font-poppins bg-black ">
       {/* Background Image */}
-      <div
-        className="absolute inset-0 w-full h-full bg-no-repeat bg-cover opacity-10 z-0 "
-        style={{
-          backgroundImage:
-            "url(https://img.freepik.com/free-vector/coloured-background-design_1164-257.jpg)",
-        }}
-      ></div>
+     
 
       {/* Pattern Overlay */}
-      <RandomPatterns2 />
+      {/* <RandomPatterns2 /> */}
 
       {/* Content */}
       <AnimBT>
@@ -31,14 +28,14 @@ export default function Footer() {
           {/* Logo and Description */}
           <div className="flex flex-col items-center md:items-start">
             <img src={Jezh} alt="JezhTechLogo" className="h-32 w-32 mb-4" />
-            <p className="text-gray-700 text-sm text-center md:text-left">
+            <p className="text-gray-300 text-sm text-center md:text-left">
               Empowering technology to build a better future.
             </p>
           </div>
 
           {/* Links Section */}
           <div className="grid grid-cols-1 gap-5">
-            <h1 className="text-gray-800 font-semibold text-lg">Company</h1>
+            <h1 className="text-gray-100 font-semibold text-lg">Company</h1>
             <Link to="/about-us" className={linkStyle}>
               About Us
             </Link>
@@ -51,7 +48,7 @@ export default function Footer() {
           </div>
 
           <div className="grid grid-cols-1 gap-5">
-            <h1 className="text-gray-800 font-semibold text-lg">Products</h1>
+            <h1 className="text-gray-100 font-semibold text-lg">Products</h1>
             <Link to="/products/software" className={linkStyle}>
               Software
             </Link>
@@ -61,7 +58,7 @@ export default function Footer() {
           </div>
 
           <div className="grid grid-cols-1 gap-5">
-            <h1 className="text-gray-800 font-semibold text-lg">Resources</h1>
+            <h1 className="text-gray-100 font-semibold text-lg">Resources</h1>
             <Link to="/blog" className={linkStyle}>
               Blog
             </Link>
@@ -72,8 +69,8 @@ export default function Footer() {
 
           {/* Contact Section */}
           <div className="grid grid-cols-1 gap-5">
-            <h1 className="text-gray-800 font-semibold text-lg">Contact Us</h1>
-            <p className="text-gray-600 flex items-center">
+            <h1 className="text-gray-100 font-semibold text-lg">Contact Us</h1>
+            <p className=" flex items-center">
               <EmailOutlinedIcon sx={iconStyle} />
               <a href="mailto:info@jezhtechnologies.com" className={linkStyle}>
                 info@jezhtechnologies.com
@@ -100,6 +97,13 @@ export default function Footer() {
                 www.jezhtechnologies.com
               </a>
             </p>
+            <div className="grid grid-cols-4  h-10 w-10 text-2xl gap-10 text-gray-400  ">
+              <FaInstagram className="transform hover:-translate-y-1 hover:text-green-500 transition-all duration-300 cursor-pointer"/>
+              <CiFacebook className="transform hover:-translate-y-1 hover:text-green-500 transition-all duration-300 cursor-pointer"/>
+              <CiTwitter className="transform hover:-translate-y-1 hover:text-green-500 transition-all duration-300 cursor-pointer"/>
+              <CiLinkedin className="transform hover:-translate-y-1 hover:text-green-500 transition-all duration-300 cursor-pointer"/>
+
+            </div>
           </div>
         </div>
       </AnimBT>
@@ -108,11 +112,11 @@ export default function Footer() {
       <div className="relative z-10 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 md:px-12 lg:px-24">
           <ANim delay={0.3}>
-            <div className="border border-gray-300  p-4 rounded text-center shadow-sm">
-              <h2 className="text-gray-800 text-lg font-semibold mb-2">
+            <div className="border border-gray-600  p-4 rounded text-center shadow-sm">
+              <h2 className="text-gray-100 text-lg font-semibold mb-2">
                 India - Kanyakumari
               </h2>
-              <p className="text-gray-600 text-sm">
+              <p className="text-gray-400 text-sm">
                 Sri Sai Complex,
                 <br />
                 Nagercoil, India, 629001
@@ -120,11 +124,11 @@ export default function Footer() {
             </div>
           </ANim>
           <ANim delay={0.4}>
-            <div className="border border-gray-300  p-4 rounded text-center shadow-sm">
-              <h2 className="text-gray-800 text-lg font-semibold mb-2">
+            <div className="border border-gray-600  p-4 rounded text-center shadow-sm">
+              <h2 className="text-gray-100 text-lg font-semibold mb-2">
                 India - Coimbatore
               </h2>
-              <p className="text-gray-600 text-sm">
+              <p className="text-gray-400 text-sm">
                 Nava India, Avinashi Rd,
                 <br />
                 Coimbatore, India - 641006
@@ -132,14 +136,14 @@ export default function Footer() {
             </div>
           </ANim>
           <ANim delay={0.5}>
-            <div className="border border-gray-300  p-4 rounded text-center shadow-sm">
-              <h2 className="text-gray-800 text-lg font-semibold mb-2">
+            <div className="border border-gray-600  p-4 rounded text-center shadow-sm">
+              <h2 className="text-gray-100 text-lg font-semibold mb-2">
                 Dubai
               </h2>
-              <p className="text-gray-600 text-sm">
+              <p className="text-gray-400 text-sm">
                 Sapphire Tower Deira,
                 <br />
-                780610, UAE
+                Dubai, UAE, 780610
               </p>
             </div>
           </ANim>
@@ -149,7 +153,7 @@ export default function Footer() {
       {/* Footer Bottom */}
       <div className="border-t border-gray-200"></div>
       <div className="relative z-10 py-4 text-center text-gray-600 text-sm">
-        © {new Date().getFullYear()} Jezh Technologies. All rights reserved.
+      Copyright © {new Date().getFullYear()} Jezh Technologies. All rights reserved.
       </div>
     </footer>
   );

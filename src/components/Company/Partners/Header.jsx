@@ -11,7 +11,7 @@ function Header() {
 
   return (
     <div 
-    className="relative min-h-screen flex flex-col justify-center items-center gap-10 font-poppins  overflow-hidden">
+    className="relative pt-20 flex flex-col justify-center items-center gap-10 font-poppins  overflow-hidden">
       <div className="absolute w-full h-full object-cover  z-[-1]">
         <img src={Background} alt="" />
       </div>

@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import Anim from "../../ui/Anim.jsx";
 import HoverButton from "../../ui/HoverButton.jsx";
@@ -7,11 +8,10 @@ import Patterns from "../../ui/RandomPatterns3.jsx"
 export default function Header() {
   
 
-  const sentence = " Trust us to simplify tech and drive success";
+  const sentence = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo eveniet tempore,";
 
   return (
-    <div className="relative top-14 py-10 md:py-14 flex flex-col justify-center items-center  font-poppins px-4 overflow-hidden">
-    
+    <div className="relative top-14 flex flex-col justify-center items-center  pt-20 font-poppins px-4 overflow-hidden">
       <div className="absolute w-full h-full object-cover  z-[-1]">
         <img src={Background} alt="" />
       </div>
@@ -19,7 +19,7 @@ export default function Header() {
       <div className="relative z-10 text-center max-w-xl mt-0  p-10 rounded-lg ">
         <Anim key="anim-header">
           <h1 className="text-4xl md:text-5xl font-extrabold text-neutral-900 mb-8">
-            About Us
+            Blog
           </h1>
         </Anim>
 
@@ -61,3 +61,4 @@ export default function Header() {
     </div>
   );
 }
+

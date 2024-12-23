@@ -9,7 +9,7 @@ function Header() {
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit corporis iusto hic quam eveniet culpa nam harum nihil iste magnam adipisci.";
 
   return (
-    <div className="relative min-h-screen flex flex-col justify-center items-center gap-10 font-poppins  overflow-hidden">
+    <div className="relative pt-20 flex flex-col justify-center items-center gap-10 font-poppins  overflow-hidden">
       <div className="absolute w-full h-full -z-10">
         <img src={Background} alt="" />
       </div>

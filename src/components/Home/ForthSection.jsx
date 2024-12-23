@@ -1,5 +1,5 @@
 import Anim from "../../ui/Anim.jsx";
-import AnimatedImage from "./Animated-Images/AnimatedImages3.jsx";
+import AnimatedImage from "./Animated-Images/Animation2.jsx";
 import MainPic from "../../assets/images/imageset3/main-pic.52b102d9.png";
 import AnimRL from "../../ui/AnimRL.jsx";
 import SyncAltIcon from "@mui/icons-material/SyncAlt";
@@ -36,34 +36,42 @@ export default function ForthSection() {
     {
       key: "Touch",
       icon: <AndroidIcon />,
-      title: "Technology with a Personal Touch",
+      title: "Technology ",
+    },
+    {
+      key: "Adaptabl",
+      icon: <TonalityOutlinedIcon />,
+      title: "lorem ipsum",
+    },
+    {
+      key: "Touc",
+      icon: <AndroidIcon />,
+      title: "lorem ipsum ",
+    },
+    {
+      key: "Toucdd",
+      icon: <AndroidIcon />,
+      title: "lorem ipsum ",
     },
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 bg-white gap-20 items-center pb-16 pt-20 px-6 pd:px-20 lg:px-24 font-poppins">
+    <div className="grid grid-cols-1 md:grid-cols-2 bg-white  items-center pb-16 pt-20   font-poppins">
       {/* Left Section */}
       <Anim>
-        <div className="relative flex flex-col items-start space-y-8 p-4 lg:p-6 rounded-md">
+        <div className="relative flex flex-col items-start space-y-8 p-4 lg:p-6 rounded-md ml-5 md:ml-10">
           {/* Background Image */}
-          <div
-            className="absolute inset-0 bg-no-repeat bg-cover  top-10 opacity-5"
-            style={{
-              backgroundImage:
-                "url(https://img.freepik.com/free-vector/coloured-background-design_1164-257.jpg?t=st=1734158786~exp=1734162386~hmac=81d7c5903a0022540b6ecc7bdbc30fc04f7ecc3accd3c2e7dd7716c9ca84fb44&w=740)",
-            }}
-          ></div>
 
           {/* Header */}
-          <div className="mx-5">
-            <h1 className="text-[#0E314C]  text-xl md:text-xl lg:text-2xl font-extrabold leading-tight mb-4">
+          <div className="">
+            <h1 className="text-[#0E314C]  text-xl md:text-2xl  font-semibold  mb-4">
               Customized Solutions for Every Business
             </h1>
             <Underline />
           </div>
 
           {/* Expertise Sections */}
-          <div className="grid grid-cols-1 gap-5 mx-5 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5  w-full ">
             {content.map((item) => (
               <div
                 key={item.key}
@@ -83,34 +91,34 @@ export default function ForthSection() {
             ))}
 
             {/* Description Section */}
-            <section className="mt-3 h-[60px] flex gap-3 items-start justify-center w-full">
-              {content.map((item, i) => {
-                if (item.key === hover) {
-                  return (
-                    <div key={i} className=" text-neutral-700">
-                      {item.icon}
-                    </div>
-                  );
-                }
-                return null;
-              })}
-              <p
-                className={`text-sm   tracking-normal transition-all duration-700 ease-in-out ${
-                  hover
-                    ? "opacity-100 max-h-[500px] translate-y-0 text-neutral-700"
-                    : "opacity-0 text-neutral-500 text-center translate-y-10"
-                }`}
-                style={{ overflow: "hidden" }}
-              >
-                {hoverDescriptions[hover] || hoverDescriptions.default}
-              </p>
-            </section>
           </div>
+          <section className="mt-3 h-[60px] flex gap-3 items-start justify-center w-full">
+            {content.map((item, i) => {
+              if (item.key === hover) {
+                return (
+                  <div key={i} className=" text-neutral-700">
+                    {item.icon}
+                  </div>
+                );
+              }
+              return null;
+            })}
+            <p
+              className={`text-sm   tracking-normal transition-all duration-700 ease-in-out ${
+                hover
+                  ? "opacity-100 max-h-[500px] translate-y-0 text-neutral-700"
+                  : "opacity-0 text-neutral-500 text-center translate-y-10"
+              }`}
+              style={{ overflow: "hidden" }}
+            >
+              {hoverDescriptions[hover] || hoverDescriptions.default}
+            </p>
+          </section>
         </div>
       </Anim>
 
       {/* Right Section */}
-      <div className="mt-[10%] md:mt-[10%] relative overflow-hidden">
+      <div className=" relative overflow-hidden flex justify-center items-center pt-20 ">
         <div className="block md:hidden">
           <AnimRL>
             <img

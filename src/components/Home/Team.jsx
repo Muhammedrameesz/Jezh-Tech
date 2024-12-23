@@ -10,12 +10,49 @@ import "slick-carousel/slick/slick-theme.css";
 import { useState, useEffect, useRef } from "react";
 import "../../css/CustomSlickSlide.css";
 import Underline from "../../ui/Underline.jsx";
+import Team1 from "../../assets/Team/WhatsApp Image 2024-12-23 at 7.04.04 PM.jpeg"
+import Team2 from "../../assets/Team/WhatsApp Image 2024-12-23 at 7.05.13 PM.jpeg"
+import Team3 from "../../assets/Team/WhatsApp Image 2024-12-23 at 7.05.49 PM.jpeg"
+import Team4 from "../../assets/Team/WhatsApp Image 2024-12-23 at 7.47.59 PM.jpeg"
+
 
 const IconStyle =
   "h-4 w-4 cursor-pointer text-violet-500 hover:text-gray-700 transform hover:-translate-y-2 transition-all duration-500";
 const content = [
   {
-    title: "Name",
+    title: "Mahesh",
+    role: "Full Stack developer",
+    media: [
+      {
+        faceBook: <CiFacebook className={IconStyle} />,
+        Twitter: <FiTwitter className={IconStyle} />,
+        Linkidin: <FaInstagram className={IconStyle} />,
+        github: <FaGithub className={IconStyle} />,
+      },
+    ],
+
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+    image:Team1,
+      
+  },
+  {
+    title: "Jinu Martin",
+    role: "Director",
+    media: [
+      {
+        faceBook: <CiFacebook className={IconStyle} />,
+        Twitter: <FiTwitter className={IconStyle} />,
+        Linkidin: <FaInstagram className={IconStyle} />,
+        github: <FaGithub className={IconStyle} />,
+      },
+    ],
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+    image:Team2,
+  },
+  {
+    title: "Shabin",
     role: "CEO & Founder",
     media: [
       {
@@ -25,15 +62,13 @@ const content = [
         github: <FaGithub className={IconStyle} />,
       },
     ],
-
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
-    image:
-      "https://img.freepik.com/premium-photo/3d-rendering-teenager-with-laptop-his-hands-surrounded-by-robots_1057-42934.jpg?w=740",
+    image:Team3,
   },
   {
-    title: "Name",
-    role: "Project Manager",
+    title: "Arshitha",
+    role: "HOP",
     media: [
       {
         faceBook: <CiFacebook className={IconStyle} />,
@@ -44,40 +79,7 @@ const content = [
     ],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
-    image:
-      "https://img.freepik.com/free-photo/view-3d-woman-using-laptop_23-2150710060.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid",
-  },
-  {
-    title: "Name",
-    role: "Web Developer",
-    media: [
-      {
-        faceBook: <CiFacebook className={IconStyle} />,
-        Twitter: <FiTwitter className={IconStyle} />,
-        Linkidin: <FaInstagram className={IconStyle} />,
-        github: <FaGithub className={IconStyle} />,
-      },
-    ],
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
-    image:
-      "https://img.freepik.com/free-photo/3d-render-little-boy-with-laptop-tools_1057-44642.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid",
-  },
-  {
-    title: "Name",
-    role: "UI/UX Designer",
-    media: [
-      {
-        faceBook: <CiFacebook className={IconStyle} />,
-        Twitter: <FiTwitter className={IconStyle} />,
-        Linkidin: <FaInstagram className={IconStyle} />,
-        github: <FaGithub className={IconStyle} />,
-      },
-    ],
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
-    image:
-      "https://img.freepik.com/free-photo/view-3d-girl-with-open-book_23-2150709876.jpg?t=st=1734178498~exp=1734182098~hmac=27401588a48d99bad9a7a4dda02ef1f7e3a2986fe11656a8b853bf7d8b7ff801&w=740",
+    image:Team4,
   },
   {
     title: "Name",

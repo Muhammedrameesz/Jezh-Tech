@@ -10,7 +10,7 @@ import Service from "../components/Home/Service.jsx";
 import OurFeatures from "../components/Home/OurFeatures.jsx";
 // import RecentWorks from "../components/Home/RecentWorks.jsx"
 import WhatUsersSaying from "../components/Home/WhatUsersSaying.jsx";
-import News from "../components/Home/News.jsx";
+// import News from "../components/Home/News.jsx";
 import { Helmet } from "react-helmet-async";
 import Team from "../components/Home/Team.jsx"
 // import PricingPlans from "../components/Home/PricinPlans.jsx"
@@ -45,7 +45,7 @@ export default function Home() {
       <WhatUsersSaying/>
       {/* <SeventhSection /> */}
       <LastSection />
-      <News/>
+      {/* <News/> */}
     </>
   );
 }

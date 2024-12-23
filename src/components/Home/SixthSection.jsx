@@ -74,13 +74,7 @@ export default function StatsSection() {
       className="relative bg-gradient-to-t from-white py-14 font-poppins
     "
     >
-      <div
-        className="absolute  inset-0 bg-no-repeat bg-cover rotate-180 top-10 left-20 right-20 bottom-10 rounded-xl opacity-10"
-        style={{
-          backgroundImage:
-            "url(https://img.freepik.com/free-vector/coloured-background-design_1164-257.jpg?t=st=1734158786~exp=1734162386~hmac=81d7c5903a0022540b6ecc7bdbc30fc04f7ecc3accd3c2e7dd7716c9ca84fb44&w=740)",
-        }}
-      ></div>
+      
       <div className="flex flex-col justify-center items-center  mb-5">
         
           
@@ -149,7 +143,7 @@ export default function StatsSection() {
         </div>
       </div>
       <Anim>
-        <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 my-10 border-2 border-dotted border-gray-300 mx-10 md:mx-52 lg:mx-72 p-5 md:p-8">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 my-10 border-2 border-dotted border-gray-200 mx-10 md:mx-52 lg:mx-72 p-5 md:p-8">
           <div>
             <h1 className="text-[#0E314C] text-lg md:text-xl font-semibold">
               Have any question about us?

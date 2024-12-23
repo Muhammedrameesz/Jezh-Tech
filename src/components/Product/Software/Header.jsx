@@ -4,6 +4,7 @@ import AnimatedButton from "../../../ui/HoverButton.jsx";
 import ANim from "../../../ui/Anim.jsx";
 import Pattern from "../../../ui/RandomPatterns3.jsx"
 import Background from "../../../assets/image2/background/banner-bg1.jpg"
+import Swipable from "../../../ui/DoublSwipeButton/Swipable.jsx"
 
 function Header() {
   const sentence =
@@ -11,12 +12,12 @@ function Header() {
 
   return (
     <div 
-    className="relative min-h-screen flex flex-col justify-center items-center gap-10 font-poppins  overflow-hidden">
+    className="relative pt-20 flex flex-col justify-center items-center gap-10 font-poppins  overflow-hidden">
       <div className="absolute w-full h-full object-cover  z-[-1]">
         <img src={Background} alt="" />
       </div>
       <Pattern/>
-      <div className="flex flex-col items-center justify-center p-6 gap-6 mt-20 text-neutral-900  bg-[rgba(250,250,250,0.5)]">
+      <div className="flex flex-col items-center justify-center p-6 gap-6 mt-20 text-neutral-900  ">
         <ANim>
           <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold ">
             SoftWare
@@ -51,7 +52,9 @@ function Header() {
           ))}
         </motion.div>
         <ANim delay={5}>
-          <AnimatedButton>Know More</AnimatedButton>
+          <Swipable textColor="text-white">Know More</Swipable>
+
+          
         </ANim>
       </div>
     </div>

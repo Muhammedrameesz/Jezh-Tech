@@ -3,12 +3,11 @@ import Anim from "../../ui/Anim.jsx";
 // import BackgroundBeamsWithCollision from "../../ui/Aceternity/Background1.jsx";
 import HoverButton from "../../ui/HoverButton.jsx";
 import { motion } from "framer-motion";
-import AnimatedImage from "./Animated-Images/AnimatedImages3.jsx";
-import ServiceMainImage from "../../assets/image2/SevicePageImg/main-pic.52b102d9.png";
+import AnimatedImage from "../Home/Animated-Images/Animation2.jsx";
+import ServiceMainImage from "../../assets/images/imageset2/service-right-main-pic.30fff806.png";
 import AnimRl from "../../ui/AnimRL.jsx";
 import RandomP2 from "../../ui/RandomPatterns4.jsx";
-import Background from "../../assets/image2/background/banner-bg1.jpg"
-import SlidingBuuton from "../../ui/SlidingButton.jsx"
+import Background from "../../assets/image2/background/banner-bg.jpg"
 
 export default function Header() {
   const navigate = useNavigate();
@@ -17,13 +16,12 @@ export default function Header() {
     navigate("/services");
   };
 
-  const sentence = "Innovative Partner for Your Digital Transformation ";
+  const sentence = "Sovablu";
   const pargraph =
-    "Empowering businesses with cutting-edge technology solutions for seamless growth and innovation.";
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo aliquam maiores ducimus quibusdam minima animi asperiores ab ipsa, ipsum!."
 
   return (
     <div className="font-poppins min-h-screen bg-white text-black  flex items-center justify-center overflow-hidden relative ">
-    
        <RandomP2/>
       <div className="absolute w-full h-full object-cover  ">
         <img src={Background} alt="img" />
@@ -38,7 +36,7 @@ export default function Header() {
           </Anim>
 
           <motion.div
-            className="text-base sm:text-lg md:text-lg text-gray-400 leading-relaxed mb-6 md:mb-6"
+            className="text-base sm:text-lg md:text-xl text-gray-500 leading-relaxed mb-6 md:mb-6"
             initial="hidden"
             animate="visible"
             variants={{
@@ -68,13 +66,13 @@ export default function Header() {
 
           <Anim delay={5.5}>
             <button onClick={handleClick} className="mt-0 md:mt-5 ">
-              <SlidingBuuton>Learn More </SlidingBuuton>
+              <HoverButton>Learn More </HoverButton>
             </button>
           </Anim>
         </div>
 
         {/* Right: Conditional Image Rendering */}
-        <div className="flex justify-center items-center mt-5 md:mt-20">
+        <div className="flex justify-center items-center mt-5 md:mt-32">
           <AnimRl>
             <div className="block md:hidden">
               <img

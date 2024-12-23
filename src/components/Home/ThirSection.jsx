@@ -6,7 +6,7 @@ import SmartToyIcon from "@mui/icons-material/SmartToy";
 import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 import { useState } from "react";
 import Anim from "../../ui/Anim.jsx";
-import Underline from "../../ui/Underline.jsx"
+import Underline from "../../ui/Underline.jsx";
 
 export default function ForthSection() {
   const [hover, setHover] = useState("");
@@ -19,6 +19,9 @@ export default function ForthSection() {
     Robotics:
       "We integrate robotics and automation technology to streamline tasks, improve productivity, and ensure operational excellence across industries.",
     default: "Hover over any section to learn more about our expertise.",
+    Website:"We specialize in creating visually appealing and highly functional websites that drive traffic, engage visitors, and boost your online presence.",
+    Research:"Through continuous research and development, we deliver superior products and services.",
+    Commerce:"From strategy and design to development and ongoing support, we guide you through the entire e-commerce process."
   };
 
   const content = [
@@ -37,48 +40,49 @@ export default function ForthSection() {
       title: "Robotics & Automation",
       Icon: <SmartToyIcon />,
     },
+    {
+      key: "Website",
+      title: "Website Development ",
+      Icon: <AutoAwesomeIcon />,
+    },
+    {
+      key: "Research",
+      title: "Research & Development ",
+      Icon: <SmartToyIcon />,
+    },
+    {
+      key: "Commerce",
+      title: "E-Commerce Services ",
+      Icon: <SmartToyIcon />,
+    },
   ];
-
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 bg-gray-100 gap-20 items-center pb-16 pt-20 px-6 pd:px-20 lg:px-24 font-poppins">
-      <div className="mt-[10%] md:mt-[10%] relative overflow-hidden">
+    <div className="grid grid-cols-1 md:grid-cols-2 bg-gray-100  items-center pb-16 pt-20  font-poppins">
+      <div className="relative overflow-hidden ml-5 md:ml-10">
         <div className="block md:hidden">
-          <AnimRL>
+          <Anim>
             <img
               src={ServiceLeft}
               alt="service"
               className="max-w-xs sm:max-w-sm h-auto object-contain"
             />
-          </AnimRL>
+          </Anim>
         </div>
         <div className="hidden md:block">
           <AnimatedImage />
         </div>
       </div>
-      <Anim>
-        <div className="relative flex flex-col items-start space-y-8 p-4 lg:p-6 rounded-md ">
-          {/* Background Image */}
-          <div
-            className="absolute inset-0 bg-no-repeat bg-cover  top-10 opacity-5"
-            style={{
-              backgroundImage:
-                "url(https://img.freepik.com/free-vector/coloured-background-design_1164-257.jpg?t=st=1734158786~exp=1734162386~hmac=81d7c5903a0022540b6ecc7bdbc30fc04f7ecc3accd3c2e7dd7716c9ca84fb44&w=740)",
-            }}
-          ></div>
-
-          {/* Header */}
-          
-           <div className=" mx-5">
-            <h1 className="text-[#0E314C]  text-xl md:text-xl lg:text-2xl font-extrabold leading-tight mb-4">
-              Our Expertise in Innovation
+      <AnimRL>
+        <div className="relative flex flex-col items-start space-y-8 p-4 lg:p-6 rounded-md mr-5 md:mr-10 ">
+          <div className=" mx-5">
+            <h1 className="text-[#0E314C]  text-xl md:text-2xl  font-semibold  mb-4">
+            Our Excellence in Next-gen Technology” OR “Pioneering Innovation
             </h1>
-            <Underline/>
-            </div>
-           
-         
+            <Underline />
+          </div>
 
           {/* Expertise Sections */}
-          <div className="grid grid-cols-1 gap-5 mx-5 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5  w-full ">
             {content.map((item) => (
               <div
                 key={item.key}
@@ -98,33 +102,34 @@ export default function ForthSection() {
             ))}
 
             {/* Description Section */}
-            <section className="mt-3 h-[60px] flex gap-3 items-start justify-center w-full">
-              {content?.map((item, i) => {
-                if (item.key === hover) {
-                  return (
-                    <div key={i} className="text-neutral-700 ">
-                      {item.Icon}
-                    </div>
-                  );
-                }
-              })}
-              <p
-                className={`text-sm tracking-normal transition-all duration-700 ease-in-out ${
-                  hover
-                    ? "opacity-100 max-h-[500px] translate-y-0 text-neutral-700 "
-                    : "opacity-0 text-neutral-500 text-center translate-y-10"
-                }`}
-                style={{
-                  overflow: "hidden",
-                  transition: "all 0.7s ease-in-out", // smooth transition
-                }}
-              >
-                {hoverDescriptions[hover] || hoverDescriptions.default}
-              </p>
-            </section>
           </div>
+
+          <section className="mt-3 h-[60px] flex gap-3 items-start justify-center w-full">
+            {content?.map((item, i) => {
+              if (item.key === hover) {
+                return (
+                  <div key={i} className="text-neutral-700 ">
+                    {item.Icon}
+                  </div>
+                );
+              }
+            })}
+            <p
+              className={`text-sm tracking-normal transition-all duration-700 ease-in-out ${
+                hover
+                  ? "opacity-100 max-h-[500px] translate-y-0 text-neutral-700 "
+                  : "opacity-0 text-neutral-500 text-center translate-y-10"
+              }`}
+              style={{
+                overflow: "hidden",
+                transition: "all 0.7s ease-in-out", // smooth transition
+              }}
+            >
+              {hoverDescriptions[hover] || hoverDescriptions.default}
+            </p>
+          </section>
         </div>
-      </Anim>
+      </AnimRL>
 
       {/* Right Section */}
     </div>

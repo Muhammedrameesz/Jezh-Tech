@@ -8,7 +8,7 @@ import Underline from "../../ui/Underline.jsx";
 
 export default function Service() {
   return (
-    <div className=" font-poppins py-20">
+    <div className=" font-poppins py-10">
       <div className="flex flex-col justify-center items-center  mb-14 space-x-4">
         
           <h1 className="text-[#0E314C] text-center text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4 ">
@@ -19,7 +19,7 @@ export default function Service() {
 
         <Anim delay={0.4}>
           <p className="text-sm text-gray-500 text-center max-w-lg leading-6">
-            Experience the power of technology with JEZH Technologies. We design
+            Experience the power of technology with Jezh Technologies. We design
             and develop customized solutions that optimize your operations,
             elevate your brand, and deliver exceptional results
           </p>
@@ -30,7 +30,7 @@ export default function Service() {
           {/* Card 1 */}
 
           <Anim delay={0.4}>
-            <div className="bg-white h-[370px] md:h-[460px] hover:bg-gradient-to-tl from-customGreen to-green-500 rounded-lg border border-dashed border-green-200 hover:border-none font-poppins group shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-3 transition-all duration-500">
+            <div className="bg-white h-[300px] hover:bg-green-500 rounded-lg border border-dashed border-green-200 hover:border-none font-poppins group shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-2 transition-all duration-500">
               <div className="p-6">
                 <span className="flex items-center justify-center mb-5 bg-green-200 group-hover:bg-white transition-all duration-500 rounded-full w-12 h-12">
                   <HomeWorkOutlinedIcon
@@ -44,18 +44,14 @@ export default function Service() {
                 </h2>
 
                 <p className="text-gray-600 text-sm group-hover:text-gray-100 transition-all duration-500">
-                  Need a smarter space? We’ve got the tech! JEZH Technologies
-                  specializes in IoT automation that makes homes smarter and
-                  industries more efficient. From boosting security to
-                  automating daily tasks, we create solutions that simplify life
-                  and streamline operations.
+                Simplify your life with smart home & industrial automation. Control devices, enhance security, and boost efficiency with intuitive solutions. 
                 </p>
               </div>
             </div>
           </Anim>
           {/* Card 2 */}
           <Anim delay={0.6}>
-            <div className="bg-white h-[370px] md:h-[460px] hover:bg-gradient-to-tl  from-customGreen to-green-500 rounded-lg border border-dashed border-blue-200 hover:border-none font-poppins group shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-3 transition-all duration-500">
+            <div className="bg-white h-[300px] hover:bg-green-500 rounded-lg border border-dashed border-blue-200 hover:border-none font-poppins group shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-2 transition-all duration-500">
               <div className="p-6">
                 <span className="flex items-center justify-center mb-5 bg-blue-200 group-hover:bg-white transition-all duration-500 rounded-full w-12 h-12">
                   <LanguageOutlinedIcon
@@ -69,18 +65,14 @@ export default function Service() {
                 </h2>
 
                 <p className="text-gray-600 text-sm group-hover:text-gray-100 transition-all duration-500">
-                  Need a powerful online presence? JEZH Technologies specializes
-                  in designing and developing custom websites that are not only
-                  visually engaging but also optimized for user experience and
-                  functionality. We make sure your site is ready to engage and
-                  convert visitors seamlessly.
+                Jezh Technologies crafts stunning websites that captivate visitors, drive conversions, and deliver exceptional user experiences. 
                 </p>
               </div>
             </div>
           </Anim>
           {/* Card 3 */}
           <AnimRL delay={0.4}>
-            <div className="bg-white h-[370px] md:h-[460px] hover:bg-gradient-to-tl  from-customGreen to-green-500 rounded-lg border border-dashed border-rose-200 hover:border-none font-poppins group shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-3 transition-all duration-500">
+            <div className="bg-white h-[300px] hover:bg-green-500 rounded-lg border border-dashed border-rose-200 hover:border-none font-poppins group shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-2 transition-all duration-500">
               <div className="p-6">
                 <span className="flex items-center justify-center mb-5 bg-rose-200 group-hover:bg-white transition-all duration-300 rounded-full w-12 h-12">
                   <CodeOutlinedIcon
@@ -94,18 +86,14 @@ export default function Service() {
                 </h2>
 
                 <p className="text-gray-600 text-sm group-hover:text-gray-100 transition-all duration-500">
-                  We offer e-commerce development services, building secure,
-                  scalable, and user-friendly online stores to boost your sales
-                  engagement and customer. We deliver cutting-edge solutions
-                  that transform spaces, enhance online experiences, and drive
-                  business growth.
+                We foster a culture of innovation through continuous research and development, exploring cutting-edge technologies to deliver cutting-edge solutions. 
                 </p>
               </div>
             </div>
           </AnimRL>
           {/* Card 4 */}
           <AnimRL delay={0.6}>
-            <div className="bg-white h-[370px] md:h-[460px] hover:bg-gradient-to-tl  from-customGreen to-green-500 rounded-lg border border-dashed border-lime-200 hover:border-none font-poppins group shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-3 transition-all duration-500">
+            <div className="bg-white h-[300px] hover:bg-green-500 rounded-lg border border-dashed border-lime-200 hover:border-none font-poppins group shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-2 transition-all duration-500">
               <div className="p-6">
                 <span className="flex items-center justify-center mb-5 bg-lime-200 group-hover:bg-white transition-all duration-300 rounded-full w-12 h-12">
                   <RiRobot3Line
@@ -119,13 +107,7 @@ export default function Service() {
                 </h2>
 
                 <p className="text-gray-600 text-sm group-hover:text-gray-100 transition-all duration-500">
-                  We are an organization dedicated to advancing AI and Robotics
-                  education. We provide immersive, hands-on learning experiences
-                  that empower individuals to develop critical skills in
-                  artificial intelligence, robotics, and automation. Our
-                  programs equip learners with the practical knowledge and
-                  expertise necessary to thrive in the rapidly evolving fields
-                  of AI and Robotics.
+                Empower your AI & Robotics future! We offer immersive programs that equip you with the skills to thrive in these rapidly evolving fields. 
                 </p>
               </div>
             </div>
