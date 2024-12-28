@@ -11,7 +11,7 @@ import Sobablu from "../pages/Sobablu.jsx";
 import Blog from "../pages/Resources/Blog.jsx";
 import SocialMedia from "../pages/Resources/SocialMedia.jsx";
 import Contact from "../pages/contact.jsx";
-
+import BlogDetails from "../pages/Resources/BlogDetals/BlogDetails.jsx";
 
 export const Router = createBrowserRouter([
   {
@@ -46,7 +46,7 @@ export const Router = createBrowserRouter([
         element: <Hardware />,
       },
       {
-        path: "/sobablu",
+        path: "/sovablu",
         element: <Sobablu />,
       },
       {
@@ -56,6 +56,10 @@ export const Router = createBrowserRouter([
       {
         path: "/social-media",
         element: <SocialMedia />,
+      },
+      {
+        path: "/blog/details",
+        element: <BlogDetails />,
       },
       {
         path: "/contact",

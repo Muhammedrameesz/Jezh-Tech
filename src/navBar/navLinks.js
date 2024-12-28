@@ -11,7 +11,7 @@ export const navLinks = [
     { path: "", element: "Company", hasDropdown: true },
     { path: "/services", element: "Services" },
     { path: "", element: "Products", hasDropdown: true },
-    { path: "/sobablu", element: "Sobablu" },
+    { path: "/sovablu", element: "Sovablu" },
     { path: "", element: "Resources", hasDropdown: true },
     { path: "/contact", element: "Contact Us" },
   ];

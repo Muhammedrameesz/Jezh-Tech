@@ -1,7 +1,7 @@
 
 import { motion } from "framer-motion";
 import Anim from "../../ui/Anim.jsx";
-import HoverButton from "../../ui/HoverButton.jsx";
+import HoverButton from "../../ui/SwipeButton.jsx/Swipe1.jsx";
 import Background from "../../assets/image2/background/banner-bg1.jpg"
 import Patterns from "../../ui/RandomPatterns3.jsx"
 
@@ -19,7 +19,7 @@ export default function Header() {
       <div className="relative z-10 text-center max-w-xl mt-0  p-10 rounded-lg ">
         <Anim key="anim-header">
           <h1 className="text-4xl md:text-5xl font-extrabold text-neutral-900 mb-8">
-            Blog
+            Blog 
           </h1>
         </Anim>
 

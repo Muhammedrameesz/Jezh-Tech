@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Anim from "../../ui/Anim.jsx";
-import HoverButton from "../../ui/HoverButton.jsx";
+import HoverButton from "../../ui/SwipeButton.jsx/Swipe1.jsx";
 import Background from "../../assets/image2/background/banner-bg1.jpg"
 import Patterns from "../../ui/RandomPatterns3.jsx"
 

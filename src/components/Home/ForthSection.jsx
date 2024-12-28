@@ -77,7 +77,7 @@ export default function ForthSection() {
                 key={item.key}
                 onMouseEnter={() => setHover(item.key)}
                 onMouseLeave={() => setHover("")}
-                className="flex flex-col md:flex-row gap-5 bg-white p-2 shadow-lg shadow-slate-200 rounded-md transform hover:-translate-y-2 transition-transform duration-700 hover:bg-gradient-to-tl from-customGreen to-green-500 group"
+                className="flex flex-col md:flex-row gap-5 bg-white p-2 shadow-custom rounded-md transform hover:-translate-y-2 transition-transform duration-700 hover:bg-gradient-to-tl from-customGreen to-green-500 group"
               >
                 <div className="text-customGreen group-hover:text-white transition-colors duration-700 ease-in-out">
                   {item.icon}

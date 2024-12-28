@@ -1,10 +1,8 @@
-import AnimRL from "../../../ui/AnimRL.jsx";
-import AnimatedImage from "../../Home/Animated-Images/Animation1.jsx";
-import ServiceLeft from "../../../assets/image2/SevicePageImg/service-left-main-pic.62057aa2.png";
+
 import SettingsInputAntennaOutlinedIcon from "@mui/icons-material/SettingsInputAntennaOutlined";
 import SmartToyIcon from "@mui/icons-material/SmartToy";
 import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
-import Anim from "../../../ui/Anim.jsx";
+import AnimBT from "../../../ui/AnimBT.jsx";
 import Underline from "../../../ui/Underline.jsx";
 import { IoMdAdd } from "react-icons/io";
 
@@ -77,9 +75,9 @@ export default function ForthSection() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
         {content?.map((data, i) => (
+          <AnimBT key={i} >
           <div
-            key={i}
-            className="bg-gradient-to-r from-purple-200 via-purple-100 to-purple-50 rounded-xl hover:shadow-2xl transform transition-all duration-500 ease-in-out hover:-translate-y-2 overflow-hidden"
+            className="bg-gradient-to-r from-purple-200 via-purple-100 to-purple-50 rounded-xl hover:shadow-xl transform transition-all duration-500 ease-in-out hover:-translate-y-3 overflow-hidden"
           >
             <div className="flex justify-center items-center  mt-5">
               <div className="text-gray-800 ">{data.Icon}</div>
@@ -94,6 +92,7 @@ export default function ForthSection() {
               </button>
             </div>
           </div>
+          </AnimBT>
         ))}
       </div>
     </div>

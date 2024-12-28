@@ -1,10 +1,9 @@
 
 import { motion } from "framer-motion";
-import AnimatedButton from "../../../ui/HoverButton.jsx";
 import ANim from "../../../ui/Anim.jsx";
 import Pattern from "../../../ui/RandomPatterns3.jsx"
 import Background from "../../../assets/image2/background/banner-bg1.jpg"
-import Swipable from "../../../ui/DoublSwipeButton/Swipable.jsx"
+import Swipable from "../../../ui/SwipeButton.jsx/Swipe1.jsx"
 
 function Header() {
   const sentence =

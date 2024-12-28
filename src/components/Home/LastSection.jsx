@@ -1,5 +1,5 @@
 import Anim from "../../ui/Anim.jsx";
-import HoverButton from "../../ui/HoverButton2.jsx";
+import HoverButton from "../../ui/SwipeButton.jsx/WhiteHover.jsx";
 import HoverLogo from "../LogoHover.jsx"
 
 export default function LastSection() {

@@ -2,7 +2,7 @@
 import Anim from "../../ui/Anim.jsx";
 import AnimRL from "../../ui/AnimRL.jsx";
 import Underline from "../../ui/Underline.jsx"
-import HoverButton from "../../ui/HoverButton.jsx";
+import HoverButton from "../../ui/SwipeButton.jsx/Swipe1.jsx";
 import Pattern from "../../ui/RandomPatterns3.jsx"
 
 

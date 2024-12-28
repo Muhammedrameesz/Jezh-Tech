@@ -75,13 +75,13 @@ export default function FifthSection() {
                     initial={{ width: 0 }}
                     animate={{ width: "50%" }}
                     transition={{ duration: 0.4 }}
-                    className="absolute bottom-0 left-0 h-1 bg-customGreen"
+                    className="absolute bottom-0 left-0 h-1 bg-green-500"
                   />
                   <motion.div
                     initial={{ width: 0 }}
                     animate={{ width: "50%" }}
                     transition={{ duration: 0.4 }}
-                    className="absolute bottom-0 right-0 h-1 bg-customGreen"
+                    className="absolute bottom-0 right-0 h-1 bg-green-500"
                   />
                 </>
               )}

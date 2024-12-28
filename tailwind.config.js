@@ -58,6 +58,9 @@ export default {
       boxShadow: {
         custom: '0px 7px 29px 0px rgba(100, 100, 111, 0.2)',
       },
+      transitionProperty: {
+        'bg': 'background-image', // Adding custom transition for background-image
+      },
       
     },
   },

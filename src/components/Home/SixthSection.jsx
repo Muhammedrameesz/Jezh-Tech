@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import AssignmentOutlinedIcon from "@mui/icons-material/AssignmentOutlined";
 import GroupRemoveOutlinedIcon from "@mui/icons-material/GroupRemoveOutlined";
-import HoverButton from "../../ui/HoverButton.jsx";
+import HoverButton from "../../ui/SwipeButton.jsx/ContactButton.jsx";
 import Anim from "../../ui/Anim.jsx";
 import Underline from "../../ui/Underline.jsx";
 
@@ -79,15 +79,14 @@ export default function StatsSection() {
         
           
             <h1 className="text-[#0E314C] text-center text-xl md:text-2xl lg:text-3xl max-w-lg font-semibold leading-tight  mb-4">
-              We always try to understand users expectation
+            Customer Delight is our Focus 
             </h1>
             <Underline/>
          
          
         <Anim delay={0.4}>
           <p className="text-sm text-gray-500 text-center max-w-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Building long-term customer relationships through exceptional service. 
           </p>
         </Anim>
       </div>
@@ -152,8 +151,10 @@ export default function StatsSection() {
               Don&apos;t hesitate to contact us
             </p>
           </div>
-
+            
+            <div>
           <HoverButton>Contact Us</HoverButton>
+          </div>
         </div>
       </Anim>
     </div>

@@ -95,14 +95,13 @@ export default function WhatUsersSaying() {
       <div className="flex flex-col justify-center items-center mb-14">
         
             <h1 className="text-[#0E314C] text-center text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4">
-              What Users Are Saying
+            Customer Success Stories
             </h1>
             <Underline/>
          
         <Anim delay={0.4}>
           <p className="text-sm text-gray-500 text-center max-w-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          We rely on customer feedback to continuously improve and thrive. 
           </p>
         </Anim>
       </div>

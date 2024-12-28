@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import Anim from "../../ui/Anim.jsx";
 // import BackgroundBeamsWithCollision from "../../ui/Aceternity/Background1.jsx";
-import HoverButton from "../../ui/HoverButton.jsx";
+import HoverButton from "../../ui/SwipeButton.jsx/Swipe1.jsx";
 import { motion } from "framer-motion";
 import AnimatedImage from "../Home/Animated-Images/Animation2.jsx";
 import ServiceMainImage from "../../assets/images/imageset2/service-right-main-pic.30fff806.png";
