@@ -5,19 +5,20 @@ import { navLinks, dropdownLinks } from "./navLinks";
 import ResponsiveNav from "./responsiveNav.jsx";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { motion } from "framer-motion";
-import LoginButton from "../ui/SwipeButton.jsx/LoginButton.jsx";
 import SupportButton from "../ui/SwipeButton.jsx/SupportButton.jsx";
 
 export default function HomeNav() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [activeLink, setActiveLink] = useState(null);
   const [hover,setHover]=useState(null)
+  const [linkActive,setLinkActive]=useState(null)
 
   const params = useParams();
 
-  const handleLinkClick = () => {
+  const handleLinkClick = (element) => {
     setIsDropdownOpen(false);
     setActiveLink("");
+    setLinkActive(element)
   };
 
   return (
@@ -34,7 +35,7 @@ export default function HomeNav() {
           <img
             src={jezhpng}
             alt="jezhIcon"
-            className="h-24 w-24 object-contain"
+            className="h-28 w-28 object-contain"
           />
         </Link>
 
@@ -54,12 +55,15 @@ export default function HomeNav() {
                 onMouseLeave={() => setIsDropdownOpen(false)}
               >
                 <Link
+                onClick={()=>setLinkActive(item.element)}
                 onMouseEnter={()=>setHover(item.element)}
                 onMouseLeave={()=>setHover(null)}
                 style={{fontWeight:500}}
                   disabled={item.hasDropdown}
                   to={item.hasDropdown ? params : item.path}
-                  className={`text-gray-600 tracking-tight leading-relaxed px-4 py-2 rounded-full transition-all duration-300 transform hover:text-green-500 hover:scale-105 
+                  className={` ${linkActive===item.element ? "text-green-500":"text-gray-600"} 
+                  tracking-tight leading-relaxed px-4 py-2 rounded-full transition-all duration-300 
+                  transform hover:text-green-500 hover:scale-105  
                     ${item.hasDropdown && isDropdownOpen && activeLink===item.element && "text-green-500"}
                   ${item.hasDropdown ? "cursor-text" : "cursor-pointer"}`}
                 >
@@ -102,7 +106,7 @@ export default function HomeNav() {
                               className="flex items-center px-4 py-2 transition-transform duration-500 hover:translate-x-2 group relative"
                             >
                               <Link
-                                onClick={handleLinkClick}
+                                onClick={()=>handleLinkClick(subItem.element)}
                                 to={subItem.path}
                                 className="text-gray-900 cursor-pointer transition-all duration-300 ease-in-out group-hover:text-gray-700"
                               >
@@ -114,15 +118,15 @@ export default function HomeNav() {
                               </Link>
                               <div className="flex flex-col mx-2">
                                 <Link
-                                  onClick={handleLinkClick}
+                                  onClick={()=>handleLinkClick(subItem.element)}
                                   to={subItem.path}
-                                  className="text-gray-600 transition-all duration-300 ease-in-out group-hover:text-green-500"
+                                  className={`${linkActive===subItem.element? "text-green-500":"text-gray-600"} transition-all duration-300 ease-in-out group-hover:text-green-500`}
                                 >
                                   {subItem.element}
                                 </Link>
 
                                 <Link
-                                  onClick={handleLinkClick}
+                                  onClick={()=>handleLinkClick(subItem.element)}
                                   to={subItem.path}
                                   className="text-gray-400 cursor-pointer transition-all duration-300 ease-in-out "
                                 >
@@ -145,8 +149,7 @@ export default function HomeNav() {
 
         {/* Action Buttons */}
         <div className="hidden lg:flex gap-4 mr-10">
-          <SupportButton>Support</SupportButton>
-          <LoginButton>Login</LoginButton>
+          <SupportButton>Contact Us</SupportButton>
         </div>
 
         {/* Responsive Navigation */}

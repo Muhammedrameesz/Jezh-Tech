@@ -12,6 +12,7 @@ import Blog from "../pages/Resources/Blog.jsx";
 import SocialMedia from "../pages/Resources/SocialMedia.jsx";
 import Contact from "../pages/contact.jsx";
 import BlogDetails from "../pages/Resources/BlogDetals/BlogDetails.jsx";
+import ServiceDetails from "../pages/ServiceDetails.jsx"
 
 export const Router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ export const Router = createBrowserRouter([
         element: <Services />,
       },
       {
+        path: "/services/details",
+        element: <ServiceDetails />,
+      },
+      {
         path: "/products/software",
         element: <Software />,
       },
@@ -54,7 +59,7 @@ export const Router = createBrowserRouter([
         element: <Blog />,
       },
       {
-        path: "/social-media",
+        path: "/career",
         element: <SocialMedia />,
       },
       {

@@ -2,6 +2,7 @@
 // import colors from 'tailwindcss/colors';
 import { default as flattenColorPalette } from 'tailwindcss/lib/util/flattenColorPalette';
 import scrollbarHide from 'tailwind-scrollbar-hide';
+import daisyui from "daisyui";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -10,12 +11,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        customGreen: "#8fd14f",
+        customGreen: "#a0d201",
         customBlue: "#17173A",
         customBg: "#A4A4A4",
         customGray: "#B5BDBC",
         oracleGray: "#abb8c3",
         "custom-purple": '#6a0fbe',
+        customWhite:"#f7fafd",
+        customGrayish:"#f9f6f6"
       },
       fontWeight: {
         custom: '450', // Add a custom weight
@@ -66,7 +69,8 @@ export default {
   },
   plugins: [
     addVariablesForColors, 
-    scrollbarHide, 
+    scrollbarHide,         
+    daisyui,              
   ],
 };
 

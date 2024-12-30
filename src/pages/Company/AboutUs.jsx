@@ -6,9 +6,9 @@ import  About from "../../components/About/AboutUs.jsx"
 // import StckyScroll from "../../ui/Aceternity/stickyScroll/StckyScrollRevealDemo.jsx"
 import WhoAreWe from "../../components/About/WhoAreWe.jsx"
 import DefoultFeature from "../../components/Home/SixthSection.jsx"
-import Team from "../../components/Home/Team.jsx"
 import OurClientFeedBack from "../../components/About/OurClientsFeedBack.jsx"
 import LogoHover from "../../components/About/LogoHover.jsx"
+import CoreTeam from "../../components/About/CoreTeam.jsx"
 
 
 export default function AboutUs() {
@@ -18,7 +18,7 @@ export default function AboutUs() {
     <About/>
     <WhoAreWe/>
     {/* <WhoWeAre/> */}
-    <Team/>
+    <CoreTeam/>
     <OurClientFeedBack/>
     {/* <Vision/> */}
     {/* <WhyChoose/> */}

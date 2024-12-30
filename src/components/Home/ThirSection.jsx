@@ -2,11 +2,14 @@ import AnimRL from "../../ui/AnimRL.jsx";
 import AnimatedImage from "./Animated-Images/Animation1.jsx";
 import ServiceLeft from "../../assets/images/imageset1/service-left-main-pic.62057aa2.png";
 import SettingsInputAntennaOutlinedIcon from "@mui/icons-material/SettingsInputAntennaOutlined";
-import SmartToyIcon from "@mui/icons-material/SmartToy";
 import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 import { useState } from "react";
 import Anim from "../../ui/Anim.jsx";
 import Underline from "../../ui/Underline.jsx";
+import { GiVintageRobot } from "react-icons/gi";
+import { PiNumberCircleZeroBold } from "react-icons/pi";
+import { TiShoppingCart } from "react-icons/ti";
+import { MdDeveloperMode } from "react-icons/md";
 
 export default function ForthSection() {
   const [hover, setHover] = useState("");
@@ -33,12 +36,12 @@ export default function ForthSection() {
     {
       key: "Artificial",
       title: "Artificial Intelligence (AI)",
-      Icon: <AutoAwesomeIcon />,
+      Icon: <PiNumberCircleZeroBold className="text-2xl"/>,
     },
     {
       key: "Robotics",
       title: "Robotics & Automation",
-      Icon: <SmartToyIcon />,
+      Icon: <GiVintageRobot className="text-2xl"/>,
     },
     {
       key: "Website",
@@ -48,17 +51,18 @@ export default function ForthSection() {
     {
       key: "Research",
       title: "Research & Development ",
-      Icon: <SmartToyIcon />,
+      Icon: <MdDeveloperMode className="text-2xl"/>,
     },
     {
       key: "Commerce",
       title: "E-Commerce Services ",
-      Icon: <SmartToyIcon />,
+      Icon: <TiShoppingCart className="text-2xl"/>,
     },
   ];
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 bg-gray-100  items-center pb-16 pt-20  font-poppins">
-      <div className="relative overflow-hidden ml-5 md:ml-10">
+    <div className="grid grid-cols-1 md:grid-cols-2 bg-customWhite  items-center pb-16 pt-20  font-poppins">
+      <div className="relative  ml-5 md:ml-10">
+      
         <div className="block md:hidden">
           <Anim>
             <img
@@ -76,7 +80,7 @@ export default function ForthSection() {
         <div className="relative flex flex-col items-start space-y-8 p-4 lg:p-6 rounded-md mr-5 md:mr-10 ">
           <div className=" mx-5">
             <h1 className="text-[#0E314C]  text-xl md:text-2xl  font-semibold  mb-4">
-            Our Excellence in Next-gen Technology” OR “Pioneering Innovation
+            Our Excellence in Next-gen Technology
             </h1>
             <Underline />
           </div>

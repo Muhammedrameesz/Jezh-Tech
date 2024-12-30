@@ -26,16 +26,16 @@ export default function Header() {
       <div className="absolute w-full h-full object-cover  ">
         <img src={Background} alt="img" />
       </div>
-      <div className="relative grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-5 max-w-screen-lg  px-4 md:px-5 rounded-lg mt-20 md:mt-20">
-        <div className="flex flex-col justify-center space-y-6">
+      <div className="relative grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-5 mx-5 md:mx-10  px-4 md:px-5 rounded-lg mt-20 md:mt-20">
+        <div className="flex flex-col justify-center space-y-6 mt-5 md:mt-10 lg:mt-20">
           <Anim>
-            <h1 className="text-2xl sm:text-4xl max-w-full md:max-w-2xl tracking-tight md:text-5xl text-start font-extrabold text-[#0E314C] leading-snug mb-2 mt-10 md:mb-4">
+            <h1 className="text-2xl sm:text-4xl max-w-full md:max-w-2xl tracking-tight md:text-5xl text-start font-semibold text-[#0E314C] leading-snug mb-2 mt-10 ">
               {sentence}
             </h1>
           </Anim>
 
           <motion.div
-            className="text-base sm:text-lg md:text-lg text-gray-400 leading-relaxed mb-6 md:mb-6"
+            className="text-base sm:text-lg md:text-lg text-gray-400 leading-relaxed mb-2"
             initial="hidden"
             animate="visible"
             variants={{

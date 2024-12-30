@@ -30,7 +30,7 @@ export default function Service() {
           {/* Card 1 */}
 
           <Anim delay={0.4}>
-            <div className="bg-white h-[300px] hover:bg-green-500 rounded-lg border border-dashed border-green-200 hover:border-none font-poppins group shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-2 transition-all duration-500">
+            <div className="bg-white h-[300px] hover:bg-customGreen rounded-lg border border-dashed border-green-200 hover:border-none font-poppins group shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-2 transition-all duration-500">
               <div className="p-6">
                 <span className="flex items-center justify-center mb-5 bg-green-200 group-hover:bg-white transition-all duration-500 rounded-full w-12 h-12">
                   <HomeWorkOutlinedIcon
@@ -39,7 +39,7 @@ export default function Service() {
                   />
                 </span>
 
-                <h2 className="text-lg font-bold text-gray-800 group-hover:text-white mb-5 transition-all duration-500 cursor-pointer hover:underline">
+                <h2 className="text-lg font-bold text-gray-800 group-hover:text-white mb-5 transition-all duration-500  ">
                   Home & Industrial Automation
                 </h2>
 
@@ -51,7 +51,7 @@ export default function Service() {
           </Anim>
           {/* Card 2 */}
           <Anim delay={0.6}>
-            <div className="bg-white h-[300px] hover:bg-green-500 rounded-lg border border-dashed border-blue-200 hover:border-none font-poppins group shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-2 transition-all duration-500">
+            <div className="bg-white h-[300px] hover:bg-customGreen rounded-lg border border-dashed border-blue-200 hover:border-none font-poppins group shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-2 transition-all duration-500">
               <div className="p-6">
                 <span className="flex items-center justify-center mb-5 bg-blue-200 group-hover:bg-white transition-all duration-500 rounded-full w-12 h-12">
                   <LanguageOutlinedIcon
@@ -60,7 +60,7 @@ export default function Service() {
                   />
                 </span>
 
-                <h2 className="text-lg font-bold text-gray-800 group-hover:text-white mb-5 transition-all duration-500 cursor-pointer hover:underline">
+                <h2 className="text-lg font-bold text-gray-800 group-hover:text-white mb-5 transition-all duration-500 ">
                   Website Development & Digital Presence
                 </h2>
 
@@ -72,7 +72,7 @@ export default function Service() {
           </Anim>
           {/* Card 3 */}
           <AnimRL delay={0.4}>
-            <div className="bg-white h-[300px] hover:bg-green-500 rounded-lg border border-dashed border-rose-200 hover:border-none font-poppins group shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-2 transition-all duration-500">
+            <div className="bg-white h-[300px] hover:bg-customGreen rounded-lg border border-dashed border-rose-200 hover:border-none font-poppins group shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-2 transition-all duration-500">
               <div className="p-6">
                 <span className="flex items-center justify-center mb-5 bg-rose-200 group-hover:bg-white transition-all duration-300 rounded-full w-12 h-12">
                   <CodeOutlinedIcon
@@ -81,7 +81,7 @@ export default function Service() {
                   />
                 </span>
 
-                <h2 className="text-lg font-bold text-gray-800 group-hover:text-white mb-5 transition-all duration-500 cursor-pointer hover:underline">
+                <h2 className="text-lg font-bold text-gray-800 group-hover:text-white mb-5 transition-all duration-500 ">
                   RESEARCH & DEVELOPMENT
                 </h2>
 

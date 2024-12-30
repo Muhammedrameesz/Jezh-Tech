@@ -23,6 +23,6 @@ export const navLinks = [
     { path: "/products/software", element: "Software", ref: "Products", icon: softwareico, des: "Intuitive software transforming ideas into seamless experiences." },
     { path: "/products/hardware", element: "Hardware", ref: "Products", icon: hardwareicon, des: "Cutting-edge hardware connecting the physical and digital worlds." },
     { path: "/blog", element: "Blog", ref: "Resources", icon: blogIcon, des: "A hub of innovation and insights to inspire and empower." },
-    { path: "/social-media", element: "Social Media", ref: "Resources", icon: socMediaIcon, des: "Building a vibrant community and shaping the digital conversation." },
+    { path: "/career", element: "Career", ref: "Resources", icon: socMediaIcon, des: "Building a vibrant community and shaping the digital conversation." },
   ];
   

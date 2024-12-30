@@ -21,7 +21,7 @@ export default function FifthSection() {
           </div>
         </Anim>
         <Anim delay={0.4}>
-          <p className="text-sm text-gray-500 text-center max-w-xl leading-6">
+          <p className="text-sm text-gray-500 text-center max-w-5xl leading-6">
             At our core, we prioritize quality and client satisfaction. Our
             commitment to excellence is unwavering, as we rigorously adhere to
             industry-leading standards and deliver precise, accurate solutions.
@@ -75,13 +75,13 @@ export default function FifthSection() {
                     initial={{ width: 0 }}
                     animate={{ width: "50%" }}
                     transition={{ duration: 0.4 }}
-                    className="absolute bottom-0 left-0 h-1 bg-green-500"
+                    className="absolute bottom-0 left-0 h-1 bg-customGreen"
                   />
                   <motion.div
                     initial={{ width: 0 }}
                     animate={{ width: "50%" }}
                     transition={{ duration: 0.4 }}
-                    className="absolute bottom-0 right-0 h-1 bg-green-500"
+                    className="absolute bottom-0 right-0 h-1 bg-customGreen"
                   />
                 </>
               )}

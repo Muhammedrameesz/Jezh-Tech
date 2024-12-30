@@ -10,7 +10,7 @@
 }
 
 .slick-dots li.slick-active button:before {
-  color: #00C853; /* Active dot color */
+  color: #a0d201; /* Active dot color */
 }
 
 .slick-dots li {
@@ -24,5 +24,5 @@
 
 /* Optional: Add hover effect */
 .slick-dots li:hover button:before {
-  color: #00C853; /* Hover color */
+  color: #a0d201; /* Hover color */
 }

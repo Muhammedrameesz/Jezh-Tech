@@ -9,7 +9,7 @@ export default function Swipe1({ children }) {
     <div
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className="relative group w-auto h-auto cursor-pointer p-3 px-6 rounded-lg font-poppins   shadow-custom bg-green-500 text-center font-semibold uppercase hover:bg-gray-950 transition-colors duration-300 overflow-hidden z-50"
+      className="relative group w-auto h-auto cursor-pointer p-3 px-6 rounded-lg font-poppins   shadow-custom bg-customGreen text-center font-semibold uppercase hover:bg-gray-950 transition-colors duration-300 overflow-hidden z-50"
       style={{ position: "relative", display: "inline-block" }}
     >
       {/* Top Swipe */}

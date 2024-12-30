@@ -14,7 +14,7 @@ export default function Login({ children }) {
     >
       {/* Top Swipe */}
       <motion.span
-        className="absolute top-0 -left-1 h-full w-full bg-green-500 "
+        className="absolute top-0 -left-1 h-full w-full bg-customGreen "
         style={{ zIndex: 1 }}
         initial={{ x: "-100%" }}
         animate={{ x: hover ? "-40%" : "-100%" }}
@@ -22,7 +22,7 @@ export default function Login({ children }) {
       />
       {/* Bottom Swipe */}
       <motion.span
-        className="absolute bottom-0 -right-1 h-full w-full bg-green-500 "
+        className="absolute bottom-0 -right-1 h-full w-full bg-customGreen "
         style={{ zIndex: 1 }}
         initial={{ x: "100%" }}
         animate={{ x: hover ? "40%" : "100%" }}

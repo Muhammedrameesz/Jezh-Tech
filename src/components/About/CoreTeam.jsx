@@ -10,18 +10,21 @@ import "slick-carousel/slick/slick-theme.css";
 import { useState, useRef } from "react";
 import "../../css/CustomSlickSlide.css";
 import Underline from "../../ui/Underline.jsx";
-import Team1 from "../../assets/Team/WhatsApp Image 2024-12-23 at 7.04.04 PM.jpeg"
+
 import Team2 from "../../assets/Team/WhatsApp Image 2024-12-23 at 7.05.13 PM.jpeg"
 import Team3 from "../../assets/Team/WhatsApp Image 2024-12-23 at 7.05.49 PM.jpeg"
 import Team4 from "../../assets/Team/WhatsApp Image 2024-12-23 at 7.47.59 PM.jpeg"
+import Sai from "../../assets/Team/WhatsApp Image 2024-12-30 at 9.04.19 PM.jpeg"
+import Midhun from "../../assets/Team/WhatsApp Image 2024-12-30 at 9.04.32 PM.jpeg"
 
 
 const IconStyle =
   "h-4 w-4 cursor-pointer text-violet-500 hover:text-green-500 transform hover:-translate-y-1 transition-all duration-500";
 const content = [
+ 
   {
-    title: "Mahesh",
-    role: "Full Stack developer",
+    title: "Shabin",
+    role: "CEO & Founder",
     media: [
       {
         faceBook: <CiFacebook className={IconStyle} />,
@@ -30,11 +33,9 @@ const content = [
         github: <FaGithub className={IconStyle} />,
       },
     ],
-
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
-    image:Team1,
-      
+    image:Team3,
   },
   {
     title: "Jinu Martin",
@@ -52,21 +53,6 @@ const content = [
     image:Team2,
   },
   {
-    title: "Shabin",
-    role: "CEO & Founder",
-    media: [
-      {
-        faceBook: <CiFacebook className={IconStyle} />,
-        Twitter: <FiTwitter className={IconStyle} />,
-        Linkidin: <FaInstagram className={IconStyle} />,
-        github: <FaGithub className={IconStyle} />,
-      },
-    ],
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
-    image:Team3,
-  },
-  {
     title: "Arshitha",
     role: "HOP",
     media: [
@@ -82,8 +68,8 @@ const content = [
     image:Team4,
   },
   {
-    title: "Name",
-    role: "UI/UX Designer",
+    title: "Sai Srikanth",
+    role: "COO",
     media: [
       {
         faceBook: <CiFacebook className={IconStyle} />,
@@ -94,12 +80,11 @@ const content = [
     ],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
-    image:
-      "https://img.freepik.com/free-photo/3d-portrait-people_23-2150793856.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid",
-  },
+    image:Sai,
+ },
   {
-    title: "Name",
-    role: "UI/UX Designer",
+    title: "Mithun Shaker",
+    role: "Tech Lead",
     media: [
       {
         faceBook: <CiFacebook className={IconStyle} />,
@@ -110,8 +95,7 @@ const content = [
     ],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
-    image:
-      "https://img.freepik.com/free-photo/view-3d-man-using-laptop_23-2150709796.jpg?t=st=1734533673~exp=1734537273~hmac=1e290ff0f1ea4d1db8d72fd1c4ec1a75a63c7a91a5327c8865252d7c72f7fa7a&w=740",
+    image:Midhun,
   },
 ];
 
@@ -161,11 +145,11 @@ export default function AllTeam() {
   // }, []);
 
   return (
-    <div className="bg-gray-100 py-20 font-poppins">
+    <div className="bg-customGrayish py-20 font-poppins">
       <Anim>
         <div className="flex flex-col pb-10 md:pb-20 items-center justify-center">
           <h1 className="text-[#0E314C] text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4">
-            Meet Our Team
+            Meet Our Core Team
           </h1>
           <Underline />
 
@@ -189,7 +173,7 @@ export default function AllTeam() {
               transition={{ duration: 0.5, delay: i * 0.2 }}
             >
               <motion.div
-                className="absolute top-28 w-full bg-gray-100"
+                className="absolute top-28 w-full bg-customGrayish"
                 initial={{ opacity: 1, height: "10px" }}
                 animate={{
                   opacity: hover === i ? 0 : 1,
@@ -201,10 +185,10 @@ export default function AllTeam() {
               <motion.img
                 src={data.image}
                 alt={data.title}
-                className="w-[130px] h-[130px] z-10 object-cover mt-4 rounded-full border-2 border-green-200 group-hover:border-green-500 transition-all duration-500"
+                className="w-[130px] h-[130px] z-10 object-cover mt-4 rounded-full border-2 border-green-200 group-hover:border-customGreen transition-all duration-500"
                 transition={{ duration: 0.3 }}
               />
-              <div className="mt-6 bg-custom-gradient py-2 w-full rounded-3xl group-hover:rounded-none transition-all duration-700">
+              <div className="mt-6 bg-gradient-to-t from-green-500 to-customGreen py-2 w-full rounded-3xl group-hover:rounded-none transition-all duration-700">
                 <h3 className="text-base tracking-wider font-semibold text-white">
                   {data.title}
                 </h3>

@@ -1,6 +1,6 @@
 
 export default function SocialMedia() {
   return (
-    <div>SocialMedia</div>
+    <div>Career</div>
   )
 }

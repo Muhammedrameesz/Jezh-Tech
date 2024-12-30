@@ -16,13 +16,6 @@ export default function Footer() {
 
   return (
     <footer className="relative font-poppins bg-black ">
-      {/* Background Image */}
-     
-
-      {/* Pattern Overlay */}
-      {/* <RandomPatterns2 /> */}
-
-      {/* Content */}
       <AnimBT>
         <div className="relative z-10 flex flex-col md:flex-row items-start justify-between py-12 px-6 md:px-12 lg:px-24 space-y-8 md:space-y-0">
           {/* Logo and Description */}
@@ -63,7 +56,7 @@ export default function Footer() {
               Blog
             </Link>
             <Link to="/social-media" className={linkStyle}>
-              Social Media
+            Career
             </Link>
           </div>
 
@@ -119,7 +112,7 @@ export default function Footer() {
               <p className="text-gray-400 text-sm">
                 Sri Sai Complex,
                 <br />
-                Nagercoil, India, 629001
+                Nagercoil, India - 629001
               </p>
             </div>
           </ANim>
@@ -129,7 +122,7 @@ export default function Footer() {
                 India - Coimbatore
               </h2>
               <p className="text-gray-400 text-sm">
-                Nava India, Avinashi Rd,
+                SRCAS IC, Nava India
                 <br />
                 Coimbatore, India - 641006
               </p>
@@ -138,12 +131,12 @@ export default function Footer() {
           <ANim delay={0.5}>
             <div className="border border-gray-600  p-4 rounded text-center shadow-sm">
               <h2 className="text-gray-100 text-lg font-semibold mb-2">
-                Dubai
+                UAE-Dubai
               </h2>
               <p className="text-gray-400 text-sm">
                 Sapphire Tower Deira,
                 <br />
-                Dubai, UAE, 780610
+                Dubai, UAE - 780610
               </p>
             </div>
           </ANim>

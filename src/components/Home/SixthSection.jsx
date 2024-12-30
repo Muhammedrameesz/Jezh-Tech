@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import AssignmentOutlinedIcon from "@mui/icons-material/AssignmentOutlined";
 import GroupRemoveOutlinedIcon from "@mui/icons-material/GroupRemoveOutlined";
-import HoverButton from "../../ui/SwipeButton.jsx/ContactButton.jsx";
+import HoverButton from "../../ui/SwipeButton.jsx/Swipe1.jsx";
 import Anim from "../../ui/Anim.jsx";
 import Underline from "../../ui/Underline.jsx";
 
@@ -71,7 +71,7 @@ export default function StatsSection() {
 
   return (
     <div
-      className="relative bg-gradient-to-t from-white py-14 font-poppins
+      className="relative bg-customWhite py-14 font-poppins
     "
     >
       
@@ -93,7 +93,7 @@ export default function StatsSection() {
       <div className="flex flex-col md:flex-row items-center gap-2 md:gap-6 justify-center md:space-x-12 space-y-8 md:space-y-0 p-10 ">
         <div
           ref={projectsRef}
-          className="flex bg-white z-40 flex-row gap-5 text-center border-b-2 md:border-0 md:border-b-0 border-dotted border-gray-600 md:pl-8 md:pb-0 pb-4"
+          className="flex  z-40 flex-row gap-5 text-center border-b-2 md:border-0 md:border-b-0 border-dotted border-gray-600 md:pl-8 md:pb-0 pb-4"
         >
           <div className="flex justify-center items-center">
             <AssignmentOutlinedIcon
@@ -110,7 +110,7 @@ export default function StatsSection() {
 
         <div
           ref={customersRef}
-          className="flex bg-white z-40 flex-row gap-5 text-center border-b-2 md:border-l-2 md:border-b-0 border-dotted border-gray-400 md:pl-8 md:pb-0 pb-4"
+          className="flex  z-40 flex-row gap-5 text-center border-b-2 md:border-l-2 md:border-b-0 border-dotted border-gray-400 md:pl-8 md:pb-0 pb-4"
         >
           <div className="flex justify-center items-center">
             <AssignmentOutlinedIcon
@@ -126,7 +126,7 @@ export default function StatsSection() {
 
         <div
           ref={othersRef}
-          className="flex bg-white z-40 flex-row gap-5 text-center border-b-2 md:border-l-2 md:border-b-0 border-dotted border-gray-400 md:pl-8 md:pb-0 pb-4"
+          className="flex  z-40 flex-row gap-5 text-center border-b-2 md:border-l-2 md:border-b-0 border-dotted border-gray-400 md:pl-8 md:pb-0 pb-4"
         >
           <div className="flex justify-center items-center">
             <GroupRemoveOutlinedIcon

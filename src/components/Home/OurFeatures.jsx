@@ -6,20 +6,19 @@ import Underline from "../../ui/Underline.jsx";
 import AccessTimeOutlinedIcon from '@mui/icons-material/AccessTimeOutlined';
 import SmartToyOutlinedIcon from '@mui/icons-material/SmartToyOutlined';
 import ApiOutlinedIcon from '@mui/icons-material/ApiOutlined';
-import DoneAllOutlinedIcon from '@mui/icons-material/DoneAllOutlined';
+import DataThresholdingOutlinedIcon from '@mui/icons-material/DataThresholdingOutlined';
 
 export default function OurFeatures() {
   return (
-    <section className="min-h-screen font-poppins bg-gray-100 pt-20 pb-10">
+    <section className="min-h-screen font-poppins bg-[#f7fafd] pt-20 pb-10">
       <div className="flex flex-col justify-center items-center mx-10 ">
         <h1 className="text-xl  md:text-3xl lg:text-3xl text-[#0E314C] font-semibold mb-5">
-          Our Features
+        Our Promise
         </h1>
         <Underline />
 
         <p className="text-sm text-gray-500 text-center max-w-lg">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        We are committed to providing the highest quality services to our customers.
         </p>
       </div>
 
@@ -28,17 +27,17 @@ export default function OurFeatures() {
           <AnimBT>
             <div className="flex flex-col md:flex-row gap-5 bg-white rounded-lg p-5 group hover:bg-white hover:shadow-custom transform hover:-translate-y-3 transition-all duration-700">
               <span className="flex items-center justify-center bg-green-200 group-hover:bg-green-500 transition-all duration-500 rounded-full h-12 p-5 w-12">
-                <DoneAllOutlinedIcon
+                <SmartToyOutlinedIcon
                   sx={{ transition: "all 0.5s ease" }}
                   className="text-green-700 text-lg group-hover:text-white transition-all duration-500"
                 />
               </span>
               <div className="flex flex-col gap-2 w-auto h-24">
                 <h1 className="text-base font-semibold w-fit text-gray-700 cursor-pointer hover:text-green-500">
-                Our Promise 
+                AI-Powered Solutions
                 </h1>
                 <p className="text-sm text-gray-400">
-                We are committed to providing the highest quality services to our customers. 
+                We&apos;ll leverage artificial intelligence (AI) to enhance user experiences, such as chatbots for customer support, personalized recommendations, and predictive analytics.
                 </p>
               </div>
             </div>
@@ -107,17 +106,17 @@ export default function OurFeatures() {
           <AnimBT delay={0.3}>
             <div className="flex flex-col md:flex-row gap-5 bg-white rounded-lg p-5 group hover:bg-white hover:shadow-custom transform hover:-translate-y-3 transition-all duration-700">
               <span className="flex items-center justify-center bg-fuchsia-200 group-hover:bg-fuchsia-500 transition-all duration-500 rounded-full h-12 p-5 w-12">
-                <SmartToyOutlinedIcon
+                <DataThresholdingOutlinedIcon
                   sx={{ transition: "all 0.5s ease" }}
                   className="text-fuchsia-700 text-lg group-hover:text-white transition-all duration-500"
                 />
               </span>
               <div className="flex flex-col gap-2 w-auto h-24">
                 <h1 className="text-base w-fit font-semibold text-gray-700 cursor-pointer hover:text-green-500">
-                AI-Powered Solutions 
+                Data Driven Decisions 
                 </h1>
                 <p className="text-sm text-gray-400">
-                We&apos;ll leverage artificial intelligence (AI) to enhance user experiences, such as chatbots for customer support, personalized recommendations, and predictive analytics. 
+                We&apos;ll leverage data analysis to understand user behavior, track key metrics, and make data-driven decisions to improve performance.
                 </p>
               </div>
             </div>

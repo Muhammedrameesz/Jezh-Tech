@@ -65,6 +65,7 @@ export default function SeventhSection() {
                 </>
                 ))}
               </div>
+              
 
               {/* Content Inside the Circle */}
               <div className="relative flex flex-col items-center text-center space-y-6 z-10 ">

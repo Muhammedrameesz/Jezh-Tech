@@ -9,7 +9,7 @@ export default function Login({ children }) {
     <div
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className="relative group w-auto h-auto cursor-pointer p-3 px-6 shadow-custom rounded-lg font-poppins  bg-purple-500 text-center font-semibold uppercase transform hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 overflow-hidden z-50"
+      className="relative group w-auto h-auto cursor-pointer p-3 px-6 shadow-custom rounded-lg font-poppins  bg-customGreen text-center font-semibold uppercase transform hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 overflow-hidden z-50"
       style={{ position: "relative", display: "inline-block" }}
     >
       {/* Top Swipe */}

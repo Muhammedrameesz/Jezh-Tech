@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import Underline from "../ui/Underline";
 import AddIcon from '@mui/icons-material/Add';
+import RemoveIcon from '@mui/icons-material/Remove';
 
 export default function StyledAccordion() {
   const [expanded, setExpanded] = useState(0);
@@ -78,7 +79,19 @@ export default function StyledAccordion() {
               }}
             >
               <AccordionSummary
-                expandIcon={<AddIcon className={` ${expanded===index && "text-green-500"}`}/>}
+                className="group"
+               expandIcon={
+                expanded === index ? (
+                  <RemoveIcon
+                    className="text-customGreen transition-transform duration-300 ease-in-out"
+                  />
+                ) : (
+                  <AddIcon
+                    className="transition-transform duration-300 ease-in-out text-gray-800 group-hover:text-customGreen"
+                  />
+                )
+              }
+              
                 aria-controls={`panel${index}-content`}
                 id={`panel${index}-header`}
               >
@@ -88,7 +101,7 @@ export default function StyledAccordion() {
                     fontWeight: 600,
                     fontSize: "15px",
                   }}
-                  className={`font-semibold hover:text-green-500 transition-colors duration-300  font-poppins ${expanded===index?"text-green-500":"text-gray-800"}`}
+                  className={`font-semibold group-hover:text-customGreen transition-colors duration-300  font-poppins ${expanded===index?"text-customGreen":"text-gray-800"}`}
                 >
                   {item.title}
                 </Typography>

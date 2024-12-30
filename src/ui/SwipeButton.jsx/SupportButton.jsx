@@ -9,12 +9,12 @@ export default function Support({ children }) {
     <div
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className="relative group w-auto h-auto cursor-pointer p-2 px-6 rounded-lg font-poppins border-2 border-dashed border-green-200   bg-transparent text-center font-semibold uppercase overflow-hidden z-50"
+      className="relative group w-auto h-auto cursor-pointer p-2 px-6 rounded-lg font-poppins border-2 border-dashed border-customGreen/40   bg-transparent text-center font-semibold uppercase overflow-hidden z-50"
       style={{ position: "relative", display: "inline-block" }}
     >
       {/* Top Swipe */}
       <motion.span
-        className="absolute top-0 -left-1 h-full w-full bg-green-500 "
+        className="absolute top-0 -left-1 h-full w-full bg-customGreen "
         style={{ zIndex: 1 }}
         initial={{ x: "-100%" }}
         animate={{ x: hover ? "-40%" : "-100%" }}
@@ -22,7 +22,7 @@ export default function Support({ children }) {
       />
       {/* Bottom Swipe */}
       <motion.span
-        className="absolute bottom-0 -right-1 h-full w-full bg-green-500 "
+        className="absolute bottom-0 -right-1 h-full w-full bg-customGreen "
         style={{ zIndex: 1 }}
         initial={{ x: "100%" }}
         animate={{ x: hover ? "40%" : "100%" }}
