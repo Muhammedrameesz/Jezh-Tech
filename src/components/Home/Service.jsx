@@ -93,7 +93,7 @@ export default function Service() {
           </AnimRL>
           {/* Card 4 */}
           <AnimRL delay={0.6}>
-            <div className="bg-white h-[300px] hover:bg-green-500 rounded-lg border border-dashed border-lime-200 hover:border-none font-poppins group shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-2 transition-all duration-500">
+            <div className="bg-white h-[300px] hover:bg-customGreen rounded-lg border border-dashed border-lime-200 hover:border-none font-poppins group shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-2 transition-all duration-500">
               <div className="p-6">
                 <span className="flex items-center justify-center mb-5 bg-lime-200 group-hover:bg-white transition-all duration-300 rounded-full w-12 h-12">
                   <RiRobot3Line
@@ -102,7 +102,7 @@ export default function Service() {
                   />
                 </span>
 
-                <h2 className="text-lg font-bold text-gray-800 group-hover:text-white mb-5 transition-all duration-500 cursor-pointer hover:underline">
+                <h2 className="text-lg font-bold text-gray-800 group-hover:text-white mb-5 transition-all duration-500 ">
                   AI & ROBOTICS WORKSHOPS
                 </h2>
 
