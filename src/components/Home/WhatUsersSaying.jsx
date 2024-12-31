@@ -6,16 +6,17 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import RandomPatterns from "../../ui/RandomPatterns3.jsx"
 import Underline from "../../ui/Underline.jsx";
 
+import BinuMon from "../../assets/images/Binumon.png"
+
 
 // Sample client data
 const clients = [
   {
-    name: "John Smith",
-    image:
-      "https://img.freepik.com/free-photo/view-3d-male-videographer_23-2151066988.jpg",
-    profession: "Software Engineer",
+    name: "Binumon V.R",
+    image:BinuMon,
+    profession: "Senior Principal",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur consequuntur unde accusamus reprehenderit totam voluptatum, eaque ipsum accusantium? Ducimus, ipsum. Perferendis similique quisquam animi laudantium dolore ipsam dolorem amet quis."
+      "The Jezh team delivered a standout Dakshin Sahodaya website, revolutionized school elections with EVMs, and fostered AI skills through Jezh Technology's Robo Fun, demonstrating innovation and commitment to technological advancement."
   },
   {
     name: "Emily Johnson",
