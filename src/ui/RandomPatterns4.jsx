@@ -58,8 +58,8 @@ const RandomShapes = () => {
                   ease: "linear",
                 }}
                 key={index}
-                className="w-10 h-10 rounded-full absolute top-[50%] left-[90%] 
-                bg-gradient-to-tr from-blue-600 via-green-100 to-purple-600"
+                className="w-5 h-5 rounded-full absolute top-[50%] left-[90%] 
+                bg-gradient-to-tr from-green-500 via-green-50 to-purple-600"
               />
             );
             break;

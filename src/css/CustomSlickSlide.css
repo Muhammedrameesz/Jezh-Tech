@@ -26,3 +26,11 @@
 .slick-dots li:hover button:before {
   color: #a0d201; /* Hover color */
 }
+.slick-slide {
+  margin-right: 16px; /* Adjust this value to control the gap between items */
+}
+
+.slick-track {
+  display: flex;
+  gap: 16px; /* Add gap between items */
+}

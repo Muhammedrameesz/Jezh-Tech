@@ -4,24 +4,22 @@ import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Anim from "../../../ui/Anim.jsx";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { useState, useRef } from "react";
-import "../../../css/CustomSlickSlide.css";
-import Underline from "../../../ui/Underline.jsx";
-import Team1 from "../../../assets/Team/WhatsApp Image 2024-12-23 at 7.04.04 PM.jpeg"
-import Team2 from "../../../assets/Team/WhatsApp Image 2024-12-23 at 7.05.13 PM.jpeg"
-import Team3 from "../../../assets/Team/WhatsApp Image 2024-12-23 at 7.05.49 PM.jpeg"
-import Team4 from "../../../assets/Team/WhatsApp Image 2024-12-23 at 7.47.59 PM.jpeg"
+import { useState} from "react";
 
+import Underline from "../../../ui/Underline.jsx";
+import Team1 from "../../../assets/Team/WhatsApp Image 2024-12-23 at 7.04.04 PM.jpeg";
+import Team2 from "../../../assets/Team/WhatsApp Image 2024-12-23 at 7.05.13 PM.jpeg";
+import Team3 from "../../../assets/Team/WhatsApp Image 2024-12-23 at 7.05.49 PM.jpeg";
+import Team4 from "../../../assets/Team/WhatsApp Image 2024-12-23 at 7.47.59 PM.jpeg";
+import Sai from "../../../assets/Team/WhatsApp Image 2024-12-30 at 9.04.19 PM.jpeg"
+import Midhun from "../../../assets/Team/WhatsApp Image 2024-12-30 at 9.04.32 PM.jpeg"
 
 const IconStyle =
   "h-4 w-4 cursor-pointer text-violet-500 hover:text-green-500 transform hover:-translate-y-1 transition-all duration-500";
 const content = [
   {
-    title: "Mahesh",
-    role: "Full Stack developer",
+    title: "Shabin",
+    role: "CEO & Founder",
     media: [
       {
         faceBook: <CiFacebook className={IconStyle} />,
@@ -30,11 +28,9 @@ const content = [
         github: <FaGithub className={IconStyle} />,
       },
     ],
-
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
-    image:Team1,
-      
+    image: Team3,
   },
   {
     title: "Jinu Martin",
@@ -49,23 +45,9 @@ const content = [
     ],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
-    image:Team2,
+    image: Team2,
   },
-  {
-    title: "Shabin",
-    role: "CEO & Founder",
-    media: [
-      {
-        faceBook: <CiFacebook className={IconStyle} />,
-        Twitter: <FiTwitter className={IconStyle} />,
-        Linkidin: <FaInstagram className={IconStyle} />,
-        github: <FaGithub className={IconStyle} />,
-      },
-    ],
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
-    image:Team3,
-  },
+  
   {
     title: "Arshitha",
     role: "HOP",
@@ -79,11 +61,58 @@ const content = [
     ],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
-    image:Team4,
+    image: Team4,
   },
   {
-    title: "Name",
-    role: "UI/UX Designer",
+    title: "Mahesh",
+    role: "Full Stack developer",
+    media: [
+      {
+        faceBook: <CiFacebook className={IconStyle} />,
+        Twitter: <FiTwitter className={IconStyle} />,
+        Linkidin: <FaInstagram className={IconStyle} />,
+        github: <FaGithub className={IconStyle} />,
+      },
+    ],
+
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+    image: Team1,
+  },
+  {
+    title: "Sai Srikanth",
+    role: "COO",
+    media: [
+      {
+        faceBook: <CiFacebook className={IconStyle} />,
+        Twitter: <FiTwitter className={IconStyle} />,
+        Linkidin: <FaInstagram className={IconStyle} />,
+        github: <FaGithub className={IconStyle} />,
+      },
+    ],
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+    image:Sai,
+ },
+  {
+    title: "Mithun Shaker",
+    role: "Tech Lead",
+    media: [
+      {
+        faceBook: <CiFacebook className={IconStyle} />,
+        Twitter: <FiTwitter className={IconStyle} />,
+        Linkidin: <FaInstagram className={IconStyle} />,
+        github: <FaGithub className={IconStyle} />,
+      },
+    ],
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+    image:Midhun,
+  },
+  
+  {
+    title: "Dharani",
+    role: " Graphic Designer",
     media: [
       {
         faceBook: <CiFacebook className={IconStyle} />,
@@ -98,8 +127,168 @@ const content = [
       "https://img.freepik.com/free-photo/3d-portrait-people_23-2150793856.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid",
   },
   {
-    title: "Name",
-    role: "UI/UX Designer",
+    title: "Sree Parvathi",
+    role: "Content Writer",
+    media: [
+      {
+        faceBook: <CiFacebook className={IconStyle} />,
+        Twitter: <FiTwitter className={IconStyle} />,
+        Linkidin: <FaInstagram className={IconStyle} />,
+        github: <FaGithub className={IconStyle} />,
+      },
+    ],
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+    image:
+      "https://img.freepik.com/free-photo/view-3d-man-using-laptop_23-2150709796.jpg?t=st=1734533673~exp=1734537273~hmac=1e290ff0f1ea4d1db8d72fd1c4ec1a75a63c7a91a5327c8865252d7c72f7fa7a&w=740",
+  },
+  {
+    title: "Gopi Krishna",
+    role: "Cyber Security",
+    media: [
+      {
+        faceBook: <CiFacebook className={IconStyle} />,
+        Twitter: <FiTwitter className={IconStyle} />,
+        Linkidin: <FaInstagram className={IconStyle} />,
+        github: <FaGithub className={IconStyle} />,
+      },
+    ],
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+    image:
+      "https://img.freepik.com/free-photo/view-3d-man-using-laptop_23-2150709796.jpg?t=st=1734533673~exp=1734537273~hmac=1e290ff0f1ea4d1db8d72fd1c4ec1a75a63c7a91a5327c8865252d7c72f7fa7a&w=740",
+  },
+  {
+    title: "Niksha",
+    role: "IOT Research Assistant -Intern",
+    media: [
+      {
+        faceBook: <CiFacebook className={IconStyle} />,
+        Twitter: <FiTwitter className={IconStyle} />,
+        Linkidin: <FaInstagram className={IconStyle} />,
+        github: <FaGithub className={IconStyle} />,
+      },
+    ],
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+    image:
+      "https://img.freepik.com/free-photo/view-3d-man-using-laptop_23-2150709796.jpg?t=st=1734533673~exp=1734537273~hmac=1e290ff0f1ea4d1db8d72fd1c4ec1a75a63c7a91a5327c8865252d7c72f7fa7a&w=740",
+  },
+  {
+    title: "Smirthy",
+    role: "IOT Research Assistant -Intern",
+    media: [
+      {
+        faceBook: <CiFacebook className={IconStyle} />,
+        Twitter: <FiTwitter className={IconStyle} />,
+        Linkidin: <FaInstagram className={IconStyle} />,
+        github: <FaGithub className={IconStyle} />,
+      },
+    ],
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+    image:
+      "https://img.freepik.com/free-photo/view-3d-man-using-laptop_23-2150709796.jpg?t=st=1734533673~exp=1734537273~hmac=1e290ff0f1ea4d1db8d72fd1c4ec1a75a63c7a91a5327c8865252d7c72f7fa7a&w=740",
+  },
+  {
+    title: "GiftyMol",
+    role: "Digital Marketer - Intern",
+    media: [
+      {
+        faceBook: <CiFacebook className={IconStyle} />,
+        Twitter: <FiTwitter className={IconStyle} />,
+        Linkidin: <FaInstagram className={IconStyle} />,
+        github: <FaGithub className={IconStyle} />,
+      },
+    ],
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+    image:
+      "https://img.freepik.com/free-photo/view-3d-man-using-laptop_23-2150709796.jpg?t=st=1734533673~exp=1734537273~hmac=1e290ff0f1ea4d1db8d72fd1c4ec1a75a63c7a91a5327c8865252d7c72f7fa7a&w=740",
+  },
+  {
+    title: "Vishnu Narayanan",
+    role: "Digital Marketer - Intern",
+    media: [
+      {
+        faceBook: <CiFacebook className={IconStyle} />,
+        Twitter: <FiTwitter className={IconStyle} />,
+        Linkidin: <FaInstagram className={IconStyle} />,
+        github: <FaGithub className={IconStyle} />,
+      },
+    ],
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+    image:
+      "https://img.freepik.com/free-photo/view-3d-man-using-laptop_23-2150709796.jpg?t=st=1734533673~exp=1734537273~hmac=1e290ff0f1ea4d1db8d72fd1c4ec1a75a63c7a91a5327c8865252d7c72f7fa7a&w=740",
+  },
+  {
+    title: "Muhammed Ramees Khan",
+    role: "Full stack developer - Intern",
+    media: [
+      {
+        faceBook: <CiFacebook className={IconStyle} />,
+        Twitter: <FiTwitter className={IconStyle} />,
+        Linkidin: <FaInstagram className={IconStyle} />,
+        github: <FaGithub className={IconStyle} />,
+      },
+    ],
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+    image:
+      "https://img.freepik.com/free-photo/view-3d-man-using-laptop_23-2150709796.jpg?t=st=1734533673~exp=1734537273~hmac=1e290ff0f1ea4d1db8d72fd1c4ec1a75a63c7a91a5327c8865252d7c72f7fa7a&w=740",
+  },
+  {
+    title: "Keerthi Vasan",
+    role: "No Code developer - Intern",
+    media: [
+      {
+        faceBook: <CiFacebook className={IconStyle} />,
+        Twitter: <FiTwitter className={IconStyle} />,
+        Linkidin: <FaInstagram className={IconStyle} />,
+        github: <FaGithub className={IconStyle} />,
+      },
+    ],
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+    image:
+      "https://img.freepik.com/free-photo/view-3d-man-using-laptop_23-2150709796.jpg?t=st=1734533673~exp=1734537273~hmac=1e290ff0f1ea4d1db8d72fd1c4ec1a75a63c7a91a5327c8865252d7c72f7fa7a&w=740",
+  },
+  {
+    title: "Subash",
+    role: "No Code developer - Intern",
+    media: [
+      {
+        faceBook: <CiFacebook className={IconStyle} />,
+        Twitter: <FiTwitter className={IconStyle} />,
+        Linkidin: <FaInstagram className={IconStyle} />,
+        github: <FaGithub className={IconStyle} />,
+      },
+    ],
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+    image:
+      "https://img.freepik.com/free-photo/view-3d-man-using-laptop_23-2150709796.jpg?t=st=1734533673~exp=1734537273~hmac=1e290ff0f1ea4d1db8d72fd1c4ec1a75a63c7a91a5327c8865252d7c72f7fa7a&w=740",
+  },
+  {
+    title: "Anish",
+    role: "No Code developer - Intern",
+    media: [
+      {
+        faceBook: <CiFacebook className={IconStyle} />,
+        Twitter: <FiTwitter className={IconStyle} />,
+        Linkidin: <FaInstagram className={IconStyle} />,
+        github: <FaGithub className={IconStyle} />,
+      },
+    ],
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+    image:
+      "https://img.freepik.com/free-photo/view-3d-man-using-laptop_23-2150709796.jpg?t=st=1734533673~exp=1734537273~hmac=1e290ff0f1ea4d1db8d72fd1c4ec1a75a63c7a91a5327c8865252d7c72f7fa7a&w=740",
+  },
+  {
+    title: "Neeraj",
+    role: "No Code developer - Intern",
     media: [
       {
         faceBook: <CiFacebook className={IconStyle} />,
@@ -117,38 +306,7 @@ const content = [
 
 export default function AllTeam() {
   const [hover, setHover] = useState(null);
-  const sliderRef = useRef(null);
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: true,
-    autoplay: true,            
-    autoplaySpeed: 2000, 
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
 
   // useEffect(() => {
   //   const interval = setInterval(() => {
@@ -176,10 +334,9 @@ export default function AllTeam() {
         </div>
       </Anim>
 
-      {/* Scrollable Cards Section */}
-      <Slider {...settings} ref={sliderRef}>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mx-5 md:mx-10">
         {content.map((data, i) => (
-          <div key={i} className="px-4">
+          <div key={i} className="flex justify-center">
             <motion.div
               onMouseEnter={() => setHover(i)}
               onMouseLeave={() => setHover(null)}
@@ -201,27 +358,34 @@ export default function AllTeam() {
               <motion.img
                 src={data.image}
                 alt={data.title}
-                className="w-[130px] h-[130px] z-10 object-cover mt-4 rounded-full border-2 border-green-200 group-hover:border-customGreen transition-all duration-500"
+                className="w-[130px] h-[130px] z-10 object-cover mt-4 rounded-full border-2 border-customGreen/40 group-hover:border-customGreen transition-all duration-500"
                 transition={{ duration: 0.3 }}
               />
               <div className="mt-6 bg-gradient-to-t from-green-500 to-customGreen py-2 w-full rounded-3xl group-hover:rounded-none transition-all duration-700">
                 <h3 className="text-base tracking-wider font-semibold text-white">
                   {data.title}
                 </h3>
-                <p className="text-xs text-white ">{data.role}</p>
+                <p className="text-xs text-white">{data.role}</p>
               </div>
-              <div className=" justify-center space-x-4 mt-4">
+
+              <div className="flex justify-center space-x-4 mt-4 ">
                 {data.media.map((icon, idx) => (
-                  <div key={idx} className="flex flex-row gap-3">
+                  <span
+                    key={idx}
+                    className="text-customGreen text-lg flex items-center gap-4"
+                  >
                     {Object.values(icon)}
-                  </div>
+                  </span>
                 ))}
               </div>
+
               <p className="text-gray-500 text-xs mt-4">{data.description}</p>
             </motion.div>
           </div>
         ))}
-      </Slider>
+      </div>
+
+  
     </div>
   );
 }

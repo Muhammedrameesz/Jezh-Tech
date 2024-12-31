@@ -34,6 +34,7 @@ export default {
         raleway: ["Raleway", "sans-serif"],
         alata: ["Alata", "sans-serif"],
         helvetica: ["Helvetica", "Arial", "Lucida", "sans-serif"],
+        exo2: ['"Exo 2"', "sans-serif"]
       },
       keyframes: {
         spinSlow: {
@@ -63,6 +64,9 @@ export default {
       },
       transitionProperty: {
         'bg': 'background-image', // Adding custom transition for background-image
+      },
+      filter: {
+        shadow: "drop-shadow(-0.25rem 0.25rem 0.0675rem rgba(0,0,0,0.75)) blur(5px)",
       },
       
     },

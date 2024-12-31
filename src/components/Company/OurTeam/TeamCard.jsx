@@ -1,40 +1,99 @@
+import { CiFacebook } from "react-icons/ci";
 import { AnimatedTestimonials } from "../../../ui/Aceternity/Testimonial.jsx";
 import Anim from "../../../ui/Anim.jsx";
 import Underline from "../../../ui/Underline.jsx"
+import { FiTwitter } from "react-icons/fi";
+import { FaGithub, FaInstagram } from "react-icons/fa";
+
+
+import Team2 from "../../../assets/Team/WhatsApp Image 2024-12-23 at 7.05.13 PM.jpeg"
+import Team3 from "../../../assets/Team/WhatsApp Image 2024-12-23 at 7.05.49 PM.jpeg"
+import Team4 from "../../../assets/Team/WhatsApp Image 2024-12-23 at 7.47.59 PM.jpeg"
+import Sai from "../../../assets/Team/WhatsApp Image 2024-12-30 at 9.04.19 PM.jpeg"
+import Midhun from "../../../assets/Team/WhatsApp Image 2024-12-30 at 9.04.32 PM.jpeg"
+
+const IconStyle =
+  "h-4 w-4 cursor-pointer text-violet-500 hover:text-green-500 transform hover:-translate-y-1 transition-all duration-500";
+const testimonials = [
+ 
+  {
+    name: "Shabin",
+    designation: "CEO & Founder",
+    media: [
+      {
+        faceBook: <CiFacebook className={IconStyle} />,
+        Twitter: <FiTwitter className={IconStyle} />,
+        Linkidin: <FaInstagram className={IconStyle} />,
+        github: <FaGithub className={IconStyle} />,
+      },
+    ],
+    quote:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+    src:Team3,
+  },
+  {
+    name: "Jinu Martin",
+    designation: "Director",
+    media: [
+      {
+        faceBook: <CiFacebook className={IconStyle} />,
+        Twitter: <FiTwitter className={IconStyle} />,
+        Linkidin: <FaInstagram className={IconStyle} />,
+        github: <FaGithub className={IconStyle} />,
+      },
+    ],
+    quote:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+    src:Team2,
+  },
+  {
+    name: "Arshitha",
+    designation: "HOP",
+    media: [
+      {
+        faceBook: <CiFacebook className={IconStyle} />,
+        Twitter: <FiTwitter className={IconStyle} />,
+        Linkidin: <FaInstagram className={IconStyle} />,
+        github: <FaGithub className={IconStyle} />,
+      },
+    ],
+    quote:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+    src:Team4,
+  },
+  {
+    name: "Sai Srikanth",
+    designation: "COO",
+    media: [
+      {
+        faceBook: <CiFacebook className={IconStyle} />,
+        Twitter: <FiTwitter className={IconStyle} />,
+        Linkidin: <FaInstagram className={IconStyle} />,
+        github: <FaGithub className={IconStyle} />,
+      },
+    ],
+    quote:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+    src:Sai,
+ },
+  {
+    name: "Mithun Shaker",
+    designation: "Tech Lead",
+    media: [
+      {
+        faceBook: <CiFacebook className={IconStyle} />,
+        Twitter: <FiTwitter className={IconStyle} />,
+        Linkidin: <FaInstagram className={IconStyle} />,
+        github: <FaGithub className={IconStyle} />,
+      },
+    ],
+    quote:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+    src:Midhun,
+  },
+];
 
 const MyComponent = () => {
-  const testimonials = [
-    {
-      src: "https://img.freepik.com/free-photo/3d-render-little-boy-with-laptop-tools_1057-44642.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid",
-      name: "John Doe",
-      designation: "Software Engineer",
-      quote: "This is the best service I have ever used!",
-    },
-    {
-      src: "https://img.freepik.com/free-photo/3d-illustration-cartoon-man-with-computer-various-objects_1057-46388.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid",
-      name: "Jane Smith",
-      designation: "Product Manager",
-      quote: "An excellent experience from start to finish!",
-    },
-    {
-      src: "https://img.freepik.com/free-photo/portrait-man-christmas-celebrations_23-2150936477.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid",
-      name: "Samuel Green",
-      designation: "UX Designer",
-      quote: "Highly recommended for anyone looking to improve their workflow.",
-    },
-    {
-      src: "https://img.freepik.com/free-photo/3d-rendering-boy-playing-piano_23-2150898665.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid",
-      name: "Alex Bruno",
-      designation: "UX Designer",
-      quote: "Highly recommended for anyone looking to improve their workflow.",
-    },
-    {
-      src: "https://img.freepik.com/free-photo/fun-man-with-laptop-sitting-spaceship-3d-rendering_1057-44735.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid",
-      name: " John Samuel ",
-      designation: "UX Designer",
-      quote: "Highly recommended for anyone looking to improve their workflow.",
-    },
-  ];
 
   return (
     <div className="py-20 font-poppins bg-gray-100">

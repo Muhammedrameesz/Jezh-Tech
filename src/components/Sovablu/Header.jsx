@@ -1,42 +1,54 @@
-import { useNavigate } from "react-router-dom";
+
 import Anim from "../../ui/Anim.jsx";
-// import BackgroundBeamsWithCollision from "../../ui/Aceternity/Background1.jsx";
-import HoverButton from "../../ui/SwipeButton.jsx/Swipe1.jsx";
 import { motion } from "framer-motion";
 import AnimatedImage from "../Home/Animated-Images/Animation2.jsx";
 import ServiceMainImage from "../../assets/images/imageset2/service-right-main-pic.30fff806.png";
-import AnimRl from "../../ui/AnimRL.jsx";
+import AnimRL from "../../ui/AnimRL.jsx";
 import RandomP2 from "../../ui/RandomPatterns4.jsx";
-import Background from "../../assets/image2/background/banner-bg.jpg"
+import Background from "../../assets/image2/background/banner-bg.jpg";
+import { FaRocket } from "react-icons/fa";
+import { FaRegFlag } from "react-icons/fa";
+import { BsFillGrid1X2Fill } from "react-icons/bs";
 
 export default function Header() {
-  const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate("/services");
-  };
-
-  const sentence = "Sovablu";
+  const sentence =
+    "Effortlessly Build Your Enterprise Apps 10x Faster with Our Sovablu AI-Powered No-Code DX Platform!";
   const pargraph =
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo aliquam maiores ducimus quibusdam minima animi asperiores ab ipsa, ipsum!."
+    "Seamlessly build and deploy complicated, scalable, cloud-native, AI-augmented applications and processes for your business without writing any code whatsoever. Sovablu allows you to progress faster in development, streamline operations, and take your solutions to the next level easier. Experience true no-code innovation and revolutionize your business processes right now.";
 
   return (
-    <div className="font-poppins min-h-screen bg-white text-black  flex items-center justify-center overflow-hidden relative ">
-       <RandomP2/>
+    <div className="font-poppins mt-10 bg-white text-black  flex items-center justify-center overflow-hidden relative ">
+      <RandomP2 />
       <div className="absolute w-full h-full object-cover  ">
         <img src={Background} alt="img" />
       </div>
-      <div className="relative grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-5 max-w-screen-lg  px-4 md:px-5 rounded-lg mt-20 md:mt-20">
-     
-        <div className="flex flex-col justify-center space-y-6">
+      <div className="relative grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-0  max-w-full mx-5 md:mx-10 lg:mx-10  px-4 md:px-5 rounded-lg mt-20 md:mt-20 overflow-hidden">
+        {/* : Conditional Image Rendering */}
+        <div className=" flex justify-center items-center mt-5 md:mt-0  ">
           <Anim>
-            <h1 className="text-2xl sm:text-4xl max-w-full md:max-w-2xl tracking-tight md:text-5xl text-start font-extrabold text-[#0E314C] leading-snug mb-2 mt-10 md:mb-4">
+            <div className="block md:hidden">
+              <img
+                src={ServiceMainImage}
+                alt="Service Main"
+                className=" max-w-xs md:max-w-sm h-auto object-contain"
+              />
+            </div>
+          </Anim>
+          <div className="hidden md:block">
+            <AnimatedImage />
+          </div>
+        </div>
+
+        <div className=" flex flex-col justify-center space-y-1 z-50 mt-10">
+          <AnimRL>
+            <h1 className="text-xl  md:text-2xl max-w-full md:max-w-2xl tracking-tight  text-start font-semibold text-[#0E314C] leading-snug mb-2 ">
               {sentence}
             </h1>
-          </Anim>
+          </AnimRL>
 
           <motion.div
-            className="text-base sm:text-lg md:text-xl text-gray-500 leading-relaxed mb-6 md:mb-6"
+            className="text-sm text-gray-500  mb-2"
             initial="hidden"
             animate="visible"
             variants={{
@@ -44,8 +56,8 @@ export default function Header() {
               visible: {
                 opacity: 1,
                 transition: {
-                  delayChildren: 1.5,
-                  staggerChildren: 0.05,
+                  delayChildren: 0.2,
+                  staggerChildren: 0.01,
                 },
               },
             }}
@@ -64,29 +76,64 @@ export default function Header() {
             ))}
           </motion.div>
 
-          <Anim delay={5.5}>
-            <button onClick={handleClick} className="mt-0 md:mt-5 ">
-              <HoverButton>Learn More </HoverButton>
-            </button>
-          </Anim>
-        </div>
+         
 
-        {/* Right: Conditional Image Rendering */}
-        <div className="flex justify-center items-center mt-5 md:mt-32">
-          <AnimRl>
-            <div className="block md:hidden">
-              <img
-                src={ServiceMainImage}
-                alt="Service Main"
-                className=" max-w-xs md:max-w-sm h-auto object-contain"
-              />
-            </div>
-          </AnimRl>
-          <div className="hidden md:block">
-            <AnimatedImage />
+          <div className="py-5 ">
+            {/* Vertical Line */}
+            <section className="py-4 w-full relative">
+              <div className="absolute left-[18px] top-10 h-full w-[2px] bg-customGreen"></div>{" "}
+              <div className="flex gap-6  items-start relative">
+                <div className="flex justify-start relative mt-5">
+                  <FaRocket className="text-white text-4xl bg-customGreen p-2 rounded-md z-10" />
+                </div>
+                <div className="flex flex-col space-y-1 w-full">
+                  <h1 className="text-base font-semibold text-[#0E314C]">
+                    &quot;Pay for what you use&quot; Licensing Model
+                  </h1>
+                  <p className="text-gray-500 text-sm">
+                    Receive a specially tailored structurally cheapest pricing
+                    model that enables one to only pay for the resources used.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section className="py-4 w-full relative">
+              <div className="absolute left-[18px] top-10 h-full w-[2px] bg-customGreen"></div>{" "}
+              <div className="flex gap-6  items-start relative">
+                <div className="flex justify-start relative mt-5">
+                  <FaRegFlag className="text-white text-4xl bg-customGreen p-2 rounded-md z-10" />
+                </div>
+                <div className="flex flex-col space-y-1 w-full">
+                  <h1 className="text-base font-semibold text-[#0E314C]">
+                    Unlimited Users
+                  </h1>
+                  <p className="text-gray-500 text-sm">
+                    Scalability is possible without limitations regarding the
+                    number of people using the platform.
+                  </p>
+                </div>
+              </div>
+            </section>
+            <section className="py-4 w-full">
+              <div className="flex gap-6  items-start relative">
+                <div className="flex justify-start relative mt-5">
+                  <BsFillGrid1X2Fill className="text-white text-4xl bg-customGreen p-2 rounded-md z-10" />
+                </div>
+                <div className="flex flex-col space-y-1 w-full">
+                  <h1 className="text-base font-semibold text-[#0E314C]">
+                    Flexible Customer Engagement Models
+                  </h1>
+                  <p className="text-gray-500 text-sm">
+                    The type of engagement can be selected from a range of
+                    options, which would mean that it is flexible and meets the
+                    organizational requirements.
+                  </p>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
-
 
       </div>
     </div>

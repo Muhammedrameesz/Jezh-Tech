@@ -73,7 +73,7 @@ const ScrollableCards = () => {
   };
 
   return (
-    <div className="bg-gradient-to-tr from-green-100 via-green-100 to-white py-20 font-poppins relative">
+    <div className="bg-customGrayish py-20 font-poppins relative">
       <Pattern/>
     <div className="max-w-screen-lg mx-auto">
       <div className="max-w-screen-lg mx-auto p-4 mb-5 ">

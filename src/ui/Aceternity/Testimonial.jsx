@@ -31,9 +31,7 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
   };
 
   return (
-    <div className="bg-white max-w-sm md:max-w-4xl mx-auto antialiased font-poppins px-4 md:px-8 lg:px-12 py-20  shadow-[0px_5px_15px_rgba(0,0,0,0.35)] rounded-xl" 
-   
-    >
+    <div className="bg-white max-w-sm md:max-w-4xl mx-auto antialiased font-poppins px-4 md:px-8 lg:px-12 py-20  shadow-[0px_5px_15px_rgba(0,0,0,0.35)] rounded-xl">
       <div className="relative grid grid-cols-1 md:grid-cols-2 gap-20">
         <div>
           <div className="relative h-80 w-full">
@@ -73,8 +71,8 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
                   <img
                     src={testimonial.src}
                     alt={testimonial.name}
-                    width={500}
-                    height={500}
+                    width={400}
+                    height={400}
                     className="h-full w-full rounded-3xl object-cover object-center"
                   />
                 </motion.div>
@@ -108,6 +106,8 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
             <p className="text-sm text-gray-500 dark:text-neutral-500">
               {testimonials[active].designation}
             </p>
+
+            
             <motion.p className="text-base text-gray-500 mt-8 dark:text-neutral-300">
               {testimonials[active].quote.split(" ").map((word, index) => (
                 <motion.span
@@ -133,6 +133,14 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
                 </motion.span>
               ))}
             </motion.p>
+
+            <div className="flex space-x-4 mt-4">
+              {Object.values(testimonials[active].media[0]).map(
+                (icon, index) => (
+                  <span key={index}>{icon}</span>
+                )
+              )}
+            </div>
           </motion.div>
           <div className="flex gap-4 pt-12 md:pt-0">
             <button
@@ -162,6 +170,7 @@ AnimatedTestimonials.propTypes = {
       name: PropTypes.string.isRequired,
       designation: PropTypes.string.isRequired,
       quote: PropTypes.string.isRequired,
+      media: PropTypes.arrayOf(PropTypes.object).isRequired,
     })
   ).isRequired,
   autoplay: PropTypes.bool,
