@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { Link,useNavigate} from "react-router-dom";
 import { useState } from "react";
 import jezhpng from "../assets/JezhLogo/Removal-40.png";
 import { navLinks, dropdownLinks } from "./navLinks";
@@ -12,14 +12,28 @@ export default function HomeNav() {
   const [activeLink, setActiveLink] = useState(null);
   const [hover,setHover]=useState(null)
   const [linkActive,setLinkActive]=useState(null)
+  const [activeRef,setActiveRef]=useState(null)
+  const [activeDrop,setActiveDrop]=useState(null)
 
-  const params = useParams();
+  
 
-  const handleLinkClick = (element) => {
+  const handleLinkClick = (element,ref) => {
     setIsDropdownOpen(false);
     setActiveLink("");
     setLinkActive(element)
+    setActiveRef(ref)
   };
+
+  const handleClear = async ()=>{
+      setActiveDrop(null)
+      setActiveLink(null)
+      setActiveRef(null)
+      setLinkActive(null)
+      activeLink(null)
+
+  }
+
+  const navigate =  useNavigate()
 
   return (
     <div>
@@ -31,8 +45,9 @@ export default function HomeNav() {
         }}
       >
         {/* Logo Section */}
-        <Link to="/" className="flex-shrink-0 ml-16">
+        <Link  to="/" className="flex-shrink-0 ml-16">
           <img
+           onClick={handleClear}
             src={jezhpng}
             alt="jezhIcon"
             className="h-28 w-28 object-contain"
@@ -55,16 +70,20 @@ export default function HomeNav() {
                 onMouseLeave={() => setIsDropdownOpen(false)}
               >
                 <Link
-                onClick={()=>setLinkActive(item.element)}
+                onClick={()=>{
+                  setLinkActive(item.element)
+                  setActiveRef(null)
+                  setActiveDrop(null)
+                }}
                 onMouseEnter={()=>setHover(item.element)}
                 onMouseLeave={()=>setHover(null)}
                 style={{fontWeight:500}}
                   disabled={item.hasDropdown}
-                  to={item.hasDropdown ? params : item.path}
-                  className={` ${linkActive===item.element ? "text-green-500":"text-gray-600"} 
+                  to={item.hasDropdown ? '#' : item.path}
+                  className={` ${linkActive===item.element || activeRef===item.element || activeDrop===item.element ? "text-customGreen":"text-gray-600"} 
                   tracking-tight leading-relaxed px-4 py-2 rounded-full transition-all duration-300 
-                  transform hover:text-green-500 hover:scale-105  
-                    ${item.hasDropdown && isDropdownOpen && activeLink===item.element && "text-green-500"}
+                  transform hover:text-customGreen hover:scale-105  
+                    ${item.hasDropdown && isDropdownOpen && activeLink===item.element  && "text-customGreen"}
                   ${item.hasDropdown ? "cursor-text" : "cursor-pointer"}`}
                 >
                   {item.element}
@@ -102,11 +121,13 @@ export default function HomeNav() {
                           .filter((subItem) => subItem.ref === activeLink)
                           .map((subItem) => (
                             <li
+                              onMouseEnter={()=>setActiveDrop(subItem.ref)}
+                              onMouseLeave={()=>setActiveDrop(null)}
                               key={subItem.element}
                               className="flex items-center px-4 py-2 transition-transform duration-500 hover:translate-x-2 group relative"
                             >
                               <Link
-                                onClick={()=>handleLinkClick(subItem.element)}
+                                onClick={()=>handleLinkClick(subItem.element,subItem.ref)}
                                 to={subItem.path}
                                 className="text-gray-900 cursor-pointer transition-all duration-300 ease-in-out group-hover:text-gray-700"
                               >
@@ -118,15 +139,15 @@ export default function HomeNav() {
                               </Link>
                               <div className="flex flex-col mx-2">
                                 <Link
-                                  onClick={()=>handleLinkClick(subItem.element)}
+                                  onClick={()=>handleLinkClick(subItem.element,subItem.ref)}
                                   to={subItem.path}
-                                  className={`${linkActive===subItem.element? "text-green-500":"text-gray-600"} transition-all duration-300 ease-in-out group-hover:text-green-500`}
+                                  className={`${linkActive===subItem.element? "text-customGreen":"text-gray-600"} transition-all duration-300 ease-in-out group-hover:text-customGreen`}
                                 >
                                   {subItem.element}
                                 </Link>
 
                                 <Link
-                                  onClick={()=>handleLinkClick(subItem.element)}
+                                  onClick={()=>handleLinkClick(subItem.element,subItem.ref)}
                                   to={subItem.path}
                                   className="text-gray-400 cursor-pointer transition-all duration-300 ease-in-out "
                                 >
@@ -148,8 +169,8 @@ export default function HomeNav() {
         </div>
 
         {/* Action Buttons */}
-        <div className="hidden lg:flex gap-4 mr-10">
-          <SupportButton>Contact Us</SupportButton>
+        <div onClick={()=>navigate("/contact")} className="hidden lg:flex gap-4 mr-10">
+          <SupportButton >Contact Us</SupportButton>
         </div>
 
         {/* Responsive Navigation */}

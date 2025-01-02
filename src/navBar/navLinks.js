@@ -13,7 +13,7 @@ export const navLinks = [
     { path: "", element: "Products", hasDropdown: true },
     { path: "/sovablu", element: "Sovablu" },
     { path: "", element: "Resources", hasDropdown: true },
-    { path: "/contact", element: "Contact Us" },
+    
   ];
 
   export const dropdownLinks = [

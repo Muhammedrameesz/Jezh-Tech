@@ -144,7 +144,7 @@ export default function Footer() {
       </div>
 
       {/* Footer Bottom */}
-      <div className="border-t border-gray-200"></div>
+      <div className="border-t border-gray-800"></div>
       <div className="relative z-10 py-4 text-center text-gray-600 text-sm">
       Copyright © {new Date().getFullYear()} Jezh Technologies. All rights reserved.
       </div>

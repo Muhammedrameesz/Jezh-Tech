@@ -69,10 +69,10 @@ export default function StyledAccordion() {
     },
   ];
   const leftColumnData = accordionData.slice(0, 5);
-  const rightColumnData = accordionData.slice(5);
+  const rightColumnData = accordionData.slice(5,10);
 
   return (
-    <div className="py-20 bg-white font-poppins">
+    <div className="py-20 bg-customWhite font-poppins">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

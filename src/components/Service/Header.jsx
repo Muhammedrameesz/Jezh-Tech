@@ -4,7 +4,9 @@ import ANim from "../../ui/Anim.jsx";
 import Background from "../../assets/image2/background/banner-bg1.jpg";
 import Pattern from "../../ui/RandomPatterns3.jsx"
 
+
 function Header() {
+
   const sentence =
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit corporis iusto hic quam eveniet culpa nam harum nihil iste magnam adipisci.";
 

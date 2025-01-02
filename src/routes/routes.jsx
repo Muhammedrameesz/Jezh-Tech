@@ -9,10 +9,13 @@ import Software from "../pages/Products/Software.jsx";
 import Hardware from "../pages/Products/Hardware.jsx";
 import Sobablu from "../pages/Sobablu.jsx";
 import Blog from "../pages/Resources/Blog.jsx";
-import SocialMedia from "../pages/Resources/SocialMedia.jsx";
+import Career from "../pages/Resources/Career.jsx";
 import Contact from "../pages/contact.jsx";
 import BlogDetails from "../pages/Resources/BlogDetals/BlogDetails.jsx";
 import ServiceDetails from "../pages/ServiceDetails.jsx"
+import SoftwareDetails from "../pages/Products/SoftwareDetails.jsx"
+
+
 
 export const Router = createBrowserRouter([
   {
@@ -47,6 +50,10 @@ export const Router = createBrowserRouter([
         element: <Software />,
       },
       {
+        path:"/softwareProductsDetails",
+        element:<SoftwareDetails/>
+      },
+      {
         path: "/products/hardware",
         element: <Hardware />,
       },
@@ -60,7 +67,7 @@ export const Router = createBrowserRouter([
       },
       {
         path: "/career",
-        element: <SocialMedia />,
+        element: <Career />,
       },
       {
         path: "/blog/details",

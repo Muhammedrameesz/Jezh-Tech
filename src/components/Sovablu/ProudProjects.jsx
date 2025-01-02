@@ -85,6 +85,9 @@ const ImageCarousel = () => {
     arrows: true, // Enable scrollable arrows
     autoplay: true,
     autoplaySpeed: 3000,
+    accessibility: true,
+    focusOnSelect: true,
+    adaptiveHeight: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -123,10 +126,13 @@ const ImageCarousel = () => {
       </p>
     </div>
 
-    <div className="w-[90%] mx-auto py-10">
-  <Slider {...settings}>
+    <div className="mx-5 ml-16 py-10">
+  <Slider {...settings} className="flex gap1-10"> {/* Adjusted the gap to 10 */}
     {slides.map((slide, index) => (
-      <div key={index} className="relative flex flex-col  mx-4"> {/* Added mx-4 for horizontal margin */}
+      <div
+        key={index}
+        className="relative flex flex-col  " // Added mx-4 for horizontal spacing
+      >
         {/* Image container */}
         <div
           className="relative overflow-hidden"
@@ -136,7 +142,7 @@ const ImageCarousel = () => {
           <img
             src={slide.img}
             alt={`Slide ${index + 1}`}
-            className="w-full h-[250px] object-cover"
+            className="w-[90%] h-[250px] object-cover"
           />
           {/* Overlay animation */}
           <AnimatePresence>
@@ -148,7 +154,7 @@ const ImageCarousel = () => {
                   animate={{ y: "-50%" }}
                   exit={{ y: "-100%" }}
                   transition={{ duration: 0.8, ease: "easeInOut" }}
-                  className="absolute inset-0 bg-black opacity-50"
+                  className="absolute inset-0 w-[90%] bg-black opacity-50" 
                 />
                 {/* Bottom overlay */}
                 <motion.div
@@ -156,7 +162,7 @@ const ImageCarousel = () => {
                   animate={{ y: "50%" }}
                   exit={{ y: "100%" }}
                   transition={{ duration: 0.8, ease: "easeInOut" }}
-                  className="absolute inset-0 bg-black opacity-50"
+                  className="absolute inset-0 bg-black w-[90%] opacity-50"
                 />
                 {/* Icon */}
                 <motion.button
@@ -164,7 +170,7 @@ const ImageCarousel = () => {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0 }}
                   transition={{ duration: 0.6, ease: "easeInOut" }}
-                  className="absolute top-5 right-10 bg-green-400 rounded-full text-white p-2 shadow-lg hover:bg-purple-400 transition-colors duration-500"
+                  className="absolute top-5 right-10  bg-green-400 rounded-full text-white p-2 shadow-lg hover:bg-purple-400 transition-colors duration-500"
                 >
                   <AddIcon sx={{ fontSize: "25px" }} />
                 </motion.button>
@@ -173,14 +179,13 @@ const ImageCarousel = () => {
           </AnimatePresence>
         </div>
         {/* Title */}
-        <h2 className="text-center mt-2 text-base font-semibold text-gray-700">
+        <h2 className="text-center mt-2 text-base font-semibold text-gray-700 w-[90%]">
           {slide.heading}
         </h2>
       </div>
     ))}
   </Slider>
 </div>
-
 
 
   </div>

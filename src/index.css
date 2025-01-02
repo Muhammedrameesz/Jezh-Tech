@@ -4,6 +4,16 @@
 @tailwind utilities;
 
 
+
+/* Ensure that body and other elements don't change based on color scheme */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #fff !important; 
+  }
+}
+
+
+
 html{
   scroll-behavior:smooth
 }

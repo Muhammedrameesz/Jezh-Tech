@@ -25,8 +25,8 @@ export default function Sobablu() {
     <ProudProjects/>
     <PricingPlans/>
     <OurClient/>
-    <SovablueFaq/>
     <OurRecentStory/>
+    <SovablueFaq/>
     <StartYourFreeTrail/>
     </>
   )

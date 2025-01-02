@@ -2,9 +2,11 @@
 import ANim from "../../../ui/Anim.jsx";
 import Background from "../../../assets/image2/background/banner-bg1.jpg";
 import Pattern from "../../../ui/RandomPatterns4.jsx"
+import useServiceStore from "../../../store/ServiceDetails"
 
 function Header() {
  
+  const serviceDetails = useServiceStore((state)=>state.serviceDetails)
 
   return (
     <div className="relative py-28 flex flex-col justify-center items-center gap-10 font-poppins  overflow-hidden">
@@ -16,10 +18,10 @@ function Header() {
       <div className="flex flex-col items-center justify-center p-6 gap-6 mt-20 text-customBlue z-10 ">
         <ANim>
           <h1 className="text-2xl md:text-4xl  font-extrabold ">
-           Services In Details
+           {serviceDetails.title}
           </h1>
         </ANim>
-        
+         
       </div>
     </div>
   );
