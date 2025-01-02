@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
-import { navLinks, dropdownLinks } from "./navLinks";
+import { navLinks, dropdownLinks } from "./navLinks.jsx";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 
@@ -79,11 +79,9 @@ export default function ResponsiveNav() {
                       .filter((subItem) => subItem.ref === item.element)
                       .map((subItem) => (
                         <li key={subItem.element} className="flex items-center">
-                          <img
-                            src={subItem.icon}
-                            alt="icon"
-                            className="h-8 w-8 mr-2 p-1 cursor-pointer bg-gradient-to-b from-gray-700 to-gray-800 rounded-full"
-                          />
+                         <div>
+                          {subItem.icon}
+                         </div>
                           <div>
                             <Link
                               to={subItem.path}

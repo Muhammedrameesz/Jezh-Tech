@@ -24,7 +24,7 @@ export default function OurFeatures() {
       <div className="grid grid-cols-1 md:grid-cols-2 mx-16 my-20 gap-8">
         <section className="flex flex-col items-center justify-center gap-5 ">
           <AnimBT>
-            <div className="flex flex-col md:flex-row gap-5 bg-white rounded-lg p-5 group hover:bg-white shadow-custom hover:shadow-none transform hover:-translate-y-3 transition-all duration-700">
+            <div className="flex flex-col md:flex-row gap-5 bg-white rounded-lg p-5 group hover:bg-white shadow-custom hover:shadow-none transform hover:-translate-y-3 transition-all duration-700 ">
               <span className="flex items-center justify-center bg-white shadow-lg group-hover:shadow-custom transition-all duration-500 rounded-full h-12 p-5 w-12">
                 <CodeIcon
                   sx={{ transition: "all 0.5s ease" }}
@@ -32,7 +32,7 @@ export default function OurFeatures() {
                 />
               </span>
               <div className="flex flex-col gap-2">
-                <h1 className="text-base font-semibold w-fit text-gray-700 cursor-pointer hover:text-green-500">
+                <h1 className="text-base font-semibold w-fit text-gray-700 ">
                 Rapid Development
                 </h1>
                 <p className="text-sm text-gray-400 group-hover:text-gray-600  transition-all duration-500">
@@ -52,7 +52,7 @@ export default function OurFeatures() {
               </span>
 
               <div className="flex flex-col gap-2">
-                <h1 className="text-base w-fit font-semibold text-gray-700 cursor-pointer hover:text-green-500">
+                <h1 className="text-base w-fit font-semibold text-gray-700 ">
                 Seamless AI Integration
                 </h1>
                 <p className="text-sm text-gray-400 group-hover:text-gray-600  transition-all duration-500">
@@ -75,7 +75,7 @@ export default function OurFeatures() {
                 />
               </span>
               <div className="flex flex-col gap-2">
-                <h1 className="text-base w-fit font-semibold text-gray-700 cursor-pointer hover:text-green-500">
+                <h1 className="text-base w-fit font-semibold text-gray-700 ">
                 Enhanced Collaboration
                 </h1>
                 <p className="text-sm text-gray-400 group-hover:text-gray-600  transition-all duration-500">
@@ -94,7 +94,7 @@ export default function OurFeatures() {
                 />
               </span>
               <div className="flex flex-col gap-2">
-                <h1 className="text-base w-fit font-semibold text-gray-700  cursor-pointer hover:text-green-500">
+                <h1 className="text-base w-fit font-semibold text-gray-700  ">
                 Cost-Effective Licensing
                 </h1>
                 <p className="text-sm text-gray-400 group-hover:text-gray-600  transition-all duration-500">

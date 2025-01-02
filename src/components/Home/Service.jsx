@@ -34,7 +34,7 @@ export default function Service() {
               <div className="p-6">
                 <span className="flex items-center justify-center mb-5 bg-green-200 group-hover:bg-white transition-all duration-500 rounded-full w-12 h-12">
                   <HomeWorkOutlinedIcon
-                    sx={{ transition: "all 0.6s" }}
+                    sx={{ transition: "all 0.5s" }}
                     className="text-green-700 text-lg "
                   />
                 </span>
@@ -55,7 +55,7 @@ export default function Service() {
               <div className="p-6">
                 <span className="flex items-center justify-center mb-5 bg-blue-200 group-hover:bg-white transition-all duration-500 rounded-full w-12 h-12">
                   <LanguageOutlinedIcon
-                    sx={{ transition: "all 0.6s" }}
+                    sx={{ transition: "all 0.5s" }}
                     className="text-blue-700 text-lg "
                   />
                 </span>
@@ -76,7 +76,7 @@ export default function Service() {
               <div className="p-6">
                 <span className="flex items-center justify-center mb-5 bg-rose-200 group-hover:bg-white transition-all duration-300 rounded-full w-12 h-12">
                   <CodeOutlinedIcon
-                    sx={{ transition: "all 0.6s" }}
+                    sx={{ transition: "all 0.5s" }}
                     className="text-rose-700 text-lg "
                   />
                 </span>
@@ -97,7 +97,7 @@ export default function Service() {
               <div className="p-6">
                 <span className="flex items-center justify-center mb-5 bg-lime-200 group-hover:bg-white transition-all duration-300 rounded-full w-12 h-12">
                   <RiRobot3Line
-                    sx={{ transition: "all 0.6s" }}
+                    sx={{ transition: "all 0.5s" }}
                     className="text-lime-700 text-xl "
                   />
                 </span>

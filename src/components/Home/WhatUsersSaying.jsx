@@ -89,7 +89,7 @@ export default function WhatUsersSaying() {
   const displayedImages = getDisplayedImages();
 
   return (
-    <div className="relative font-poppins overflow-hidden py-20 bg-white">
+    <div className="relative font-poppins overflow-hidden py-20 bg-customGrayish">
       <RandomPatterns/>
       
       {/* Heading */}
@@ -110,7 +110,7 @@ export default function WhatUsersSaying() {
       {/* Card */}
 
       <section className="flex justify-center items-center mb-20">
-        <div className=" relative flex  flex-col sm:flex-row items-center bg-customWhite  rounded-lg p-6 sm:p-8 w-full max-w-[90%] md:max-w-[80%] lg:max-w-[60%] space-y-0 sm:space-y-0 sm:space-x-6">
+        <div className=" relative flex  flex-col sm:flex-row items-center bg-white  rounded-lg p-6 sm:p-8 w-full max-w-[90%] md:max-w-[80%] lg:max-w-[60%] space-y-0 sm:space-y-0 sm:space-x-6">
           
         <div className="absolute w-10 h-10 bg-white bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 rotate-45" />
 
