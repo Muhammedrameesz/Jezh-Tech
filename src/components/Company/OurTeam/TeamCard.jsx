@@ -13,7 +13,7 @@ import Sai from "../../../assets/Team/WhatsApp Image 2024-12-30 at 9.04.19 PM.jp
 import Midhun from "../../../assets/Team/WhatsApp Image 2024-12-30 at 9.04.32 PM.jpeg"
 
 const IconStyle =
-  "h-4 w-4 cursor-pointer text-violet-500 hover:text-green-500 transform hover:-translate-y-1 transition-all duration-500";
+  "h-4 w-4 cursor-pointer text-customGreen hover:text-green-500 transform hover:-translate-y-1 transition-all duration-500";
 const testimonials = [
  
   {
@@ -96,7 +96,7 @@ const testimonials = [
 const MyComponent = () => {
 
   return (
-    <div className="py-20 font-poppins bg-gray-100">
+    <div className="py-20 font-jost bg-white">
       <div className="flex flex-col pb-10 md:pb-20 items-center justify-center space-x-4">
         
             <h1 className="text-[#0E314C] text-center text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4 ">

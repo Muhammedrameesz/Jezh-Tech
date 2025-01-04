@@ -37,7 +37,7 @@ const partners = [
 ];
 
 export default function LogoHover() {
-    const imgStyle = "w-24 h-16 cursor-pointer";
+    const imgStyle = "w-24 h-24 cursor-pointer";
   
     // State to keep track of the currently hovered image
     const [hoveredImage, setHoveredImage] = useState(null);
@@ -52,10 +52,10 @@ export default function LogoHover() {
   
     
     const settings = {
-      dots: false,
+      dots:true,
       infinite: true,
       speed: 500,
-      slidesToShow: 6, 
+      slidesToShow: 7, 
       slidesToScroll: 1, 
       autoplay: true, 
       autoplaySpeed: 2000, 
@@ -80,7 +80,7 @@ export default function LogoHover() {
   
     return (
       <div className="w-full">
-        <section className="bg-white py-20 rounded-lg mx-16 ">
+        <section className=" py-20 rounded-lg mx-16 ">
           <Slider {...settings}>
             {partners.map((partner, index) => (
               <div key={index} className="relative">
@@ -97,7 +97,7 @@ export default function LogoHover() {
                     <motion.img
                       src={partner.hover}
                       alt={`hover-logo-${index}`}
-                      className="absolute top-0 left-0 w-24 h-16 cursor-pointer"
+                      className="absolute top-0 left-0 w-24 h-24 cursor-pointer"
                       initial={{ y: 20, opacity: 0 }}
                       animate={{ y: 0, opacity: 1 }}
                       exit={{ y: 20, opacity: 0 }}

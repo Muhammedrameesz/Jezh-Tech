@@ -6,7 +6,7 @@ import Pattern from "../../ui/Pattern5.jsx"
 export default function PricinPlans() {
   const SpanStyle = "text-sm text-gray-500";
   return (
-    <div className="max-w-screen  py-20 font-poppins bg-gray-50 relative ">
+    <div className="max-w-screen  py-20 font-jost bg-gray-50 relative ">
       <Pattern/>
       <div className="flex flex-col justify-center items-center mb-14">
         <h1 className="text-[#0E314C] text-center text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4 ">

@@ -11,11 +11,11 @@ import { FaInstagram } from "react-icons/fa";
 
 
 export default function Footer() {
-  const linkStyle = "text-gray-400 hover:text-green-600 transition";
+  const linkStyle = "text-gray-400 hover:text-customGreen transition";
   const iconStyle = { marginRight: "8px", color: "rgb(156, 163, 175)" };
 
   return (
-    <footer className="relative font-poppins bg-black ">
+    <footer className="relative font-jost bg-black ">
       <AnimBT>
         <div className="relative z-10 flex flex-col md:flex-row items-start justify-between py-12 px-6 md:px-12 lg:px-24 space-y-8 md:space-y-0">
           {/* Logo and Description */}
@@ -91,10 +91,10 @@ export default function Footer() {
               </a>
             </p>
             <div className="grid grid-cols-4  h-10 w-10 text-2xl gap-10 text-gray-400  ">
-              <FaInstagram className="transform hover:-translate-y-1 hover:text-green-500 transition-all duration-300 cursor-pointer"/>
-              <CiFacebook className="transform hover:-translate-y-1 hover:text-green-500 transition-all duration-300 cursor-pointer"/>
-              <CiTwitter className="transform hover:-translate-y-1 hover:text-green-500 transition-all duration-300 cursor-pointer"/>
-              <CiLinkedin className="transform hover:-translate-y-1 hover:text-green-500 transition-all duration-300 cursor-pointer"/>
+              <FaInstagram className="transform hover:-translate-y-1 hover:text-customGreen transition-all duration-300 cursor-pointer"/>
+              <CiFacebook className="transform hover:-translate-y-1 hover:text-customGreen transition-all duration-300 cursor-pointer"/>
+              <CiTwitter className="transform hover:-translate-y-1 hover:text-customGreen transition-all duration-300 cursor-pointer"/>
+              <CiLinkedin className="transform hover:-translate-y-1 hover:text-customGreen transition-all duration-300 cursor-pointer"/>
 
             </div>
           </div>
@@ -131,7 +131,7 @@ export default function Footer() {
           <ANim delay={0.5}>
             <div className="border border-gray-600  p-4 rounded text-center shadow-sm">
               <h2 className="text-gray-100 text-lg font-semibold mb-2">
-                UAE-Dubai
+                UAE - Dubai
               </h2>
               <p className="text-gray-400 text-sm">
                 Sapphire Tower Deira,

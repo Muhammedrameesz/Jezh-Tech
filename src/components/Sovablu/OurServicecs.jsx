@@ -10,7 +10,7 @@ export default function Service() {
   const [hover, setHover] = useState(null);
 
   return (
-    <div className="flex flex-col  items-center font-poppins px-6 py-16 bg-green-50  ">
+    <div className="flex flex-col  items-center font-jost px-6 py-16 bg-green-50  ">
       <Pattern />
       {/* Header Section */}
       <div className="flex flex-col justify-center items-center mb-10 md:mb-20">

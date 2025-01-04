@@ -1,6 +1,6 @@
 import AnimRL from "../../ui/AnimRL.jsx";
-import AnimatedImage from "./Animated-Images/Animation1.jsx";
-import ServiceLeft from "../../assets/images/imageset1/service-left-main-pic.62057aa2.png";
+import AnimatedImage from "./Animated-Images/AnimatedImage4.jsx";
+import ServiceLeft from "../../assets/images/imageset4/ml-main-pic.600dfb02.png";
 import SettingsInputAntennaOutlinedIcon from "@mui/icons-material/SettingsInputAntennaOutlined";
 import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 import { useState } from "react";
@@ -60,7 +60,7 @@ export default function ForthSection() {
     },
   ];
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 bg-customWhite  items-center pb-16 pt-20  font-poppins">
+    <div className="grid grid-cols-1 md:grid-cols-2 bg-customWhite  items-center pb-16 pt-20  font-jost">
       <div className="relative  ml-5 md:ml-10">
       
         <div className="block md:hidden">

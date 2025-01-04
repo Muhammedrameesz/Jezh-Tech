@@ -82,7 +82,7 @@ const ImageCarousel = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    arrows: true, // Enable scrollable arrows
+    arrows: false, // Enable scrollable arrows
     autoplay: true,
     autoplaySpeed: 3000,
     accessibility: true,
@@ -113,7 +113,7 @@ const ImageCarousel = () => {
   const [hover, setHover] = useState(null);
 
   return (
-    <div className="relative py-10 font-poppins">
+    <div className="relative py-10 font-jost">
     <Pattern />
     <div className="flex flex-col items-start justify-center mx-5 md:mx-20 max-w-md mb-8 mt-4">
       <h1 className="text-[#0E314C] text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4">
@@ -169,7 +169,7 @@ const ImageCarousel = () => {
                   initial={{ opacity: 0, scale: 0 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0 }}
-                  transition={{ duration: 0.6, ease: "easeInOut" }}
+                  transition={{ duration: 0.6, ease: "easeInOut",delay:0.3 }}
                   className="absolute top-5 right-10  bg-green-400 rounded-full text-white p-2 shadow-lg hover:bg-purple-400 transition-colors duration-500"
                 >
                   <AddIcon sx={{ fontSize: "25px" }} />

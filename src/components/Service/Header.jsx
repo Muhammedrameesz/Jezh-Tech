@@ -11,14 +11,14 @@ function Header() {
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit corporis iusto hic quam eveniet culpa nam harum nihil iste magnam adipisci.";
 
   return (
-    <div className="relative pt-20 flex flex-col justify-center items-center gap-10 font-poppins  overflow-hidden">
+    <div className="relative pt-20 flex flex-col justify-center items-center gap-10 font-jost  overflow-hidden">
       <div className="absolute w-full h-full -z-10">
         <img src={Background} alt="" />
       </div>
       <Pattern/>
       <div className="flex flex-col items-center justify-center p-6 gap-6 mt-20 text-neutral-900 z-10 ">
         <ANim>
-          <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold ">
+          <h1 className="text-2xl md:text-4xl lg:text-4xl font-semibold ">
             Our Services
           </h1>
         </ANim>

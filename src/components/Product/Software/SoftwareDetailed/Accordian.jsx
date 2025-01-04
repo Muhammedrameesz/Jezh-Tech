@@ -1,6 +1,6 @@
 export default function SDAccordian() {
     return (
-      <div className="w-full   font-poppins bg-white">
+      <div className="w-full   font-jost bg-white">
         {/* Accordion Item 1    dfsdfds */}
         <div className="collapse collapse-plus bg-white shadow-custom rounded-none mb-2">
           <input type="radio" name="my-accordion-3" defaultChecked />

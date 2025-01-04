@@ -37,7 +37,7 @@ export default function BlogDetailsPage() {
   const blogDetails = useBlogStore((state) => state.blogDetails);
 
   return (
-    <div className="py-20 bg-white font-poppins">
+    <div className="py-20 bg-white font-jost">
       <div className="grid grid-cols-1 md:grid-cols-6 gap-5 mx-5 md:mx-10 items-start">
        
         <div className="col-span-4 bg-white p-8 rounded-lg ">

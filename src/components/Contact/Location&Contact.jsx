@@ -4,7 +4,7 @@ import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
 
 export default function Location() {
   return (
-    <div className="py-20 font-poppins  ">
+    <div className="py-20 font-jost  ">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto max-w-5xl">
         {/* Email Card */}
         <div className="bg-white p-8 rounded-lg shadow-custom  transform hover:scale-105 transition-all duration-300 text-center group">

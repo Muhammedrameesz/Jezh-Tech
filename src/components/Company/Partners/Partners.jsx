@@ -26,8 +26,10 @@ export default function Partners() {
     });
   };
 
+  const [cardHover,setCardHover]=useState(null)
+
   return (
-    <div className="relative w-full h-full overflow-hidden font-poppins bg-gray-100 py-10 md:py-20">
+    <div className="relative w-full h-full overflow-hidden font-jost bg-customWhite py-10 md:py-20">
       <div className="flex flex-col pb-10  items-center justify-center space-x-4">
         <h1 className="text-[#0E314C] text-center text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4 ">
           Our Partners
@@ -41,7 +43,7 @@ export default function Partners() {
           </p>
         </Anim>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 py-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  px-6 py-6">
         {CardData.map((item, index) => (
           <div
             key={index}
@@ -49,50 +51,62 @@ export default function Partners() {
             onMouseEnter={() => handleCardHover(index)}
             onMouseLeave={() => handleCardHoverOut(index)}
           >
-            <div className="relative w-72 h-72 perspective">
+            <div className="relative w-60 h-80 perspective mx-5 ">
               <motion.div
+              onMouseEnter={()=>setCardHover(index)}
+              onMouseLeave={()=>setCardHover(null)}
                 className="relative w-full h-full transform transition-transform duration-100"
-                animate={{ rotateY: flippedCards[index] ? 180 : 0 }}
+                animate={{ rotateY: flippedCards[index] ? -180 : 0 }}
                 transition={{
                   type: "spring",
                   stiffness: 200,
-                  damping: 20,
+                  damping: 40,
+                  duration:1
                 }}
                 style={{ transformStyle: "preserve-3d" }}
               >
                 {/* Front Side */}
-                <div className="absolute w-full h-full bg-white border-none border-gray-400 rounded-xl backface-hidden flex flex-col items-center justify-center shadow-xl overflow-hidden">
+                <div className="absolute group w-full h-full bg-white border-none  border-gray-400 rounded-2xl backface-hidden flex flex-col items-center justify-center shadow-custom overflow-hidden">
                   {/* Blurred Image */}
-                  <div className="absolute inset-0 w-full h-full">
-                    <img
+                  <div className="flex flex-col items-center justify-center gap-3">
+                   <img
                       src={item.image}
                       alt={item.name}
-                      className="w-full h-full object-cover "
+                      className={`  object-contain ${index===3 ?"w-[150px] h-[80px]":"w-[150px] h-full"}`} 
                     />
-                    {/* Overlay for better text contrast */}
-                    <div className="absolute inset-0 bg-black bg-opacity-70"></div>
+                 
+                  <p className="text-sm font-semibold text-gray-500 text-center px-4 group-hover:translate-x-5 transition-all duration-300">
+                    {item.description}
+                  </p>
                   </div>
 
-                  {/* Visible Text */}
-                  <h1 className="relative text-white text-2xl font-semibold z-10">
-                    Our Trusted Partners
-                  </h1>
+                 
                 </div>
 
                 {/* Back Side */}
                 <div
-                  className="absolute w-full h-full gap-3 bg-white  bg-cover bg-center rounded-xl border-none border-black backface-hidden flex flex-col items-center justify-center shadow-2xl"
+                  className="absolute w-full h-full gap-3 bg-customGreen   bg-cover bg-center rounded-xl border-none border-black backface-hidden flex flex-col items-center justify-center shadow-custom"
                   style={{
                     transform: "rotateY(180deg)",
-                    // backgroundImage: `url(${item.image})`,
+                   
                   }}
                 >
-                  <h3 className="text-xl font-bold  text-customGreen px-4">
+                  <div className="flex flex-col items-center justify-center gap-3">
+                   <img
+                      src={item.image}
+                      alt={item.name}
+                      className={`  object-contain ${index===3 ?"w-[150px] h-[80px]":"w-[150px] h-full"}`} 
+                    />
+                  {/* <h3 className="text-xl font-bold  text-white px-4">
                     {item.name}
-                  </h3>
-                  <p className="text-sm text-gray-500 text-center px-4">
+                  </h3> */}
+                  <motion.p
+                  
+                   className={`text-sm font-semibold text-white text-center px-4 ${cardHover===index ? "translate-x-0":"-translate-x-5"} transition-all duration-300`}>
                     {item.description}
-                  </p>
+                  </motion.p>
+                  </div>
+
                 </div>
               </motion.div>
             </div>

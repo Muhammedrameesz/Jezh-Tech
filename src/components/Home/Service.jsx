@@ -8,7 +8,7 @@ import Underline from "../../ui/Underline.jsx";
 
 export default function Service() {
   return (
-    <div className=" font-poppins py-10">
+    <div className=" font-jost py-10">
       <div className="flex flex-col justify-center items-center  mb-14 space-x-4">
         
           <h1 className="text-[#0E314C] text-center text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4 ">
@@ -30,7 +30,7 @@ export default function Service() {
           {/* Card 1 */}
 
           <Anim delay={0.4}>
-            <div className="bg-white h-[300px] hover:bg-customGreen rounded-lg border border-dashed border-green-200 hover:border-none font-poppins group shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-2 transition-all duration-500">
+            <div className="bg-white h-[300px] hover:bg-customGreen rounded-lg border border-dashed border-green-200 hover:border-none font-jost group shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-2 transition-all duration-500">
               <div className="p-6">
                 <span className="flex items-center justify-center mb-5 bg-green-200 group-hover:bg-white transition-all duration-500 rounded-full w-12 h-12">
                   <HomeWorkOutlinedIcon
@@ -51,7 +51,7 @@ export default function Service() {
           </Anim>
           {/* Card 2 */}
           <Anim delay={0.6}>
-            <div className="bg-white h-[300px] hover:bg-customGreen rounded-lg border border-dashed border-blue-200 hover:border-none font-poppins group shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-2 transition-all duration-500">
+            <div className="bg-white h-[300px] hover:bg-customGreen rounded-lg border border-dashed border-blue-200 hover:border-none font-jost group shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-2 transition-all duration-500">
               <div className="p-6">
                 <span className="flex items-center justify-center mb-5 bg-blue-200 group-hover:bg-white transition-all duration-500 rounded-full w-12 h-12">
                   <LanguageOutlinedIcon
@@ -72,7 +72,7 @@ export default function Service() {
           </Anim>
           {/* Card 3 */}
           <AnimRL delay={0.4}>
-            <div className="bg-white h-[300px] hover:bg-customGreen rounded-lg border border-dashed border-rose-200 hover:border-none font-poppins group shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-2 transition-all duration-500">
+            <div className="bg-white h-[300px] hover:bg-customGreen rounded-lg border border-dashed border-rose-200 hover:border-none font-jost group shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-2 transition-all duration-500">
               <div className="p-6">
                 <span className="flex items-center justify-center mb-5 bg-rose-200 group-hover:bg-white transition-all duration-300 rounded-full w-12 h-12">
                   <CodeOutlinedIcon
@@ -93,7 +93,7 @@ export default function Service() {
           </AnimRL>
           {/* Card 4 */}
           <AnimRL delay={0.6}>
-            <div className="bg-white h-[300px] hover:bg-customGreen rounded-lg border border-dashed border-lime-200 hover:border-none font-poppins group shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-2 transition-all duration-500">
+            <div className="bg-white h-[300px] hover:bg-customGreen rounded-lg border border-dashed border-lime-200 hover:border-none font-jost group shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-2 transition-all duration-500">
               <div className="p-6">
                 <span className="flex items-center justify-center mb-5 bg-lime-200 group-hover:bg-white transition-all duration-300 rounded-full w-12 h-12">
                   <RiRobot3Line

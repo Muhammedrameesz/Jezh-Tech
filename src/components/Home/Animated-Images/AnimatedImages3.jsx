@@ -16,27 +16,27 @@ import TeaCup from "../../../assets/images/imageset3/tea-cup.6956e3ff.png"
 
 
 const images = [
-    { src: Carpet, alt: "Carpet", className: " w-[470px] h-[220px] bottom-10 " },
-    { src: Flower1, alt: "Flower1", className: "z-30 w-[70px] h-[130px] top-[45%] left-[8%]" },
-    { src: Man, alt: "Man", className: "z-20 w-[250px] h-[250px]  bottom-8 left-16" },
-    { src: Table, alt: "Table", className: "w-[350px] h-[250px]  top-[24%] left-[18%]" },
-    { src: Keyboard, alt: "Keyboard", className: "z-10 w-[100px] h-[50px]  top-[45%] left-[50%]" },
-    { src: Desktop, alt: "Desktop", className: "z-10 w-[70px] h-[100px]  top-[25%] left-[60%]" },
-    { src: Book, alt: "Book", className: "z-10 w-[50px] h-[40px] top-[22%] left-[38%]" },
-    { src: Pen, alt: "Pen", className: "z-10 w-[30px] h-[40px]  top-[30%] right-[40%]" },
-    { src: Headphone, alt: "Headphone", className: "z-10 w-[40px] h-[25px]  top-[35%] right-[48%]" },
-    { src: Flower2, alt: "Flower2", className: "z-10 w-[25px] h-[40px]  top-[40%] right-[18%]" },
-    { src: TeaCup, alt: "TeaCup", className: "z-10 w-[20px] h-[40px]  top-[51%] left-[59%]" },
-    { src: Bin, alt: "Bin", className: "z-10 w-[80px] h-[100px] bottom-8 right-[15%] " },
+    { src: Carpet, alt: "Carpet", className: " w-[700px] h-[250px] bottom-0 " },
+    { src: Flower1, alt: "Flower1", className: "z-30 w-[80px] h-[250px] top-[10%] right-[-10%]" },
+    { src: Man, alt: "Man", className: "z-20 w-[350px] h-[350px]  bottom-[5%] left-[-15%]" },
+    { src: Table, alt: "Table", className: "w-[450px] h-[350px]  top-[7%] left-[5%]" },
+    { src: Keyboard, alt: "Keyboard", className: "z-10 w-[120px] h-[50px]  top-[31%] left-[36%]" },
+    { src: Desktop, alt: "Desktop", className: "z-10 w-[120px] h-[140px]  top-[0%] left-[48%]" },
+    { src: Book, alt: "Book", className: "z-10 w-[70px] h-[70px] top-[7%] left-[26%]" },
+    { src: Pen, alt: "Pen", className: " w-[50px] h-[80px]  top-[-3%] left-[34%]" },
+    { src: Headphone, alt: "Headphone", className: "z-10 w-[70px] h-[60px]  top-[30%] right-[10%]" },
+    { src: Flower2, alt: "Flower2", className: "z-10 w-[50px] h-[90px]  top-[30%] right-[24%]" },
+    { src: TeaCup, alt: "TeaCup", className: "z-10 w-[45px] h-[90px]  top-[31%] left-[55%]" },
+    { src: Bin, alt: "Bin", className: "z-10 w-[90px] h-[110px] bottom-5 right-[3%] " },
     
-    { src: Code, alt: "Code", className: "z-10 w-[50px] h-[50px] top-5 right-[40%] " },
-    { src: Dot, alt: "Dot", className: " w-[40px] h-[40px]  top-20 right-[20%]" },
+    { src: Code, alt: "Code", className: "z-10 w-[150px] h-[100px] top-[-20%] right-[5%] " },
+    { src: Dot, alt: "Dot", className: " w-[60px] h-[60px]  top-[10%] right-[-5%]" },
     
   ];
 
 export default function Animation2() {
   return (
-    <section className=" relative w-[420px] -ml-12 md:ml-0 h-[300px] md:w-[500px] md:h-[400px]   ">
+    <section className=" relative w-[420px] -ml-12 md:ml-0 h-[300px] md:w-[500px] md:h-[400px] ">
     {images.map((image, index) => (
       <motion.img
       key={image.alt}

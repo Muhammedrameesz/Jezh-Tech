@@ -1,6 +1,6 @@
 export default function StartYourFreeTrial() {
   return (
-    <div className="font-poppins py-10 bg-gradient-to-r from-green-100 via-white to-white">
+    <div className="font-jost py-10 bg-gradient-to-r from-green-100 via-white to-white">
       <section className="grid grid-cols-1 md:grid-cols-2 items-center">
         {/* Image Section */}
         <div className="flex justify-center ">

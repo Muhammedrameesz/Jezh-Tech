@@ -9,7 +9,7 @@ export default function FifthSection() {
   const [hover, setHover] = useState(null);
 
   return (
-    <div className="flex flex-col  items-center font-poppins px-6 py-16 bg-white ">
+    <div className="flex flex-col  items-center font-jost px-6 py-16 bg-white ">
       {/* Header Section */}
       <div className="flex flex-col justify-center items-center mb-10 md:mb-20">
         <Anim>
@@ -21,7 +21,7 @@ export default function FifthSection() {
           </div>
         </Anim>
         <Anim delay={0.4}>
-          <p className="text-sm text-gray-500 text-center max-w-5xl leading-6">
+          <p className="text-sm text-gray-500 text-center max-w-3xl leading-6">
             At our core, we prioritize quality and client satisfaction. Our
             commitment to excellence is unwavering, as we rigorously adhere to
             industry-leading standards and deliver precise, accurate solutions.

@@ -35,7 +35,7 @@ export default function HomeNav() {
   return (
     <div>
       <nav
-        className="font-poppins z-50 w-full max-w-full flex items-center fixed top-0 bg-white"
+        className="font-jost z-50 w-full max-w-full flex items-center fixed top-0 bg-white"
         style={{
           boxShadow: "rgba(0, 0, 0, 0.5) 0px 20px 40px -40px inset",
           zIndex: 1000,

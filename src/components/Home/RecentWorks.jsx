@@ -92,7 +92,7 @@ const ScrollingCards = () => {
   ];
 
   return (
-    <div className="py-20 font-poppins">
+    <div className="py-20 font-jost">
       <div className="flex flex-col justify-center items-center mb-14">
         <h1 className="text-[#0E314C] text-center text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4 ">
           Our Recent Works

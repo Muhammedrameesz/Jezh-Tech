@@ -16,14 +16,16 @@ export default function Sobablu() {
   return (
     <>
     <Header/>
-    <HoverLogo/>
     <FeaturedSolutions/>
     <RoundedCards/>
     <AboutUs/>
     {/* <OurService/> */}
+
     <UserExp/>
     <ProudProjects/>
     <PricingPlans/>
+    <HoverLogo/>
+
     <OurClient/>
     <OurRecentStory/>
     <SovablueFaq/>

@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import AssignmentOutlinedIcon from "@mui/icons-material/AssignmentOutlined";
 import GroupRemoveOutlinedIcon from "@mui/icons-material/GroupRemoveOutlined";
+import HandshakeOutlinedIcon from '@mui/icons-material/HandshakeOutlined';
 import HoverButton from "../../ui/SwipeButton.jsx/Swipe1.jsx";
 import Anim from "../../ui/Anim.jsx";
 import Underline from "../../ui/Underline.jsx";
@@ -71,7 +72,7 @@ export default function StatsSection() {
 
   return (
     <div
-      className="relative bg-customWhite py-14 font-poppins
+      className="relative bg-customWhite py-14 font-jost
     "
     >
       
@@ -96,15 +97,15 @@ export default function StatsSection() {
           className="flex  z-40 flex-row gap-5 text-center border-b-2 md:border-0 md:border-b-0 border-dotted border-gray-600 md:pl-8 md:pb-0 pb-4"
         >
           <div className="flex justify-center items-center">
-            <AssignmentOutlinedIcon
+            <HandshakeOutlinedIcon
               fontSize="medium"
               className="text-gray-500"
             />
           </div>
 
           <div>
-            <h1 className="text-3xl md:text-5xl  font-semibold text-customGreen">{`${projectsCount}+`}</h1>
-            <p className="text-md md:text:lg text-gray-600  ">Projects</p>
+            <h1 className="text-3xl md:text-4xl  font-semibold text-customGreen">{`${projectsCount}+`}</h1>
+            <p className="text-md md:text:lg text-gray-600  ">Clients</p>
           </div>
         </div>
 
@@ -119,7 +120,7 @@ export default function StatsSection() {
             />
           </div>
           <div>
-            <h1 className="text-3xl md:text-5xl  font-semibold text-customGreen">{`${customersCount}+`}</h1>
+            <h1 className="text-3xl md:text-4xl  font-semibold text-customGreen">{`${customersCount}+`}</h1>
             <p className="text-md md:text:lg text-gray-600">Projects</p>
           </div>
         </div>
@@ -136,7 +137,7 @@ export default function StatsSection() {
           </div>
 
           <div>
-            <h1 className="text-3xl md:text-5xl font-semibold text-customGreen ">{`${othersCount}+`}</h1>
+            <h1 className="text-3xl md:text-4xl font-semibold text-customGreen ">{`${othersCount}+`}</h1>
             <p className="text-md md:text:lg text-gray-600">Happy Customers</p>
           </div>
         </div>

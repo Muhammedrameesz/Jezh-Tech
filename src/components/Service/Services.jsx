@@ -1,12 +1,12 @@
 import AnimBT from "../../ui/AnimBT.jsx";
 import Anim from "../../ui/Anim.jsx";
 import { ServiceContent } from "./ServiceContent";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import Underline from "../../ui/Underline.jsx";
 import { useNavigate } from "react-router-dom";
 import useServiceStore from "../../store/ServiceDetails";
-import AddIcon from "@mui/icons-material/Add";
+import KeyboardDoubleArrowRightOutlinedIcon from "@mui/icons-material/KeyboardDoubleArrowRightOutlined";
 
 export default function Service() {
   const [hover, setHover] = useState(null);
@@ -26,8 +26,10 @@ export default function Service() {
     }
   };
 
+  const [BtnHover, setBtnHover] = useState(null);
+
   return (
-    <div className="flex flex-col  items-center font-poppins px-6 py-16 bg-green-50  ">
+    <div className="flex flex-col  items-center font-jost px-6 py-16 bg-green-50  ">
       {/* Header Section */}
       <div className="flex flex-col justify-center items-center mb-10 md:mb-20">
         <h1 className="text-[#0E314C] text-center text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4">
@@ -50,7 +52,6 @@ export default function Service() {
         {ServiceContent.map((feature, index) => (
           <AnimBT key={index}>
             <div
-              
               onMouseEnter={() => setHover(index)}
               onMouseLeave={() => setHover(null)}
               className="relative flex flex-col p-8 rounded-lg bg-white/80 justify-center items-center transition-all duration-500 transform group  h-full"
@@ -69,31 +70,48 @@ export default function Service() {
               </p>
 
               {/* Align Button to the Right */}
-              <div className="flex w-full mt-5">
-                <button 
-                onClick={() => handleDetails(feature.image, feature.title, index)}
-                 className="text-sm ml-auto  text-gray-700 font-semibold hover:text-customGreen transition-colors duration-300 ">
-                  Learn More <AddIcon />
+              <div className="flex w-full mt-5 gap-0">
+                <button
+                  onMouseEnter={() => setBtnHover(feature.title)}
+                  onMouseLeave={() => setBtnHover(null)}
+                  onClick={() =>
+                    handleDetails(feature.image, feature.title, index)
+                  }
+                  className="text-sm ml-auto bg-customGreen p-2 px-4 rounded-full text-white font-semibold transition-colors duration-300 groupB
+                            
+                 "
+                >
+                  Learn More{" "}
+                  <KeyboardDoubleArrowRightOutlinedIcon
+                    sx={{ transition: "all 0.5s ease" }}
+                    className={`${BtnHover === feature.title ? "translate-x-2" : "translate-x-0"}`}
+                  />
                 </button>
               </div>
 
               {/* Animated Underline on Hover */}
-              {hover === index && (
-                <>
+
+              
+                <AnimatePresence>
+                  {/* Left Line */}
                   <motion.div
                     initial={{ width: 0 }}
-                    animate={{ width: "50%" }}
+                    animate={hover===index ?{ width: "50%" }:{width:0}}
+                    exit={{ width: 0 }}
                     transition={{ duration: 0.5 }}
-                    className="absolute bottom-0 left-0 h-1 bg-customGreen"
+                    className="absolute bottom-0 left-0 h-1 bg-purple-500"
                   />
+
+                  {/* Right Line */}
                   <motion.div
                     initial={{ width: 0 }}
-                    animate={{ width: "50%" }}
+                    animate={hover===index ?{ width: "50%" }:{width:0}}
+                    exit={{ width: 0 }}
                     transition={{ duration: 0.5 }}
-                    className="absolute bottom-0 right-0 h-1 bg-customGreen"
+                    className="absolute bottom-0 right-0 h-1 bg-purple-500"
                   />
-                </>
-              )}
+                </AnimatePresence>
+            
             </div>
           </AnimBT>
         ))}

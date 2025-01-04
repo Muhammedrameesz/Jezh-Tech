@@ -18,7 +18,7 @@ export default function Header() {
     "Seamlessly build and deploy complicated, scalable, cloud-native, AI-augmented applications and processes for your business without writing any code whatsoever. Sovablu allows you to progress faster in development, streamline operations, and take your solutions to the next level easier. Experience true no-code innovation and revolutionize your business processes right now.";
 
   return (
-    <div className="font-poppins mt-10 bg-white text-black  flex items-center justify-center overflow-hidden relative ">
+    <div className="font-jost mt-10 bg-white text-black  flex items-center justify-center overflow-hidden relative ">
       <RandomP2 />
       <div className="absolute w-full h-full object-cover  ">
         <img src={Background} alt="img" />

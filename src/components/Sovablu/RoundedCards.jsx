@@ -8,7 +8,7 @@ import Underline from "../../ui/Underline.jsx";
 
 export default function OurFeatures() {
   return (
-    <section className="min-h-screen font-poppins bg-white pt-20 pb-10">
+    <section className=" font-jost bg-customWhite pt-10 pb-5 ">
       <div className="flex flex-col justify-center items-center mx-10 ">
         <h1 className="text-xl  md:text-3xl lg:text-3xl text-[#0E314C] font-semibold mb-5">
         Benefits of Sovablu No code development platform
@@ -28,14 +28,14 @@ export default function OurFeatures() {
               <span className="flex items-center justify-center bg-white shadow-lg group-hover:shadow-custom transition-all duration-500 rounded-full h-12 p-5 w-12">
                 <CodeIcon
                   sx={{ transition: "all 0.5s ease" }}
-                  className="text-green-600 group-hover:text-customGreen  text-lg  transition-all duration-500"
+                  className="text-gray-700 group-hover:text-customGreen  text-lg  transition-all duration-500"
                 />
               </span>
               <div className="flex flex-col gap-2">
                 <h1 className="text-base font-semibold w-fit text-gray-700 ">
                 Rapid Development
                 </h1>
-                <p className="text-sm text-gray-400 group-hover:text-gray-600  transition-all duration-500">
+                <p className="text-sm text-gray-400 group-hover:text-gray-600 font-semibold transition-all duration-500">
                 You will be capable of developing complex apps simultaneously 5x faster with a no-code approach meaning you will not have to code anything at all. 
                 </p>
               </div>
@@ -47,7 +47,7 @@ export default function OurFeatures() {
               <span className="flex items-center justify-center bg-white shadow-lg group-hover:shadow-custom transition-all duration-500 rounded-full h-12 p-5 w-12">
                 <SmartToyIcon
                   sx={{ transition: "all 0.5s " }}
-                  className="text-green-600 group-hover:text-customGreen  text-lg  transition-all duration-500"
+                  className="text-gray-800 group-hover:text-customGreen  text-lg  transition-all duration-500"
                 />
               </span>
 
@@ -55,7 +55,7 @@ export default function OurFeatures() {
                 <h1 className="text-base w-fit font-semibold text-gray-700 ">
                 Seamless AI Integration
                 </h1>
-                <p className="text-sm text-gray-400 group-hover:text-gray-600  transition-all duration-500">
+                <p className="text-sm text-gray-400 group-hover:text-gray-600 font-semibold transition-all duration-500">
                 Utilize advanced AI technologies for faster development and to gain the advanced functionality conveniently embedded into the applications.
                 </p>
               </div>
@@ -71,14 +71,14 @@ export default function OurFeatures() {
               <span className="flex items-center justify-center bg-white shadow-lg group-hover:shadow-custom transition-all duration-500 rounded-full h-12 p-5 w-12">
                 <GroupsIcon
                   sx={{ transition: "all 0.5s ease" }}
-                  className="text-green-600 group-hover:text-customGreen  text-lg  transition-all duration-500"
+                  className="text-gray-700 group-hover:text-customGreen  text-lg  transition-all duration-500"
                 />
               </span>
               <div className="flex flex-col gap-2">
                 <h1 className="text-base w-fit font-semibold text-gray-700 ">
                 Enhanced Collaboration
                 </h1>
-                <p className="text-sm text-gray-400 group-hover:text-gray-600  transition-all duration-500">
+                <p className="text-sm text-gray-400 group-hover:text-gray-600 font-semibold transition-all duration-500">
                 Support IT and business personnel and help them cooperate to create new solutions and improve the existing ones with the help of clear forms of presentation and data modelling.
                 </p>
               </div>
@@ -90,14 +90,14 @@ export default function OurFeatures() {
               <span className="flex items-center justify-center bg-white shadow-lg group-hover:shadow-custom transition-all duration-500 rounded-full h-12 p-5 w-12">
                 <PaidIcon
                   sx={{ transition: "all 0.5s ease" }}
-                  className="text-green-600 group-hover:text-customGreen transition-all duration-500"
+                  className="text-gray-700 group-hover:text-customGreen transition-all duration-500"
                 />
               </span>
               <div className="flex flex-col gap-2">
                 <h1 className="text-base w-fit font-semibold text-gray-700  ">
                 Cost-Effective Licensing
                 </h1>
-                <p className="text-sm text-gray-400 group-hover:text-gray-600  transition-all duration-500">
+                <p className="text-sm text-gray-400 group-hover:text-gray-600 font-semibold transition-all duration-500">
                 Enjoy entrusting business with a “pay as you grow” licensing model that provides unlimited user access and gives you freedom to shape the way how to engage the customers.
                 </p>
               </div>

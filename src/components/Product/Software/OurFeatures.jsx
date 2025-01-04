@@ -10,7 +10,7 @@ import DataThresholdingOutlinedIcon from '@mui/icons-material/DataThresholdingOu
 
 export default function OurFeatures() {
   return (
-    <section className="min-h-screen font-poppins bg-[#f7fafd] pt-20 pb-10">
+    <section className="min-h-screen font-jost bg-[#f7fafd] pt-20 pb-10">
       <div className="flex flex-col justify-center items-center mx-10 ">
         <h1 className="text-xl  md:text-3xl lg:text-3xl text-[#0E314C] font-semibold mb-5">
         Our Promise

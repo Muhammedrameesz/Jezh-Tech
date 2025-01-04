@@ -44,11 +44,11 @@ export default function StyledAccordion() {
   ];
 
   return (
-    <div className="py-20 bg-white  font-poppins">
-      <div className="bg-white  mx-10 md:mx-14 rounded-lg grid grid-cols-1 md:grid-cols-2">
-        <div>
+    <div className="py-20 bg-customWhite  font-jost">
+      <div className="  mx-10 md:mx-14 rounded-lg grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="mt-5 md:mt-20 lg:mt-36">
           <img
-            src="https://img.freepik.com/free-vector/faqs-concept-illustration_114360-5185.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid"
+            src="https://img.freepik.com/free-vector/faq-concept-illustration_114360-4996.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid"
             alt=""
           />
         </div>
@@ -97,11 +97,11 @@ export default function StyledAccordion() {
               >
                 <Typography
                   sx={{
-                    fontFamily: "Poppins, sans-serif",
+                    
                     fontWeight: 600,
                     fontSize: "15px",
                   }}
-                  className={`font-semibold group-hover:text-customGreen transition-colors duration-300  font-poppins ${expanded===index?"text-customGreen":"text-gray-800"}`}
+                  className={`font-semibold group-hover:text-customGreen transition-colors duration-300  font-jost ${expanded===index?"text-customGreen":"text-gray-800"}`}
                 >
                   {item.title}
                 </Typography>
@@ -109,8 +109,8 @@ export default function StyledAccordion() {
               {!item.disabled && (
                 <AccordionDetails>
                   <Typography
-                    sx={{ fontFamily: "Poppins, sans-serif", fontSize: 14 }}
-                    className="text-gray-500 font-poppins"
+                    sx={{fontSize: 14 }}
+                    className="text-gray-500 font-jost"
                   >
                     {item.content}
                   </Typography>

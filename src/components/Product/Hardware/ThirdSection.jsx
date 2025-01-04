@@ -59,10 +59,10 @@ export default function ForthSection() {
   ];
 
   return (
-    <div className="py-20 font-poppins bg-white">
+    <div className="py-20 font-jost bg-white">
       <div className="flex flex-col justify-center items-center">
         <h1
-          className="text-[#0E314C] text-xl md:text-xl lg:text-2xl font-extrabold leading-tight mb-4
+          className="text-[#0E314C] text-xl md:text-xl lg:text-2xl font-semibold leading-tight mb-4
            "
         >
           Hardware Services
@@ -87,7 +87,7 @@ export default function ForthSection() {
                 {data.title}
               </h1>
               <p className="text-gray-600 mb-4 text-sm">{data.des}</p>
-              <button className="flex items-center text-sm  text-gray-800 font-semibold rounded-full transition-all duration-300 ease-in-out hover:text-green-500">
+              <button className="flex items-center text-sm  text-gray-800 font-semibold rounded-full transition-all duration-300 ease-in-out hover:text-customGreen">
                 Learn More <IoMdAdd className="ml-1 text-lg" />
               </button>
             </div>

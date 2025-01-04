@@ -10,14 +10,14 @@ function App() {
     
 
   return (
-    <div className="relative pt-28 flex flex-col justify-center items-center gap-10 font-poppins  overflow-hidden">
+    <div className="relative pt-28 flex flex-col justify-center items-center gap-10 font-jost  overflow-hidden">
        <div className="absolute w-full h-full object-cover  z-[-1]">
         <img src={Background} alt="" />
       </div>
       <Pattern/>
       <div className="flex flex-col items-center justify-center p-6 gap-6 mt-20 text-neutral-900 ">
         <ANim>
-          <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold ">
+          <h1 className="text-2xl md:text-4xl lg:text-4xl font-semibold ">
           Contact Us
           </h1>
         </ANim>

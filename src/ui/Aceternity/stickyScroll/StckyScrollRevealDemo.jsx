@@ -106,7 +106,7 @@ const content = [
 
 export default function StickyScrollRevealDemo() {
   return (
-    <div className="p-10 font-poppins my-10">
+    <div className="p-10 font-jost my-10">
       <div className="flex flex-col justify-center items-center  mb-20">
         
           <h1 className="text-[#0E314C] text-center text-xl md:text-2xl lg:text-3xl font-semibold leading-tight  mb-4">

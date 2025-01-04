@@ -8,7 +8,7 @@ import Underline from "../../ui/Underline.jsx";
 
 export default function TestAnim() {
   return (
-    <div className="pb-20 pt-10 font-poppins bg-black">
+    <div className="pb-20 pt-10 font-jost bg-black">
       <AnimZF>
        
         <div className="flex flex-col justify-center items-center my-16  space-x-4">

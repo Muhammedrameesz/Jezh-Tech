@@ -17,18 +17,20 @@ const RandomShapes = () => {
     animate: { opacity: 1, x: [0, 200, 0], y: [0, 200, 0] },
     transition: { duration: 3, repeat: Infinity, repeatType: 'reverse' },
   };
+  const generateUniqueKey = () => `${Date.now()}-${Math.random()}`;
 
   return (
     <div className="absolute w-full h-screen overflow-hidden opacity-20">
       {/* Loop through shapes and render them with animations */}
-      {shapes.map((shape, index) => {
+      {shapes.map((shape) => {
         let shapeElement = null;
+        const uniqueKey = generateUniqueKey();
 
         switch (shape) {
           case 'square':
             shapeElement = (
                 <motion.div
-                key={index}
+                key={uniqueKey}
                 className="w-8 h-8 bg-blue-500 absolute"
                 style={{
                   backgroundColor: randomColor(),
@@ -43,7 +45,7 @@ const RandomShapes = () => {
           case 'circle':
             shapeElement = (
                 <motion.div
-                key={index}
+                key={uniqueKey}
                 className="w-10 h-10 rounded-full absolute"
                 style={{
                   backgroundColor: randomColor(),
@@ -58,7 +60,7 @@ const RandomShapes = () => {
           case 'pyramid':
             shapeElement = (
                 <motion.div
-                  key={index}
+                  key={uniqueKey}
                   className="absolute"
                   style={{
                     width: 0,
@@ -78,7 +80,7 @@ const RandomShapes = () => {
           case 'cross':
             shapeElement = (
               <motion.div
-                key={index}
+                key={uniqueKey}
                 className="absolute flex items-center justify-center"
                 {...motionSettings}
                 style={{ left: `${Math.random() * 100}%`, top: `${Math.random() * 100}%` }}

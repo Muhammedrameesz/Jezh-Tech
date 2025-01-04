@@ -28,7 +28,7 @@ const contentArray = [
 
 export default function AboutUs() {
   return (
-    <div className="bg-white  py-20 font-poppins  ">
+    <div className="bg-white  py-20 font-jost  ">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mx-10 md:mx-20">
         <Anim>
           <section>

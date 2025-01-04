@@ -56,7 +56,7 @@ export default function ForthSection() {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 bg-white  items-center pb-16 pt-20   font-poppins">
+    <div className="grid grid-cols-1 md:grid-cols-2 bg-white  items-center pb-16 pt-20   font-jost">
       {/* Left Section */}
       <Anim>
         <div className="relative flex flex-col items-start space-y-8 p-4 lg:p-6 rounded-md ml-5 md:ml-10">

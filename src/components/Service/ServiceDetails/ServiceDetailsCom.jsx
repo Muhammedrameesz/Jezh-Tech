@@ -84,7 +84,7 @@ export default function ServiceDetailsCom() {
   );
 
   return (
-    <div className="font-poppins">
+    <div className="font-jost">
       <div className=" grid grid-cols-1 md:grid-cols-2  p-6">
         {/* Text Section */}
         <section className="flex flex-col justify-center gap-4 mx-5 md:mx-10">

@@ -34,7 +34,8 @@ export default {
         raleway: ["Raleway", "sans-serif"],
         alata: ["Alata", "sans-serif"],
         helvetica: ["Helvetica", "Arial", "Lucida", "sans-serif"],
-        exo2: ['"Exo 2"', "sans-serif"]
+        exo2: ['"Exo 2"', "sans-serif"],
+        jost: ['Jost', 'sans-serif'],
       },
       keyframes: {
         spinSlow: {

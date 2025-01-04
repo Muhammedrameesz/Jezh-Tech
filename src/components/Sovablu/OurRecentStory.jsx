@@ -34,7 +34,7 @@ const contents = [
 
 export default function OurRecentStory() {
   return (
-    <div className="font-poppins py-20 relative bg-white">
+    <div className="font-jost py-20 relative bg-white">
         <Pattern/>
       <section className="flex flex-col items-center justify-center text-center ">
         <h1 className="text-[#0E314C] text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-5">

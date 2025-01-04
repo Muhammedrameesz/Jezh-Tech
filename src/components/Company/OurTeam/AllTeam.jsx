@@ -319,7 +319,7 @@ export default function AllTeam() {
   // }, []);
 
   return (
-    <div className="bg-customGrayish py-20 font-poppins">
+    <div className="bg-customWhite py-20 font-jost">
       <Anim>
         <div className="flex flex-col pb-10 md:pb-20 items-center justify-center">
           <h1 className="text-[#0E314C] text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4">
@@ -340,13 +340,13 @@ export default function AllTeam() {
             <motion.div
               onMouseEnter={() => setHover(i)}
               onMouseLeave={() => setHover(null)}
-              className="relative flex flex-col items-center text-center bg-gradient-to-tr from-white to-white rounded-lg group p-6 hover:shadow-2xl transition-shadow duration-500"
+              className="relative flex flex-col items-center text-center shadow-md bg-gradient-to-tr from-white to-white rounded-lg group p-6 hover:shadow-custom transition-shadow duration-500"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: i * 0.2 }}
             >
               <motion.div
-                className="absolute top-28 w-full bg-customGrayish"
+                className="absolute top-28 w-full bg-customWhite"
                 initial={{ opacity: 1, height: "10px" }}
                 animate={{
                   opacity: hover === i ? 0 : 1,

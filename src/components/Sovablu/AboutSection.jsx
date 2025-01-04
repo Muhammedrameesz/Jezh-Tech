@@ -8,7 +8,7 @@ import Pattern from "../../ui/RandomPatterns3.jsx"
 
 export default function AboutUs() {
   return (
-    <div className="bg-white  font-poppins relative ">
+    <div className="bg-white  font-jost relative ">
         <Pattern/>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mx-10 md:mx-20 ">
         <Anim>

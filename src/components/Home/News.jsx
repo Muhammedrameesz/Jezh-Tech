@@ -7,7 +7,7 @@ import Underline from "../../ui/Underline.jsx";
 
 export default function News() {
   return (
-    <div className="pb-20 pt-48 bg-white font-poppins">
+    <div className="pb-20 pt-48 bg-white font-jost">
       <div className="flex flex-col justify-center items-center ">
        
             <h1 className="text-[#0E314C] text-center text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4">
@@ -23,7 +23,7 @@ export default function News() {
         </Anim>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 bg-white  gap-5 mx-5 md:mx-14 font-poppins mt-10 md:mt-16">
+      <div className="grid grid-cols-1 md:grid-cols-3 bg-white  gap-5 mx-5 md:mx-14 font-jost mt-10 md:mt-16">
 
          <AnimBT delay={0.3}>
         <section className="relative flex flex-col gap-3 bg-gray-100 hover:bg-white hover:shadow-xl transition-colors duration-300 ">
