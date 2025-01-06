@@ -83,7 +83,7 @@ export default function Partners() {
   
               {/* Back Side */}
               <div
-                className="absolute w-full h-full gap-3 bg-customGreen bg-cover bg-center rounded-2xl border-none border-black backface-hidden flex flex-col items-center justify-center shadow-custom"
+                className="absolute w-full h-full gap-3 bg-green-600 bg-cover bg-center rounded-2xl border-none border-black backface-hidden flex flex-col items-center justify-center shadow-custom"
                 style={{
                   transform: "rotateY(180deg)",
                 }}
