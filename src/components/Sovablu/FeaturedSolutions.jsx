@@ -86,9 +86,8 @@ export default function FeaturedSolutions() {
         </h1>
         <Underline />
 
-        <p className="text-sm text-gray-500 text-center max-w-lg">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <p className="text-base text-gray-500 text-center max-w-lg">
+        Sovablu&apos;s No-code platform empowers you to build powerful digital experiences with ease. 
         </p>
       </div>
 
@@ -98,7 +97,7 @@ export default function FeaturedSolutions() {
             onMouseEnter={() => setHover(i)}
             onMouseLeave={() => setHover(null)}
             key={i}
-            className="flex bg-white  z-40   flex-col items-start text-center p-5  gap-3 rounded-lg  shadow-custom group transform  group transition-all duration-500"
+            className="flex bg-white  z-40   flex-col items-start text-center p-5  gap-3 rounded-lg  shadow-xl group transform hover:-translate-y-2 hover:shadow-2xl group transition-all duration-500"
           >
             {/* <Anim> */}
               <div className=" shadow-lg group-hover:bg-customGreen transition-colors duration-500  rounded-full  p-2 mb-2 ">
@@ -122,7 +121,7 @@ export default function FeaturedSolutions() {
             <h1 className="text-lg font-semibold text-start text-[#0E314C]  ">
               {item.title}
             </h1>
-            <p className="text-sm text-gray-500 text-start leading-6 ">
+            <p className="text-sm font-semibold text-gray-500 text-start leading-6 ">
               {item.description}
             </p>
 

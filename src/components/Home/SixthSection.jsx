@@ -86,7 +86,7 @@ export default function StatsSection() {
          
          
         <Anim delay={0.4}>
-          <p className="text-sm text-gray-500 text-center max-w-lg">
+          <p className="text-base text-gray-500 text-center max-w-lg">
           Building long-term customer relationships through exceptional service. 
           </p>
         </Anim>

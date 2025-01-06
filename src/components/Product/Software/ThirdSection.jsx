@@ -78,7 +78,7 @@ export default function ForthSection() {
           Software Services
         </h1>
         <Underline />
-        <p className="text-sm text-gray-500 mb-10 max-w-lg">
+        <p className="text-base text-gray-500 mb-10 max-w-lg">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo,
           sapiente. A ipsa veniam quos, perferendis, nobis maiores.
         </p>
@@ -102,7 +102,7 @@ export default function ForthSection() {
                 <h1 className="text-lg font-semibold text-gray-800 mb-2 ">
                   {data.title}
                 </h1>
-                <p className="text-gray-600 mb-4 text-sm">{data.des}</p>
+                <p className="text-gray-600 mb-4 text-sm font-semibold">{data.des}</p>
                 <AnimatePresence>
                   <motion.button
                     onClick={() => handleClick(data.title, i)}

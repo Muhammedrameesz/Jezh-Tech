@@ -101,8 +101,8 @@ export default function WhatUsersSaying() {
             <Underline/>
          
         <Anim delay={0.4}>
-          <p className="text-sm text-gray-500 text-center max-w-lg">
-          We rely on customer feedback to continuously improve and thrive. 
+          <p className="text-base text-gray-500 text-center max-w-3xl">
+          Jezh team delivered a standout Dakshin Sahodaya website, revolutionized school elections with EVMs in Adarsh Vidya Kendra and Rojavanam International School, and fostered AI skills through Jezh&apos;s RoboFun, demonstrating innovation and commitment to technological advancement. 
           </p>
         </Anim>
       </div>

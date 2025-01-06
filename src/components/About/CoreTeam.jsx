@@ -153,7 +153,7 @@ export default function AllTeam() {
           </h1>
           <Underline />
 
-          <p className="text-sm text-gray-500 text-center max-w-lg leading-6">
+          <p className="text-base text-gray-500 text-center max-w-lg leading-6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
@@ -201,7 +201,7 @@ export default function AllTeam() {
                   </div>
                 ))}
               </div>
-              <p className="text-gray-500 text-xs mt-4">{data.description}</p>
+              <p className="text-gray-500 text-sm mt-4">{data.description}</p>
             </motion.div>
           </div>
         ))}

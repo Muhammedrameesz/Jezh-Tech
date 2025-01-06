@@ -63,7 +63,7 @@ export default function ForthSection() {
     <div className="bg-customWhite pb-16 pt-20  font-jost">
     <div className="grid grid-cols-1 md:grid-cols-2 items-center mx-5 md:mx-10 lg:mx-10">
       <div className="relative  ">
-        <div className="block md:hidden ml-5 md:ml-10">
+        <div className="block md:hidden ">
           <Anim>
             <img
               src={ServiceLeft}
@@ -72,7 +72,7 @@ export default function ForthSection() {
             />
           </Anim>
         </div>
-        <div className="hidden md:block">
+        <div className="hidden md:block ml-10 lg:ml-16">
           <AnimatedImage />
         </div>
       </div>

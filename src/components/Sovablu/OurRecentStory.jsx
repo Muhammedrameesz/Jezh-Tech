@@ -1,6 +1,7 @@
 import Underline from "../../ui/Underline";
-import AddIcon from "@mui/icons-material/Add";
-import Pattern from "../../ui/RandomPatterns4.jsx"
+import Pattern from "../../ui/RandomPatterns4.jsx";
+import { MdOutlineDoubleArrow } from "react-icons/md";
+import { useState } from "react";
 
 const contents = [
   {
@@ -33,9 +34,10 @@ const contents = [
 ];
 
 export default function OurRecentStory() {
+  const [btnHover, setBtnHover] = useState(null);
   return (
     <div className="font-jost py-20 relative bg-white">
-        <Pattern/>
+      <Pattern />
       <section className="flex flex-col items-center justify-center text-center ">
         <h1 className="text-[#0E314C] text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-5">
           Our Recent Story
@@ -43,7 +45,7 @@ export default function OurRecentStory() {
         <div className="">
           <Underline />
         </div>
-        <p className="text-sm text-gray-500 leading-6 mb-10 max-w-lg mx-auto ">
+        <p className="text-base text-gray-500 leading-6 mb-10 max-w-lg mx-auto ">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias
           sapiente, reiciendis beatae consequuntur ratione odit accusantium
           pariatur explicabo totam optio
@@ -54,7 +56,7 @@ export default function OurRecentStory() {
         {contents?.map((item, index) => (
           <div
             key={index}
-            className="flex z-10 flex-col gap-3 bg-gradient-to-r from-green-100 via-green-100 to-white shadow-md rounded-lg overflow-hidden"
+            className="flex z-10 flex-col gap-7 bg-gradient-to-r from-green-100 via-green-100 to-white shadow-md rounded-lg overflow-hidden"
           >
             {/* Image */}
             <img
@@ -64,14 +66,23 @@ export default function OurRecentStory() {
             />
             {/* Content */}
             <div className="p-4">
-              <p className="text-xs text-gray-500 mb-2">{item.date}</p>
+              <p className="text-base text-gray-500 mb-2">{item.date}</p>
               <h1 className="text-[#0E314C] text-lg font-semibold mb-2">
                 {item.title}
               </h1>
-              <p className="text-sm text-gray-500 ">{item.description}</p>
+              <p className="text-base text-gray-500 ">{item.description}</p>
               {/* Button */}
-              <button className="mt-4 text-xs font-semibold text-[#0E314C] hover:text-green-500 transition-colors duration-300">
-                Read Story <AddIcon sx={{ fontSize: "20px" }} />
+              <button
+                onMouseEnter={() => setBtnHover(index)}
+                onMouseLeave={() => setBtnHover(null)}
+                className="mt-4 flex items-center text-sm bg-white rounded-full p-2 px-5 font-semibold text-[#0E314C] hover:text-customGreen transition-colors duration-300"
+              >
+                Read Story
+                <MdOutlineDoubleArrow
+                  className={`text-lg transform transition-transform duration-300 ${
+                    btnHover === index ? "translate-x-3" : "translate-x-0"
+                  }`}
+                />
               </button>
             </div>
           </div>

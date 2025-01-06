@@ -17,7 +17,7 @@ export default function OurFeatures() {
         </h1>
         <Underline />
 
-        <p className="text-sm text-gray-500 text-center max-w-lg">
+        <p className="text-base text-gray-500 text-center max-w-lg">
         We are committed to providing the highest quality services to our customers.
         </p>
       </div>
@@ -36,7 +36,7 @@ export default function OurFeatures() {
                 <h1 className="text-base font-semibold w-fit text-gray-700 cursor-pointer hover:text-green-500">
                 AI-Powered Solutions
                 </h1>
-                <p className="text-sm text-gray-400">
+                <p className="text-sm text-gray-500 font-semibold">
                 We&apos;ll leverage artificial intelligence (AI) to enhance user experiences, such as chatbots for customer support, personalized recommendations, and predictive analytics.
                 </p>
               </div>
@@ -56,7 +56,7 @@ export default function OurFeatures() {
                 <h1 className="text-base w-fit font-semibold text-gray-700 cursor-pointer hover:text-green-500">
                 Engaging User Experiences 
                 </h1>
-                <p className="text-sm text-gray-400">
+                <p className="text-sm text-gray-500 font-semibold">
                 We’ll create websites and digital products that are visually appealing, user-friendly, and enjoyable to interact with. 
                 </p>
               </div>
@@ -75,7 +75,7 @@ export default function OurFeatures() {
                 <h1 className="text-base w-fit font-semibold text-gray-700 cursor-pointer hover:text-green-500">
                 Accessibility 
                 </h1>
-                <p className="text-sm text-gray-400">
+                <p className="text-sm text-gray-500 font-semibold">
                 We’ll ensure your digital experiences are accessible to all users, including those with liabilities. 
                 </p>
               </div>
@@ -96,7 +96,7 @@ export default function OurFeatures() {
                 <h1 className="text-base w-fit font-semibold text-gray-700 cursor-pointer hover:text-green-500">
                 Personalization 
                 </h1>
-                <p className="text-sm text-gray-400">
+                <p className="text-sm text-gray-500 font-semibold">
                 We’ll create personalized experiences for each user, delivering relevant content and offers based on their individual preferences and behavior. 
                 </p>
               </div>
@@ -115,7 +115,7 @@ export default function OurFeatures() {
                 <h1 className="text-base w-fit font-semibold text-gray-700 cursor-pointer hover:text-green-500">
                 Data Driven Decisions 
                 </h1>
-                <p className="text-sm text-gray-400">
+                <p className="text-sm text-gray-500 font-semibold">
                 We&apos;ll leverage data analysis to understand user behavior, track key metrics, and make data-driven decisions to improve performance.
                 </p>
               </div>
@@ -134,7 +134,7 @@ export default function OurFeatures() {
                 <h1 className="text-base w-fit font-semibold text-gray-700 cursor-pointer hover:text-green-500">
                 Continuous Improvement 
                 </h1>
-                <p className="text-sm text-gray-400 ">
+                <p className="text-sm text-gray-500 font-semibold ">
                 We&apos;ll continuously monitor and analyze user behavior to identify areas for improvement and optimize your digital experiences over time. 
                 </p>
               </div>

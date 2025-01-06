@@ -13,7 +13,7 @@ import Sai from "../../../assets/Team/WhatsApp Image 2024-12-30 at 9.04.19 PM.jp
 import Midhun from "../../../assets/Team/WhatsApp Image 2024-12-30 at 9.04.32 PM.jpeg"
 
 const IconStyle =
-  "h-4 w-4 cursor-pointer text-customGreen hover:text-green-500 transform hover:-translate-y-1 transition-all duration-500";
+  "h-4 w-4 cursor-pointer text-purple-500 hover:text-green-500 transform hover:-translate-y-1 transition-all duration-500";
 const testimonials = [
  
   {
@@ -105,7 +105,7 @@ const MyComponent = () => {
             <Underline/>
           
         <Anim delay={0.4}>
-          <p className="text-sm text-gray-500 text-center max-w-lg leading-6">
+          <p className="text-base text-gray-500 text-center max-w-lg leading-6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>

@@ -38,7 +38,7 @@ export default function Service() {
         <Underline />
 
         <Anim>
-          <p className="text-sm text-gray-500 text-center max-w-xl leading-6">
+          <p className="text-base text-gray-500 text-center max-w-xl leading-6">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
             nesciunt corporis illo totam eos quis saepe odit autem laborum nobis
             fugiat, quos voluptate maiores quidem repellat assumenda rem
@@ -65,7 +65,7 @@ export default function Service() {
               </h2>
 
               {/* Description */}
-              <p className="text-gray-500 text-center text-sm leading-relaxed">
+              <p className="text-gray-500 font-semibold text-center text-sm leading-relaxed">
                 {feature.text}
               </p>
 

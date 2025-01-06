@@ -6,7 +6,7 @@ export default function CompanyValues() {
     {
       title: "Our Mission",
       icon: <FaLightbulb className="text-4xl text-purple-600" />,
-      content: "Lagoon is to be a global leader in digital innovation. We aspire to shape the future by creating intelligent, user-centric, and sustainable technologies. Our aim is to foster a connected world where businesses leverage IT to achieve unparalleled success, growth, and customer satisfaction."
+      content: "Jezh is to be a global leader in digital innovation. We aspire to shape the future by creating intelligent, user-centric, and sustainable technologies. Our aim is to foster a connected world where businesses leverage IT to achieve unparalleled success, growth, and customer satisfaction."
     },
     {
       title: "Our Vision",
@@ -16,7 +16,7 @@ export default function CompanyValues() {
     {
       title: "Core Values",
       icon: <FaHandshake className="text-4xl text-yellow-600" />,
-      content: "At Lagoon, we are committed to fostering an ethical work culture characterized by transparent marketing practices. Our strength is derived from our achievements, which empower us to innovate and deliver exceptional projects, while also building trusted relationships with our clients."
+      content: "At Jezh, we are committed to fostering an ethical work culture characterized by transparent marketing practices. Our strength is derived from our achievements, which empower us to innovate and deliver exceptional projects, while also building trusted relationships with our clients."
     }
   ];
 
@@ -24,7 +24,7 @@ export default function CompanyValues() {
     <div className="py-10 bg-white font-jost">
       <div className="text-center mb-12">
         <h1 className="text-4xl sm:text-3xl font-semibold mb-4 text-gray-800 ">Our Mission, Vision, and Core Values</h1>
-        <p className="text-md text-gray-500 max-w-3xl mx-auto">
+        <p className="text-base text-gray-500 max-w-3xl mx-auto">
           At Jezh, we strive for excellence in everything we do. Our mission, vision, and core values are the foundation of our company culture and guide us toward achieving long-term success.
         </p>
       </div>
@@ -38,7 +38,7 @@ export default function CompanyValues() {
           >
             <div className="flex justify-center mb-4">{section.icon}</div>
             <h3 className="text-xl font-semibold text-center mb-3">{section.title}</h3>
-            <p className="text-gray-500 text-center">{section.content}</p>
+            <p className="text-gray-500 text-center text-sm font-semibold leading-5 tracking-wide">{section.content}</p>
           </div>
         ))}
       </div>

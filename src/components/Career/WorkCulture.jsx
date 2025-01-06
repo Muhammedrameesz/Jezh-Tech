@@ -39,7 +39,7 @@ export default function WorkCulture() {
       <div className="flex flex-col justify-center items-center text-center space-y-6">
         <p className="text-sm font-semibold text-customGreen bg-white rounded-full shadow-lg p-2 px-6">Jezh Technologies&apos;s Work Culture & Value</p>
         <h1 className="text-4xl sm:text-3xl font-semibold text-gray-800">Your Life In Jezh Technologies</h1>
-        <p className="max-w-2xl text-md text-gray-600">
+        <p className="max-w-3xl text-md text-gray-600">
        At Jezh Technologies, we foster interpersonal relationships through mutual respect, harmony, and understanding, aiming to consistently exceed our commitments. Here’s a glimpse of some of the perks we offer to help our employees unleash their inner talents! If you’re someone who enjoys making a meaningful contribution and being acknowledged for your efforts, Jezh is the place for you.
         </p>
       </div>
@@ -55,7 +55,7 @@ export default function WorkCulture() {
               <div className="text-4xl text-customGreen">{item.icon}</div>
             </div>
             <h3 className="text-md font-semibold mb-2 text-center">{item.title}</h3>
-            <p className="text-gray-500 text-center">{item.description}</p>
+            <p className="text-gray-500 text-center text-sm font-semibold">{item.description}</p>
           </div>
         ))}
       </div>

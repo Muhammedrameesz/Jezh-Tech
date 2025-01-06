@@ -11,8 +11,21 @@ import Team1 from "../../../assets/Team/WhatsApp Image 2024-12-23 at 7.04.04 PM.
 import Team2 from "../../../assets/Team/WhatsApp Image 2024-12-23 at 7.05.13 PM.jpeg";
 import Team3 from "../../../assets/Team/WhatsApp Image 2024-12-23 at 7.05.49 PM.jpeg";
 import Team4 from "../../../assets/Team/WhatsApp Image 2024-12-23 at 7.47.59 PM.jpeg";
-import Sai from "../../../assets/Team/WhatsApp Image 2024-12-30 at 9.04.19 PM.jpeg"
-import Midhun from "../../../assets/Team/WhatsApp Image 2024-12-30 at 9.04.32 PM.jpeg"
+import Sai from "../../../assets/Team/WhatsApp Image 2024-12-30 at 9.04.19 PM.jpeg";
+import Midhun from "../../../assets/Team/WhatsApp Image 2024-12-30 at 9.04.32 PM.jpeg";
+
+import SreeParvathy from "../../../assets/Team/Sree Parvathy.jpeg"
+import GopiKrishna from "../../../assets/Team/Gopi-Krishna.jpeg"
+import Niksha from "../../../assets/Team/Niksha.jpeg"
+import Smrithy from "../../../assets/Team/Smirthy.jpeg"
+import GiftyMol from "../../../assets/Team/GiftyMol.jpeg"
+import VishnuNarayanan from "../../../assets/Team/Vishnu Narayanan.jpeg"
+import Subash from "../../../assets/Team/Subash.jpeg"
+import Anish from "../../../assets/Team/Anish.jpeg"
+import KeerthyVasan from "../../../assets/Team/Keerthi Vasan.jpeg"
+ import Ramees from "../../../assets/Team/Ramees.jpeg"
+import Neeraj from "../../../assets/Team/Neeraj.jpeg"
+
 
 const IconStyle =
   "h-4 w-4 cursor-pointer text-violet-500 hover:text-green-500 transform hover:-translate-y-1 transition-all duration-500";
@@ -139,8 +152,8 @@ const content = [
     ],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
-    image:
-      "https://img.freepik.com/free-photo/view-3d-man-using-laptop_23-2150709796.jpg?t=st=1734533673~exp=1734537273~hmac=1e290ff0f1ea4d1db8d72fd1c4ec1a75a63c7a91a5327c8865252d7c72f7fa7a&w=740",
+    image:SreeParvathy,
+      
   },
   {
     title: "Gopi Krishna",
@@ -155,8 +168,7 @@ const content = [
     ],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
-    image:
-      "https://img.freepik.com/free-photo/view-3d-man-using-laptop_23-2150709796.jpg?t=st=1734533673~exp=1734537273~hmac=1e290ff0f1ea4d1db8d72fd1c4ec1a75a63c7a91a5327c8865252d7c72f7fa7a&w=740",
+    image:GopiKrishna,
   },
   {
     title: "Niksha",
@@ -171,8 +183,7 @@ const content = [
     ],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
-    image:
-      "https://img.freepik.com/free-photo/view-3d-man-using-laptop_23-2150709796.jpg?t=st=1734533673~exp=1734537273~hmac=1e290ff0f1ea4d1db8d72fd1c4ec1a75a63c7a91a5327c8865252d7c72f7fa7a&w=740",
+    image:Niksha,
   },
   {
     title: "Smirthy",
@@ -187,8 +198,7 @@ const content = [
     ],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
-    image:
-      "https://img.freepik.com/free-photo/view-3d-man-using-laptop_23-2150709796.jpg?t=st=1734533673~exp=1734537273~hmac=1e290ff0f1ea4d1db8d72fd1c4ec1a75a63c7a91a5327c8865252d7c72f7fa7a&w=740",
+    image:Smrithy,
   },
   {
     title: "GiftyMol",
@@ -203,8 +213,7 @@ const content = [
     ],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
-    image:
-      "https://img.freepik.com/free-photo/view-3d-man-using-laptop_23-2150709796.jpg?t=st=1734533673~exp=1734537273~hmac=1e290ff0f1ea4d1db8d72fd1c4ec1a75a63c7a91a5327c8865252d7c72f7fa7a&w=740",
+    image:GiftyMol,
   },
   {
     title: "Vishnu Narayanan",
@@ -219,8 +228,7 @@ const content = [
     ],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
-    image:
-      "https://img.freepik.com/free-photo/view-3d-man-using-laptop_23-2150709796.jpg?t=st=1734533673~exp=1734537273~hmac=1e290ff0f1ea4d1db8d72fd1c4ec1a75a63c7a91a5327c8865252d7c72f7fa7a&w=740",
+    image:VishnuNarayanan,
   },
   {
     title: "Muhammed Ramees Khan",
@@ -235,8 +243,7 @@ const content = [
     ],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
-    image:
-      "https://img.freepik.com/free-photo/view-3d-man-using-laptop_23-2150709796.jpg?t=st=1734533673~exp=1734537273~hmac=1e290ff0f1ea4d1db8d72fd1c4ec1a75a63c7a91a5327c8865252d7c72f7fa7a&w=740",
+    image:Ramees,
   },
   {
     title: "Keerthi Vasan",
@@ -251,8 +258,7 @@ const content = [
     ],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
-    image:
-      "https://img.freepik.com/free-photo/view-3d-man-using-laptop_23-2150709796.jpg?t=st=1734533673~exp=1734537273~hmac=1e290ff0f1ea4d1db8d72fd1c4ec1a75a63c7a91a5327c8865252d7c72f7fa7a&w=740",
+    image:KeerthyVasan,
   },
   {
     title: "Subash",
@@ -267,8 +273,7 @@ const content = [
     ],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
-    image:
-      "https://img.freepik.com/free-photo/view-3d-man-using-laptop_23-2150709796.jpg?t=st=1734533673~exp=1734537273~hmac=1e290ff0f1ea4d1db8d72fd1c4ec1a75a63c7a91a5327c8865252d7c72f7fa7a&w=740",
+    image:Subash,
   },
   {
     title: "Anish",
@@ -283,8 +288,7 @@ const content = [
     ],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
-    image:
-      "https://img.freepik.com/free-photo/view-3d-man-using-laptop_23-2150709796.jpg?t=st=1734533673~exp=1734537273~hmac=1e290ff0f1ea4d1db8d72fd1c4ec1a75a63c7a91a5327c8865252d7c72f7fa7a&w=740",
+    image:Anish,
   },
   {
     title: "Neeraj",
@@ -299,8 +303,7 @@ const content = [
     ],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
-    image:
-      "https://img.freepik.com/free-photo/view-3d-man-using-laptop_23-2150709796.jpg?t=st=1734533673~exp=1734537273~hmac=1e290ff0f1ea4d1db8d72fd1c4ec1a75a63c7a91a5327c8865252d7c72f7fa7a&w=740",
+    image:Neeraj,
   },
 ];
 
@@ -327,7 +330,7 @@ export default function AllTeam() {
           </h1>
           <Underline />
 
-          <p className="text-sm text-gray-500 text-center max-w-lg leading-6">
+          <p className="text-base text-gray-500 text-center max-w-lg leading-6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
@@ -379,7 +382,7 @@ export default function AllTeam() {
                 ))}
               </div>
 
-              <p className="text-gray-500 text-xs mt-4">{data.description}</p>
+              <p className="text-gray-500 text-sm mt-4">{data.description}</p>
             </motion.div>
           </div>
         ))}

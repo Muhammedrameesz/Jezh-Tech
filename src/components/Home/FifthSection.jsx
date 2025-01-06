@@ -21,7 +21,7 @@ export default function FifthSection() {
           </div>
         </Anim>
         <Anim delay={0.4}>
-          <p className="text-sm text-gray-500 text-center max-w-3xl leading-6">
+          <p className="text-base text-gray-500 text-center max-w-3xl leading-6">
             At our core, we prioritize quality and client satisfaction. Our
             commitment to excellence is unwavering, as we rigorously adhere to
             industry-leading standards and deliver precise, accurate solutions.
@@ -66,7 +66,7 @@ export default function FifthSection() {
               </h2>
 
               {/* Description */}
-              <p className="text-gray-500  text-sm ">{feature.text}</p>
+              <p className="text-gray-500  text-sm font-semibold ">{feature.text}</p>
 
               {/* Animated Underline on Hover */}
               {hover === index && (

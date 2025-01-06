@@ -7,6 +7,7 @@ import { useState } from "react";
 import Underline from "../ui/Underline";
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
+import FaqImage from "../assets/images/rb_4996.png"
 
 export default function StyledAccordion() {
   const [expanded, setExpanded] = useState(0);
@@ -44,82 +45,85 @@ export default function StyledAccordion() {
   ];
 
   return (
-    <div className="py-20 bg-customWhite  font-jost">
-      <div className="  mx-10 md:mx-14 rounded-lg grid grid-cols-1 md:grid-cols-2 gap-5">
-        <div className="mt-5 md:mt-20 lg:mt-36">
-          <img
-            src="https://img.freepik.com/free-vector/faq-concept-illustration_114360-4996.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid"
-            alt=""
-          />
-        </div>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeInOut" }}
-          className="mx-auto max-w-4xl "
-        >
-          <div className="mb-10">
-            <h1 className="text-customBlue text-2xl md:text-3xl font-bold mb-5 ">
-              Quick & Clear Information
-            </h1>
-            <Underline />
-          </div>
-          {accordionData.map((item, index) => (
-            <Accordion
-              expanded={expanded === index}
-              onChange={handleChange(index)}
-              key={index}
-              disabled={item.disabled || false}
-              sx={{
-                background: "white",
-                boxShadow: "0 7px 29px rgba(100, 100, 111, 0.2)",
-                borderRadius: "8px",
-                overflow: "hidden",
-                marginBottom: "20px",
-              }}
-            >
-              <AccordionSummary
-                className="group"
-               expandIcon={
-                expanded === index ? (
-                  <RemoveIcon
-                    className="text-customGreen transition-transform duration-300 ease-in-out"
-                  />
-                ) : (
-                  <AddIcon
-                    className="transition-transform duration-300 ease-in-out text-gray-800 group-hover:text-customGreen"
-                  />
-                )
-              }
-              
-                aria-controls={`panel${index}-content`}
-                id={`panel${index}-header`}
-              >
-                <Typography
-                  sx={{
-                    
-                    fontWeight: 600,
-                    fontSize: "15px",
-                  }}
-                  className={`font-semibold group-hover:text-customGreen transition-colors duration-300  font-jost ${expanded===index?"text-customGreen":"text-gray-800"}`}
-                >
-                  {item.title}
-                </Typography>
-              </AccordionSummary>
-              {!item.disabled && (
-                <AccordionDetails>
-                  <Typography
-                    sx={{fontSize: 14 }}
-                    className="text-gray-500 font-jost"
-                  >
-                    {item.content}
-                  </Typography>
-                </AccordionDetails>
-              )}
-            </Accordion>
-          ))}
-        </motion.div>
-      </div>
+    <div className="py-20 bg-customWhite font-jost flex items-center justify-center">
+  <div className="w-full max-w-7xl mx-5 lg:mx-14 rounded-lg grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    {/* Left Column: Image */}
+    <div className="flex justify-center mt-20">
+      <img
+        src={FaqImage}
+        alt="FAQ Illustration"
+        className="w-full max-w-sm md:max-w-md lg:max-w-lg object-contain"
+      />
     </div>
+
+    {/* Right Column: FAQ Accordion */}
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeInOut" }}
+      className="w-full max-w-xl mx-auto"
+    >
+      <div className="mb-10 text-center md:text-left">
+        <h1 className="text-customBlue text-2xl md:text-3xl font-bold mb-5">
+          Quick & Clear Information
+        </h1>
+        <Underline />
+      </div>
+
+      {/* Accordion Items */}
+      {accordionData.map((item, index) => (
+        <Accordion
+          expanded={expanded === index}
+          onChange={handleChange(index)}
+          key={index}
+          disabled={item.disabled || false}
+          sx={{
+            background: "white",
+            boxShadow: "0 7px 29px rgba(100, 100, 111, 0.2)",
+            borderRadius: "8px",
+            overflow: "hidden",
+            marginBottom: "20px",
+          }}
+        >
+          <AccordionSummary
+            className="group"
+            expandIcon={
+              expanded === index ? (
+                <RemoveIcon className="text-customGreen transition-transform duration-300 ease-in-out" />
+              ) : (
+                <AddIcon className="transition-transform duration-300 ease-in-out text-gray-800 group-hover:text-customGreen" />
+              )
+            }
+            aria-controls={`panel${index}-content`}
+            id={`panel${index}-header`}
+          >
+            <Typography
+              sx={{
+                fontWeight: 600,
+                fontSize: "15px",
+              }}
+              className={`font-semibold group-hover:text-customGreen transition-colors duration-300 font-jost ${
+                expanded === index ? "text-customGreen" : "text-gray-800"
+              }`}
+            >
+              {item.title}
+            </Typography>
+          </AccordionSummary>
+          {!item.disabled && (
+            <AccordionDetails>
+              <Typography
+                sx={{ fontSize: 14 }}
+                className="text-gray-500 font-jost"
+              >
+                {item.content}
+              </Typography>
+            </AccordionDetails>
+          )}
+        </Accordion>
+      ))}
+    </motion.div>
+  </div>
+</div>
+
   );
 }

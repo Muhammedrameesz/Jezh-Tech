@@ -48,7 +48,7 @@ export default function Header() {
           </AnimRL>
 
           <motion.div
-            className="text-sm text-gray-500  mb-2"
+            className="text-base text-gray-500  mb-2"
             initial="hidden"
             animate="visible"
             variants={{
@@ -90,7 +90,7 @@ export default function Header() {
                   <h1 className="text-base font-semibold text-[#0E314C]">
                     &quot;Pay for what you use&quot; Licensing Model
                   </h1>
-                  <p className="text-gray-500 text-sm">
+                  <p className="text-gray-500 text-base">
                     Receive a specially tailored structurally cheapest pricing
                     model that enables one to only pay for the resources used.
                   </p>
@@ -108,7 +108,7 @@ export default function Header() {
                   <h1 className="text-base font-semibold text-[#0E314C]">
                     Unlimited Users
                   </h1>
-                  <p className="text-gray-500 text-sm">
+                  <p className="text-gray-500 text-base">
                     Scalability is possible without limitations regarding the
                     number of people using the platform.
                   </p>
@@ -124,7 +124,7 @@ export default function Header() {
                   <h1 className="text-base font-semibold text-[#0E314C]">
                     Flexible Customer Engagement Models
                   </h1>
-                  <p className="text-gray-500 text-sm">
+                  <p className="text-gray-500 text-base">
                     The type of engagement can be selected from a range of
                     options, which would mean that it is flexible and meets the
                     organizational requirements.

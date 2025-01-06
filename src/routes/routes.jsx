@@ -14,6 +14,7 @@ import Contact from "../pages/contact.jsx";
 import BlogDetails from "../pages/Resources/BlogDetals/BlogDetails.jsx";
 import ServiceDetails from "../pages/ServiceDetails.jsx"
 import SoftwareDetails from "../pages/Products/SoftwareDetails.jsx"
+import PrivacyPolicy from "../pages/PrivacyPolicy.jsx"
 
 
 
@@ -77,6 +78,12 @@ export const Router = createBrowserRouter([
         path: "/contact",
         element: <Contact />,
       },
+      
+        {
+          path:"/privacy-policy",
+          element:<PrivacyPolicy/>
+      }
+      
     ],
   },
 ]);

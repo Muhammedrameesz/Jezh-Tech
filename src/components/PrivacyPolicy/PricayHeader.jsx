@@ -4,9 +4,9 @@ import Anim from "../../ui/Anim.jsx";
 import Background from "../../assets/image2/background/banner-bg1.jpg";
 import Patterns from "../../ui/RandomPatterns3.jsx";
 
-export default function Header() {
+export default function PrivacyHeader() {
   const sentence =
-    "Explore exciting opportunities at Jezh Technologies. We're a team of passionate innovators, and we're always looking for talented individuals to join us.";
+    "Jezh Technologies holds your privacy in high esteem. We believe in creating a digital oasis where innovation and privacy coexist seamlessly. We encourage you to utilize Jezh services with utmost assurance in our dedication to your well-being and the security of your confidential information. This privacy policy outlines the methods through which we gather information from users of Jezh’s services and visitors to our website. We kindly urge customers and visitors to thoroughly review this privacy policy for a comprehensive understanding. Our commitment to your data’s security is as strong as the currents that shape the Jezh itself."
 
   return (
     <div className="relative top-14 flex flex-col justify-center items-center  pt-20 font-jost px-4 overflow-hidden ">
@@ -17,12 +17,12 @@ export default function Header() {
       <div className="relative z-10 text-center max-w-4xl mt-0  p-10 rounded-lg ">
         <Anim key="anim-header">
           <h1 className="text-4xl md:text-4xl font-semibold text-neutral-900 mb-8">
-          Build Your Future With Jezh 
+            Privacy - Policy
           </h1>
         </Anim>
 
         <motion.div
-          className="text-lg md:text-xl text-gray-600 mb-10 leading-relaxed "
+          className="text-md text-gray-600 mb-10 leading-relaxed "
           initial="hidden"
           animate="visible"
           variants={{
@@ -30,7 +30,7 @@ export default function Header() {
             visible: {
               opacity: 1,
               transition: {
-                staggerChildren: 0.05,
+                staggerChildren: 0.03,
                 delayChildren: 1,
               },
             },

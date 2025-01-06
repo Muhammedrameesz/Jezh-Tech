@@ -73,7 +73,7 @@ const ScrollableCards = () => {
   };
 
   return (
-    <div className="bg-customWhite py-20 font-jost relative">
+    <div className="bg-white pt-20 font-jost relative">
       <Pattern/>
     <div className="max-w-screen-lg mx-auto">
       <div className="max-w-screen-lg mx-auto p-4 mb-5 ">
@@ -84,8 +84,8 @@ const ScrollableCards = () => {
           <div className="">
           <Underline />
           </div>
-          <p className="text-sm text-gray-500 leading-6 mb-10 max-w-lg mx-auto ">
-           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sapiente, reiciendis beatae consequuntur ratione odit accusantium pariatur explicabo totam optio nihil perferendis, veniam repellendus quas, deleniti ex odio nostrum! Non?
+          <p className="text-base text-gray-500 leading-6 mb-10 max-w-3xl mx-auto ">
+          Jezh team delivered a standout Dakshin Sahodaya website, revolutionized school elections with EVMs in Adarsh Vidya Kendra and Rojavanam International School, and fostered AI skills through Jezh&apos;s RoboFun, demonstrating innovation and commitment to technological advancement. 
           </p>
         </section>
 
@@ -101,12 +101,12 @@ const ScrollableCards = () => {
                     className="rounded-md w-full h-32 object-cover mb-3"
                   />
                   <h3 className="text-lg font-semibold mb-1">{card.title}</h3>
-                  <p className="text-sm text-gray-500">{card.subTitle}</p>
+                  <p className="text-sm  text-gray-500">{card.subTitle}</p>
                 </div>
 
                 {/* Second Column: Description, Rating */}
                 <div className="w-1/2 p-4 flex flex-col justify-between">
-                  <p className="text-gray-600 mb-4 text-sm">{card.description}</p>
+                  <p className="text-gray-600 mb-4 text-sm font-semibold">{card.description}</p>
                   <div className="flex items-center">{renderStars(card.rating)}</div>
                 </div>
               </div>

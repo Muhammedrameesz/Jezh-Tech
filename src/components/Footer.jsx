@@ -55,7 +55,7 @@ export default function Footer() {
             <Link to="/blog" className={linkStyle}>
               Blog
             </Link>
-            <Link to="/social-media" className={linkStyle}>
+            <Link to="/career" className={linkStyle}>
             Career
             </Link>
           </div>
@@ -69,11 +69,11 @@ export default function Footer() {
                 info@jezhtechnologies.com
               </a>
             </p>
-            <p className="text-gray-600 flex items-center">
+            <p className="text-gray-600 flex items-center ">
               <ContactPhoneOutlinedIcon sx={iconStyle} />
               <a href="tel:+919385722102" className={linkStyle}>
                 +91 9385722102
-              </a>
+              </a> 
               ,{" "}
               <a href="tel:+918428807007" className={linkStyle}>
                 +91 8428807007
@@ -98,6 +98,26 @@ export default function Footer() {
 
             </div>
           </div>
+     
+        <div className="text-white grid grid-cols-1 gap-5">
+          <h1 className="opacity-0" >Career</h1>
+          
+          <Link to="/services" className={linkStyle}>
+              Services
+            </Link>
+            <Link to="/sovablu" className={linkStyle}>
+              Sovablu
+            </Link>
+            <Link to="/contact" className={linkStyle}>
+             Contact Us
+            </Link>
+            <Link to="/privacy-policy" className={linkStyle}>
+             Privacy - Policy 
+            </Link>
+        </div>
+
+
+
         </div>
       </AnimBT>
 

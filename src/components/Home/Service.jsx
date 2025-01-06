@@ -18,7 +18,7 @@ export default function Service() {
        
 
         <Anim delay={0.4}>
-          <p className="text-sm text-gray-500 text-center max-w-lg leading-6">
+          <p className="text-md text-gray-500 text-center max-w-lg leading-6">
             Experience the power of technology with Jezh Technologies. We design
             and develop customized solutions that optimize your operations,
             elevate your brand, and deliver exceptional results
@@ -43,7 +43,7 @@ export default function Service() {
                   Home & Industrial Automation
                 </h2>
 
-                <p className="text-gray-600 text-sm group-hover:text-gray-100 transition-all duration-500">
+                <p className="text-gray-500 text-sm font-semibold group-hover:text-gray-100 transition-all duration-500">
                 Simplify your life with smart home & industrial automation. Control devices, enhance security, and boost efficiency with intuitive solutions. 
                 </p>
               </div>
@@ -64,7 +64,7 @@ export default function Service() {
                   Website Development & Digital Presence
                 </h2>
 
-                <p className="text-gray-600 text-sm group-hover:text-gray-100 transition-all duration-500">
+                <p className="text-gray-500 font-semibold text-sm group-hover:text-gray-100 transition-all duration-500">
                 Jezh Technologies crafts stunning websites that captivate visitors, drive conversions, and deliver exceptional user experiences. 
                 </p>
               </div>
@@ -85,7 +85,7 @@ export default function Service() {
                   RESEARCH & DEVELOPMENT
                 </h2>
 
-                <p className="text-gray-600 text-sm group-hover:text-gray-100 transition-all duration-500">
+                <p className="text-gray-500 font-semibold text-sm group-hover:text-gray-100 transition-all duration-500">
                 We foster a culture of innovation through continuous research and development, exploring cutting-edge technologies to deliver cutting-edge solutions. 
                 </p>
               </div>
@@ -106,7 +106,7 @@ export default function Service() {
                   AI & ROBOTICS WORKSHOPS
                 </h2>
 
-                <p className="text-gray-600 text-sm group-hover:text-gray-100 transition-all duration-500">
+                <p className="text-gray-500 font-semibold text-sm group-hover:text-gray-100 transition-all duration-500">
                 Empower your AI & Robotics future! We offer immersive programs that equip you with the skills to thrive in these rapidly evolving fields. 
                 </p>
               </div>
