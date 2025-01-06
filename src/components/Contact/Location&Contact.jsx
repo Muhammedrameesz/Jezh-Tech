@@ -50,28 +50,6 @@ export default function Location() {
       </div>
           
 
-          {/* Google Map */}
-      <div
-      className="mt-20"
-        style={{
-          position: "relative",
-          width: "100vw",
-          height: "80vh",
-        }}
-      >
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d780.3276961322545!2d77.43131!3d8.182218!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b04f124099b7a1f%3A0x1360d2ba2f59de3c!2sCADCenter%20-%20Autodesk%2C%20PTC%20Authorized%20Training%20Center%2C%20Nagercoil!5e1!3m2!1sen!2sin!4v1735560826805!5m2!1sen!2sin"
-          style={{
-            border: 0,
-            width: "100%",
-            height: "100%",
-          }}
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          title="Google Maps"
-        ></iframe>
-      </div>
     </div>
   );
 }
