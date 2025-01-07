@@ -70,7 +70,7 @@ export default function LogoHover() {
   };
 
   return (
-    <div className="w-full py-10 bg-gray-50">
+    <div className="w-full py-10 bg-white">
       <section className="mx-auto max-w-screen-lg px-4">
         <Slider {...settings}>
           {partners.map((partner, index) => (
