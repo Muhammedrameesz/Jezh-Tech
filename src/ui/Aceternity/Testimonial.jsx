@@ -103,7 +103,7 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
             <h3 className="text-2xl font-bold dark:text-white text-[#0E314C]">
               {testimonials[active].name}
             </h3>
-            <p className="text-sm text-gray-500 dark:text-neutral-500">
+            <p className="text-sm text-gray-500 font-semibold dark:text-neutral-500">
               {testimonials[active].designation}
             </p>
 
@@ -134,13 +134,6 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
               ))}
             </motion.p>
 
-            <div className="flex space-x-4 mt-4">
-              {Object.values(testimonials[active].media[0]).map(
-                (icon, index) => (
-                  <span key={index}>{icon}</span>
-                )
-              )}
-            </div>
           </motion.div>
           <div className="flex gap-4 pt-12 md:pt-0">
             <button

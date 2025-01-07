@@ -3,10 +3,13 @@ import AnimatedImage from "./Animated-Images/Animation2.jsx";
 import MainPic from "../../assets/images/imageset3/main-pic.52b102d9.png";
 import AnimRL from "../../ui/AnimRL.jsx";
 import SyncAltIcon from "@mui/icons-material/SyncAlt";
-import AndroidIcon from "@mui/icons-material/Android";
 import TonalityOutlinedIcon from "@mui/icons-material/TonalityOutlined";
 import { useState } from "react";
 import Underline from "../../ui/Underline.jsx";
+import AutorenewIcon from '@mui/icons-material/Autorenew';
+import AutoStoriesIcon from '@mui/icons-material/AutoStories';
+import BatchPredictionIcon from '@mui/icons-material/BatchPrediction';
+import DynamicFeedIcon from '@mui/icons-material/DynamicFeed';
 
 export default function ForthSection() {
   const [hover, setHover] = useState("");
@@ -16,12 +19,18 @@ export default function ForthSection() {
       "Whether it's smart homes, e-commerce, healthcare, or manufacturing, we align our services to meet the specific needs of each industry.",
     Adaptable:
       "Our solutions grow with your business, with easy integration and scalability as your company evolves.",
-    Touch:
-      "Our team is dedicated to understanding your business’s unique requirements and delivering solutions that resonate with your goals.",
     default:
-      "Explore our tailored solutions designed to enhance your business efficiency and growth .",
+      "Explore our tailored solutions designed to enhance your business efficiency and growth.",
+    Innovative: 
+      "Stay ahead of the curve with our cutting-edge solutions that embrace the future of technology.",
+    Optimized: 
+      "Our solutions are designed to continuously evolve with your business, ensuring long-term growth and success.",
+    Flexible: 
+      "Our services offer the perfect balance of flexibility, strength, and innovation to meet your business needs.",
+    Efficient: 
+      "We focus on delivering highly efficient and dependable solutions that streamline operations and enhance performance."
   };
-
+  
   const content = [
     {
       key: "Industry",
@@ -33,27 +42,29 @@ export default function ForthSection() {
       icon: <TonalityOutlinedIcon />,
       title: "Adaptable & Scalable",
     },
+    
     {
-      key: "Touch",
-      icon: <AndroidIcon />,
-      title: "Technology ",
+      key: "Innovative",
+      icon: <BatchPredictionIcon />, 
+      title: "Innovative & Future-Ready",
     },
     {
-      key: "Adaptabl",
-      icon: <TonalityOutlinedIcon />,
-      title: "lorem ipsum",
+      key: "Optimized",
+      icon: <DynamicFeedIcon />, 
+      title: "Optimized for Growth",
     },
     {
-      key: "Touc",
-      icon: <AndroidIcon />,
-      title: "lorem ipsum ",
+      key: "Flexible",
+      icon: <AutorenewIcon />, 
+      title: "Flexible & Robust",
     },
     {
-      key: "Toucdd",
-      icon: <AndroidIcon />,
-      title: "lorem ipsum ",
+      key: "Efficient",
+      icon: <AutoStoriesIcon />, 
+      title: "Efficient & Reliable",
     },
   ];
+  
 
   return (
     <div className="bg-white  items-center pb-16 pt-20   font-jost">

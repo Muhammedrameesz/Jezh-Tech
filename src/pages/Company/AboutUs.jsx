@@ -9,6 +9,8 @@ import DefoultFeature from "../../components/Home/SixthSection.jsx"
 import OurClientFeedBack from "../../components/About/OurClientsFeedBack.jsx"
 import LogoHover from "../../components/About/LogoHover.jsx"
 import CoreTeam from "../../components/About/CoreTeam.jsx"
+import Faq from "../../components/DefoultFaq.jsx"
+import Form from "../../components/Contact/Contact.jsx"
 
 
 export default function AboutUs() {
@@ -24,6 +26,8 @@ export default function AboutUs() {
     {/* <WhyChoose/> */}
    <DefoultFeature/>
    <LogoHover/>
+   <Faq/>
+   <Form/>
     
     </>
   )

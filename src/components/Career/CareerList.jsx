@@ -75,9 +75,10 @@ const CareerList = () => {
       {careerList.map((item, index) => (
         <div
           key={index}
-          className="relative career-item flex flex-col justify-between p-6 bg-white shadow-md rounded-lg gap-4 min-h-[300px]"
+          className="relative career-item flex flex-col justify-between p-6  rounded-lg gap-4 min-h-[300px] "
         >
-          <span className="absolute h-[1px] w-[90%] bg-gray-300 bottom-0 left-0"></span>
+          <span className="absolute h-[1px] w-[90%] bg-gray-400 bottom-0 left-0"></span>
+          <span className={`absolute bg-gray-400 top-0 right-0 ${index===2 | index==5 | index===8 ? "h-0 w-0":" h-[90%] w-[0.5px] "}`}></span>
           <div className="flex flex-col gap-3">
             <div className="icon text-4xl mb-3 text-gray-800">{item.icon}</div>
             <h3 className="text-lg font-semibold text-[#0E314C]">{item.career}</h3>

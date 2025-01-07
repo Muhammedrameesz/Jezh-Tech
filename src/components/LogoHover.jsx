@@ -9,8 +9,8 @@ import partner5 from "../assets/images/Clients/ricspace B&W.png";
 import partner6 from "../assets/images/Clients/Rojavanam B&W.png";
 import partner7 from "../assets/images/Clients/Sidone B&W.png";
 import partner8 from "../assets/images/Clients/ENYARD.jpeg";
-import partner9 from "../assets/images/Clients/RoboFun.jpeg";
-import partner10 from "../assets/images/Clients/WhatsApp Image 2025-01-04 at 11.35.39 PM.jpeg";
+import partner9 from "../assets/images/Clients/robofun_logo-removebg-preview-modified.png";
+import partner10 from "../assets/images/Clients/booba logo-modified.jpg";
 
 import partnerHover1 from "../assets/images/Clients/Adarsh Logo.png";
 import partnerHover2 from "../assets/images/Clients/DSSC logo.png";
@@ -67,7 +67,7 @@ export default function LogoHover() {
   };
 
   return (
-    <div className="w-full absolute bottom-0 translate-y-1/2 ">
+    <div className="w-full absolute -bottom-10 translate-y-1/2 ">
       <section className="grid grid-cols-2 justify-center items-center md:grid-cols-3 lg:grid-cols-6 bg-white p-10 gap-5 rounded-lg mx-16 md:mx-20 shadow-lg">
         {partners.map((partner, index) => (
           <div key={index} className="relative">

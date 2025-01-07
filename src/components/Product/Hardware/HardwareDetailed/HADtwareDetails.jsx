@@ -1,4 +1,4 @@
-import useSoftwareServiceDetails from "../../../../store/SoftwareProduct";
+import useHardwareServiceDetails from "../../../../store/HardwareProduct.js";
 
 
 import Accordian from "./Accordian.jsx"
@@ -76,9 +76,9 @@ const serviceDetailsContent = [
 ];
 
 export default function SoftwareProductseDetailsCom() {
-  const softwareDetails = useSoftwareServiceDetails((state) => state.softwareProductsDetails);
+  const HardwareDetails = useHardwareServiceDetails((state) => state.hardwareProductsDetails);
   const currentService = serviceDetailsContent.find(
-    (item) => item.title === softwareDetails.title
+    (item) => item.title === HardwareDetails.title
   );
 
   return (

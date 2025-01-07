@@ -13,7 +13,7 @@ import Career from "../pages/Resources/Career.jsx";
 import Contact from "../pages/contact.jsx";
 import BlogDetails from "../pages/Resources/BlogDetals/BlogDetails.jsx";
 import ServiceDetails from "../pages/ServiceDetails.jsx"
-import SoftwareDetails from "../pages/Products/SoftwareDetails.jsx"
+import HardwareDetails from "../pages/Products/HardwareDetails.jsx"
 import PrivacyPolicy from "../pages/PrivacyPolicy.jsx"
 
 
@@ -51,8 +51,8 @@ export const Router = createBrowserRouter([
         element: <Software />,
       },
       {
-        path:"/softwareProductsDetails",
-        element:<SoftwareDetails/>
+        path:"/hardwareProductsDetails",
+        element:<HardwareDetails/>
       },
       {
         path: "/products/hardware",

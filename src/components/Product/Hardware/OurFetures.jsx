@@ -76,7 +76,7 @@ export default function OurFeatures() {
                 Accessibility 
                 </h1>
                 <p className="text-sm text-gray-500 font-semibold">
-                We’ll ensure your digital experiences are accessible to all users, including those with liabilities. 
+                We&apos;ll ensure your digital experiences are accessible to all users, including those with liabilities. This includes designing solutions that cater to diverse needs and provide seamless usability for everyone.
                 </p>
               </div>
             </div>

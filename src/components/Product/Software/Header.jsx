@@ -7,7 +7,7 @@ import Swipable from "../../../ui/SwipeButton.jsx/Swipe1.jsx"
 
 function Header() {
   const sentence =
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit corporis iusto hic quam eveniet culpa nam harum nihil iste magnam adipisci .";
+    "Our wide range of software solutions cater to diverse business needs, empowering efficiency and growth.";
 
   return (
     <div 
@@ -19,7 +19,7 @@ function Header() {
       <div className="flex flex-col items-center justify-center p-6 gap-6 mt-20 text-neutral-900  ">
         <ANim>
           <h1 className="text-2xl md:text-4xl lg:text-4xl font-semibold ">
-            SoftWare
+          Software Services 
           </h1>
         </ANim>
         <motion.div

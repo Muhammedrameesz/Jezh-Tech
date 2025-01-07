@@ -16,6 +16,7 @@ function App() {
       </div>
       <Pattern/>
       <div className="flex flex-col items-center justify-center p-6 gap-6 mt-20 text-neutral-900 ">
+      
         <ANim>
           <h1 className="text-2xl md:text-4xl lg:text-4xl font-semibold ">
           Contact Us

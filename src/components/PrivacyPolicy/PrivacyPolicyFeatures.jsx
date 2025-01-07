@@ -55,7 +55,7 @@ const privacyPolicyContent = [
     title: "Consent",
     description:
       " We reserve the right, without explicit permission, to provide personally identifiable information in the following circumstances:\n\n When we believe in good faith that it is necessary to comply with subpoenas, court orders, and other legal processes as required or permitted by law.\n\n To report, prevent, or assist in the investigation of suspected fraud or other illegal activities or take actions associated with such activities.\n\n To enforce the Jezh.com Terms of Services, establish, exercise, or defend our legal rights or as otherwise provided in the User Agreement or this Privacy Policy.",
-    icon: <FaCompress className="text-purple-500 text-5xl" />,
+    icon: <FaCompress className="text-gray-500 text-5xl" />,
   },
 ];
 
@@ -75,11 +75,11 @@ export default function PrivacyPolicyFeatures() {
         {privacyPolicyContent.slice(0, 6).map((item) => (
           <div
             key={item.key}
-            className="flex flex-col md:flex-row items-start text-start gap-4"
+            className="flex flex-col md:flex-row items-start text-start gap-4 "
           >
             <div className="mb-4">{item.icon}</div>
             <div>
-              <h2 className="text-xl font-semibold text-gray-700 mb-2">
+              <h2 className="text-lg font-semibold text-customGreen leading-7 tracking-wide mb-2">
                 {item.title}
               </h2>
               <p className="text-gray-500 text-sm whitespace-pre-wrap font-semibold">
@@ -101,7 +101,7 @@ export default function PrivacyPolicyFeatures() {
               {data.title}
             </h1>
             {/* Split description into points */}
-            <ul className="text-left text-gray-600 text-sm space-y-3">
+            <ul className="text-left text-gray-600 text-sm space-y-5">
               {data.description.split("\n\n").map((point, index) => (
                 <li key={index} className="flex items-start font-semibold ">
                   <span className="mr-2 -mt-2 text-customGreen text-2xl p-2 font-bold">-</span>

@@ -44,9 +44,10 @@ export default function Home() {
       {/* <RecentWorks/> */}
       {/* <PricingPlans/> */}
       <WhatUsersSaying/>
-      <Accorian/>
+      
       {/* <SeventhSection /> */}
       <LastSection />
+      <Accorian/>
       {/* <News/> */}
     </>
   );

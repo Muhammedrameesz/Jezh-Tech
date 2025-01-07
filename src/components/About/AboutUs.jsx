@@ -23,20 +23,15 @@ export default function AboutUs() {
               About Us
             </p>
             <h1 className="text-[#0E314C] text-start text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-5 ">
-              Engaging New Audiences Through Smart Approach
+            Experience the Digital Difference
             </h1>
             <Underline/>
 
             <p className="text-base text-gray-500 leading-6 mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Jezh is a leading digital experience development company that crafts captivating and results-driven online experiences.
             </p>
             <p className="text-base text-gray-500 leading-6">
-              Nullam quis ante. Etiam sit amet orci eget eros faucibus
-              tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec
-              sodales sagittis magna. Sed consequat, leo eget bibendum sodales,
-              augue velit cursus nunc.Donec vitae sapien ut libero venenatis
-              faucibus tempus.
+            We specialize in creating user-centric websites, mobile apps, and digital platforms that engage audiences, drive conversions, and build strong brand identities. Our team of skilled designers, developers, and strategists combines creativity with cutting-edge technology to deliver innovative solutions that exceed client expectations. We are passionate about helping businesses thrive in the digital world by creating seamless and impactful online experiences for their customers.
             </p>
           </section>
         </AnimRL>

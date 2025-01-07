@@ -10,7 +10,7 @@ export default function Blogs() {
       image:
         "https://media.istockphoto.com/id/2094337676/photo/diverse-team-working-together-in-modern-co-working-space.jpg?s=612x612&w=0&k=20&c=EvWROZsfro1ghOVViXVj-tKS364-NeabwNNYkyvhxoY=",
       date: "Admin / August 15, 2022",
-      title: "Making Peace With The Feast Or Famine Of Freelancing",
+      title: "How a Website Can Help Scale Your Small Business",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...",
       buttonLink: "/",
@@ -19,7 +19,7 @@ export default function Blogs() {
       image:
         "https://media.istockphoto.com/id/1322205588/photo/cropped-shot-of-three-young-businessmpeople-working-together-on-a-laptop-in-their-office-late.jpg?b=1&s=612x612&w=0&k=20&c=rIMVMkPV5kiP2vu0iMk_u4LyzKr1tG02L6wYTHX7yEQ=",
       date: "Admin / August 15, 2022",
-      title: "Making Peace With The Feast Or Famine Of Freelancing",
+      title: "The Role of Software Development in Digital Transformation",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...",
       buttonLink: "/",
@@ -28,7 +28,7 @@ export default function Blogs() {
       image:
         "https://media.istockphoto.com/id/1434742171/photo/laptop-ppt-presentation-business-meeting-and-team-working-on-review-for-new-digital-website.jpg?b=1&s=612x612&w=0&k=20&c=6K9v0tIuP0MFKy9JF1e1IW-pqhnmpoLWTPP4MsGSOmg=",
       date: "Admin / August 15, 2022",
-      title: "Making Peace With The Feast Or Famine Of Freelancing",
+      title: "Top 5 Features Every E-Commerce Website Should Have",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...",
       buttonLink: "/",
@@ -123,7 +123,7 @@ export default function Blogs() {
       date: "Admin / August 15, 2022",
       title: "Making Peace With The Feast Or Famine Of Freelancing",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...",
+        "How a Website Can Help Scale Your Small Business...",
       buttonLink: "/",
     },
     {
@@ -132,7 +132,7 @@ export default function Blogs() {
       date: "Admin / August 15, 2022",
       title: "Making Peace With The Feast Or Famine Of Freelancing",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...",
+        "The Role of Software Development in Digital Transformation...",
       buttonLink: "/",
     },
     {
@@ -141,7 +141,7 @@ export default function Blogs() {
       date: "Admin / August 15, 2022",
       title: "Making Peace With The Feast Or Famine Of Freelancing",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...",
+        "Top 5 Features Every E-Commerce Website Should Have...",
       buttonLink: "/",
     },
   ];
@@ -215,9 +215,9 @@ export default function Blogs() {
               >
                 <p className={`text-sm text-gray-700 `}>{data.date}</p>
                 <h1
-                  className={`text-base font-semibold cursor-pointer  line-clamp-3 text-gray-900 ${hover === index ? "mb-4" : "mb-0"} transform transition-all duration-500`}
+                  className={`text-base font-semibold cursor-pointer  line-clamp-3 text-gray-800 ${hover === index ? "mb-4" : "mb-0"} transform transition-all duration-500`}
                 >
-                  {data.description}
+                  {data.title}
                 </h1>
                 <button
                 onClick={()=>handleDetails(data.image,data.date,data.title,data.description)}

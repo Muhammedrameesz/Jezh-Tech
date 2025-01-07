@@ -11,6 +11,7 @@ import OurRecentStory from "../components/Sovablu/OurRecentStory.jsx"
 import StartYourFreeTrail from "../components/Sovablu/StartYourFreeTrail.jsx"
 import RoundedCards from "../components/Sovablu/RoundedCards.jsx"
 import SovablueFaq from "../components/Sovablu/SovableFaq.jsx"
+import Form from "../components/Contact/Contact.jsx"
 
 export default function Sobablu() {
   return (
@@ -29,7 +30,9 @@ export default function Sobablu() {
     <OurClient/>
     <OurRecentStory/>
     <SovablueFaq/>
+    <Form/>
     <StartYourFreeTrail/>
+
     </>
   )
 }

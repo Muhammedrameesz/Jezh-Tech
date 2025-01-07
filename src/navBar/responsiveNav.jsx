@@ -1,10 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
 import { navLinks, dropdownLinks } from "./navLinks.jsx";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
+import {motion} from "framer-motion"
 
 export default function ResponsiveNav() {
   const [open, setOpen] = useState(false);
@@ -17,6 +18,12 @@ export default function ResponsiveNav() {
       [element]: !prevState[element],
     }));
   };
+
+   const navigate =useNavigate()
+  const handleContactPage = () => {
+     navigate('/contact')
+     setOpen(false)
+  }
 
   return (
     <div className="relative">
@@ -41,8 +48,12 @@ export default function ResponsiveNav() {
 
       {/* Navigation Drawer */}
       {open && (
-        <div className="fixed top-0 left-0 w-full h-full bg-gray-50 z-10 p-6 overflow-y-auto">
-          <ul className="flex flex-col mt-6 gap-6 text-gray-800">
+        <motion.div 
+         initial={{height:0,width:0}}
+         animate={open?{height:'100%',width:'100%'}:{height:0,width:0}}
+         transition={{duration:0.2}}
+          className="fixed top-0 left-0  bg-gray-50 z-10 p-6 overflow-y-auto">
+          <ul className="flex flex-col mt-14 gap-6 text-gray-800 ">
             {navLinks?.map((item) => (
               <li key={item.element} className="relative">
                 <div className="flex items-center justify-between">
@@ -104,14 +115,14 @@ export default function ResponsiveNav() {
 
           {/* Login and Signup Buttons */}
           <div className="mt-8 flex flex-col gap-4">
-            <button className="bg-green-600 text-gray-50 font-medium px-5 py-2 rounded-lg border border-green-700 hover:bg-green-700 transition-all duration-300">
-              Login
+            <button
+            onClick={handleContactPage}
+             className="bg-customGreen text-gray-50 font-semibold px-5 py-2 rounded-lg border border-green-700 hover:bg-green-700 transition-all duration-300">
+              Contact Us
             </button>
-            <button className="text-black px-5 py-2 font-medium rounded-lg border border-gray-300 hover:text-green-500 hover:border-green-500 transition-all duration-300">
-              Sign Up
-            </button>
+           
           </div>
-        </div>
+        </motion.div>
       )}
     </div>
   );

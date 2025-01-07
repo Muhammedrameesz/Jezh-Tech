@@ -97,7 +97,7 @@ export default function FeaturedSolutions() {
             onMouseEnter={() => setHover(i)}
             onMouseLeave={() => setHover(null)}
             key={i}
-            className="flex bg-white  z-40   flex-col items-start text-center p-5  gap-3 rounded-lg  shadow-xl group transform hover:-translate-y-2 hover:shadow-2xl group transition-all duration-500"
+            className="flex bg-white  z-40   flex-col items-start justify-between text-center p-5  gap-3 rounded-lg  shadow-xl group transform hover:-translate-y-2 hover:shadow-2xl group transition-all duration-500"
           >
             {/* <Anim> */}
               <div className=" shadow-lg group-hover:bg-customGreen transition-colors duration-500  rounded-full  p-2 mb-2 ">
@@ -149,6 +149,7 @@ export default function FeaturedSolutions() {
           </div>
         ))}
       </section>
+      
     </div>
   );
 }

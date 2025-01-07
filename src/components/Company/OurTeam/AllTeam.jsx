@@ -42,7 +42,7 @@ const content = [
       },
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+      "Shabin is the driving force behind Jezh Technologies, leading with vision, innovation, and a commitment to excellence in technology and business growth.",
     image: Team3,
   },
   {
@@ -57,7 +57,7 @@ const content = [
       },
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+      "Jinu Martin is instrumental in shaping Jezh Technologies' overall direction, bringing strategic expertise, leadership, and a commitment to driving growth and innovation.",
     image: Team2,
   },
   
@@ -73,7 +73,7 @@ const content = [
       },
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+      "Arshitha plays a key role at Jezh Technologies, ensuring smooth processes, efficient management, and a steadfast commitment to operational excellence and growth.",
     image: Team4,
   },
   {
@@ -89,7 +89,7 @@ const content = [
     ],
 
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+      "Mahesh is a skilled and dedicated developer, committed to crafting innovative and efficient web solutions, enhancing user experiences with each project.",
     image: Team1,
   },
   {
@@ -104,7 +104,7 @@ const content = [
       },
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+      "Sai Srikanth leads with a focus on operational excellence, driving efficiency, innovation, and seamless execution across all functions at Jezh Technologies for optimal results.",
     image:Sai,
  },
   {
@@ -119,7 +119,7 @@ const content = [
       },
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+      "Mithun is the mastermind behind our cutting-edge solutions, combining technical expertise, innovative thinking, and a passion for excellence in delivering top-tier technology.",
     image:Midhun,
   },
   
@@ -135,7 +135,7 @@ const content = [
       },
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+      "Dharani creates visually striking and professional designs, elevating Jezh Technologies' brand identity with creativity, precision, and a keen eye for detail and innovation.",
     image:
       "https://img.freepik.com/free-photo/3d-portrait-people_23-2150793856.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid",
   },
@@ -151,7 +151,7 @@ const content = [
       },
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+      "Sree Parvathi shapes our narrative with creativity and precision, delivering content that resonates with Jezh Technologies' vision and engages our audience effectively.",
     image:SreeParvathy,
       
   },
@@ -167,7 +167,7 @@ const content = [
       },
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+      "Gopi Krishna focuses on safeguarding Jezh Technologies' digital assets, applying his expertise to protect against emerging cybersecurity threats with precision and vigilance.",
     image:GopiKrishna,
   },
   {
@@ -182,7 +182,7 @@ const content = [
       },
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+      "Niksha supports our IoT research efforts with dedication and curiosity, contributing to innovative projects and solutions with enthusiasm, precision, and unwavering commitment.",
     image:Niksha,
   },
   {
@@ -197,11 +197,11 @@ const content = [
       },
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+      "Smirthy brings fresh insights to our IoT projects, assisting with research and development, and contributing to innovative solutions as an enthusiastic intern at Jezh Technologies.",
     image:Smrithy,
   },
   {
-    title: "GiftyMol",
+    title: "Gifty",
     role: "Digital Marketer - Intern",
     media: [
       {
@@ -212,7 +212,7 @@ const content = [
       },
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+      "Gifty plays a key role in driving our digital marketing efforts, contributing fresh ideas and energy to elevate Jezh Technologies' online visibility and engagement.",
     image:GiftyMol,
   },
   {
@@ -227,11 +227,11 @@ const content = [
       },
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+      "Vishnu Narayanan drives our digital marketing strategies, blending creativity with analytics to boost Jezh Technologies' online presence and enhance customer engagement.",
     image:VishnuNarayanan,
   },
   {
-    title: "Muhammed Ramees Khan",
+    title: "Muhammed Ramees ",
     role: "Full stack developer - Intern",
     media: [
       {
@@ -242,7 +242,7 @@ const content = [
       },
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+      "Muhammed Rameez Khan is dedicated to creating dynamic and scalable web applications, leveraging his full-stack development expertise to deliver efficient solutions.",
     image:Ramees,
   },
   {
@@ -257,7 +257,7 @@ const content = [
       },
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+      "Keerthi Vasan contributes with a keen interest in no-code development, helping streamline processes and bring innovative solutions to life with a user-friendly approach.",
     image:KeerthyVasan,
   },
   {
@@ -272,7 +272,7 @@ const content = [
       },
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+      "Subash brings innovative no-code solutions to life, crafting intuitive and efficient applications that enhance functionality and streamline user experiences.",
     image:Subash,
   },
   {
@@ -287,7 +287,7 @@ const content = [
       },
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+      "Anish is dedicated to building intuitive no-code applications, making complex technology accessible, reliable, and innovative while delivering creative and efficient solutions.",
     image:Anish,
   },
   {
@@ -302,7 +302,7 @@ const content = [
       },
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+      "Neeraj is a skilled no-code developer, passionate about creating seamless applications, simplifying complex processes, and delivering innovative, user-friendly solutions efficiently.",
     image:Neeraj,
   },
 ];
@@ -371,16 +371,7 @@ export default function AllTeam() {
                 <p className="text-xs text-white">{data.role}</p>
               </div>
 
-              <div className="flex justify-center space-x-4 mt-4 ">
-                {data.media.map((icon, idx) => (
-                  <span
-                    key={idx}
-                    className="text-customGreen text-lg flex items-center gap-4"
-                  >
-                    {Object.values(icon)}
-                  </span>
-                ))}
-              </div>
+             
 
               <p className="text-gray-500 text-sm mt-4">{data.description}</p>
             </motion.div>

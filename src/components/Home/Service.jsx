@@ -82,7 +82,7 @@ export default function Service() {
                 </span>
 
                 <h2 className="text-lg font-bold text-gray-800 group-hover:text-white mb-5 transition-all duration-500 ">
-                  RESEARCH & DEVELOPMENT
+                Research & Development
                 </h2>
 
                 <p className="text-gray-500 font-semibold text-sm group-hover:text-gray-100 transition-all duration-500">
@@ -103,7 +103,7 @@ export default function Service() {
                 </span>
 
                 <h2 className="text-lg font-bold text-gray-800 group-hover:text-white mb-5 transition-all duration-500 ">
-                  AI & ROBOTICS WORKSHOPS
+                AI & Robotics Workshops
                 </h2>
 
                 <p className="text-gray-500 font-semibold text-sm group-hover:text-gray-100 transition-all duration-500">

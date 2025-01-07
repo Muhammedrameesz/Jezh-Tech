@@ -28,7 +28,7 @@ const testimonials = [
       },
     ],
     quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+      "Shabin is the driving force behind Jezh Technologies, leading with vision, innovation, and a commitment to excellence in technology and business growth.",
     src:Team3,
   },
   {
@@ -43,7 +43,7 @@ const testimonials = [
       },
     ],
     quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+      "Jinu Martin is instrumental in shaping Jezh Technologies' overall direction, bringing strategic expertise, leadership, and a commitment to driving growth and innovation.",
     src:Team2,
   },
   {
@@ -58,7 +58,7 @@ const testimonials = [
       },
     ],
     quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+      "Arshitha plays a key role at Jezh Technologies, ensuring smooth processes, efficient management, and a steadfast commitment to operational excellence and growth.",
     src:Team4,
   },
   {
@@ -73,7 +73,7 @@ const testimonials = [
       },
     ],
     quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+      "Sai Srikanth leads with a focus on operational excellence, driving efficiency, innovation, and seamless execution across all functions at Jezh Technologies for optimal results.",
     src:Sai,
  },
   {
@@ -88,7 +88,7 @@ const testimonials = [
       },
     ],
     quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+      "Mithun is the mastermind behind our cutting-edge solutions, combining technical expertise, innovative thinking, and a passion for excellence in delivering top-tier technology.",
     src:Midhun,
   },
 ];

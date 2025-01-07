@@ -13,8 +13,8 @@ import partner5 from "../../assets/images/Clients/ricspace B&W.png";
 import partner6 from "../../assets/images/Clients/Rojavanam B&W.png";
 import partner7 from "../../assets/images/Clients/Sidone B&W.png";
 import partner8 from "../../assets/images/Clients/ENYARD.jpeg";
-import partner9 from "../../assets/images/Clients/RoboFun.jpeg";
-import partner10 from "../../assets/images/Clients/WhatsApp Image 2025-01-04 at 11.35.39 PM.jpeg";
+import partner9 from "../../assets/images/Clients/robofun_logo-removebg-preview-modified.png";
+import partner10 from "../../assets/images/Clients/booba logo-modified.jpg";
 
 import partnerHover1 from "../../assets/images/Clients/Adarsh Logo.png";
 import partnerHover2 from "../../assets/images/Clients/DSSC logo.png";

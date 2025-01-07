@@ -33,16 +33,13 @@ export default function Service() {
       {/* Header Section */}
       <div className="flex flex-col justify-center items-center mb-10 md:mb-20">
         <h1 className="text-[#0E314C] text-center text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4">
-          Services
+        What We Offer
         </h1>
         <Underline />
 
         <Anim>
           <p className="text-base text-gray-500 text-center max-w-xl leading-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-            nesciunt corporis illo totam eos quis saepe odit autem laborum nobis
-            fugiat, quos voluptate maiores quidem repellat assumenda rem
-            mollitia iusto.
+          We offer a comprehensive suite of services to support your business growth, IoT Automation, Digital marketing, Web development, and E-commerce development. Our approach is specialized to your specific needs and budget. 
           </p>
         </Anim>
       </div>

@@ -34,7 +34,7 @@ const content = [
       },
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+      "Shabin is the driving force behind Jezh Technologies, leading with vision, innovation, and a commitment to excellence in technology and business growth.",
     image:Team3,
   },
   {
@@ -49,7 +49,7 @@ const content = [
       },
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+      "Jinu Martin is instrumental in shaping Jezh Technologies' overall direction, bringing strategic expertise, leadership, and a commitment to driving growth and innovation.",
     image:Team2,
   },
   {
@@ -64,7 +64,7 @@ const content = [
       },
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+      "Arshitha plays a key role at Jezh Technologies, ensuring smooth processes, efficient management, and a steadfast commitment to operational excellence and growth.",
     image:Team4,
   },
   {
@@ -79,7 +79,7 @@ const content = [
       },
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+      "Sai Srikanth leads with a focus on operational excellence, driving efficiency, innovation, and seamless execution across all functions at Jezh Technologies for optimal results.",
     image:Sai,
  },
   {
@@ -94,7 +94,7 @@ const content = [
       },
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo animi eum autem, numquam eius eligendi. Minima porro reiciendis reprehenderit qui nisi quo, eaque, quod quos, at hic modi laborum. Voluptate.",
+      "Mithun is the mastermind behind our cutting-edge solutions, combining technical expertise, innovative thinking, and a passion for excellence in delivering top-tier technology.",
     image:Midhun,
   },
 ];
@@ -154,8 +154,7 @@ export default function AllTeam() {
           <Underline />
 
           <p className="text-base text-gray-500 text-center max-w-lg leading-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          We are a diverse group with a wide range of skills and experience, and we work together to achieve our common goals.
           </p>
         </div>
       </Anim>
@@ -167,7 +166,7 @@ export default function AllTeam() {
             <motion.div
               onMouseEnter={() => setHover(i)}
               onMouseLeave={() => setHover(null)}
-              className="relative flex flex-col items-center text-center bg-gradient-to-tr from-white to-white rounded-lg group p-6 hover:shadow-2xl transition-shadow duration-500"
+              className="relative flex flex-col items-center h-[400px] text-center bg-gradient-to-tr from-white to-white rounded-lg group p-6 hover:shadow-2xl transition-shadow duration-500"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: i * 0.2 }}
@@ -194,14 +193,8 @@ export default function AllTeam() {
                 </h3>
                 <p className="text-xs text-white ">{data.role}</p>
               </div>
-              <div className=" justify-center space-x-4 mt-4">
-                {data.media.map((icon, idx) => (
-                  <div key={idx} className="flex flex-row gap-3">
-                    {Object.values(icon)}
-                  </div>
-                ))}
-              </div>
-              <p className="text-gray-500 text-sm mt-4">{data.description}</p>
+             
+              <p className="text-gray-500 text-sm mt-4 ">{data.description}</p>
             </motion.div>
           </div>
         ))}

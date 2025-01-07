@@ -1,6 +1,6 @@
 import Underline from "../../ui/Underline";
 import Pattern from "../../ui/RandomPatterns4.jsx";
-import { MdOutlineDoubleArrow } from "react-icons/md";
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { useState } from "react";
 
 const contents = [
@@ -78,8 +78,8 @@ export default function OurRecentStory() {
                 className="mt-4 flex items-center text-sm bg-white rounded-full p-2 px-5 font-semibold text-[#0E314C] hover:text-customGreen transition-colors duration-300"
               >
                 Read Story
-                <MdOutlineDoubleArrow
-                  className={`text-lg transform transition-transform duration-300 ${
+                <MdKeyboardDoubleArrowRight
+                  className={`text-lg transform transition-transform duration-500 ${
                     btnHover === index ? "translate-x-3" : "translate-x-0"
                   }`}
                 />

@@ -15,7 +15,8 @@ export default function SignupForm() {
   };
 
   return (
-    <div className=" pb-20  items-center justify-center bg-customWhite px-4 font-jost grid grid-cols-1 md:grid-cols-2 gap-5 mx-5 md:mx-10">
+    <div className="bg-customWhite pb-20 font-jost">
+    <div className="   items-center justify-center  px-4 font-jost grid grid-cols-1 md:grid-cols-2 gap-5 mx-5 md:mx-10">
       <div className="flex flex-col gap-6">
         <h1 className="text-gray-800 text-2xl font-semibold">
           Think Big, Act Smart & Scale Fast with Lagoon
@@ -277,6 +278,7 @@ export default function SignupForm() {
           </div>
         </form>
       </div>
+    </div>
     </div>
   );
 }

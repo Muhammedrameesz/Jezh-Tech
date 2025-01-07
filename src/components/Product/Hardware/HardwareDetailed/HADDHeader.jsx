@@ -3,11 +3,11 @@ import ANim from "../../../../ui/Anim.jsx";
 import Pattern from "../../../../ui/RandomPatterns3.jsx"
 import Background from "../../../../assets/image2/background/banner-bg1.jpg"
 
-import useSoftwareProductsDetails from "../../../../store/SoftwareProduct"
+import useSoftwareProductsDetails from "../../../../store/HardwareProduct.js"
 import { useEffect } from "react";
 
 function Header() {
-    const productsDetails = useSoftwareProductsDetails((state)=>state.softwareProductsDetails)
+    const productsDetails = useSoftwareProductsDetails((state)=>state.hardwareProductsDetails)
     useEffect(()=>{
         console.log(productsDetails);
     },[productsDetails])
@@ -19,7 +19,7 @@ function Header() {
         <img src={Background} alt="" />
       </div>
       <Pattern/>
-      <div className="flex flex-col items-center justify-center p-6 gap-6  text-neutral-900  ">
+      <div className="flex flex-col items-center justify-center p-6 gap-6  text-customBlue  ">
         <ANim>
           <h1 className="text-2xl md:text-4xl lg:text-4xl font-semibold ">
            {productsDetails.title}

@@ -7,11 +7,11 @@ export default function Location() {
     <div className="py-20 font-jost  ">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto max-w-5xl">
         {/* Email Card */}
-        <div className="bg-white p-8 rounded-lg shadow-custom  transform hover:scale-105 transition-all duration-300 text-center group">
-          <div className="text-green-500 text-4xl mb-4 transition duration-300 group-hover:text-white ">
+        <div className="bg-white p-8 rounded-lg border-dashed border-2 transform hover:scale-105 transition-all duration-500 text-center group">
+          <div className="text-customGreen text-4xl mb-4 transition duration-500 group-hover:text-white ">
             <EmailOutlinedIcon
               sx={{ fontSize: "55px" }}
-              className="bg-gray-50 rounded-full p-4 group-hover:bg-green-500 transition-all duration-300"
+              className="bg-white shadow-lg rounded-full p-4 group-hover:bg-customGreen transition-all duration-300"
             />
           </div>
           <h2 className="text-xl font-semibold text-gray-800 mb-2">
@@ -22,11 +22,11 @@ export default function Location() {
         </div>
 
         {/* Location Card */}
-        <div className="bg-white p-8 rounded-lg shadow-custom  transform hover:scale-105 transition-all duration-300 text-center group">
-          <div className="text-green-500 text-4xl mb-4 transition duration-300 group-hover:text-white ">
+        <div className="bg-white p-8 rounded-lg border-dashed border-2  transform hover:scale-105 transition-all duration-500 text-center group">
+          <div className="text-customGreen text-4xl mb-4 transition duration-500 group-hover:text-white ">
             <LocationOnOutlinedIcon
               sx={{ fontSize: "55px" }}
-              className="bg-gray-50 rounded-full p-4 group-hover:bg-green-500 transition-all duration-300"
+              className="bg-white shadow-lg rounded-full p-4 group-hover:bg-customGreen transition-all duration-300"
             />
           </div>
           <h2 className="text-xl font-semibold text-gray-800 mb-2">
@@ -36,11 +36,11 @@ export default function Location() {
         </div>
 
         {/* Phone Card */}
-        <div className="bg-white p-8 rounded-lg shadow-custom  transform hover:scale-105 transition-all duration-300 text-center group">
-          <div className="text-green-500 text-4xl mb-4 transition duration-300 group-hover:text-white ">
+        <div className="bg-white p-8 rounded-lg border-dashed border-2  transform hover:scale-105 transition-all duration-500 text-center group">
+          <div className="text-customGreen text-4xl mb-4 transition duration-500 group-hover:text-white ">
             <PhoneOutlinedIcon
               sx={{ fontSize: "55px" }}
-              className="bg-gray-50 rounded-full p-4 group-hover:bg-green-500 transition-all duration-300"
+              className="bg-white shadow-lg rounded-full p-4 group-hover:bg-customGreen transition-all duration-300"
             />
           </div>
           <h2 className="text-xl font-semibold text-gray-800 mb-2">Call Us</h2>
@@ -48,7 +48,10 @@ export default function Location() {
           <p className="text-gray-600">+098-765-4321</p>
         </div>
       </div>
+
+
           
+   
 
     </div>
   );

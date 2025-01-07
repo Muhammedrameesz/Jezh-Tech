@@ -15,7 +15,7 @@ export default function Header() {
   const sentence =
     "Effortlessly Build Your Enterprise Apps 10x Faster with Our Sovablu AI-Powered No-Code DX Platform!";
   const pargraph =
-    "Seamlessly build and deploy complicated, scalable, cloud-native, AI-augmented applications and processes for your business without writing any code whatsoever. Sovablu allows you to progress faster in development, streamline operations, and take your solutions to the next level easier. Experience true no-code innovation and revolutionize your business processes right now.";
+    "Seamlessly build and deploy complicated, scalable, cloud-native, AI-augmented applications and processes for your business without writing any code whatsoever.";
 
   return (
     <div className="font-jost mt-10 bg-white text-black  flex items-center justify-center overflow-hidden relative ">

@@ -3,68 +3,62 @@ import SmartToyIcon from "@mui/icons-material/SmartToy";
 import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 import Anim from "../../../ui/AnimBT.jsx";
 import Underline from "../../../ui/Underline.jsx";
-import { IoMdAdd } from "react-icons/io";
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { AnimatePresence, motion } from "framer-motion";
-import useSoftwareDetails from "../../../store/SoftwareProduct.js";
-import {useNavigate} from "react-router-dom"
+// import useSoftwareDetails from "../../../store/HardwareProduct.js";
+// import {useNavigate} from "react-router-dom"
 
 export default function ForthSection() {
-  const navigate = useNavigate()
-  const softwareProductDet = useSoftwareDetails(
-    (state) => state.setsoftwareProductsDetails
-  );
+  // const navigate = useNavigate()
+  // const softwareProductDet = useSoftwareDetails(
+  //   (state) => state.setsoftwareProductsDetails
+  // );
 
-  const handleClick = async (title, index) => {
-    try {
-      // Validate inputs
-      if (!title || typeof title !== "string") {
-        throw new Error("Title is missing or invalid.");
-      }
-      if (typeof index !== "number") {
-        throw new Error("Index is missing or not a valid number.");
-      }
+  // const handleClick = async (title, index) => {
+  //   try {
+  //     // Validate inputs
+  //     if (!title || typeof title !== "string") {
+  //       throw new Error("Title is missing or invalid.");
+  //     }
+  //     if (typeof index !== "number") {
+  //       throw new Error("Index is missing or not a valid number.");
+  //     }
 
-      // Call the state setter with provided title and index
-      await softwareProductDet({ title, index });
+  //     // Call the state setter with provided title and index
+  //     await softwareProductDet({ title, index });
 
-      // Navigate to the target page
-      navigate("/softwareProductsDetails");
-    } catch (error) {
-      console.error("Error:", error.message);
-    }
-  };
+  //     // Navigate to the target page
+  //     navigate("/softwareProductsDetails");
+  //   } catch (error) {
+  //     console.error("Error:", error.message);
+  //   }
+  // };
 
   const content = [
     {
-      
       title: "Time Tick",
       Icon: <SettingsInputAntennaOutlinedIcon />,
-      des: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Repudiandae eum adipisci dolorem delectus fugiat tempora",
+      des: "Time Tick Attendance system uses AI-integrated recognition for facial seamless, accurate, and efficient employee attendance tracking.",
     },
     {
-      title: "Smart Safety Helmet",
+      title: "Maze HCM",
       Icon: <AutoAwesomeIcon />,
-      des: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Repudiandae eum adipisci dolorem delectus fugiat tempora",
+      des: "Mace HCM software streamlines HR for businesses of all sizes. Integrated solutions for Time Attendance, Payroll, Leave, Claims, and Appraisal. Safe data, reduced costs, automated workflows, and fewer errors.",
     },
     {
-      title: "Electronic Voting Machines (EVMs)",
+      title: "TrackoonGPS",
       Icon: <SmartToyIcon />,
-      des: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Repudiandae eum adipisci dolorem delectus fugiat tempora",
+      des: "User-friendly school bus fleet management. Streamlines routes, driver assignments, and maintenance. Improves safety & compliance. Easy setup. Cost-effective.",
     },
     {
-      title: "Washroom Automation",
+      title: "Safety Management System",
       Icon: <SettingsInputAntennaOutlinedIcon />,
-      des: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Repudiandae eum adipisci dolorem delectus fugiat tempora",
+      des: "Jezh's Aviation SMS software boosts safety with analytics, reduces incidents, and improves safety culture. Mobile solutions enhance on-the-go management.",
     },
     {
-      title: "Guest Greeting Device",
+      title: "Vendor Management System",
       Icon: <AutoAwesomeIcon />,
-      des: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Repudiandae eum adipisci dolorem delectus fugiat tempora",
-    },
-    {
-      title: "School Automation",
-      Icon: <SmartToyIcon />,
-      des: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Repudiandae eum adipisci dolorem delectus fugiat tempora",
+      des: "Jezh’s vendor management software streamlines vendor relationships. Easily monitor service providers, manage contracts, and track performance. Automated reminders and enhanced security. Seamlessly integrates with existing processes.",
     },
   ];
 
@@ -75,12 +69,11 @@ export default function ForthSection() {
           className="text-[#0E314C] text-xl md:text-xl lg:text-2xl font-semibold leading-tight mb-4
            "
         >
-          Software Services
+          Software Products
         </h1>
         <Underline />
-        <p className="text-base text-gray-500 mb-10 max-w-lg">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo,
-          sapiente. A ipsa veniam quos, perferendis, nobis maiores.
+        <p className="text-base text-gray-500 mb-10 max-w-3xl text-center">
+        Empowering Your Business with Innovative Solutions. Our comprehensive suite of software solutions is designed to streamline operations, enhance efficiency, and drive growth across your organization. 
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-5 md:mx-10">
@@ -90,7 +83,7 @@ export default function ForthSection() {
               initial={{ rotateX: 0 }}
               whileHover={{ rotateX: 25 }}
               transition={{ duration: 0, ease: "easeInOut" }}
-              className={`bg-gradient-to-r from-purple-200 via-purple-100 to-purple-50 rounded-xl hover:shadow-xl transform transition-all duration-500 ease-in-out hover:-translate-y-3 overflow-hidden group`}
+              className={`relative bg-gradient-to-r from-purple-200 via-purple-100 h-[320px] to-purple-50 rounded-xl hover:shadow-xl transform transition-all duration-500 ease-in-out hover:-translate-y-3 overflow-hidden group`}
             >
               <motion.div className="flex justify-start items-center ml-5 mt-5">
                 <motion.div className="text-gray-800 bg-white rounded-full p-3 group-hover:bg-customGreen group-hover:text-white transition-colors duration-1000">
@@ -98,20 +91,27 @@ export default function ForthSection() {
                 </motion.div>
               </motion.div>
 
-              <div className="p-6">
+              <div className="p-6 pb-14">
+                {" "}
+                {/* Add bottom padding for the button */}
                 <h1 className="text-lg font-semibold text-gray-800 mb-2 ">
                   {data.title}
                 </h1>
-                <p className="text-gray-600 mb-4 text-sm font-semibold">{data.des}</p>
-                <AnimatePresence>
-                  <motion.button
-                    onClick={() => handleClick(data.title, i)}
-                    className="flex ml-auto text-sm px-3 p-2 bg-white text-gray-800 font-semibold rounded-full ease-in-out hover:text-white hover:bg-customGreen transition-colors duration-1000"
-                  >
-                    Learn More <IoMdAdd className="ml-1 text-lg" />
-                  </motion.button>
-                </AnimatePresence>
+                <p className="text-gray-600 mb-4 text-sm font-semibold">
+                  {data.des}
+                </p>
               </div>
+
+              {/* Button with fixed position at the bottom */}
+              <AnimatePresence>
+                <motion.button
+                  onClick={() => alert("will update soon")}
+                  className="absolute bottom-5 right-5 flex text-sm px-3 py-2 bg-white text-gray-800 font-semibold rounded-full ease-in-out hover:text-white hover:bg-customGreen transition-colors duration-1000"
+                >
+                  Learn More{" "}
+                  <MdKeyboardDoubleArrowRight className="ml-1 text-lg" />
+                </motion.button>
+              </AnimatePresence>
             </motion.div>
           </Anim>
         ))}

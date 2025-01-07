@@ -44,7 +44,4 @@ export const CardData =[
     "description": "WitBlox offers a DIY robotics kit for children aged 8+, featuring 55 modular parts to explore design, electronics, and programming. The kit encourages hands-on learning through over 100 engaging projects. It’s designed to spark creativity and develop problem-solving skills in young learners."
 },
 
-
-
-
 ]

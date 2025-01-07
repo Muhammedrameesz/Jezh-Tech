@@ -1,4 +1,7 @@
 import { useState } from "react";
+import emailjs from "emailjs-com";
+import { toast } from "react-toastify";
+import CircularProgress from "@mui/material/CircularProgress";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -12,6 +15,7 @@ export default function ContactForm() {
 
   const [errors, setErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -34,25 +38,69 @@ export default function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     const validationErrors = validate();
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
       return;
     }
+
     setErrors({});
     setIsSubmitted(true);
+    setLoading(true); // Start loading
 
-    // Add form submission logic here (e.g., API call)
-    setTimeout(() => setIsSubmitted(false), 3000);
+    // List of recipient email addresses
+    const recipients = [
+      "rameesta456@gmail.com",
+       "info@jezhtechnologies.com",
+       "shabin@jezhtechnologies.com",
+       "Arshitha@jezhtechnologies.com"
+    ];
+
+    // Loop through recipients and send emails
+    const emailPromises = recipients.map((recipient) =>
+      emailjs.send(
+        "service_447409k",
+        "template_b2ku3eb",
+        { ...formData, recipient_email: recipient },
+        "qI8zxfCk1DLGkeecf"
+      )
+    );
+
+    // Wait for all emails to be sent
+    Promise.all(emailPromises)
+      .then((responses) => {
+        console.log("Emails sent successfully:", responses);
+        toast.success("Messages sent successfully to all recipients!");
+      })
+      .catch((error) => {
+        console.error("Error sending emails:", error);
+        toast.error("There was an error sending some or all messages.");
+      })
+      .finally(() => {
+        setLoading(false); // Stop loading
+        setTimeout(() => setIsSubmitted(false), 3000);
+
+        // Reset the form data after submission
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
+          terms: false,
+        });
+      });
   };
 
   return (
-    <div className="bg-white   flex items-center justify-center font-jost">
+    
+    <div className="bg-white flex items-center justify-center font-jost">
       <div className="bg-white shadow-custom rounded-lg p-8 w-full max-w-6xl">
         <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">
-        Ask Your Question
+          Ask Your Question
         </h2>
-        <form onSubmit={handleSubmit} className="space-y-6  ">
+        <form onSubmit={handleSubmit} className="space-y-6">
           {/* Row 1: Name and Email */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
@@ -171,12 +219,8 @@ export default function ContactForm() {
               id="terms"
               checked={formData.terms}
               onChange={handleChange}
-              // className="h-5 w-5 text-green-500 border-gray-300 rounded focus:ring-2 focus:ring-green-400"
             />
-            <label
-              htmlFor="terms"
-              className="ml-2 text-sm text-gray-600"
-            >
+            <label htmlFor="terms" className="ml-2 text-sm text-gray-600">
               By checking this, you agree to our{" "}
               <a
                 href="#"
@@ -197,7 +241,13 @@ export default function ContactForm() {
               type="submit"
               className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-md transition-all duration-300"
             >
-              {isSubmitted ? "Message Sent!" : "Send Message"}
+              {loading ? (
+                <div>
+                 Please Wait <CircularProgress size={16} sx={{color:'#fff',marginLeft:"4px"}}/>
+                </div>
+              ) : (
+                "Send Message"
+              )}
             </button>
           </div>
         </form>

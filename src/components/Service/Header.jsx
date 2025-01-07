@@ -8,7 +8,7 @@ import Pattern from "../../ui/RandomPatterns3.jsx"
 function Header() {
 
   const sentence =
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit corporis iusto hic quam eveniet culpa nam harum nihil iste magnam adipisci.";
+    "We specialize in technology solutions, from crafting engaging websites and robust software to automating processes with IoT and driving online success through e-commerce and digital marketing. Our R&D fuels innovation across all our offerings.";
 
   return (
     <div className="relative pt-20 flex flex-col justify-center items-center gap-10 font-jost  overflow-hidden">

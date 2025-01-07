@@ -1,7 +1,7 @@
 import AnimBT from "../../ui/AnimBT.jsx";
 import Anim from "../../ui/Anim.jsx";
 import { FifthContent } from "./fifthSectionContent";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import Underline from "../../ui/Underline.jsx";
 
@@ -69,22 +69,24 @@ export default function FifthSection() {
               <p className="text-gray-500  text-sm font-semibold ">{feature.text}</p>
 
               {/* Animated Underline on Hover */}
-              {hover === index && (
-                <>
+              
+                <AnimatePresence>
                   <motion.div
                     initial={{ width: 0 }}
-                    animate={{ width: "50%" }}
+                    animate={hover===index ?{ width: "50%" }:{width:0}}
                     transition={{ duration: 0.4 }}
+                    exit={{width:0}}
                     className="absolute bottom-0 left-0 h-1 bg-customGreen"
                   />
                   <motion.div
                     initial={{ width: 0 }}
-                    animate={{ width: "50%" }}
+                    animate={hover===index ?{ width: "50%" }:{width:0}}
                     transition={{ duration: 0.4 }}
+                    exit={{width:0}}
                     className="absolute bottom-0 right-0 h-1 bg-customGreen"
                   />
-                </>
-              )}
+                </AnimatePresence>
+
             </div>
           </AnimBT>
         ))}
