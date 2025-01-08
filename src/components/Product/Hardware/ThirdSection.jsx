@@ -38,27 +38,27 @@ export default function ForthSection() {
     {
       title: "Smart Safety Helmet",
       Icon: <AutoAwesomeIcon />,
-      des: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Repudiandae eum adipisci dolorem delectus fugiat tempora",
+      des: "The smart safety helmet integrates advanced technologies for enhanced workplace safety, including features like real-time monitoring and alerts for potential hazards. ",
     },
     {
       title: "Electronic Voting Machines (EVMs)",
       Icon: <SmartToyIcon />,
-      des: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Repudiandae eum adipisci dolorem delectus fugiat tempora",
+      des: "The electronic voting machine (EVM) is a secure, efficient system for conducting elections electronically, ensuring accuracy and integrity invoting processes.",
     },
     {
       title: "Washroom Automation",
       Icon: <SettingsInputAntennaOutlinedIcon />,
-      des: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Repudiandae eum adipisci dolorem delectus fugiat tempora",
+      des: "Washroom automation includes sensor-based faucets, soap dispensers, and flush systems, enhancing hygiene and efficiency through touchless operation and water conservation.",
     },
     {
       title: "Guest Greeting Device",
       Icon: <AutoAwesomeIcon />,
-      des: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Repudiandae eum adipisci dolorem delectus fugiat tempora",
+      des: "A guest greeting device offers automated, personalized welcomes using AI and facial recognition, enhancing hospitality experiences with seamless interaction and security features.",
     },
     {
       title: "School Automation",
       Icon: <SmartToyIcon />,
-      des: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Repudiandae eum adipisci dolorem delectus fugiat tempora",
+      des: "School automation streamlines administrative tasks, attendance tracking, grading, communication and between educators, students, and parents, enhancing efficiency and educational outcomes.",
     },
     {
       title: "Smart AI Coat ",
