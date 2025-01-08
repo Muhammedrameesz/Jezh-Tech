@@ -6,17 +6,26 @@ import Pattern from "../../../ui/RandomPatterns3.jsx"
 import Background from "../../../assets/image2/background/banner-bg1.jpg"
 
 function Header() {
+
+  const onScroll = () => {
+    const scrollAmount = window.innerHeight * 0.60; 
+    window.scrollBy({
+      top: scrollAmount, 
+      behavior: "smooth", 
+    });
+  };
+
   const sentence =
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit corporis iusto hic quam eveniet culpa nam harum nihil iste magnam adipisci .";
 
   return (
     <div 
-    className="relative pt-20 flex flex-col justify-center items-center gap-10 font-jost  overflow-hidden">
+    className="relative pt-20 pb-10 flex flex-col justify-center items-center gap-10 font-jost  overflow-hidden">
       <div className="absolute w-full h-full object-cover  z-[-1]">
         <img src={Background} alt="" />
       </div>
       <Pattern/>
-      <div className="flex flex-col items-center justify-center p-6 gap-6 mt-20 text-neutral-900  bg-[rgba(250,250,250,0.5)]">
+      <div className="flex flex-col items-center justify-center p-6 gap-6 mt-20 text-neutral-900  ">
         <ANim>
           <h1 className="text-2xl md:text-4xl lg:text-4xl font-semibold ">
             Our Partners
@@ -51,7 +60,9 @@ function Header() {
           ))}
         </motion.div>
         <ANim delay={5}>
-          <AnimatedButton>Know More</AnimatedButton>
+          <div onClick={onScroll}>
+          <AnimatedButton >Know More</AnimatedButton>
+          </div>
         </ANim>
       </div>
     </div>

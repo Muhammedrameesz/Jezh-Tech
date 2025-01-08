@@ -15,7 +15,7 @@ import BlogDetails from "../pages/Resources/BlogDetals/BlogDetails.jsx";
 import ServiceDetails from "../pages/ServiceDetails.jsx"
 import HardwareDetails from "../pages/Products/HardwareDetails.jsx"
 import PrivacyPolicy from "../pages/PrivacyPolicy.jsx"
-
+import SoftwareDetails from "../pages/Products/SoftwareDetails.jsx"
 
 
 export const Router = createBrowserRouter([
@@ -53,6 +53,10 @@ export const Router = createBrowserRouter([
       {
         path:"/hardwareProductsDetails",
         element:<HardwareDetails/>
+      },
+      {
+        path:"/softwareProductsDetails",
+        element:<SoftwareDetails/>
       },
       {
         path: "/products/hardware",

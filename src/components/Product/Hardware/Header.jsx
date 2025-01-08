@@ -6,6 +6,13 @@ import Pattern from "../../../ui/RandomPatterns3.jsx"
 import Background from "../../../assets/image2/background/banner-bg1.jpg"
 
 function Header() {
+  const onScroll = () => {
+    const scrollAmount = window.innerHeight * 0.60; 
+    window.scrollBy({
+      top: scrollAmount, 
+      behavior: "smooth", 
+    });
+  };
   const sentence =
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit corporis iusto hic quam eveniet culpa nam harum nihil iste magnam adipisci .";
 
@@ -51,7 +58,9 @@ function Header() {
           ))}
         </motion.div>
         <ANim delay={5}>
+          <div onClick={onScroll}>
           <AnimatedButton>Know More</AnimatedButton>
+          </div>
         </ANim>
       </div>
     </div>

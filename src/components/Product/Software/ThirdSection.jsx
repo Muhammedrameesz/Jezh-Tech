@@ -5,34 +5,31 @@ import Anim from "../../../ui/AnimBT.jsx";
 import Underline from "../../../ui/Underline.jsx";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { AnimatePresence, motion } from "framer-motion";
-// import useSoftwareDetails from "../../../store/HardwareProduct.js";
-// import {useNavigate} from "react-router-dom"
+import useSoftwareDetails from "../../../store/SoftwareProductsStore";
+import {useNavigate} from "react-router-dom"
 
 export default function ForthSection() {
-  // const navigate = useNavigate()
-  // const softwareProductDet = useSoftwareDetails(
-  //   (state) => state.setsoftwareProductsDetails
-  // );
+  const navigate = useNavigate()
+  const softwareProductDet = useSoftwareDetails(
+    (state) => state.setSoftwareProductsDetails
+  );
 
-  // const handleClick = async (title, index) => {
-  //   try {
-  //     // Validate inputs
-  //     if (!title || typeof title !== "string") {
-  //       throw new Error("Title is missing or invalid.");
-  //     }
-  //     if (typeof index !== "number") {
-  //       throw new Error("Index is missing or not a valid number.");
-  //     }
-
-  //     // Call the state setter with provided title and index
-  //     await softwareProductDet({ title, index });
-
-  //     // Navigate to the target page
-  //     navigate("/softwareProductsDetails");
-  //   } catch (error) {
-  //     console.error("Error:", error.message);
-  //   }
-  // };
+  const handleClick = async (title, index,des) => {
+    try {
+      if (!title || typeof title !== "string") {
+        throw new Error("Title is missing or invalid.");
+      }
+      if (typeof index !== "number") {
+        throw new Error("Index is missing or not a valid number.");
+      }
+      await softwareProductDet({ title, index, des });
+      console.log('data sent to store');
+      
+      navigate("/softwareProductsDetails");
+    } catch (error) {
+      console.error("Error:", error.message);
+    }
+  };
 
   const content = [
     {
@@ -46,7 +43,7 @@ export default function ForthSection() {
       des: "Mace HCM software streamlines HR for businesses of all sizes. Integrated solutions for Time Attendance, Payroll, Leave, Claims, and Appraisal. Safe data, reduced costs, automated workflows, and fewer errors.",
     },
     {
-      title: "TrackoonGPS",
+      title: "Trackoon GPS",
       Icon: <SmartToyIcon />,
       des: "User-friendly school bus fleet management. Streamlines routes, driver assignments, and maintenance. Improves safety & compliance. Easy setup. Cost-effective.",
     },
@@ -105,7 +102,7 @@ export default function ForthSection() {
               {/* Button with fixed position at the bottom */}
               <AnimatePresence>
                 <motion.button
-                  onClick={() => alert("will update soon")}
+                  onClick={()=>handleClick(data.title, i,data.des)}
                   className="absolute bottom-5 right-5 flex text-sm px-3 py-2 bg-white text-gray-800 font-semibold rounded-full ease-in-out hover:text-white hover:bg-customGreen transition-colors duration-1000"
                 >
                   Learn More{" "}

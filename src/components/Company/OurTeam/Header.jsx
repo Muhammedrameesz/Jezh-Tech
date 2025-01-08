@@ -6,6 +6,14 @@ import Background from "../../../assets/image2/background/banner-bg1.jpg"
 import Pattern from "../../../ui/RandomPatterns3.jsx"
 
 function App() {
+
+  const onScroll = () => {
+    const scrollAmount = window.innerHeight * 0.60; 
+    window.scrollBy({
+      top: scrollAmount, 
+      behavior: "smooth", 
+    });
+  };
   const sentence =
     " Our team is a dynamic, collaborative group focused on innovation,excellence, and continuous learning in a supportive and inclusive environment.";
 
@@ -50,7 +58,9 @@ function App() {
           ))}
         </motion.div>
         <ANim delay={5}>
+          <div onClick={onScroll}>
           <AnimatedButton>Know More</AnimatedButton>
+          </div>
         </ANim>
       </div>
     </div>

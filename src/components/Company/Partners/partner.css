@@ -2,19 +2,21 @@
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap:30px;
   padding: 20px;
-  justify-items: center;
+  justify-items:center;
+  
 }
 
 /* Card Container */
 .container {
-  max-width: 300px;
+  max-width: 340px;
   min-height: 420px;
   border-radius: 20px;
   position: relative;
   transition: 1.5s ease-in-out;
   transform-style: preserve-3d;
+
 }
 
 /* Flip Effect on Hover */
@@ -65,7 +67,7 @@
 
 .content p {
   margin-top: 35px;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5em;
 }
 
@@ -88,7 +90,7 @@
 
   .container {
     min-width: 250px;
-    min-height: 420px0px;
+    min-height: 420px ;
   }
 }
 

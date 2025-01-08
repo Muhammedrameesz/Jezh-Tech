@@ -12,6 +12,7 @@ import { BsFillGrid1X2Fill } from "react-icons/bs";
 
 export default function Header() {
 
+
   const sentence =
     "Effortlessly Build Your Enterprise Apps 10x Faster with Our Sovablu AI-Powered No-Code DX Platform!";
   const pargraph =
@@ -81,7 +82,7 @@ export default function Header() {
           <div className="py-5 ">
             {/* Vertical Line */}
             <section className="py-4 w-full relative">
-              <div className="absolute left-[18px] top-10 h-full w-[2px] bg-customGreen"></div>{" "}
+              <div className="absolute left-[18px] top-10 h-full w-[2px] bg-customGreen "></div>{" "}
               <div className="flex gap-6  items-start relative">
                 <div className="flex justify-start relative mt-5">
                   <FaRocket className="text-white text-4xl bg-customGreen p-2 rounded-md z-10" />

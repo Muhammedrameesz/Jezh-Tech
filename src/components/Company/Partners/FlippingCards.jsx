@@ -29,7 +29,7 @@ const AnimatedCardGrid = () => {
                 <img
                   src={card.image}
                   alt={card.name}
-                  className={`${card.id === 5 && "h-36 w-full mb-6 "} ${card.id === 4 && "h-28 w-full mb-7"} mb-4`}
+                  className={`${card.id === 5 && "h-40 w-full mb-6 "} ${card.id === 4 && "h-40 w-full mb-7"} mb-4`}
                 />
                 <h1 className="text-gray-900 ">{card.name}</h1>
                 <p className="text-gray-600 mt-3">{card.description}</p>
@@ -41,7 +41,7 @@ const AnimatedCardGrid = () => {
                 <img
                   src={card.image}
                   alt={card.name}
-                  className={`${card.id === 5 && "h-32 w-full mb-6 "} ${card.id === 4 && "h-32 w-full mb-7"} mb-4`}
+                  className={`${card.id === 5 && "h-40 w-full mb-6 "} ${card.id === 4 && "h-40 w-full mb-7"} mb-4`}
                 />
                 <h1>{card.name}</h1>
                 <p>{card.description}</p>

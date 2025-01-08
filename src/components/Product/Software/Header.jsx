@@ -6,6 +6,13 @@ import Background from "../../../assets/image2/background/banner-bg1.jpg"
 import Swipable from "../../../ui/SwipeButton.jsx/Swipe1.jsx"
 
 function Header() {
+  const onScroll = () => {
+    const scrollAmount = window.innerHeight * 0.60; 
+    window.scrollBy({
+      top: scrollAmount, 
+      behavior: "smooth", 
+    });
+  };
   const sentence =
     "Our wide range of software solutions cater to diverse business needs, empowering efficiency and growth.";
 
@@ -51,9 +58,9 @@ function Header() {
           ))}
         </motion.div>
         <ANim delay={5}>
+          <div onClick={onScroll}>
           <Swipable textColor="text-white">Know More</Swipable>
-
-          
+          </div>
         </ANim>
       </div>
     </div>

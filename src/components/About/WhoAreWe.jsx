@@ -35,7 +35,7 @@ export default function AboutUs() {
         </Anim>
 
         <AnimRL>
-          <section>
+          <section className="mt-6">
             <img
               src="https://startp-next.envytheme.com/_next/static/media/about-one.15a914b7.png"
               alt=""

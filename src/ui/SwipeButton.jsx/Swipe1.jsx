@@ -9,12 +9,12 @@ export default function Swipe1({ children }) {
     <div
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className="relative group w-auto h-auto cursor-pointer p-3 px-6 rounded-lg font-jost   shadow-custom bg-customGreen text-center font-semibold uppercase hover:bg-gray-950 transition-colors duration-300 overflow-hidden z-50"
+      className="relative  group w-auto h-auto cursor-pointer p-3 px-6 rounded-lg font-jost   shadow-custom bg-customGreen text-center font-semibold uppercase hover:bg-gray-950 transition-colors duration-300 overflow-hidden z-50"
       style={{ position: "relative", display: "inline-block" }}
     >
       {/* Top Swipe */}
       <motion.span
-        className="absolute top-0 -left-1 h-full w-full bg-purple-500 "
+        className="absolute top-0 -left-1 h-full w-full bg-purple-500 z-50"
         style={{ zIndex: 1 }}
         initial={{ x: "-100%" }}
         animate={{ x: hover ? "-40%" : "-100%" }}
@@ -22,7 +22,7 @@ export default function Swipe1({ children }) {
       />
       {/* Bottom Swipe */}
       <motion.span
-        className="absolute bottom-0 -right-1 h-full w-full bg-purple-500 "
+        className="absolute bottom-0 -right-1 h-full w-full bg-purple-500 z-50"
         style={{ zIndex: 1 }}
         initial={{ x: "100%" }}
         animate={{ x: hover ? "40%" : "100%" }}
@@ -30,7 +30,7 @@ export default function Swipe1({ children }) {
       />
       {/* Button Text */}
       <motion.span
-        className="relative z-10 text-white text-sm tracking-wider"
+        className="relative z-50 text-white text-sm tracking-wider "
         style={{ position: "relative", zIndex: 10 }}
         animate={{ color: hover ? "#fff" : "#fff" }}
         transition={{ duration: 0.3, ease: "easeOut" }}

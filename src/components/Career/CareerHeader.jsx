@@ -5,6 +5,7 @@ import Background from "../../assets/image2/background/banner-bg1.jpg";
 import Patterns from "../../ui/RandomPatterns3.jsx";
 
 export default function Header() {
+ 
   const sentence =
     "Explore exciting opportunities at Jezh Technologies. We're a team of passionate innovators, and we're always looking for talented individuals to join us.";
 
@@ -50,6 +51,8 @@ export default function Header() {
           ))}
         </motion.div>
       </div>
+
+      
 
     </div>
   );

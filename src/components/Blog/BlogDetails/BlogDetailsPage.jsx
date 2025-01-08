@@ -2,6 +2,8 @@ import useBlogStore from "../../../store/BlogDetails";
 import SearchBar from "../../SearchBar";
 import { AiOutlineCalendar } from "react-icons/ai";
 
+
+
 export default function BlogDetailsPage() {
   const PopularPosts = [
     {
@@ -26,8 +28,7 @@ export default function BlogDetailsPage() {
         "https://media.istockphoto.com/id/1434742171/photo/laptop-ppt-presentation-business-meeting-and-team-working-on-review-for-new-digital-website.jpg?b=1&s=612x612&w=0&k=20&c=6K9v0tIuP0MFKy9JF1e1IW-pqhnmpoLWTPP4MsGSOmg=",
       date: "Admin / August 15, 2022",
       title: "Making Peace With The Feast Or Famine Of Freelancing",
-      description:
-        "Top 5 Features Every E-Commerce Website Should Have...",
+      description: "Top 5 Features Every E-Commerce Website Should Have...",
       buttonLink: "/",
     },
   ];
@@ -256,10 +257,13 @@ export default function BlogDetailsPage() {
                   <h2 className="font-semibold text-lg text-gray-800">
                     {item.heading}
                   </h2>
-                  <p className="text-gray-600">{item.text}</p>
-                  {item.text1 && <p className="text-gray-600">{item.text1}</p>}
-                  {item.text2 && <p className="text-gray-600">{item.text2}</p>}
-                  {item.text3 && <p className="text-gray-600">{item.text3}</p>}
+                  {item.text && <p className="text-gray-500 ">{item.text}</p>}
+
+                  <div className="space-y-3">
+                  {item.text1 &&  <p className="text-gray-500 "> {item.text1}</p>}
+                  {item.text2 && <p className="text-gray-500 ">{item.text2}</p>}
+                  {item.text3 && <p className="text-gray-500 ">{item.text3}</p>}
+                  </div>
                 </div>
               ))}
             </div>

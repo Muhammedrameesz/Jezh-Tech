@@ -26,7 +26,7 @@ export default function Service() {
         </Anim>
       </div>
       <div className=" flex justify-center items-center bg-white mx-5 md:mx-0">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-10">
           {/* Card 1 */}
 
           <Anim delay={0.4}>
@@ -106,7 +106,7 @@ export default function Service() {
                 AI & Robotics <br /> Workshops
                 </h2>
 
-                <p className="text-gray-500 font-semibold text-sm group-hover:text-gray-100 transition-all duration-500">
+                <p className="text-gray-500 font-semibold text-sm  group-hover:text-gray-100 transition-all duration-500">
                 Empower your AI & Robotics future! We offer immersive programs that equip you with the skills to thrive in these rapidly evolving fields. 
                 </p>
               </div>

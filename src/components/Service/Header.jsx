@@ -6,6 +6,13 @@ import Pattern from "../../ui/RandomPatterns3.jsx"
 
 
 function Header() {
+  const onScroll = () => {
+    const scrollAmount = window.innerHeight * 0.70; 
+    window.scrollBy({
+      top: scrollAmount, 
+      behavior: "smooth", 
+    });
+  };
 
   const sentence =
     "We specialize in technology solutions, from crafting engaging websites and robust software to automating processes with IoT and driving online success through e-commerce and digital marketing. Our R&D fuels innovation across all our offerings.";
@@ -51,7 +58,9 @@ function Header() {
           ))}
         </motion.div>
         <ANim delay={5}>
+          <div onClick={onScroll}>
           <AnimatedButton>Know More</AnimatedButton>
+          </div>
         </ANim>
       </div>
     </div>

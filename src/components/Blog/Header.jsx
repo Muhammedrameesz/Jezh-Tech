@@ -7,8 +7,14 @@ import Patterns from "../../ui/RandomPatterns3.jsx"
 
 export default function Header() {
   
-
-  const sentence = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo eveniet tempore,";
+  const onScroll = () => {
+    const scrollAmount = window.innerHeight * 0.60; 
+    window.scrollBy({
+      top: scrollAmount, 
+      behavior: "smooth", 
+    });
+  };
+  const sentence = "Discover insights, trends, and updates on technology, innovation, and solutions that drive growth and transformation.";
 
   return (
     <div className="relative top-14 flex flex-col justify-center items-center  pt-20 font-jost px-4 overflow-hidden">
@@ -19,7 +25,7 @@ export default function Header() {
       <div className="relative z-10 text-center max-w-xl mt-0  p-10 rounded-lg ">
         <Anim key="anim-header">
           <h1 className="text-4xl md:text-4xl font-semibold text-neutral-900 mb-8">
-            Blog 
+          Tech Talks
           </h1>
         </Anim>
 
@@ -53,7 +59,7 @@ export default function Header() {
         </motion.div>
 
         <Anim key="anim-button" delay={3}>
-          <div>
+          <div onClick={onScroll}>
             <HoverButton>Contact Us Now</HoverButton>
           </div>
         </Anim>

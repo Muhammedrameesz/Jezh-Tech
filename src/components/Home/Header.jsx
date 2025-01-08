@@ -9,6 +9,8 @@ import Background from "../../assets/image2/background/banner-bg1.jpg";
 import SwipeButton from "../../ui/SwipeButton.jsx/Swipe1.jsx";
 
 export default function Header() {
+
+  
   const navigate = useNavigate();
 
   const handleClick = () => {
@@ -35,7 +37,7 @@ export default function Header() {
           </Anim>
 
           <motion.div
-            className="text-base sm:text-lg md:text-md text-gray-400 leading-relaxed mb-2 max-w-md"
+            className="text-base sm:text-lg md:text-md text-gray-400 leading-relaxed mb-2 max-w-sm"
             initial="hidden"
             animate="visible"
             variants={{

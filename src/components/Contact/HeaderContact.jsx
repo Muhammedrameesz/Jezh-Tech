@@ -5,6 +5,8 @@ import Background from "../../assets/image2/background/banner-bg1.jpg"
 import Pattern from "../../ui/RandomPatterns3.jsx"
 
 function App() {
+
+  
   const sentence =
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam explicabo quasi ea inventore aperiam ."
     

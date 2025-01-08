@@ -7,7 +7,7 @@ import { useState } from "react";
 import Underline from "../ui/Underline";
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
-import FaqImage from "../assets/images/rb_4996.png"
+import FaqImage from "../assets/images/FAQ Background removed.png"
 
 export default function StyledAccordion() {
   const [expanded, setExpanded] = useState(0);

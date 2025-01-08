@@ -5,6 +5,14 @@ import Background from "../../assets/image2/background/banner-bg1.jpg"
 import Patterns from "../../ui/RandomPatterns3.jsx"
 
 export default function Header() {
+
+  const onScroll = () => {
+    const scrollAmount = window.innerHeight * 0.50; 
+    window.scrollBy({
+      top: scrollAmount, 
+      behavior: "smooth", 
+    });
+  };
   
 
   const sentence = " Trust us to simplify tech and drive success";
@@ -53,7 +61,7 @@ export default function Header() {
         </motion.div>
 
         <Anim key="anim-button" delay={3}>
-          <div>
+          <div onClick={onScroll}>
             <HoverButton>Contact Us Now</HoverButton>
           </div>
         </Anim>

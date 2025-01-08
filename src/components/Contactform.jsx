@@ -3,6 +3,7 @@ import emailjs from "emailjs-com";
 import { toast } from "react-toastify";
 import CircularProgress from "@mui/material/CircularProgress";
 
+
 export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
@@ -71,7 +72,7 @@ export default function ContactForm() {
     Promise.all(emailPromises)
       .then((responses) => {
         console.log("Emails sent successfully:", responses);
-        toast.success("Messages sent successfully to all recipients!");
+        toast.success("Messages sent successfully");
       })
       .catch((error) => {
         console.error("Error sending emails:", error);
@@ -110,6 +111,7 @@ export default function ContactForm() {
               >
                 Your Name
               </label>
+              
               <input
                 type="text"
                 name="name"
@@ -123,6 +125,7 @@ export default function ContactForm() {
                 <p className="text-red-500 text-sm mt-1">{errors.name}</p>
               )}
             </div>
+
             <div>
               <label
                 htmlFor="email"

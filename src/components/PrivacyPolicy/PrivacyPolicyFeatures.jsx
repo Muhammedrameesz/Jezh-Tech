@@ -62,56 +62,60 @@ const privacyPolicyContent = [
 export default function PrivacyPolicyFeatures() {
   return (
     <div className="font-jost py-16 bg-customWhite">
-      <div className="flex flex-col justify-center items-center text-center mb-10 md:mb-16">
-        <h1 className="text-sm  font-semibold shadow-md rounded-full p-2 px-6 text-customGreen  mb-4">
-          Privacy Policy
-        </h1>
-        {/* <p className="text-gray-600 text-md  max-w-4xl text-center ">
-        f.
-        </p> */}
-      </div>
-
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 md:gap-16 px-6 md:px-16 lg:px-24">
-        {privacyPolicyContent.slice(0, 6).map((item) => (
-          <div
-            key={item.key}
-            className="flex flex-col md:flex-row items-start text-start gap-4 "
-          >
-            <div className="mb-4">{item.icon}</div>
-            <div>
-              <h2 className="text-lg font-semibold text-customGreen leading-7 tracking-wide mb-2">
-                {item.title}
-              </h2>
-              <p className="text-gray-500 text-sm whitespace-pre-wrap font-semibold">
-                {item.description}
-              </p>
-            </div>
-          </div>
-        ))}
-      </section>
-
-      <section className="flex flex-col items-center justify-center mt-5 md:mt-8">
-        {privacyPolicyContent.slice(6,7).map((data) => (
-          <div
-            key={data.key}
-            className="flex flex-col items-center  justify-center text-center p-5   mb-4 w-full md:w-3/4 lg:w-1/2"
-          >
-            <div className="mb-3">{data.icon}</div>
-            <h1 className="text-xl font-semibold text-gray-700 mb-5">
-              {data.title}
-            </h1>
-            {/* Split description into points */}
-            <ul className="text-left text-gray-600 text-sm space-y-5">
-              {data.description.split("\n\n").map((point, index) => (
-                <li key={index} className="flex items-start font-semibold ">
-                  <span className="mr-2 -mt-2 text-customGreen text-2xl p-2 font-bold">-</span>
-                  {point}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </section>
+    <div className="flex flex-col justify-center items-center text-center mb-10 md:mb-16">
+      <h1 className="text-sm font-semibold shadow-md rounded-full p-2 px-6 text-customGreen mb-4 bg-green-50">
+        Privacy Policy
+      </h1>
     </div>
+  
+    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 px-6 md:px-16 lg:px-24">
+      {privacyPolicyContent.slice(0, 6).map((item) => (
+        <div
+          key={item.key}
+          className="flex flex-col md:flex-row items-start gap-4 bg-white shadow-md hover:shadow-lg rounded-lg p-6 border-t-4 border-customGreen transition-shadow duration-300"
+        >
+          <div className="flex items-center justify-center w-14 h-14 bg-green-100 text-customGreen rounded-full">
+            {item.icon}
+          </div>
+          <div>
+            <h2 className="text-lg font-semibold text-customGreen leading-7 tracking-wide mb-2">
+              {item.title}
+            </h2>
+            <p className="text-gray-500 text-sm whitespace-pre-wrap font-medium">
+              {item.description}
+            </p>
+          </div>
+        </div>
+      ))}
+    </section>
+  
+    <section className="flex flex-col items-center justify-center mt-12 md:mt-16">
+      {privacyPolicyContent.slice(6, 7).map((data) => (
+        <div
+          key={data.key}
+          className="flex flex-col items-center justify-center text-center bg-white shadow-lg hover:shadow-xl rounded-lg p-8 w-full md:w-3/4 lg:w-1/2 border-t-4 border-customGreen transition-shadow duration-300"
+        >
+          <div className="flex items-center justify-center w-16 h-16 bg-green-100 text-customGreen rounded-full mb-4">
+            {data.icon}
+          </div>
+          <h1 className="text-xl font-semibold text-gray-700 mb-5">
+            {data.title}
+          </h1>
+          <ul className="text-left text-gray-600 text-sm space-y-5">
+            {data.description.split("\n\n").map((point, index) => (
+              <li
+                key={index}
+                className="flex items-start font-medium space-x-2"
+              >
+                <span className="text-customGreen text-2xl">•</span>
+                <p>{point}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </section>
+  </div>
+  
   );
 }
