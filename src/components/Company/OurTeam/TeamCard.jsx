@@ -18,7 +18,7 @@ const testimonials = [
  
   {
     name: "Shabin",
-    designation: "CEO & Founder",
+    designation: "Founder & CEO",
     media: [
       {
         faceBook: <CiFacebook className={IconStyle} />,
@@ -33,7 +33,7 @@ const testimonials = [
   },
   {
     name: "Jinu Martin",
-    designation: "Director",
+    designation: "Director & CTO",
     media: [
       {
         faceBook: <CiFacebook className={IconStyle} />,
@@ -48,7 +48,7 @@ const testimonials = [
   },
   {
     name: "Arshitha",
-    designation: "HOP",
+    designation: "Head of Operation",
     media: [
       {
         faceBook: <CiFacebook className={IconStyle} />,
@@ -63,7 +63,7 @@ const testimonials = [
   },
   {
     name: "Sai Srikanth",
-    designation: "COO",
+    designation: "Chief Operating Officer",
     media: [
       {
         faceBook: <CiFacebook className={IconStyle} />,
@@ -78,7 +78,7 @@ const testimonials = [
  },
   {
     name: "Mithun Shaker",
-    designation: "Tech Lead",
+    designation: "Technical Lead",
     media: [
       {
         faceBook: <CiFacebook className={IconStyle} />,

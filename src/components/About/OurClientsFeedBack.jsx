@@ -40,7 +40,7 @@ const ScrollableCards = () => {
       subTitle: "CEO",
       image:
         "https://media.istockphoto.com/id/1416048929/photo/woman-working-on-laptop-online-checking-emails-and-planning-on-the-internet-while-sitting-in.jpg?b=1&s=612x612&w=0&k=20&c=aLm7LvcUVsB1sZMMzHhfktuVTXH-tOt2kGuxuM60PL0=",
-      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis odio temporibus deserunt inventore quos doloremque adipisci maxime commodi laboriosam.",
+      description: "The Jezh team delivered a standout Dakshin Sahodaya website, revolutionized school elections with EVMs, and fostered AI skills through Jezh Technology's Robo Fun, demonstrating innovation and commitment to technological advancement.",
       rating: 4,
     },
     {
@@ -49,7 +49,7 @@ const ScrollableCards = () => {
       subTitle: "CTO",
       image:
         "https://img.freepik.com/free-photo/young-emotional-concentrated-man-suit-pointing-up-isolated-dark-wall_140725-97235.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid",
-      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis odio temporibus deserunt inventore quos doloremque adipisci maxime commodi laboriosam.",
+      description: "The Jezh team delivered a standout Dakshin Sahodaya website, revolutionized school elections with EVMs, and fostered AI skills through Jezh Technology's Robo Fun, demonstrating innovation and commitment to technological advancement.",
       rating: 5,
     },
     {
@@ -58,7 +58,7 @@ const ScrollableCards = () => {
       subTitle: "Designer",
       image:
         "https://img.freepik.com/premium-photo/businessman-classic-suit-is-pointing-away_85574-5819.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid",
-      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis odio temporibus deserunt inventore quos doloremque adipisci maxime commodi laboriosam.",
+      description: "The Jezh team delivered a standout Dakshin Sahodaya website, revolutionized school elections with EVMs, and fostered AI skills through Jezh Technology's Robo Fun, demonstrating innovation and commitment to technological advancement.",
       rating: 3,
     },
   ];

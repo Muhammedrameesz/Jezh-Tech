@@ -70,7 +70,7 @@ export default function FifthSection() {
 
               {/* Animated Underline on Hover */}
               
-                <AnimatePresence>
+                <AnimatePresence key={index}>
                   <motion.div
                     initial={{ width: 0 }}
                     animate={hover===index ?{ width: "50%" }:{width:0}}

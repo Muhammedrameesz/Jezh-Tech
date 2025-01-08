@@ -8,7 +8,7 @@ function App() {
 
   
   const sentence =
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam explicabo quasi ea inventore aperiam ."
+        "Your concerns, ideas, and feedback are important to us. Reach out to our team, and together, we make sure you get the best experience possible."
     
 
   return (

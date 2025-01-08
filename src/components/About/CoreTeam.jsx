@@ -24,7 +24,7 @@ const content = [
  
   {
     title: "Shabin",
-    role: "CEO & Founder",
+    role: "Founder & CEO",
     media: [
       {
         faceBook: <CiFacebook className={IconStyle} />,
@@ -39,7 +39,7 @@ const content = [
   },
   {
     title: "Jinu Martin",
-    role: "Director",
+    role: "Director & CTO",
     media: [
       {
         faceBook: <CiFacebook className={IconStyle} />,
@@ -54,7 +54,7 @@ const content = [
   },
   {
     title: "Arshitha",
-    role: "HOP",
+    role: "Head of Operation",
     media: [
       {
         faceBook: <CiFacebook className={IconStyle} />,
@@ -69,7 +69,7 @@ const content = [
   },
   {
     title: "Sai Srikanth",
-    role: "COO",
+    role: "Chief Operating Officer",
     media: [
       {
         faceBook: <CiFacebook className={IconStyle} />,
@@ -84,7 +84,7 @@ const content = [
  },
   {
     title: "Mithun Shaker",
-    role: "Tech Lead",
+    role: "Technical Lead",
     media: [
       {
         faceBook: <CiFacebook className={IconStyle} />,
@@ -191,7 +191,7 @@ export default function AllTeam() {
                 <h3 className="text-base tracking-wider font-semibold text-white">
                   {data.title}
                 </h3>
-                <p className="text-xs text-white ">{data.role}</p>
+                <p className="text-xs text-gray-100 ">{data.role}</p>
               </div>
              
               <p className="text-gray-500 text-sm mt-4 ">{data.description}</p>

@@ -24,7 +24,7 @@ const clients = [
       "https://img.freepik.com/premium-photo/3d-cartoon-old-man_919271-49.jpg",
     profession: "Graphic Designer",
     description:
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur consequuntur unde accusamus reprehenderit totam voluptatum, eaque ipsum accusantium? Ducimus, ipsum. Perferendis similique quisquam animi laudantium dolore ipsam dolorem amet quis."
+    "The Jezh team delivered a standout Dakshin Sahodaya website, revolutionized school elections with EVMs, and fostered AI skills through Jezh Technology's Robo Fun, demonstrating innovation and commitment to technological advancement."
 },
   {
     name: "Michael Brown",
@@ -32,7 +32,7 @@ const clients = [
       "https://img.freepik.com/free-photo/3d-dia-de-muertos-cartoon-style-illustration_23-2151826817.jpg",
     profession: "Marketing Specialist",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur consequuntur unde accusamus reprehenderit totam voluptatum, eaque ipsum accusantium? Ducimus, ipsum. Perferendis similique quisquam animi laudantium dolore ipsam dolorem amet quis."
+      "The Jezh team delivered a standout Dakshin Sahodaya website, revolutionized school elections with EVMs, and fostered AI skills through Jezh Technology's Robo Fun, demonstrating innovation and commitment to technological advancement."
   },
   {
     name: "Sophia Davis",
@@ -40,7 +40,7 @@ const clients = [
       "https://img.freepik.com/free-photo/fun-3d-cartoon-teenage-boy_183364-81073.jpg",
     profession: "Project Manager",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur consequuntur unde accusamus reprehenderit totam voluptatum, eaque ipsum accusantium? Ducimus, ipsum. Perferendis similique quisquam animi laudantium dolore ipsam dolorem amet quis."
+      "The Jezh team delivered a standout Dakshin Sahodaya website, revolutionized school elections with EVMs, and fostered AI skills through Jezh Technology's Robo Fun, demonstrating innovation and commitment to technological advancement."
   },
   {
     name: "James Wilson",
@@ -48,7 +48,7 @@ const clients = [
       "https://img.freepik.com/free-photo/celebration-labour-day-with-3d-cartoon-portrait-working-woman_23-2151306640.jpg",
     profession: "Data Analyst",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur consequuntur unde accusamus reprehenderit totam voluptatum, eaque ipsum accusantium? Ducimus, ipsum. Perferendis similique quisquam animi laudantium dolore ipsam dolorem amet quis."
+      "The Jezh team delivered a standout Dakshin Sahodaya website, revolutionized school elections with EVMs, and fostered AI skills through Jezh Technology's Robo Fun, demonstrating innovation and commitment to technological advancement."
   },
 ];
 

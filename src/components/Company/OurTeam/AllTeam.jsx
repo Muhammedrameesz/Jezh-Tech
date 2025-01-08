@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Anim from "../../../ui/Anim.jsx";
-import { useState} from "react";
+import { useState } from "react";
 
 import Underline from "../../../ui/Underline.jsx";
 import Team1 from "../../../assets/Team/WhatsApp Image 2024-12-23 at 7.04.04 PM.jpeg";
@@ -14,25 +14,24 @@ import Team4 from "../../../assets/Team/WhatsApp Image 2024-12-23 at 7.47.59 PM.
 import Sai from "../../../assets/Team/WhatsApp Image 2024-12-30 at 9.04.19 PM.jpeg";
 import Midhun from "../../../assets/Team/WhatsApp Image 2024-12-30 at 9.04.32 PM.jpeg";
 
-import SreeParvathy from "../../../assets/Team/Sree Parvathy.jpeg"
-import GopiKrishna from "../../../assets/Team/Gopi-Krishna.jpeg"
-import Niksha from "../../../assets/Team/Niksha.jpeg"
-import Smrithy from "../../../assets/Team/Smirthy.jpeg"
-import GiftyMol from "../../../assets/Team/GiftyMol.jpeg"
-import VishnuNarayanan from "../../../assets/Team/Vishnu Narayanan.jpeg"
-import Subash from "../../../assets/Team/Subash.jpeg"
-import Anish from "../../../assets/Team/Anish.jpeg"
-import KeerthyVasan from "../../../assets/Team/Keerthi Vasan.jpeg"
- import Ramees from "../../../assets/Team/Ramees.jpeg"
-import Neeraj from "../../../assets/Team/Neeraj.jpeg"
-
+import SreeParvathy from "../../../assets/Team/Sree Parvathy.jpeg";
+import GopiKrishna from "../../../assets/Team/Gopi-Krishna.jpeg";
+import Niksha from "../../../assets/Team/Niksha.jpeg";
+import Smrithy from "../../../assets/Team/Smirthy.jpeg";
+import GiftyMol from "../../../assets/Team/GiftyMol.jpeg";
+import VishnuNarayanan from "../../../assets/Team/Vishnu Narayanan.jpeg";
+import Subash from "../../../assets/Team/Subash.jpeg";
+import Anish from "../../../assets/Team/Anish.jpeg";
+import KeerthyVasan from "../../../assets/Team/Keerthi Vasan.jpeg";
+import Ramees from "../../../assets/Team/Ramees.jpeg";
+import Neeraj from "../../../assets/Team/Neeraj.jpeg";
 
 const IconStyle =
   "h-4 w-4 cursor-pointer text-violet-500 hover:text-green-500 transform hover:-translate-y-1 transition-all duration-500";
 const content = [
   {
     title: "Shabin",
-    role: "CEO & Founder",
+    role: "Founder & CEO",
     media: [
       {
         faceBook: <CiFacebook className={IconStyle} />,
@@ -47,7 +46,7 @@ const content = [
   },
   {
     title: "Jinu Martin",
-    role: "Director",
+    role: "Director & CTO",
     media: [
       {
         faceBook: <CiFacebook className={IconStyle} />,
@@ -60,10 +59,10 @@ const content = [
       "Jinu Martin is instrumental in shaping Jezh Technologies' overall direction, bringing strategic expertise, leadership, and a commitment to driving growth and innovation.",
     image: Team2,
   },
-  
+
   {
     title: "Arshitha",
-    role: "HOP",
+    role: "Head of Operation",
     media: [
       {
         faceBook: <CiFacebook className={IconStyle} />,
@@ -75,6 +74,22 @@ const content = [
     description:
       "Arshitha plays a key role at Jezh Technologies, ensuring smooth processes, efficient management, and a steadfast commitment to operational excellence and growth.",
     image: Team4,
+  },
+
+  {
+    title: "Sai Srikanth",
+    role: "Chief Operating Officer",
+    media: [
+      {
+        faceBook: <CiFacebook className={IconStyle} />,
+        Twitter: <FiTwitter className={IconStyle} />,
+        Linkidin: <FaInstagram className={IconStyle} />,
+        github: <FaGithub className={IconStyle} />,
+      },
+    ],
+    description:
+      "Sai Srikanth leads with a focus on operational excellence, driving efficiency, innovation, and seamless execution across all functions at Jezh Technologies for optimal results.",
+    image: Sai,
   },
   {
     title: "Mahesh",
@@ -93,23 +108,8 @@ const content = [
     image: Team1,
   },
   {
-    title: "Sai Srikanth",
-    role: "COO",
-    media: [
-      {
-        faceBook: <CiFacebook className={IconStyle} />,
-        Twitter: <FiTwitter className={IconStyle} />,
-        Linkidin: <FaInstagram className={IconStyle} />,
-        github: <FaGithub className={IconStyle} />,
-      },
-    ],
-    description:
-      "Sai Srikanth leads with a focus on operational excellence, driving efficiency, innovation, and seamless execution across all functions at Jezh Technologies for optimal results.",
-    image:Sai,
- },
-  {
     title: "Mithun Shaker",
-    role: "Tech Lead",
+    role: "Technical Lead",
     media: [
       {
         faceBook: <CiFacebook className={IconStyle} />,
@@ -120,9 +120,9 @@ const content = [
     ],
     description:
       "Mithun is the mastermind behind our cutting-edge solutions, combining technical expertise, innovative thinking, and a passion for excellence in delivering top-tier technology.",
-    image:Midhun,
+    image: Midhun,
   },
-  
+
   {
     title: "Dharani",
     role: " Graphic Designer",
@@ -152,8 +152,7 @@ const content = [
     ],
     description:
       "Sree Parvathi shapes our narrative with creativity and precision, delivering content that resonates with Jezh Technologies' vision and engages our audience effectively.",
-    image:SreeParvathy,
-      
+    image: SreeParvathy,
   },
   {
     title: "Gopi Krishna",
@@ -168,7 +167,7 @@ const content = [
     ],
     description:
       "Gopi Krishna focuses on safeguarding Jezh Technologies' digital assets, applying his expertise to protect against emerging cybersecurity threats with precision and vigilance.",
-    image:GopiKrishna,
+    image: GopiKrishna,
   },
   {
     title: "Niksha",
@@ -183,7 +182,7 @@ const content = [
     ],
     description:
       "Niksha supports our IoT research efforts with dedication and curiosity, contributing to innovative projects and solutions with enthusiasm, precision, and unwavering commitment.",
-    image:Niksha,
+    image: Niksha,
   },
   {
     title: "Smirthy",
@@ -198,7 +197,7 @@ const content = [
     ],
     description:
       "Smirthy brings fresh insights to our IoT projects, assisting with research and development, and contributing to innovative solutions as an enthusiastic intern at Jezh Technologies.",
-    image:Smrithy,
+    image: Smrithy,
   },
   {
     title: "Gifty",
@@ -213,7 +212,7 @@ const content = [
     ],
     description:
       "Gifty plays a key role in driving our digital marketing efforts, contributing fresh ideas and energy to elevate Jezh Technologies' online visibility and engagement.",
-    image:GiftyMol,
+    image: GiftyMol,
   },
   {
     title: "Vishnu Narayanan",
@@ -228,7 +227,7 @@ const content = [
     ],
     description:
       "Vishnu Narayanan drives our digital marketing strategies, blending creativity with analytics to boost Jezh Technologies' online presence and enhance customer engagement.",
-    image:VishnuNarayanan,
+    image: VishnuNarayanan,
   },
   {
     title: "Muhammed Ramees ",
@@ -243,7 +242,7 @@ const content = [
     ],
     description:
       "Muhammed Rameez Khan is dedicated to creating dynamic and scalable web applications, leveraging his full-stack development expertise to deliver efficient solutions.",
-    image:Ramees,
+    image: Ramees,
   },
   {
     title: "Keerthi Vasan",
@@ -258,7 +257,7 @@ const content = [
     ],
     description:
       "Keerthi Vasan contributes with a keen interest in no-code development, helping streamline processes and bring innovative solutions to life with a user-friendly approach.",
-    image:KeerthyVasan,
+    image: KeerthyVasan,
   },
   {
     title: "Subash",
@@ -273,7 +272,7 @@ const content = [
     ],
     description:
       "Subash brings innovative no-code solutions to life, crafting intuitive and efficient applications that enhance functionality and streamline user experiences.",
-    image:Subash,
+    image: Subash,
   },
   {
     title: "Anish",
@@ -288,7 +287,7 @@ const content = [
     ],
     description:
       "Anish is dedicated to building intuitive no-code applications, making complex technology accessible, reliable, and innovative while delivering creative and efficient solutions.",
-    image:Anish,
+    image: Anish,
   },
   {
     title: "Neeraj",
@@ -303,13 +302,12 @@ const content = [
     ],
     description:
       "Neeraj is a skilled no-code developer, passionate about creating seamless applications, simplifying complex processes, and delivering innovative, user-friendly solutions efficiently.",
-    image:Neeraj,
+    image: Neeraj,
   },
 ];
 
 export default function AllTeam() {
   const [hover, setHover] = useState(null);
-
 
   // useEffect(() => {
   //   const interval = setInterval(() => {
@@ -368,18 +366,14 @@ export default function AllTeam() {
                 <h3 className="text-base tracking-wider font-semibold text-white">
                   {data.title}
                 </h3>
-                <p className="text-xs text-white">{data.role}</p>
+                <p className="text-xs text-gray-100">{data.role}</p>
               </div>
-
-             
 
               <p className="text-gray-500 text-sm mt-4">{data.description}</p>
             </motion.div>
           </div>
         ))}
       </div>
-
-  
     </div>
   );
 }

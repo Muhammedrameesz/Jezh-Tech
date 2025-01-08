@@ -7,7 +7,7 @@ import UserExp from "../components/Home/SixthSection.jsx"
 import ProudProjects from "../components/Sovablu/ProudProjects.jsx"
 // import PricingPlans from "../components/Sovablu/PricinPlans.jsx"
 import OurClient from "../components/Sovablu/ClientsFeedback.jsx"
-import OurRecentStory from "../components/Sovablu/OurRecentStory.jsx"
+// import OurRecentStory from "../components/Sovablu/OurRecentStory.jsx"
 import StartYourFreeTrail from "../components/Sovablu/StartYourFreeTrail.jsx"
 import RoundedCards from "../components/Sovablu/RoundedCards.jsx"
 import SovablueFaq from "../components/Sovablu/SovableFaq.jsx"
@@ -28,7 +28,7 @@ export default function Sobablu() {
     <HoverLogo/>
 
     <OurClient/>
-    <OurRecentStory/>
+    {/* <OurRecentStory/> */}
     <SovablueFaq/>
     <Form/>
     <StartYourFreeTrail/>
