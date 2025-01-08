@@ -7,7 +7,7 @@ import Pattern from "../../ui/RandomPatterns3.jsx"
 
 function Header() {
   const onScroll = () => {
-    const scrollAmount = window.innerHeight * 0.70; 
+    const scrollAmount = window.innerHeight * 0.64; 
     window.scrollBy({
       top: scrollAmount, 
       behavior: "smooth", 
