@@ -62,7 +62,7 @@ export default function Header() {
 
         <Anim key="anim-button" delay={3}>
           <div onClick={onScroll}>
-            <HoverButton>Contact Us Now</HoverButton>
+            <HoverButton>Know More</HoverButton>
           </div>
         </Anim>
       </div>
