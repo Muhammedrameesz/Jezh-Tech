@@ -8,8 +8,8 @@ export default function Software() {
   return (
     <>
     <Headr/>
-    <OurFetures/>
     <ThirdSection/>
+    <OurFetures/>
     <Faq/>
     <Form/>
     </>

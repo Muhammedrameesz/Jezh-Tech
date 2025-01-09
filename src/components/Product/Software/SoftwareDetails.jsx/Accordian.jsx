@@ -10,10 +10,10 @@ export default function SDAccordian({acc1,acc2,acc3}) {
         <div className="collapse collapse-plus bg-white shadow-custom rounded-none mb-2">
           <input type="radio" name="my-accordion-3" defaultChecked />
           <div className="collapse-title text-base font-medium text-customBlue">
-             {acc1.header}
+             {acc1?.header}
           </div>
           <div className="collapse-content text-gray-500 text-sm">
-            <p>{acc1.des}</p>
+            <p>{acc1?.des}</p>
           </div>
         </div>
   
@@ -21,10 +21,10 @@ export default function SDAccordian({acc1,acc2,acc3}) {
         <div className="collapse collapse-plus bg-white shadow-custom rounded-none mb-2">
           <input type="radio" name="my-accordion-3" />
           <div className="collapse-title text-base font-medium text-customBlue">
-           {acc2.header}
+           {acc2?.header}
           </div>
           <div className="collapse-content text-gray-500 text-sm">
-          <p>{acc2.des}</p>
+          <p>{acc2?.des}</p>
           </div>
         </div>
   
@@ -32,10 +32,10 @@ export default function SDAccordian({acc1,acc2,acc3}) {
         <div className="collapse collapse-plus bg-white shadow-custom rounded-none mb-2">
           <input type="radio" name="my-accordion-3" />
           <div className="collapse-title text-base font-medium text-customBlue">
-           {acc3.header}
+           {acc3?.header}
           </div>
           <div className="collapse-content text-gray-500 text-sm">
-          <p>{acc3.des}</p>
+          <p>{acc3?.des}</p>
           </div>
         </div>
       </div>

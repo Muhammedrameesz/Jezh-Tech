@@ -4,6 +4,7 @@ import Goyaka from "../assets/partners/Goyaka.png"
 import Lagoon from "../assets/partners/lagoon logo.png"
 import UAE from "../assets/partners/UAE Chauffeur.png"
 import WitBlox from "../assets/partners/Witblox.png"
+import BoobaTaxi from "../assets/partners/BoobaTaxi.jpeg"
 
 export const CardData =[
     {
@@ -42,6 +43,13 @@ export const CardData =[
     "price": 300,
     "image": WitBlox,
     "description": "WitBlox offers a DIY robotics kit for children aged 8+, featuring 55 modular parts to explore design, electronics, and programming. The kit encourages hands-on learning through over 100 engaging projects. It’s designed to spark creativity and develop problem-solving skills in young learners."
+},
+{
+    "id": 6,
+    "name": "Booba Taxi",
+    "price": 300,
+    "image": BoobaTaxi,
+    "description": "Booba Taxi is a trusted taxi booking platform, offering safe, reliable, and convenient rides for individuals and groups. With a focus on ease of use, punctuality, and customer satisfaction, they provide smooth and hassle-free transportation for every journey."
 },
 
 ]

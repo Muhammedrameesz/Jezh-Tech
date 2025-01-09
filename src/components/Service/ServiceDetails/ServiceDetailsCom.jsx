@@ -136,6 +136,7 @@ export default function ServiceDetailsCom() {
           <p className="text-gray-500 leading-7 text-justify text-sm">
             {currentService?.description6 && currentService?.description6}
           </p>
+          
           <Accordian/>
         </section>
       </div>

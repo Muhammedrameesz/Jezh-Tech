@@ -6,9 +6,8 @@ import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
 import AnimBT from "../ui/AnimBT.jsx";
 import ANim from "../ui/Anim.jsx";
 // import RandomPatterns2 from "../ui/RandomPatterns4.jsx";
-import { CiLinkedin,CiTwitter,CiFacebook } from "react-icons/ci";
+import { CiLinkedin, CiTwitter, CiFacebook } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
-
 
 export default function Footer() {
   const linkStyle = "text-gray-400 hover:text-customGreen transition";
@@ -56,7 +55,7 @@ export default function Footer() {
               Blog
             </Link>
             <Link to="/career" className={linkStyle}>
-            Career
+              Career
             </Link>
           </div>
 
@@ -73,7 +72,7 @@ export default function Footer() {
               <ContactPhoneOutlinedIcon sx={iconStyle} />
               <a href="tel:+919385722102" className={linkStyle}>
                 +91 9385722102
-              </a> 
+              </a>
               ,{" "}
               <a href="tel:+918428807007" className={linkStyle}>
                 +91 8428807007
@@ -91,33 +90,39 @@ export default function Footer() {
               </a>
             </p>
             <div className="grid grid-cols-4  h-10 w-10 text-2xl gap-10 text-gray-400  ">
-              <FaInstagram className="transform hover:-translate-y-1 hover:text-customGreen transition-all duration-300 cursor-pointer"/>
-              <CiFacebook className="transform hover:-translate-y-1 hover:text-customGreen transition-all duration-300 cursor-pointer"/>
-              <CiTwitter className="transform hover:-translate-y-1 hover:text-customGreen transition-all duration-300 cursor-pointer"/>
-              <CiLinkedin className="transform hover:-translate-y-1 hover:text-customGreen transition-all duration-300 cursor-pointer"/>
-
+              <a href="https://www.instagram.com/jezh_technologies?igsh=MXF0N2h3OHZyaWh2bg==">
+                <FaInstagram className="transform hover:-translate-y-1 hover:text-customGreen transition-all duration-300 cursor-pointer" />
+              </a>
+             
+                {" "}
+                <CiFacebook className="transform hover:-translate-y-1 hover:text-customGreen transition-all duration-300 cursor-pointer" />
+             
+              <a href="https://x.com/Jezhtech?t=Br12bODBOtRqVXX5xFYOug&s=08">
+                {" "}
+                <CiTwitter className="transform hover:-translate-y-1 hover:text-customGreen transition-all duration-300 cursor-pointer" />
+              </a>
+              <a href="https://www.linkedin.com/company/jezh-technologies/">
+                <CiLinkedin className="transform hover:-translate-y-1 hover:text-customGreen transition-all duration-300 cursor-pointer" />
+              </a>
             </div>
           </div>
-     
-        <div className="text-white grid grid-cols-1 gap-5">
-          <h1 className="opacity-0" >Career</h1>
-          
-          <Link to="/services" className={linkStyle}>
+
+          <div className="text-white grid grid-cols-1 gap-5">
+            <h1 className="opacity-0">Career</h1>
+
+            <Link to="/services" className={linkStyle}>
               Services
             </Link>
             <Link to="/sovablu" className={linkStyle}>
               Sovablu
             </Link>
             <Link to="/contact" className={linkStyle}>
-             Contact Us
+              Contact Us
             </Link>
             <Link to="/privacy-policy" className={linkStyle}>
-             Privacy - Policy 
+              Privacy - Policy
             </Link>
-        </div>
-
-
-
+          </div>
         </div>
       </AnimBT>
 
@@ -166,7 +171,8 @@ export default function Footer() {
       {/* Footer Bottom */}
       <div className="border-t border-gray-800"></div>
       <div className="relative z-10 py-4 text-center text-gray-600 text-sm">
-      Copyright © {new Date().getFullYear()} Jezh Technologies. All rights reserved.
+        Copyright © {new Date().getFullYear()} Jezh Technologies. All rights
+        reserved.
       </div>
     </footer>
   );

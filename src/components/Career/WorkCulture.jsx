@@ -8,7 +8,7 @@ export default function WorkCulture() {
       description: "Join our amazing parties and social events that bring everyone together."
     },
     {
-      title: "ECONOMI INCENTIVES",
+      title: "ECONOMIC INCENTIVES",
       icon: <FaDollarSign />,
       description: "Enjoy competitive salary packages and attractive economic incentives."
     },

@@ -35,20 +35,13 @@ export default function Home() {
       <Header />
       <Service/>
       <ThirSection />
-      {/* <Divider sx={{ marginX: "10%" }} className=" bg-neutral-400" /> */}
       <ForthSection />
       <OurFeatures/>
       <FifthSection />
-      {/* <Team/> */}
       <SixthSection />
-      {/* <RecentWorks/> */}
-      {/* <PricingPlans/> */}
       <WhatUsersSaying/>
-      
-      {/* <SeventhSection /> */}
       <LastSection />
       <Accorian/>
-      {/* <News/> */}
     </>
   );
 }

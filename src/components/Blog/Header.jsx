@@ -22,7 +22,7 @@ export default function Header() {
         <img src={Background} alt="" />
       </div>
       <Patterns/>
-      <div className="relative z-10 text-center max-w-xl mt-0  p-10 rounded-lg ">
+      <div className="relative z-10 text-center max-w-[700px] mt-0  p-10 rounded-lg ">
         <Anim key="anim-header">
           <h1 className="text-4xl md:text-4xl font-semibold text-neutral-900 mb-8">
           Tech Talks
@@ -30,7 +30,7 @@ export default function Header() {
         </Anim>
 
         <motion.div
-          className="text-lg md:text-xl text-gray-600 mb-10 leading-relaxed"
+          className="text-lg md:text-xl  text-gray-600 mb-10 leading-relaxed"
           initial="hidden"
           animate="visible"
           variants={{

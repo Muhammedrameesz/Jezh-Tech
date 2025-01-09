@@ -30,7 +30,7 @@ function Header() {
           </h1>
         </ANim>
         <motion.div
-          className="text-lg md:text-xl max-w-2xl text-center text-gray-600 leading-relaxed"
+          className="text-lg md:text-xl max-w-[560px] text-center text-gray-600 leading-relaxed"
           initial="hidden"
           animate="visible"
           variants={{

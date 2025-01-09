@@ -14,7 +14,7 @@ function Header() {
     });
   };
   const sentence =
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit corporis iusto hic quam eveniet culpa nam harum nihil iste magnam adipisci .";
+    "Our innovative hardware products have a positive impact on various industries by helping them to better.";
 
   return (
     <div 
@@ -26,11 +26,11 @@ function Header() {
       <div className="flex flex-col items-center justify-center p-6 gap-6 mt-20 text-neutral-900  ">
         <ANim>
           <h1 className="text-2xl md:text-4xl lg:text-4xl font-semibold ">
-            Hardware
+            Hardware Services
           </h1>
         </ANim>
         <motion.div
-          className="text-lg md:text-xl max-w-2xl text-center text-gray-600 leading-relaxed"
+          className="text-lg md:text-xl max-w-lg text-center text-gray-600 leading-relaxed"
           initial="hidden"
           animate="visible"
           variants={{

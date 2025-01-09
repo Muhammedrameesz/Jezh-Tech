@@ -173,13 +173,13 @@ export default function SoftwareProductseDetailsCom() {
         {/* Text Section */}
         <section className="flex flex-col justify-center gap-4 mx-5 md:mx-10">
           <p className="text-gray-500 leading-7 text-justify text-sm">
-            {SoftwareDetails.des}
+            {SoftwareDetails?.des}
           </p>
 
           <Accordian
-            acc1={currentService.accordianItem1}
-            acc2={currentService.accordianItem2}
-            acc3={currentService.accordianItem3}
+            acc1={currentService?.accordianItem1}
+            acc2={currentService?.accordianItem2}
+            acc3={currentService?.accordianItem3}
           />
         </section>
       </div>

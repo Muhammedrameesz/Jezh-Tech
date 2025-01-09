@@ -107,7 +107,6 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
               {testimonials[active].designation}
             </p>
 
-            
             <motion.p className="text-base text-gray-500 mt-8 dark:text-neutral-300">
               {testimonials[active].quote.split(" ").map((word, index) => (
                 <motion.span
@@ -134,6 +133,16 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
               ))}
             </motion.p>
 
+            <div className="flex gap-5 mt-6">
+              {testimonials[active].media.map((icon, i) => (
+                <div
+                  key={i}
+                  className="flex gap-3 text-5xl"
+                >
+                  {Object.values(icon)}
+                </div>
+              ))}
+            </div>
           </motion.div>
           <div className="flex gap-4 pt-12 md:pt-0">
             <button

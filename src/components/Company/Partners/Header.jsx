@@ -16,7 +16,7 @@ function Header() {
   };
 
   const sentence =
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit corporis iusto hic quam eveniet culpa nam harum nihil iste magnam adipisci .";
+    "We collaborate with trusted partners to drive innovation and deliver top-notch solutions. Explore the synergy that fuels our success.";
 
   return (
     <div 
@@ -32,7 +32,7 @@ function Header() {
           </h1>
         </ANim>
         <motion.div
-          className="text-lg md:text-xl max-w-2xl text-center text-gray-600 leading-relaxed"
+          className="text-lg md:text-xl max-w-[500px] text-center text-gray-600 leading-relaxed"
           initial="hidden"
           animate="visible"
           variants={{

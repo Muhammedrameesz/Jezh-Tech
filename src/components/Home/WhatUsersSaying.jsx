@@ -19,36 +19,36 @@ const clients = [
       "The Jezh team delivered a standout Dakshin Sahodaya website, revolutionized school elections with EVMs, and fostered AI skills through Jezh Technology's Robo Fun, demonstrating innovation and commitment to technological advancement."
   },
   {
-    name: "Emily Johnson",
+    name: "Ravi Shankar",
     image:
       "https://img.freepik.com/premium-photo/3d-cartoon-old-man_919271-49.jpg",
-    profession: "Graphic Designer",
+    profession: "CEO",
     description:
-    "The Jezh team delivered a standout Dakshin Sahodaya website, revolutionized school elections with EVMs, and fostered AI skills through Jezh Technology's Robo Fun, demonstrating innovation and commitment to technological advancement."
+    "Jezh's Electronic Voting Machine streamlined our election process with its affordability and user-friendly design, making it an excellent solution for efficient voting management."
 },
   {
-    name: "Michael Brown",
+    name: "Arun Kumar",
     image:
       "https://img.freepik.com/free-photo/3d-dia-de-muertos-cartoon-style-illustration_23-2151826817.jpg",
-    profession: "Marketing Specialist",
+    profession: "CEO",
     description:
-      "The Jezh team delivered a standout Dakshin Sahodaya website, revolutionized school elections with EVMs, and fostered AI skills through Jezh Technology's Robo Fun, demonstrating innovation and commitment to technological advancement."
+      "Jezh Technologies developed our website with remarkable service and exceptional customization to meet our specific requirements. We are extremely pleased with the outstanding results."
   },
   {
-    name: "Sophia Davis",
+    name: "Divya Prasad",
     image:
       "https://img.freepik.com/free-photo/fun-3d-cartoon-teenage-boy_183364-81073.jpg",
     profession: "Project Manager",
     description:
-      "The Jezh team delivered a standout Dakshin Sahodaya website, revolutionized school elections with EVMs, and fostered AI skills through Jezh Technology's Robo Fun, demonstrating innovation and commitment to technological advancement."
+      " Innovative approach of Jezh Technologies to IoT automation transformed our office operations. Their professionalism and technical expertise are commendable."
   },
   {
-    name: "James Wilson",
+    name: "Nithya Ramesh",
     image:
       "https://img.freepik.com/free-photo/celebration-labour-day-with-3d-cartoon-portrait-working-woman_23-2151306640.jpg",
-    profession: "Data Analyst",
+    profession: "Project Manager",
     description:
-      "The Jezh team delivered a standout Dakshin Sahodaya website, revolutionized school elections with EVMs, and fostered AI skills through Jezh Technology's Robo Fun, demonstrating innovation and commitment to technological advancement."
+      "Our e-commerce site, developed by Jezh Technologies, exceeded our expectations. Their team’s creativity and attention to detail truly stood out."
   },
 ];
 
@@ -110,7 +110,7 @@ export default function WhatUsersSaying() {
       {/* Card */}
 
       <section className="flex justify-center items-center mb-20">
-        <div className=" relative flex  flex-col sm:flex-row items-center bg-white shadow-custom  rounded-lg p-6 sm:p-8 w-full max-w-[90%] md:max-w-[80%] lg:max-w-[60%] space-y-0 sm:space-y-0 sm:space-x-6">
+        <div className=" relative flex  flex-col sm:flex-row items-center bg-white shadow-custom  rounded-lg p-6 sm:p-8 w-full max-w-[90%] md:max-w-[80%] lg:max-w-[60%] h-[250px] space-y-0 sm:space-y-0 sm:space-x-6">
           
         <div className="absolute w-10 h-10 bg-white bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 rotate-45" />
 

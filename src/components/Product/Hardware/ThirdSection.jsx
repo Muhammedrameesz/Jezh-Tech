@@ -36,7 +36,7 @@ export default function ForthSection() {
 
   const content = [
     {
-      title: "Smart Safety Helmet",
+      title: "Skeegle Helmet",
       Icon: <AutoAwesomeIcon />,
       des: "The smart safety helmet integrates advanced technologies for enhanced workplace safety, including features like real-time monitoring and alerts for potential hazards. ",
     },
@@ -50,16 +50,16 @@ export default function ForthSection() {
       Icon: <SettingsInputAntennaOutlinedIcon />,
       des: "Washroom automation includes sensor-based faucets, soap dispensers, and flush systems, enhancing hygiene and efficiency through touchless operation and water conservation.",
     },
-    {
-      title: "Guest Greeting Device",
-      Icon: <AutoAwesomeIcon />,
-      des: "A guest greeting device offers automated, personalized welcomes using AI and facial recognition, enhancing hospitality experiences with seamless interaction and security features.",
-    },
-    {
-      title: "School Automation",
-      Icon: <SmartToyIcon />,
-      des: "School automation streamlines administrative tasks, attendance tracking, grading, communication and between educators, students, and parents, enhancing efficiency and educational outcomes.",
-    },
+    // {
+    //   title: "Guest Greeting Device",
+    //   Icon: <AutoAwesomeIcon />,
+    //   des: "A guest greeting device offers automated, personalized welcomes using AI and facial recognition, enhancing hospitality experiences with seamless interaction and security features.",
+    // },
+    // {
+    //   title: "School Automation",
+    //   Icon: <SmartToyIcon />,
+    //   des: "School automation streamlines administrative tasks, attendance tracking, grading, communication and between educators, students, and parents, enhancing efficiency and educational outcomes.",
+    // },
     {
       title: "Smart AI Coat ",
       Icon: <SettingsInputAntennaOutlinedIcon />,
@@ -74,16 +74,15 @@ export default function ForthSection() {
           className="text-[#0E314C] text-xl md:text-xl lg:text-2xl font-semibold leading-tight mb-4
            "
         >
-          Hardware Services
+          Hardware Products
         </h1>
         <Underline />
-        <p className="text-base text-gray-500 mb-10 max-w-lg">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo,
-          sapiente. A ipsa veniam quos, perferendis, nobis maiores.
+        <p className="text-base text-gray-500 mb-10 max-w-lg text-center">
+        Explore reliable, efficient, and intelligent hardware for a smarter future. 
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-5 md:mx-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mx-5 md:mx-20 lg:mx-32">
         {content?.map((data, i) => (
           <Anim key={i}>
             <motion.div

@@ -57,8 +57,8 @@ export default function Header() {
               visible: {
                 opacity: 1,
                 transition: {
-                  delayChildren: 0.2,
-                  staggerChildren: 0.01,
+                  delayChildren: 0.5,
+                  staggerChildren: 0.05,
                 },
               },
             }}

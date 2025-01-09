@@ -1,5 +1,4 @@
 import SettingsInputAntennaOutlinedIcon from "@mui/icons-material/SettingsInputAntennaOutlined";
-import SmartToyIcon from "@mui/icons-material/SmartToy";
 import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 import Anim from "../../../ui/AnimBT.jsx";
 import Underline from "../../../ui/Underline.jsx";
@@ -7,6 +6,11 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { AnimatePresence, motion } from "framer-motion";
 import useSoftwareDetails from "../../../store/SoftwareProductsStore";
 import {useNavigate} from "react-router-dom"
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import RoomIcon from '@mui/icons-material/Room';
+import LayersIcon from '@mui/icons-material/Layers';
+import JoinLeftIcon from '@mui/icons-material/JoinLeft';
+
 
 export default function ForthSection() {
   const navigate = useNavigate()
@@ -34,7 +38,7 @@ export default function ForthSection() {
   const content = [
     {
       title: "Time Tick",
-      Icon: <SettingsInputAntennaOutlinedIcon />,
+      Icon: <AccessTimeIcon />,
       des: "Time Tick Attendance system uses AI-integrated recognition for facial seamless, accurate, and efficient employee attendance tracking.",
     },
     {
@@ -44,7 +48,7 @@ export default function ForthSection() {
     },
     {
       title: "Trackoon GPS",
-      Icon: <SmartToyIcon />,
+      Icon: <RoomIcon />,
       des: "User-friendly school bus fleet management. Streamlines routes, driver assignments, and maintenance. Improves safety & compliance. Easy setup. Cost-effective.",
     },
     {
@@ -54,8 +58,13 @@ export default function ForthSection() {
     },
     {
       title: "Vendor Management System",
-      Icon: <AutoAwesomeIcon />,
+      Icon: <LayersIcon/>,
       des: "Jezh’s vendor management software streamlines vendor relationships. Easily monitor service providers, manage contracts, and track performance. Automated reminders and enhanced security. Seamlessly integrates with existing processes.",
+    },
+    {
+      title: "Maze LMS",
+      Icon: <JoinLeftIcon />,
+      des: "Maze LMS simplifies learning management with seamless course creation, progress tracking, and assessments. It enhances training efficiency, reduces costs, and improves skill development across organizations of all sizes.",
     },
   ];
 

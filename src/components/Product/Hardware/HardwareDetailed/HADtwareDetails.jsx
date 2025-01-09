@@ -4,18 +4,9 @@ import useHardwareServiceDetails from "../../../../store/HardwareProduct.js";
 import Accordian from "./Accordian.jsx"
 
 const serviceDetailsContent = [
+
   {
-    title: "Time Tick",
-    description:"The Time Tick Attendance System leverages AI-integrated facial recognition technology to streamline employee attendance tracking. This advanced system eliminates manual errors, ensuring accurate and reliable records every time. With its seamless operation, businesses can enjoy efficient workforce management, saving valuable time and resources.",
-    description2:
-      "By automating attendance tracking, Time Tick enhances organizational productivity and reduces administrative burdens. Its AI-powered recognition ensures that attendance is recorded instantaneously and securely, minimizing the risk of fraud. Employees benefit from a hassle-free clock-in process, fostering a more efficient workplace environment.",
-    description3:
-      "Implementing the Time Tick Attendance System also strengthens compliance with attendance policies and labor regulations. Its sophisticated technology offers scalability, making it ideal for businesses of all sizes. With its focus on accuracy and efficiency, Time Tick is a game-changer for modern workforce management.",
-    image:"https://img.freepik.com/free-vector/appointment-booking-with-smartphone-men_23-2148575071.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid",
-    image2:"https://img.freepik.com/free-vector/taxi-service-onboarding-app-screens_23-2148426149.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid"
-},
-  {
-    title: "Smart Safety Helmet",
+    title: "Skeegle Helmet",
     description:
       "The smart safety helmet represents a breakthrough in workplace safety by integrating advanced technologies to protect workers effectively. Its real-time monitoring capabilities ensure that potential hazards are identified immediately, minimizing risks and preventing accidents before they occur. This proactive approach fosters a safer work environment, particularly in high-risk industries like construction, mining, and manufacturing.",
     description2:

@@ -25,6 +25,8 @@ import Anish from "../../../assets/Team/Anish.jpeg";
 import KeerthyVasan from "../../../assets/Team/Keerthi Vasan.jpeg";
 import Ramees from "../../../assets/Team/Ramees.jpeg";
 import Neeraj from "../../../assets/Team/Neeraj.jpeg";
+import Dharani from "../../../assets/Team/Dharani.jpeg"
+
 
 const IconStyle =
   "h-4 w-4 cursor-pointer text-violet-500 hover:text-green-500 transform hover:-translate-y-1 transition-all duration-500";
@@ -136,8 +138,7 @@ const content = [
     ],
     description:
       "Dharani creates visually striking and professional designs, elevating Jezh Technologies' brand identity with creativity, precision, and a keen eye for detail and innovation.",
-    image:
-      "https://img.freepik.com/free-photo/3d-portrait-people_23-2150793856.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid",
+    image:Dharani,
   },
   {
     title: "Sree Parvathi",
@@ -309,15 +310,7 @@ const content = [
 export default function AllTeam() {
   const [hover, setHover] = useState(null);
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     if (sliderRef.current) {
-  //       sliderRef.current.slickNext();
-  //     }
-  //   }, 5000);
-
-  //   return () => clearInterval(interval);
-  // }, []);
+ 
 
   return (
     <div className="bg-customWhite py-20 font-jost">
@@ -329,8 +322,7 @@ export default function AllTeam() {
           <Underline />
 
           <p className="text-base text-gray-500 text-center max-w-lg leading-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Discover the talented individuals who bring our company to life and drive our success.
           </p>
         </div>
       </Anim>

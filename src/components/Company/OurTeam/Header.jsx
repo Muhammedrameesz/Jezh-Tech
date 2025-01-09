@@ -30,7 +30,7 @@ function App() {
           </h1>
         </ANim>
         <motion.div
-          className="text-lg md:text-xl max-w-2xl text-center text-gray-600 leading-6"
+          className="text-lg md:text-xl max-w-[590px] text-center text-gray-600 leading-6"
           initial="hidden"
           animate="visible"
           variants={{
