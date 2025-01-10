@@ -18,6 +18,20 @@ const serviceDetailsContent = [
     description3:
       "Partner with us to transform your environment with cutting-edge IoT automation tailored to your needs. We prioritize scalability, reliability, and user-friendly interfaces to ensure our solutions grow with your demands. Experience the future of technology today with our innovative IoT services. ",
     image: image1,
+    accordiandata:[
+      {
+        title:"IoT Automation",
+        quote:"Real-Time Monitoring and Control :IoT automation enables real-time data collection and analysis from connected devices, allowing users to monitor and control systems remotely through smartphones, computers, or other interfaces.",
+      },
+      {
+        title:"Interconnectivity and Communication",
+        quote:"IoT devices are interconnected and communicate seamlessly via wireless protocols. ",
+      },
+      {
+        title:"Data-Driven Decision Making",
+        quote:"IoT automation leverages data from sensors and devices to identify patterns, make predictions, and optimize performance.",
+      },   
+    ]
   },
   {
     title: "Website Development Services",
@@ -28,6 +42,20 @@ const serviceDetailsContent = [
     description3:
       "We don’t just build websites; we create digital experiences that captivate your audience and drive growth. Partner with us for reliable maintenance, regular updates, and scalable solutions to keep your online presence thriving. ",
     image: image2,
+    accordiandata:[
+      {
+        title:" User-Centric ",
+        quote:"We design and develop websites with the user in mind, ensuring easy navigation, accessibility, and a seamless user journey.",
+      },
+      {
+        title:"Responsive Designs",
+        quote:"Our websites look stunning and function perfectly across all devices, providing a consistent user experience regardless of how they access your site. ",
+      },
+      {
+        title:"Modern Tech",
+        quote:"Utilizing the latest web technologies and frameworks for high-performance and cutting-edge solutions.",
+      },   
+    ]
   },
   {
     title: "Software Development",
@@ -38,6 +66,20 @@ const serviceDetailsContent = [
     description3:
       "Beyond development, we provide ongoing support and maintenance to keep your software secure and up to date with our expertise, your business gains the digital tools needed to stay competitive and thrive in an ever-changing technological landscape. Let us help you build solutions that drive success. ",
     image: image5,
+    accordiandata:[
+      {
+        title:"User-Centric Design",
+        quote:"We prioritize understanding your needs and creating software that is intuitive, efficient, and enjoyable to use.",
+      },
+      {
+        title:"Agile Development",
+        quote:"We embrace flexibility and adapt to changing requirements throughout the development process, ensuring your software stays relevant.",
+      },
+      {
+        title:"Quality Assurance",
+        quote:"We conduct rigorous testing and implement robust quality control measures to deliver software that is reliable, secure, and free of defects.",
+      },   
+    ]
   },
   {
     title: "Research & Development",
@@ -48,6 +90,20 @@ const serviceDetailsContent = [
     description3:
       "Partner with us to leverage our R&D services for a smarter, more innovative approach to growth. Let us help you bridge the gap between your vision and tangible achievements, driving success through unparalleled expertise and dedication.",
     image: image6,
+    accordiandata:[
+      {
+        title:"Innovation",
+        quote:"R&D fuels innovation by pushing the boundaries of knowledge and developing novel solutions to existing problems. This leads to new products, services, and technologies that drive progress and improve lives.",
+      },
+      {
+        title:" Competitive Advantage",
+        quote:"Investing in R&D allows companies to stay ahead of the curve and gain a competitive edge. Through continuous research and development, businesses can develop unique offerings, improve efficiency, and enhance their market position.",
+      },
+      {
+        title:"Future-Proofing",
+        quote:"R&D is essential for long-term success and sustainability. By anticipating future trends and challenges, businesses can adapt and evolve, ensuring they remain relevant and competitive in a rapidly changing world.",
+      },   
+    ]
   },
   {
     title: "E-commerce Development",
@@ -64,6 +120,20 @@ const serviceDetailsContent = [
     description6:
       "Whether you're looking to grow your brand, launch new products, or boost sales, we provide end-to-end solutions to achieve measurable results. Partner with us to harness the power of digital marketing and transform your online potential into success. Let’s take your business to the next level!",
     image: image3,
+    accordiandata:[
+      {
+        title:"User-Friendly",
+        quote:"We design online stores that are easy for customers to navigate and shop.",
+      },
+      {
+        title:"Secure & Reliable",
+        quote:"Our platforms are built for speed and security, with features like secure payments and inventory management.",
+      },
+      {
+        title:"SEO Optimized",
+        quote:"We help your online store rank higher in search results, bringing you more customers.",
+      },   
+    ]
   },
   {
     title: "Digital Marketing",
@@ -74,6 +144,20 @@ const serviceDetailsContent = [
     description3:
       "Whether you're looking to grow your brand, launch new products, or boost sales, we provide end-to-end solutions to achieve measurable results. Partner with us to harness the power of digital marketing and transform your online potential into success. Let’s take your business to the next level!",
     image: image4,
+    accordiandata:[
+      {
+        title:"Data-Driven",
+        quote:"We use data and insights to create effective marketing campaigns that get results.",
+      },
+      {
+        title:"Full-Service",
+        quote:"We offer a wide range of services to meet all your digital marketing needs.",
+      },
+      {
+        title:"Results-Focused",
+        quote:"We're dedicated to helping you achieve your business goals.",
+      },   
+    ]
   },
 ];
 
@@ -137,7 +221,7 @@ export default function ServiceDetailsCom() {
             {currentService?.description6 && currentService?.description6}
           </p>
           
-          <Accordian/>
+          <Accordian accordianData={currentService.accordiandata}/>
         </section>
       </div>
     </div>

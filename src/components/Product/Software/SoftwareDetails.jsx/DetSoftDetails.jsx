@@ -130,7 +130,11 @@ export default function SoftwareProductseDetailsCom() {
     (state) => state.SoftwareProductsDetails
   );
   const currentService = serviceDetailsContent.find(
-    (item) => item.title === SoftwareDetails.title
+    (item) => {
+       console.log("currenet:",item.title);
+       console.log("Store:",SoftwareDetails.title);
+     return item.title === SoftwareDetails.title
+    }
   );
 
   return (

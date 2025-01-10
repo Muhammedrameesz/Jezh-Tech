@@ -13,8 +13,9 @@ export default function ForthSection() {
   const softwareProductDet = useSoftwareDetails(
     (state) => state.setHardwareProductsDetails
   );
-
-  const handleClick = async (title, index) => {
+   
+  const  resetHardwareProductsDetails =useSoftwareDetails((state)=>state.resetHardwareProductsDetails)
+  const handleClick =  (title, index) => {
     try {
       // Validate inputs
       if (!title || typeof title !== "string") {
@@ -23,11 +24,8 @@ export default function ForthSection() {
       if (typeof index !== "number") {
         throw new Error("Index is missing or not a valid number.");
       }
-
-      // Call the state setter with provided title and index
-      await softwareProductDet({ title, index });
-
-      // Navigate to the target page
+      resetHardwareProductsDetails()
+       softwareProductDet({ title, index });
       navigate("/hardwareProductsDetails");
     } catch (error) {
       console.error("Error:", error.message);
@@ -50,18 +48,8 @@ export default function ForthSection() {
       Icon: <SettingsInputAntennaOutlinedIcon />,
       des: "Washroom automation includes sensor-based faucets, soap dispensers, and flush systems, enhancing hygiene and efficiency through touchless operation and water conservation.",
     },
-    // {
-    //   title: "Guest Greeting Device",
-    //   Icon: <AutoAwesomeIcon />,
-    //   des: "A guest greeting device offers automated, personalized welcomes using AI and facial recognition, enhancing hospitality experiences with seamless interaction and security features.",
-    // },
-    // {
-    //   title: "School Automation",
-    //   Icon: <SmartToyIcon />,
-    //   des: "School automation streamlines administrative tasks, attendance tracking, grading, communication and between educators, students, and parents, enhancing efficiency and educational outcomes.",
-    // },
     {
-      title: "Smart AI Coat ",
+      title: "Smart AI Coat",
       Icon: <SettingsInputAntennaOutlinedIcon />,
       des: "Al-enabled smart coat represents a significant advancement in wearable healthcare technology, offering a proactive approach to health management.",
     },

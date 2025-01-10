@@ -4,13 +4,9 @@ import Pattern from "../../../../ui/RandomPatterns3.jsx"
 import Background from "../../../../assets/image2/background/banner-bg1.jpg"
 
 import useSoftwareProductsDetails from "../../../../store/HardwareProduct.js"
-import { useEffect } from "react";
 
 function Header() {
     const productsDetails = useSoftwareProductsDetails((state)=>state.hardwareProductsDetails)
-    useEffect(()=>{
-        console.log(productsDetails);
-    },[productsDetails])
 
   return (
     <div 
