@@ -83,7 +83,7 @@ const content = [
     image:Sai,
  },
   {
-    title: "Mithun Shaker",
+    title: "Mithun Shanker",
     role: "Technical Lead",
     media: [
       {

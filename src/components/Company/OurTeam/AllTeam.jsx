@@ -110,7 +110,7 @@ const content = [
     image: Team1,
   },
   {
-    title: "Mithun Shaker",
+    title: "Mithun Shanker",
     role: "Technical Lead",
     media: [
       {
@@ -276,7 +276,7 @@ const content = [
     image: Subash,
   },
   {
-    title: "Anish",
+    title: "Kanal Sathriya Anish",
     role: "No Code developer - Intern",
     media: [
       {
