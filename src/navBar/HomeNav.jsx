@@ -79,7 +79,7 @@ export default function HomeNav() {
                   to={item.hasDropdown ? "#" : item.path}
                   className={` ${linkActive === item.element || activeRef === item.element || activeDrop === item.element ? "text-customGreen" : "text-gray-600"} 
                   tracking-tight leading-relaxed px-4  py-2 rounded-full transition-all duration-300 
-                  transform hover:text-customGreen hover:scale-105  
+                  transform hover:text-customGreen  hover:scale-105  
                     ${item.hasDropdown && isDropdownOpen && activeLink === item.element && "text-customGreen"}
                   ${item.hasDropdown ? "cursor-text" : "cursor-pointer"}`}
                 >

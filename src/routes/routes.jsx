@@ -16,6 +16,7 @@ import ServiceDetails from "../pages/ServiceDetails.jsx"
 import HardwareDetails from "../pages/Products/HardwareDetails.jsx"
 import PrivacyPolicy from "../pages/PrivacyPolicy.jsx"
 import SoftwareDetails from "../pages/Products/SoftwareDetails.jsx"
+import CoreX from "../pages/CoreX.jsx"
 
 
 export const Router = createBrowserRouter([
@@ -86,7 +87,11 @@ export const Router = createBrowserRouter([
         {
           path:"/privacy-policy",
           element:<PrivacyPolicy/>
-      }
+      },
+      {
+        path:"/CoreX-ERP",
+        element:<CoreX/>
+    }
       
     ],
   },

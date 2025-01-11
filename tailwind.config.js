@@ -18,7 +18,8 @@ export default {
         oracleGray: "#abb8c3",
         "custom-purple": '#6a0fbe',
         customWhite:"#f7fafd",
-        customGrayish:"#f9f6f6"
+        customGrayish:"#f9f6f6",
+        
       },
       fontWeight: {
         custom: '450', // Add a custom weight

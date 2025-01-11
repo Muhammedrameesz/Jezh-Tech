@@ -6,12 +6,14 @@ import { IoHardwareChip } from "react-icons/io5";
 import { FaBlog } from "react-icons/fa";
 import { FaBusinessTime } from "react-icons/fa";
 
+
 export const navLinks = [
   { path: "", element: "Company", hasDropdown: true },
   { path: "/services", element: "Services" },
   { path: "", element: "Products", hasDropdown: true },
   { path: "/sovablu", element: "Sovablu" },
   { path: "", element: "Resources", hasDropdown: true },
+  {path:"/CoreX-ERP",element:"CoreX ERP"}
 ];
 
 export const dropdownLinks = [
