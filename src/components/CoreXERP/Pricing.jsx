@@ -1,6 +1,6 @@
 export default function Pricing() {
   return (
-    <div className="font-jost py-14">
+    <div className="font-jost pt-14 pb-5">
       <section className="flex flex-col justify-center items-center text-center gap-4 mb-5">
         <h1 className="text-2xl md:text-3xl lg:text-4xl text-customBlue">
           Simple <span className="font-semibold">Pricing,</span> Tailored for
@@ -170,6 +170,10 @@ export default function Pricing() {
           </table>
         </div>
       </section>
+
+         <div className="flex justify-center items-center text-center mt-5">
+            <h1 className="text-sm text-gray-500">Pick a plan that matches your goals. No hidden fees, cancel anytime.</h1>
+         </div>
     </div>
   );
 }
