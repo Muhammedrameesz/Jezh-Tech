@@ -68,7 +68,7 @@ export default function LogoHover() {
 
   return (
     <div className="w-full absolute -bottom-10 translate-y-1/2 ">
-      <section className="grid grid-cols-2 justify-center items-center md:grid-cols-3 lg:grid-cols-6 bg-white p-10 gap-5 rounded-lg mx-16 md:mx-20 shadow-lg">
+      <section className="grid grid-cols-3 justify-center items-center md:grid-cols-3 lg:grid-cols-6 bg-white p-10 gap-5 rounded-lg mx-16 md:mx-20 shadow-lg">
         {partners.map((partner, index) => (
           <div key={index} className="relative">
             <img
