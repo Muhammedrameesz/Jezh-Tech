@@ -12,8 +12,8 @@ export default function Pricing() {
       </section>
 
       <section>
-        <div className="overflow-x-auto p-4">
-          <table className="min-w-full border-collapse border border-gray-300">
+        <div className="overflow-x-auto p-4 ">
+          <table className="min-w-full border-collapse border-x  border-gray-300">
             <thead>
               <tr className="bg-[#dff7df] text-left  font-semibold text-xl ">
                 <th className="p-4 border-b border-r border-gray-300">Plan</th>
@@ -155,7 +155,7 @@ export default function Pricing() {
                   </button>
                 </td>
                 <td className="p-4  border-r text-center border-r-customBlue bg-[#dff7df]">
-                  <button className="rounded-full bg-customGreen border p-2 px-6 font-semibold text-white border-customGreen hover:bg-purple-600 hover:text-white transition-all duration-300">
+                  <button className="rounded-full bg-customGreen border p-2 px-6 font-semibold text-white border-customGreen hover:bg-purple-600 hover:border-purple-600 hover:text-white transition-all duration-300">
                     Get Started
                   </button>
                 </td>
