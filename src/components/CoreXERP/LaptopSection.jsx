@@ -6,14 +6,14 @@ export default function LaptopSection() {
   return (
     <div className="pt-5 pb-20 font-jost">
         <section className="relative mx-10 md:mx-20">
-            <img src={Books} alt="books" className="absolute -right-10 bottom-10 h-[170px] -z-10"/>
+            <img src={Books} alt="books" className="hidden md:block md:absolute md:-right-10 md:bottom-10 md:h-[170px] -z-10"/>
             <div className="relative"> 
             <img src={Laptop} alt="laptop" className="w-full h-full z-0"/>
                <div className="absolute top-1/3 left-1/2 -translate-x-1/2 ">
-                  <IoPlay className="bg-customGreen text-8xl rounded-full p-4 cursor-pointer hover:bg-red-600 transition-colors duration-200"/>
+                  <IoPlay className="bg-customGreen text-5xl md:text-8xl rounded-full p-4 cursor-pointer hover:bg-[#FF0000] transition-colors duration-200"/>
                </div>
             </div>
-            <div className="absolute -left-[150px] top-[280px] -rotate-90">
+            <div className="relative mt-5 md:absolute md:-left-[150px] md:top-[280px] md:-rotate-90">
                 <span className="text-customGreen text-xl font-semibold">Lorem, ipsum dolor sit  </span>
                 <span className="text-blue-500 text-xl font-semibold">Neque ipsa quis iusto   </span>
             </div>

@@ -179,12 +179,11 @@ export default function Blogs() {
   };
 
   const navigate = useNavigate()
+
   const handleDetails =async(image,date,title,description)=>{
       try {
         setBlogDetails({image:image,date:date,title:title,description:description})
-         navigate('/blog/details')
-        console.log(image,date,title,description);
-        
+         navigate('/blog/details') 
       } catch (error) {
         console.log(error);
       }

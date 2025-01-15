@@ -1,49 +1,51 @@
-import {
-  FaReact,
-  FaNodeJs,
-  FaPython,
-  FaJava,
-  FaDatabase,
-  FaAws,
-} from "react-icons/fa";
+
 import Image from "../../assets/CoreXImages/valuable-product.png";
+// import { FaRegClock, FaTasks, FaChartLine, FaExpandArrowsAlt, FaUsers, FaShieldAlt } from 'react-icons/fa';
+import {
+  FaRegClock,
+  FaRegCheckCircle,
+  FaRegChartBar,
+  FaRegArrowAltCircleUp,
+  FaRegHandshake,
+  FaRegLifeRing
+} from 'react-icons/fa';
 
 const contents = [
   {
-    icon: <FaReact size={40} />,
-    title: "React Development",
+    icon: <FaRegClock size={35} />,
+    title: "Saves Time",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Automate repetitive processes and optimize workflows, so you can focus on your core business goals without unnecessary delays.",
   },
   {
-    icon: <FaNodeJs size={40} />,
-    title: "Node.js Backend",
+    icon: <FaRegCheckCircle size={35} />,
+    title: "Boosts Efficiency",
     description:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Consolidate your operations into a single, centralized platform to minimize complexity, increase accuracy, and elevate productivity.",
   },
   {
-    icon: <FaPython size={40} />,
-    title: "Python Scripting",
+    icon: <FaRegChartBar size={35} />,
+    title: "Data-Driven Insights",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Leverage real-time analytics and comprehensive reporting to make informed decisions that drive success.",
   },
   {
-    icon: <FaJava size={40} />,
-    title: "Java Programming",
+    icon: <FaRegArrowAltCircleUp size={35} />,
+    title: "Scalable for Growth",
     description:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "CoreX ERP grows with your business, providing the flexibility and support needed at every stage of your journey.",
   },
   {
-    icon: <FaDatabase size={40} />,
-    title: "Database Management",
+    icon: <FaRegHandshake size={35} />,
+    title: "Enhanced Collaboration",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Facilitate seamless communication and data sharing across teams, ensuring everyone is on the same page and working toward common goals.",
   },
   {
-    icon: <FaAws size={40} />,
-    title: "AWS Cloud Services",
+    icon: <FaRegLifeRing size={35} />,
+    title: "Robust Security",
     description:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Protect your business-critical data with advanced security features, ensuring compliance and peace of mind.",
   },
 ];
 
@@ -51,17 +53,16 @@ const LayoutComponent = () => {
   return (
     <div className="space-y-12 bg-white font-jost py-16">
       {/* Two Column Layout for Heading and Description */}
-      <div className="flex flex-col md:flex-row justify-center items-center px-4 max-w-7xl mx-auto space-y-6 md:space-y-0 ">
-        <div className="md:w-1/2 ">
-          <h1 className="text-2xl  md:text-4xl  text-customBlue mb-4 text-center">
-            Empowering <span className="font-semibold">Your Business</span>
+      <div className="grid grid-cols-1 md:grid-cols-3 justify-center items-center mx-5 md:mx-8 px-4 max-w-7xl gap-6">
+        <div className="">
+          <h1 className="text-2xl md:text-4xl  text-customBlue ">
+          Why CoreX is the right
           </h1>
+          <h1 className="text-2xl  md:text-4xl  text-customBlue "><span className="font-semibold"> choice </span> for you</h1>
         </div>
-        <div className="md:w-1/2 ">
+        <div className=" col-span-2">
           <p className="text-lg text-gray-500 text-start">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-            ipsum suspendisse ultrices gravida dictum fusce ut.
+          Our CoreX ERP solution is designed to simplify and streamline your business operations by integrating all essential tools and data into one seamless platform. Experience enhanced productivity, improved collaboration, and smarter decision-making, all while saving time and reducing costs. Whether you&apos;re a startup or a growing enterprise, CoreX ERP adapts to meet your unique business needs. 
           </p>
         </div>
       </div>

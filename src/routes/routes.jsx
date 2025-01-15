@@ -12,12 +12,12 @@ import Blog from "../pages/Resources/Blog.jsx";
 import Career from "../pages/Resources/Career.jsx";
 import Contact from "../pages/contact.jsx";
 import BlogDetails from "../pages/Resources/BlogDetals/BlogDetails.jsx";
-import ServiceDetails from "../pages/ServiceDetails.jsx"
-import HardwareDetails from "../pages/Products/HardwareDetails.jsx"
-import PrivacyPolicy from "../pages/PrivacyPolicy.jsx"
-import SoftwareDetails from "../pages/Products/SoftwareDetails.jsx"
-import CoreX from "../pages/CoreX.jsx"
-
+import ServiceDetails from "../pages/ServiceDetails.jsx";
+import HardwareDetails from "../pages/Products/HardwareDetails.jsx";
+import PrivacyPolicy from "../pages/PrivacyPolicy.jsx";
+import SoftwareDetails from "../pages/Products/SoftwareDetails.jsx";
+import CoreX from "../pages/CoreX.jsx";
+import CorexLayout from "../layout/CorexLayout.jsx";
 
 export const Router = createBrowserRouter([
   {
@@ -52,12 +52,12 @@ export const Router = createBrowserRouter([
         element: <Software />,
       },
       {
-        path:"/hardwareProductsDetails",
-        element:<HardwareDetails/>
+        path: "/hardwareProductsDetails",
+        element: <HardwareDetails />,
       },
       {
-        path:"/softwareProductsDetails",
-        element:<SoftwareDetails/>
+        path: "/softwareProductsDetails",
+        element: <SoftwareDetails />,
       },
       {
         path: "/products/hardware",
@@ -83,16 +83,20 @@ export const Router = createBrowserRouter([
         path: "/contact",
         element: <Contact />,
       },
-      
-        {
-          path:"/privacy-policy",
-          element:<PrivacyPolicy/>
-      },
+
       {
-        path:"/CoreX-ERP",
-        element:<CoreX/>
-    }
-      
+        path: "/privacy-policy",
+        element: <PrivacyPolicy />,
+      },
+    ],
+  },
+  {
+    element: <CorexLayout />,
+    children: [
+      {
+        path: "/CoreX-ERP",
+        element: <CoreX />,
+      },
     ],
   },
 ]);

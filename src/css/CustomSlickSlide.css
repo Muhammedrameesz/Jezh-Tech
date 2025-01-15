@@ -26,6 +26,10 @@
 .slick-dots li:hover button:before {
   color: #a0d201; /* Hover color */
 }
+.slick-arrow {
+  z-index: 10; /* Ensure arrows are above the slides */
+  display: block !important; /* Force arrows to display */
+}
 /* .slick-slide {
   margin-right: 16px; 
 }

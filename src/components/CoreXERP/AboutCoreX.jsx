@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import HoverButton from "../../ui/SwipeButton.jsx/Swipe1.jsx";
 
+
 export default function AboutCoreX() {
+  const navigate = useNavigate()
   const contents = [
     {
       title: "Innovative Solutions",
@@ -15,20 +18,24 @@ export default function AboutCoreX() {
   ];
 
   return (
-    <div className="relative bg-purple-400 min-h-screen py-16">
-      <div className="flex flex-col justify-center items-center text-center max-w-3xl mx-auto p-6 space-y-4">
-        <span className="p-2 px-6 shadow-xl rounded-full bg-purple-500 text-white text-sm">
+    <div className="relative bg-[#ada8f0] min-h-screen py-16 ">
+      <div className="absolute w-[50%] h-[95%] bg-[#b5b1f2] backdrop-blur-3xl top-5 rounded-full left-1/3 -translate-x-1/3 border border-[#c8c5e9]"></div>
+      <div className="absolute w-[50%] h-[95%] bg-[#b5b1f2] backdrop-blur-3xl top-5 rounded-full right-1/3 translate-x-1/3 border border-[#c8c5e9] "></div>
+
+      <div className="flex flex-col justify-center items-center text-center max-w-3xl mx-auto p-6 space-y-4 ">
+        <span className="p-2 px-6 shadow-xl rounded-full bg-[#a6a1ee] text-white text-sm z-10">
           About CoreX ERP
         </span>
-        <h1 className="text-2xl  leading-relaxed text-gray-700">
+        <h1 className="text-2xl  leading-relaxed text-gray-700 z-10">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
-          <span className="font-semibold">Cupiditate sequi</span> tenetur nulla iste optio doloremque
-          culpa nesciunt, sapiente libero nostrum dignissimos, minima quod nemo
-          voluptatem rem. Aspernatur cum unde quod.
+          <span className="font-semibold">Cupiditate sequi</span> tenetur nulla
+          iste optio doloremque culpa nesciunt, sapiente libero nostrum
+          dignissimos, minima quod nemo voluptatem rem. Aspernatur cum unde
+          quod.
         </h1>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-6 p-6">
+      <div className="flex flex-wrap justify-center gap-6 p-6 z-10">
         {contents.map((content, index) => (
           <div
             key={index}
@@ -45,7 +52,7 @@ export default function AboutCoreX() {
         ))}
       </div>
 
-      <div className="flex items-center justify-center py-5 mt-4">
+      <div onClick={()=>navigate('/about-us')} className="flex items-center justify-center py-5 mt-4">
         <HoverButton>More ABout Us</HoverButton>
       </div>
     </div>
