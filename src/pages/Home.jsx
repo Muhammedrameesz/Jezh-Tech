@@ -4,11 +4,9 @@ import ForthSection from "../components/Home/ForthSection.jsx";
 import FifthSection from "../components/Home/FifthSection.jsx";
 import SixthSection from "../components/Home/SixthSection.jsx";
 import LastSection from "../components/Home/LastSection.jsx";
-// import { Divider } from "@mui/material";
-// import SeventhSection from "../components/Home/SeventhSection.jsx";
 import Service from "../components/Home/Service.jsx";
 import OurFeatures from "../components/Home/OurFeatures.jsx";
-// import RecentWorks from "../components/Home/RecentWorks.jsx"
+import RecentWorks from "../components/Home/RecentWorks.jsx"
 import WhatUsersSaying from "../components/Home/WhatUsersSaying.jsx";
 // import News from "../components/Home/News.jsx";
 import { Helmet } from "react-helmet-async";
