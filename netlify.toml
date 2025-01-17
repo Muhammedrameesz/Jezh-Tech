@@ -10,10 +10,11 @@
       font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net;
       object-src 'none';
       frame-src 'none';
+      frame-ancestors 'self'; # Prevent unauthorized framing
       base-uri 'self';
       upgrade-insecure-requests;
     """
     Referrer-Policy = "no-referrer"
     X-Content-Type-Options = "nosniff"
     Permissions-Policy = "geolocation=(), microphone=(), camera=()"
-    X-Frame-Options = "DENY"
+    X-Frame-Options = "DENY" # Fallback for older browsers
