@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import {toast} from "react-toastify"
 
 const SecurityFeatures = () => {
   useEffect(() => {
@@ -11,17 +12,16 @@ const SecurityFeatures = () => {
     // Prevent right-click
     const handleContextMenu = (event) => {
       event.preventDefault();
-      alert("Right-click is disabled!");
+     toast.error("Right-click is disabled!");
     };
 
     // Prevent opening developer tools
     const handleKeyDown = (event) => {
       if (event.key === "F12" || (event.ctrlKey && event.shiftKey && event.key === "I")) {
         event.preventDefault();
-        alert("Access to developer tools is restricted!");
+        toast.error("Access to developer tools is restricted!");
       }
     };
-
     // Add event listeners
     document.addEventListener("copy", handleCopy);
     document.addEventListener("contextmenu", handleContextMenu);
