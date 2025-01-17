@@ -1,41 +1,63 @@
 import { useEffect } from "react";
-import {toast} from "react-toastify"
+import { toast } from "react-toastify";
 
 const SecurityFeatures = () => {
   useEffect(() => {
-    // Prevent copying content
+   
     const handleCopy = (event) => {
-      event.clipboardData.setData("text/plain", "Restricted to paste contents");
+      event.clipboardData.setData("text/plain", "Copying is restricted!");
       event.preventDefault();
+      toast.warning("Copying is disabled on this site.");
     };
 
-    // Prevent right-click
+ 
     const handleContextMenu = (event) => {
       event.preventDefault();
-     toast.error("Right-click is disabled!");
+      toast.error("Right-click is disabled for security reasons.");
     };
 
-    // Prevent opening developer tools
+ 
     const handleKeyDown = (event) => {
-      if (event.key === "F12" || (event.ctrlKey && event.shiftKey && event.key === "I")) {
+      if (
+        event.key === "F12" || 
+        (event.ctrlKey && event.shiftKey && event.key === "I") || 
+        (event.ctrlKey && event.shiftKey && event.key === "C") || 
+        (event.ctrlKey && event.shiftKey && event.key === "J") || 
+        (event.ctrlKey && event.key === "U") 
+      ) {
         event.preventDefault();
-        toast.error("Access to developer tools is restricted!");
+        toast.error("Developer tools access is restricted.");
       }
     };
-    // Add event listeners
+
+   
+    const detectDevTools = () => {
+      const devtools = new Function("debugger;");
+      try {
+        devtools();
+      } catch (e) {
+        toast.error("Developer tools are detected. Actions are restricted!");
+       
+      }
+    };
+
+    const devToolsInterval = setInterval(detectDevTools, 1000);
+
+ 
     document.addEventListener("copy", handleCopy);
     document.addEventListener("contextmenu", handleContextMenu);
     document.addEventListener("keydown", handleKeyDown);
 
-    // Cleanup on component unmount
+   
     return () => {
       document.removeEventListener("copy", handleCopy);
       document.removeEventListener("contextmenu", handleContextMenu);
       document.removeEventListener("keydown", handleKeyDown);
+      clearInterval(devToolsInterval);
     };
   }, []);
 
-  return null; // No visual output
+  return null; 
 };
 
 export default SecurityFeatures;
