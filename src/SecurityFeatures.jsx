@@ -31,17 +31,17 @@ const SecurityFeatures = () => {
     };
 
    
-    const detectDevTools = () => {
-      const devtools = new Function("debugger;");
-      try {
-        devtools();
-      } catch (e) {
-        toast.error("Developer tools are detected. Actions are restricted!");
+    // const detectDevTools = () => {
+    //   const devtools = new Function("debugger;");
+    //   try {
+    //     devtools();
+    //   } catch (e) {
+    //     toast.error("Developer tools are detected. Actions are restricted!");
        
-      }
-    };
+    //   }
+    // };
 
-    const devToolsInterval = setInterval(detectDevTools, 1000);
+    // const devToolsInterval = setInterval(detectDevTools, 1000);
 
  
     document.addEventListener("copy", handleCopy);
@@ -53,7 +53,7 @@ const SecurityFeatures = () => {
       document.removeEventListener("copy", handleCopy);
       document.removeEventListener("contextmenu", handleContextMenu);
       document.removeEventListener("keydown", handleKeyDown);
-      clearInterval(devToolsInterval);
+      // clearInterval(devToolsInterval);
     };
   }, []);
 
