@@ -1,5 +1,8 @@
 [[headers]]
-for = "/*"
-[headers.values]
-X-Frame-Options = "DENY"
-Content-Security-Policy = "frame-ancestors 'none';"
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; script-src 'self' https://api.emailjs.com; style-src 'self'; img-src 'self' data: https:; connect-src 'self' https://api.emailjs.com; object-src 'none'; frame-src 'none'; base-uri 'self'; upgrade-insecure-requests;"
+    Referrer-Policy = "no-referrer"
+    X-Content-Type-Options = "nosniff"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+    X-Frame-Options = "DENY"
