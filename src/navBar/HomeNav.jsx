@@ -182,7 +182,7 @@ export default function HomeNav() {
           <SupportButton>Contact Us</SupportButton>
         </div>
 
-        {/* Responsive Navigation */}
+        {/* Responsive Navigation in  */}
         <div className="flex lg:hidden justify-end items-center">
           <ResponsiveNav />
         </div>
