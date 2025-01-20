@@ -26,21 +26,21 @@ export default function ResponsiveNav() {
   };
 
   return (
-    <div className="font-jost">
+    <div className="font-jost absolute top-0 left-0 w-full z-50">
       {/* Navbar Toggle Button */}
-      <div className="flex justify-end items-center p-4">
+      <div className="flex justify-end items-center p-4 transform translate-y-1/3 top-1/2">
         <button onClick={() => setOpen(!open)} className="text-gray-950 z-20">
           {open ? <CloseIcon fontSize="large" /> : <MenuIcon fontSize="large" />}
         </button>
       </div>
 
       {/* Overlay */}
-      {open && (
+      {/* {open && (
         <div
           className="fixed inset-0 z-10 bg-black bg-opacity-50"
           onClick={() => setOpen(false)}
         />
-      )}
+      )} */}
 
       {/* Navigation Drawer */}
       {open && (
@@ -48,7 +48,8 @@ export default function ResponsiveNav() {
           initial={{ height: 0, width: 0 }}
           animate={open ? { height: "100%", width: "100%" } : { height: 0, width: 0 }}
           transition={{ duration: 0.3 }}
-          className="fixed top-0 left-0 bg-gray-50 z-20 p-6 overflow-y-auto h-full w-full"
+          className=" top-10 left-0 bg-gray-50 z-20 p-6 w-full h-full overflow-hidden"
+          style={{zIndex:1000}}
         >
           <ul className="flex flex-col gap-6 text-gray-800">
             {navLinks?.map((item) => (

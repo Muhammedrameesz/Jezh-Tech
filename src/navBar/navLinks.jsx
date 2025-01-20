@@ -12,8 +12,9 @@ export const navLinks = [
   { path: "/services", element: "Services" },
   { path: "", element: "Products", hasDropdown: true },
   { path: "/sovablu", element: "Sovablu" },
+  {path:"/CoreX-ERP",element:"CoreX ERP"},
   { path: "", element: "Resources", hasDropdown: true },
-  {path:"/CoreX-ERP",element:"CoreX ERP"}
+  
 ];
 
 export const dropdownLinks = [

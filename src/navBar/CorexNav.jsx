@@ -69,7 +69,7 @@ export default function HomeNav() {
 
       {/* Navigation Links */}
       <div className="flex-grow flex justify-center items-center">
-        <ul className="hidden lg:flex gap-4 items-center list-none">
+        <ul className="hidden lg:flex justify-between items-center list-none">
           {navLinks.map((item) => (
             <li
               key={item.element}

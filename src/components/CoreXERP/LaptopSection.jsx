@@ -13,7 +13,7 @@ export default function LaptopSection() {
                   <IoPlay className="bg-customGreen text-5xl md:text-8xl rounded-full p-4 cursor-pointer hover:bg-[#FF0000] transition-colors duration-200"/>
                </div>
             </div>
-            <div className="relative mt-5 md:absolute md:-left-[150px] md:top-[220px] md:-rotate-90">
+            <div className="relative mt-5 lg:absolute lg:-left-[150px] lg:top-[220px] lg:-rotate-90">
                 <span className="text-customGreen text-xl font-semibold">More Efficiency,  </span>
                 <span className="text-purple-500 text-xl font-semibold">Better Decisions,   </span>
                 <span className="text-customGreen text-xl font-semibold">Reduced Costs..   </span>
