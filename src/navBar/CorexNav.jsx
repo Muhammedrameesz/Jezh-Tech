@@ -51,7 +51,7 @@ export default function HomeNav() {
 
   return (
     <motion.nav
-      className="font-jost z-50 max-w-6xl w-full shadow-custom flex items-center fixed bg-white rounded-full left-1/2 transform -translate-x-1/2 overflow-hidden"
+      className="font-jost z-50 max-w-6xl w-full shadow-custom flex items-center fixed bg-white rounded-full left-1/2 transform -translate-x-1/2 "
       initial={{ top: isScrolled ? 0 : 80 }}
       animate={{ top: isScrolled ? 0 : 80 }}
       transition={{ duration: 0.5, ease: "easeInOut" }}
@@ -130,7 +130,7 @@ export default function HomeNav() {
                   >
                     <div className="absolute left-0 right-0 top-6 bg-transparent h-6 " />
                     <div className="absolute left-1/2 right-1/2 h-6 w-6 -translate-x-1/2 -translate-y-1/2 bg-white z-10 top-12 rotate-45" />
-                    <motion.ul className="absolute left-1/2 top-12 -translate-x-1/2 w-96 rounded-2xl bg-white p-2 py-3 shadow-custom">
+                    <motion.ul className="absolute left-1/2 top-12 -translate-x-1/2 w-96 rounded-2xl bg-white p-2 py-3 shadow-custom " style={{zIndex:10000}}>
                       {dropdownLinks
                         .filter((subItem) => subItem.ref === activeLink)
                         .map((subItem) => (
