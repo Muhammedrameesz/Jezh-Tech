@@ -4,9 +4,16 @@ import Goyaka from "../assets/partners/Goyaka.png"
 import Lagoon from "../assets/partners/lagoon logo.png"
 import UAE from "../assets/partners/UAE Chauffeur.png"
 import WitBlox from "../assets/partners/Witblox.png"
-import BoobaTaxi from "../assets/partners/BoobaTaxi.jpeg"
+import BoobaTaxi from "../assets/partners/BoobaTaxiSecond.png"
 
 export const CardData =[
+    {
+        "id": 3,
+        "name": "Lagoon",
+        "price": 300,
+        "image": Lagoon,
+        "description": "Lagoon Technologies, Our trusted partner, offers AI-driven no-code platforms, IoT development, and end-to-end software solutions. With over a decade of experience, they provide agile development and reliable infrastructure support, delivering efficient and cost-effective solutions globally."
+    },
     {
     "id": 1,
     "name": "Enyard",
@@ -23,13 +30,7 @@ export const CardData =[
     "description": "Goyaka offers expert tours and travel services, providing tailored travel experiences for individuals and groups. With a focus on personalized itineraries, seamless booking, and local insights, they ensure memorable and hassle-free journeys to various destinations worldwide",
     "typo":"Stay hydrated with us"
 },
-{
-    "id": 3,
-    "name": "Lagoon",
-    "price": 300,
-    "image": Lagoon,
-    "description": "Lagoon Technologies, Our trusted partner, offers AI-driven no-code platforms, IoT development, and end-to-end software solutions. With over a decade of experience, they provide agile development and reliable infrastructure support, delivering efficient and cost-effective solutions globally."
-},
+
 {
     "id": 4,
     "name": "UAE Chauffeur",

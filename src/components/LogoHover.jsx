@@ -21,7 +21,7 @@ import partnerHover6 from "../assets/images/Clients/Rojavanam internation school
 import partnerHover7 from "../assets/images/Clients/Sidone logo.jpg";
 import partnerHover8 from "../assets/images/Clients/ENYARD.jpeg";
 import partnerHover9 from "../assets/images/Clients/RoboFun.jpeg";
-import partnerHover10 from "../assets/images/Clients/WhatsApp Image 2025-01-04 at 11.35.39 PM.jpeg";
+import partnerHover10 from "../assets/partners/BoobaTaxiSecond.png";
 
 // Combine normal images and hover images in pairs
 const partners = [
@@ -32,8 +32,6 @@ const partners = [
   { normal: partner5, hover: partnerHover5,className: "w-40 h-20 cursor-pointer" },
   { normal: partner6, hover: partnerHover6 },
   { normal: partner7, hover: partnerHover7 },
-  { normal: partner1, hover: partnerHover1 },
-
   {
     normal: partner8,
     hover: partnerHover8,
@@ -42,13 +40,7 @@ const partners = [
   { normal: partner9, hover: partnerHover9 ,className: "w-40 h-20 cursor-pointer"},
   { normal: partner10, hover: partnerHover10,className: "w-32 h-20 cursor-pointer" },
 
-  { normal: partner2, hover: partnerHover2 },
-  { normal: partner3, hover: partnerHover3 },
-  { normal: partner4, hover: partnerHover4,className: "w-40 h-20 cursor-pointer" },
-  { normal: partner5, hover: partnerHover5,className: "w-40 h-20 cursor-pointer" },
-  { normal: partner6, hover: partnerHover6 },
-  { normal: partner7, hover: partnerHover7 },
-  { normal: partner6, hover: partnerHover6 },
+ 
 ];
 
 export default function LogoHover() {
@@ -67,8 +59,8 @@ export default function LogoHover() {
   };
 
   return (
-    <div className="w-full absolute -bottom-10 translate-y-1/2 ">
-      <section className="grid grid-cols-3 justify-center items-center sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 bg-white p-10 gap-5 rounded-lg mx-5 md:mx-16 lg:mx-20 shadow-lg">
+    <div className="w-full absolute -bottom-10 translate-y-1/2 overflow-hidden ">
+      <section className="grid grid-cols-2 justify-center items-center  md:grid-cols-3 lg:grid-cols-5 bg-white p-10 gap-5 rounded-lg mx-5 md:mx-16 lg:mx-20 shadow-lg overflow-hidden">
         {partners.map((partner, index) => (
           <div key={index} className="relative">
             <img

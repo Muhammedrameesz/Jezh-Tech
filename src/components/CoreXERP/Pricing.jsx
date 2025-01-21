@@ -1,4 +1,7 @@
 export default function Pricing() {
+
+const greenBg = "p-4 border-r border-r-customBlue text-center  bg-customGreen text-white"
+
   return (
     <div className="font-jost pt-14 pb-5">
       <section className="flex flex-col justify-center items-center text-center gap-4 mb-5">
@@ -15,12 +18,12 @@ export default function Pricing() {
         <div className="overflow-x-auto p-4 ">
           <table className="min-w-full border-collapse border-x  border-gray-300">
             <thead>
-              <tr className="bg-[#dff7df] text-left  font-semibold text-xl ">
-                <th className="p-4 border-b border-r border-gray-300">Plan</th>
-                <th className="p-4 border-b border-r border-gray-300">Basic</th>
-                <th className="p-4 border-b border-r border-gray-300 bg-[#dff7df] text-center font-bold">
+              <tr className="bg-customGreen text-white text-left rounded-lg font-semibold text-xl ">
+                <th className="p-4 border-b ">Plan</th>
+                <th className="p-4 border-b ">Basic</th>
+                <th className="p-4  text-white text-center font-bold">
                   Pro{" "}
-                  <span className="text-xs font-light text-green-500">
+                  <span className="text-xs font-light text-gray-100">
                     (Most Popular)
                   </span>
                 </th>
@@ -36,7 +39,7 @@ export default function Pricing() {
                 <td className="p-4 border-b border-r border-r-customBlue text-gray-500 border-gray-300">
                   $10/month
                 </td>
-                <td className="p-4 border-r border-r-customBlue text-center text-gray-500 bg-[#dff7df]">
+                <td className={`${greenBg}`}>
                   $30/month
                 </td>
                 <td className="p-4 border-b text-gray-500 border-gray-300">
@@ -51,7 +54,7 @@ export default function Pricing() {
                 <td className="p-4 border-b border-r border-r-customBlue text-gray-500 border-gray-300">
                   5
                 </td>
-                <td className="p-4 border-r text-center border-r-customBlue text-gray-500 bg-[#dff7df]">
+                <td className={`${greenBg}`}>
                   50
                 </td>
                 <td className="p-4 border-b text-gray-500 border-gray-300">
@@ -66,7 +69,7 @@ export default function Pricing() {
                 <td className="p-4 border-b border-r border-r-customBlue text-gray-500 border-gray-300">
                   10GB
                 </td>
-                <td className="p-4 border-r text-center border-r-customBlue text-gray-500 bg-[#dff7df]">
+                <td className={`${greenBg}`}>
                   100GB
                 </td>
                 <td className="p-4 border-b text-gray-500 border-gray-300">
@@ -81,7 +84,7 @@ export default function Pricing() {
                 <td className="p-4 border-b border-r border-r-customBlue text-gray-500 border-gray-300">
                   Email
                 </td>
-                <td className="p-4 border-r border-r-customBlue text-center text-gray-500 bg-[#dff7df]">
+                <td className={`${greenBg}`}>
                   Email + Chat
                 </td>
                 <td className="p-4 border-b text-gray-500 border-gray-300">
@@ -96,7 +99,7 @@ export default function Pricing() {
                 <td className="p-4 border-b border-r border-r-customBlue text-gray-500 border-gray-300">
                   Basic Reports
                 </td>
-                <td className="p-4 border-r text-center border-r-customBlue text-gray-500 bg-[#dff7df]">
+                <td className={`${greenBg}`}>
                   Advanced Insights
                 </td>
                 <td className="p-4 border-b text-gray-500 border-gray-300">
@@ -111,7 +114,7 @@ export default function Pricing() {
                 <td className="p-4 border-b border-r border-r-customBlue text-gray-500 border-gray-300">
                   Limited
                 </td>
-                <td className="p-4 border-r text-center border-r-customBlue text-gray-500 bg-[#dff7df]">
+                <td className={`${greenBg}`}>
                   Extensive
                 </td>
                 <td className="p-4 border-b text-gray-500 border-gray-300">
@@ -126,7 +129,7 @@ export default function Pricing() {
                 <td className="p-4 border-b text-gray-500 border-r border-r-customBlue border-gray-300">
                   No
                 </td>
-                <td className="p-4 border-r text-gray-500 text-center border-r-customBlue bg-[#dff7df]">
+                <td className={`${greenBg}`}>
                   Yes
                 </td>
                 <td className="p-4 border-b text-gray-500 border-gray-300">
@@ -139,7 +142,7 @@ export default function Pricing() {
                   Customization
                 </td>
                 <td className="p-4 border-b text-gray-500 border-r border-r-customBlue">No</td>
-                <td className="p-4  border-r text-gray-500 text-center border-r-customBlue bg-[#dff7df]">
+                <td className={`${greenBg}`}>
                   Limited
                 </td>
                 <td className="p-4 border-b text-gray-500 ">Full</td>
@@ -154,8 +157,8 @@ export default function Pricing() {
                     Get Started
                   </button>
                 </td>
-                <td className="p-4  border-r text-center border-r-customBlue bg-[#dff7df]">
-                  <button className="rounded-full bg-customGreen border p-2 px-6 font-semibold text-white border-customGreen hover:bg-purple-600 hover:border-purple-600 hover:text-white transition-all duration-300">
+                <td className={`${greenBg}`}>
+                  <button className="rounded-full bg-purple-600 border p-2 px-6 font-semibold text-white border-customGreen hover:bg-white hover:text-gray-800 hover:border-purple-600 hover:text-white transition-all duration-300">
                     Get Started
                   </button>
                 </td>

@@ -89,10 +89,10 @@ export default function ForthSection() {
               initial={{ rotateX: 0 }}
               whileHover={{ rotateX: 25 }}
               transition={{ duration: 0, ease: "easeInOut" }}
-              className={`relative bg-gradient-to-r from-purple-200 via-purple-100 h-[320px] to-purple-50 rounded-xl hover:shadow-xl transform transition-all duration-500 ease-in-out hover:-translate-y-3 overflow-hidden group`}
+              className={`relative bg-gradient-to-br from-white via-white to-purple-50 h-[320px]  shadow-md rounded-3xl hover:shadow-xl transform transition-all duration-500 ease-in-out hover:-translate-y-3 overflow-hidden group`}
             >
               <motion.div className="flex justify-start items-center ml-5 mt-5">
-                <motion.div className="text-gray-800 bg-white rounded-full p-3 group-hover:bg-customGreen group-hover:text-white transition-colors duration-1000">
+                <motion.div className="text-gray-800 bg-customWhite rounded-full p-3 group-hover:bg-customGreen group-hover:text-white transition-colors duration-1000">
                   {data.Icon}
                 </motion.div>
               </motion.div>

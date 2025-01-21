@@ -25,7 +25,7 @@ import partnerHover6 from "../../assets/images/Clients/Rojavanam internation sch
 import partnerHover7 from "../../assets/images/Clients/Sidone logo.jpg";
 import partnerHover8 from "../../assets/images/Clients/ENYARD.jpeg";
 import partnerHover9 from "../../assets/images/Clients/RoboFun.jpeg";
-import partnerHover10 from "../../assets/images/Clients/WhatsApp Image 2025-01-04 at 11.35.39 PM.jpeg";
+import partnerHover10 from "../../assets/partners/BoobaTaxiSecond.png";
 
 const partners = [
   { normal: partner1, hover: partnerHover1 },

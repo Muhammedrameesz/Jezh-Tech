@@ -1,19 +1,18 @@
 import { useNavigate } from "react-router-dom";
 import HoverButton from "../../ui/SwipeButton.jsx/Swipe1.jsx";
 
-
 export default function AboutCoreX() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const contents = [
-    {
-      title: "Innovative Solutions",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
     {
       title: "Seamless Integration",
       description:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "CoreX offers seamless integration capabilities, allowing it to connect with various third-party applications and systems. This eliminates the need for manual data entry and reduces the risk of errors. Whether it's connecting with your accounting software, CRM, e-commerce platform, or any other business tool, CoreX streamlines your workflows and ensures data consistency across all platforms.",
+    },
+    {
+      title: "Advanced Analytics and Reporting",
+      description:
+        "CoreX provides robust analytics and reporting tools that give you a comprehensive view of your business performance. With interactive dashboards and customizable reports, you can gain insights into key metrics such as sales trends, inventory levels, customer behavior, and financial performance. This data-driven approach empowers you to make informed decisions and optimize your business operations.",
     },
   ];
 
@@ -27,11 +26,10 @@ export default function AboutCoreX() {
           About CoreX ERP
         </span>
         <h1 className="text-2xl  leading-relaxed text-gray-700 z-10">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
-          <span className="font-semibold">Cupiditate sequi</span> tenetur nulla
-          iste optio doloremque culpa nesciunt, sapiente libero nostrum
-          dignissimos, minima quod nemo voluptatem rem. Aspernatur cum unde
-          quod.
+          Simplify operations with <span className="font-semibold">CoreX,</span>  our all-in-one ERP software. <span className="font-semibold mr-1">CoreX</span>  
+          integrates essential business functions like accounting, inventory,
+          CRM,HRM,and project management, giving you a unified view of your
+          organization and boosting efficiency.
         </h1>
       </div>
 
@@ -52,7 +50,10 @@ export default function AboutCoreX() {
         ))}
       </div>
 
-      <div onClick={()=>navigate('/about-us')} className="flex items-center justify-center py-5 mt-4">
+      <div
+        onClick={() => navigate("/about-us")}
+        className="flex items-center justify-center py-5 mt-4"
+      >
         <HoverButton>More ABout Us</HoverButton>
       </div>
     </div>

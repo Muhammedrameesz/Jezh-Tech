@@ -8,6 +8,7 @@ import ANim from "../ui/Anim.jsx";
 // import RandomPatterns2 from "../ui/RandomPatterns4.jsx";
 import { CiLinkedin, CiTwitter, CiFacebook } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
+import { CiLocationOn } from "react-icons/ci";
 
 export default function Footer() {
   const linkStyle = "text-gray-400 hover:text-customGreen transition";
@@ -92,11 +93,8 @@ export default function Footer() {
             <div className="grid grid-cols-4  h-10 w-10 text-2xl gap-10 text-gray-400  ">
               <a href="https://www.instagram.com/jezh_technologies?igsh=MXF0N2h3OHZyaWh2bg==">
                 <FaInstagram className="transform hover:-translate-y-1 hover:text-customGreen transition-all duration-300 cursor-pointer" />
-              </a>
-             
-                {" "}
-                <CiFacebook className="transform hover:-translate-y-1 hover:text-customGreen transition-all duration-300 cursor-pointer" />
-             
+              </a>{" "}
+              <CiFacebook className="transform hover:-translate-y-1 hover:text-customGreen transition-all duration-300 cursor-pointer" />
               <a href="https://x.com/Jezhtech?t=Br12bODBOtRqVXX5xFYOug&s=08">
                 {" "}
                 <CiTwitter className="transform hover:-translate-y-1 hover:text-customGreen transition-all duration-300 cursor-pointer" />
@@ -129,42 +127,61 @@ export default function Footer() {
       {/* Location Cards */}
       <div className="relative z-10 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 md:px-12 lg:px-24">
+
           <ANim delay={0.3}>
-            <div className="border border-gray-600  p-4 rounded text-center shadow-sm">
-              <h2 className="text-gray-100 text-lg font-semibold mb-2">
-                India - Kanyakumari
-              </h2>
-              <p className="text-gray-400 text-sm">
-                Sri Sai Complex,
-                <br />
-                Nagercoil, India - 629001
-              </p>
+            <div className="border border-gray-600 flex gap-5 justify-center items-center p-4 rounded text-center shadow-sm">
+              <div className="">
+                <CiLocationOn className="text-gray-100 text-2xl lg:text-3xl" />
+              </div>
+              <div>
+                <h2 className="text-gray-100 text-lg font-semibold mb-2">
+                  India - Kanyakumari
+                </h2>
+                <p className="text-gray-400 text-sm">
+                  Sri Sai Complex,
+                  <br />
+                  Nagercoil, India - 629001
+                </p>
+              </div>
             </div>
           </ANim>
+
           <ANim delay={0.4}>
-            <div className="border border-gray-600  p-4 rounded text-center shadow-sm">
-              <h2 className="text-gray-100 text-lg font-semibold mb-2">
-                India - Coimbatore
-              </h2>
-              <p className="text-gray-400 text-sm">
-                SRCAS IC, Nava India
-                <br />
-                Coimbatore, India - 641006
-              </p>
+            <div className="border border-gray-600 flex gap-5 justify-center items-center p-4 rounded text-center shadow-sm">
+              <div className="">
+                <CiLocationOn className="text-gray-100 text-2xl lg:text-3xl" />
+              </div>
+              <div>
+                <h2 className="text-gray-100 text-lg font-semibold mb-2">
+                  India - Coimbatore
+                </h2>
+                <p className="text-gray-400 text-sm">
+                  SRCAS IC, Nava India,
+                  <br />
+                  Coimbatore, India - 641006
+                </p>
+              </div>
             </div>
           </ANim>
+
           <ANim delay={0.5}>
-            <div className="border border-gray-600  p-4 rounded text-center shadow-sm">
-              <h2 className="text-gray-100 text-lg font-semibold mb-2">
-                UAE - Dubai
-              </h2>
-              <p className="text-gray-400 text-sm">
-                Sapphire Tower Deira,
-                <br />
-                Dubai, UAE - 780610
-              </p>
+            <div className="border border-gray-600 flex gap-5 justify-center items-center p-4 rounded text-center shadow-sm">
+              <div className="">
+                <CiLocationOn className="text-gray-100 text-2xl lg:text-3xl" />
+              </div>
+              <div>
+                <h2 className="text-gray-100 text-lg font-semibold mb-2">
+                  UAE - Dubai
+                </h2>
+                <p className="text-gray-400 text-sm">
+                  Sapphire Tower Deira,
+                  <br />
+                  Dubai, UAE - 780610
+                </p>
+              </div>
             </div>
           </ANim>
+          
         </div>
       </div>
 

@@ -77,7 +77,7 @@ export default function ForthSection() {
         </div>
       </div>
       <AnimRL>
-        <div className="relative flex flex-col items-start space-y-8 p-4 lg:p-6 rounded-md mr-5 md:mr-10 ">
+        <div className="relative flex flex-col items-center space-y-8 p-4 lg:p-6 rounded-md mr-5 md:mr-10 ">
           <div className=" mx-5">
             <h1 className="text-[#0E314C]  text-xl md:text-2xl  font-semibold  mb-4">
             Our Excellence in Next-gen Technology

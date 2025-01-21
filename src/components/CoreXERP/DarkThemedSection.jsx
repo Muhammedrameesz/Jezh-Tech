@@ -20,8 +20,8 @@ export default function DarkThemedSection() {
         className="bg-purple-800 text-white text-sm font-semibold tracking-wider p-3 px-6 rounded-full hover:bg-customGreen transition-all duration-300 ">
           Start Free Trail
         </button>
-        <img src={Man1} alt="man" className="absolute bottom-10 left-10 h-[160px] "/>
-        <img src={Man2} alt="man" className="absolute bottom-10 right-10 h-[100px]  "/>
+        <img src={Man1} alt="man" className="hidden md:block absolute bottom-10 left-10 h-[160px] "/>
+        <img src={Man2} alt="man" className="hidden md:block absolute bottom-10 right-10 h-[100px]  "/>
       </section>
     </div>
   );

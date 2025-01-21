@@ -11,7 +11,8 @@ import Faq from "../components/DefoultFaq.jsx"
 import Form from "../components/Contact/Contact.jsx"
 import LatestNewsAndBlog from "../components/CoreXERP/LatestNewsAndBlog.jsx"
 import Subscribe from "../components/CoreXERP/Subscribe.jsx"
-import PricinPlans from "../components/CoreXERP/Pricing.jsx"
+// import PricinPlans from "../components/CoreXERP/Pricing.jsx"
+import PricingPlansSec from "../components/CoreXERP/PricingPlans.jsx"
 
 export default function CoreX() {
   return (
@@ -24,7 +25,8 @@ export default function CoreX() {
   <ThreeColumnLayout/>
   <LineIntegration/>
   <WhatOurUsersSaying/>
-  <PricinPlans/>
+  {/* <PricinPlans/> */}
+  <PricingPlansSec/>
   <DarkThemedSection/>
   <LatestNewsAndBlog/>
   <Subscribe/>

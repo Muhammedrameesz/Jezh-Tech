@@ -32,6 +32,11 @@ export default function HomeNav() {
 
   const navigate = useNavigate();
 
+  const handleContact = ()=>{
+    handleClear()
+    navigate("/contact")
+  }
+
   return (
     <div>
       <nav
@@ -176,7 +181,7 @@ export default function HomeNav() {
 
         {/* Action Buttons */}
         <div
-          onClick={() => navigate("/contact")}
+          onClick={handleContact}
           className="hidden lg:flex gap-4 mr-10"
         >
           <SupportButton>Contact Us</SupportButton>

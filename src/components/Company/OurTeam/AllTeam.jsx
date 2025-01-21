@@ -26,6 +26,9 @@ import KeerthyVasan from "../../../assets/Team/Keerthi Vasan.jpeg";
 import Ramees from "../../../assets/Team/Ramees.jpeg";
 import Neeraj from "../../../assets/Team/Neeraj.jpeg";
 import Dharani from "../../../assets/Team/Dharani.jpeg"
+import Jayapriya from "../../../assets/Team/Jayapriya.jpeg"
+import Madhushree from "../../../assets/Team/Madhushree.jpg"
+import Pavithramuki from "../../../assets/Team/Pavithramuki.jpeg"
 
 
 const IconStyle =
@@ -94,6 +97,36 @@ const content = [
     image: Sai,
   },
   {
+    title: "Mithun Shanker",
+    role: "Technical Lead",
+    media: [
+      {
+        faceBook: <CiFacebook className={IconStyle} />,
+        Twitter: <FiTwitter className={IconStyle} />,
+        Linkidin: <FaInstagram className={IconStyle} />,
+        github: <FaGithub className={IconStyle} />,
+      },
+    ],
+    description:
+      "Mithun is the mastermind behind our cutting-edge solutions, combining technical expertise, innovative thinking, and a passion for excellence in delivering top-tier technology.",
+    image: Midhun,
+  },
+  {
+    title: "Madhushree",
+    role: "Operational Manager",
+    media: [
+      {
+        faceBook: <CiFacebook className={IconStyle} />,
+        Twitter: <FiTwitter className={IconStyle} />,
+        Linkidin: <FaInstagram className={IconStyle} />,
+        github: <FaGithub className={IconStyle} />,
+      },
+    ],
+    description:
+      "As our Operational Manager, Madhushree ensures seamless and efficient operations across the company. Her expertise in streamlining processes and driving productivity is invaluable.",
+    image: Madhushree,
+  },
+  {
     title: "Mahesh",
     role: "Full Stack developer",
     media: [
@@ -109,21 +142,7 @@ const content = [
       "Mahesh is a skilled and dedicated developer, committed to crafting innovative and efficient web solutions, enhancing user experiences with each project.",
     image: Team1,
   },
-  {
-    title: "Mithun Shanker",
-    role: "Technical Lead",
-    media: [
-      {
-        faceBook: <CiFacebook className={IconStyle} />,
-        Twitter: <FiTwitter className={IconStyle} />,
-        Linkidin: <FaInstagram className={IconStyle} />,
-        github: <FaGithub className={IconStyle} />,
-      },
-    ],
-    description:
-      "Mithun is the mastermind behind our cutting-edge solutions, combining technical expertise, innovative thinking, and a passion for excellence in delivering top-tier technology.",
-    image: Midhun,
-  },
+  
 
   {
     title: "Dharani",
@@ -246,6 +265,21 @@ const content = [
     image: Ramees,
   },
   {
+    title: "Jayapriya",
+    role: "UI/UX Designer",
+    media: [
+      {
+        faceBook: <CiFacebook className={IconStyle} />,
+        Twitter: <FiTwitter className={IconStyle} />,
+        Linkidin: <FaInstagram className={IconStyle} />,
+        github: <FaGithub className={IconStyle} />,
+      },
+    ],
+    description:
+      "As our UI/UX Designer, Jayapriya crafts intuitive and visually stunning user interfaces. Her focus on user experience ensures our products are not only beautiful but also easy and enjoyable to use.",
+    image: Jayapriya,
+  },
+  {
     title: "Keerthi Vasan",
     role: "No Code developer - Intern",
     media: [
@@ -305,6 +339,22 @@ const content = [
       "Neeraj is a skilled no-code developer, passionate about creating seamless applications, simplifying complex processes, and delivering innovative, user-friendly solutions efficiently.",
     image: Neeraj,
   },
+  {
+    title: "Pavithramuki",
+    role: "No Code developer - Intern",
+    media: [
+      {
+        faceBook: <CiFacebook className={IconStyle} />,
+        Twitter: <FiTwitter className={IconStyle} />,
+        Linkidin: <FaInstagram className={IconStyle} />,
+        github: <FaGithub className={IconStyle} />,
+      },
+    ],
+    description:
+      "A skilled No-code Developer, Pavithramuki leverages innovative tools to build powerful applications without writing a single line of code. Her ability to quickly develop solutions is a significant asset to our team.",
+    image:Pavithramuki,
+  },
+  
 ];
 
 export default function AllTeam() {

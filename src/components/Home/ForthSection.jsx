@@ -68,11 +68,12 @@ export default function ForthSection() {
 
   return (
     <div className="bg-white  items-center pb-16 pt-20   font-jost">
-    <div className="grid grid-cols-1 md:grid-cols-2 mx-5 md:mx-10 lg:mx-10">
+
+    <div className="grid grid-cols-1 md:grid-cols-2 mx-5 md:mx-10 lg:mx-16">
       {/* Left Section */}
       <Anim>
-        <div className="relative flex flex-col items-start space-y-8 p-4 lg:p-6 rounded-md ml-5 md:ml-10">
-          {/* Background Image */}
+        <div className="relative flex flex-col items-center space-y-8 p-4 lg:p-6 rounded-md ml-5 md:ml-10">
+      
 
           {/* Header */}
           <div className="">
@@ -145,6 +146,8 @@ export default function ForthSection() {
         </div>
       </div>
     </div>
+
+    
     </div>
   );
 }

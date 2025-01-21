@@ -13,7 +13,7 @@ import { MdIntegrationInstructions } from "react-icons/md";
 import { FaOctopusDeploy } from "react-icons/fa";
 import { SiBuiltbybit } from "react-icons/si";
 import { GiClassicalKnowledge } from "react-icons/gi";
-import KeyboardDoubleArrowRightOutlinedIcon from '@mui/icons-material/KeyboardDoubleArrowRightOutlined';
+
 
 export default function FeaturedSolutions() {
   const contents = [
@@ -75,7 +75,7 @@ export default function FeaturedSolutions() {
   ];
 
   const [hover, setHover] = useState(null);
-  const [btnHover,setBtnHover]=useState(null)
+ 
 
   return (
     <div className="py-10 bg-white font-jost relative">
@@ -97,7 +97,7 @@ export default function FeaturedSolutions() {
             onMouseEnter={() => setHover(i)}
             onMouseLeave={() => setHover(null)}
             key={i}
-            className="flex bg-white  z-40   flex-col items-start justify-between text-center p-5  gap-3 rounded-lg  shadow-xl group transform hover:-translate-y-2 hover:shadow-2xl group transition-all duration-500"
+            className="flex bg-white  z-40   flex-col items-start justify-between text-center p-5  gap-3 rounded-lg  border border-dashed border-customGreen hover:border-white group transform hover:-translate-y-2 hover:shadow-custom group transition-all duration-500"
           >
             {/* <Anim> */}
               <div className=" shadow-lg group-hover:bg-customGreen transition-colors duration-500  rounded-full  p-2 mb-2 ">
@@ -125,7 +125,7 @@ export default function FeaturedSolutions() {
               {item.description}
             </p>
 
-            <div className="flex justify-end ml-auto mt-5 relative">
+            {/* <div className="flex justify-end ml-auto mt-5 relative">
               <motion.button 
                onMouseEnter={()=>setBtnHover(item.title)}
                onMouseLeave={()=>setBtnHover(null)}
@@ -144,7 +144,7 @@ export default function FeaturedSolutions() {
                   </motion.span>
                 
               </motion.button>
-            </div>
+            </div> */}
 
           </div>
         ))}

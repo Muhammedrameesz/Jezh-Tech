@@ -9,9 +9,9 @@ import SupportButton from "../ui/SwipeButton.jsx/SupportButton.jsx";
 
 export default function HomeNav() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState(null);
+  const [activeLink, setActiveLink] = useState("coreX Business Suite");
   const [hover, setHover] = useState(null);
-  const [linkActive, setLinkActive] = useState(null);
+  const [linkActive, setLinkActive] = useState("coreX Business Suite");
   const [activeRef, setActiveRef] = useState(null);
   const [activeDrop, setActiveDrop] = useState(null);
 
