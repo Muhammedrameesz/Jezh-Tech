@@ -1,4 +1,6 @@
 import useSoftwareServiceDetails from "../../../../store/SoftwareProductsStore";
+import Timetickimg1 from "../../../../assets/image2/prducts/TimeTick.png"
+import TimeTickImage2 from "../../../../assets/image2/prducts/Timetickimage2.jpeg"
 
 import Accordian from "./Accordian.jsx";
 
@@ -22,10 +24,8 @@ const serviceDetailsContent = [
       des: "Streamlines complex scheduling needs for large teams, including multiple locations and shifts.",
     },
 
-    image:
-      "https://img.freepik.com/free-vector/appointment-booking-with-smartphone_23-2148546549.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid",
-    image2:
-      "https://img.freepik.com/free-photo/man-touching-his-smartwatch_1134-157.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid",
+    image:Timetickimg1,
+    image2:TimeTickImage2,
   },
   {
     title: "Maze HCM",
@@ -158,7 +158,7 @@ export default function SoftwareProductseDetailsCom() {
           <img
             src={currentService?.image}
             alt={currentService?.title}
-            className="w-full max-w-lg rounded-lg object-cover"
+            className="h-auto w-full md:h-[400px] object-cover rounded-lg "
           />
         </section>
       </div>
@@ -171,7 +171,7 @@ export default function SoftwareProductseDetailsCom() {
           <img
             src={currentService?.image2}
             alt={currentService?.title}
-            className="w-full max-w-lg rounded-lg "
+            className="order-2 mb-5 md:mb-0 h-auto w-full md:h-[400px] object-cover max-w-lg rounded-lg "
           />
         </section>
         {/* Text Section */}

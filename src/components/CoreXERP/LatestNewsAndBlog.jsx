@@ -23,7 +23,8 @@ export default function LatestNewsAndBlog() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-6">
-        <div className="bg-red-50 p-6 pb-14 rounded-3xl shadow-md relative">
+
+        <div className="bg-[#fff6ea] p-6 pb-14 rounded-3xl shadow-md relative">
           <section className="flex gap-4 mb-4 text-sm  ">
             <h1 className="bg-customGreen/80 p-1 px-6 rounded-full text-white">
               Articles
@@ -53,7 +54,7 @@ export default function LatestNewsAndBlog() {
           </button>
         </div>
 
-        <div className="bg-green-50 p-6 pb-14 rounded-3xl shadow-md relative">
+        <div className="bg-[#dff7df] p-6 pb-14 rounded-3xl shadow-md relative">
           <section className="flex gap-4 mb-4 text-sm ">
             <h1 className="bg-customGreen/80 p-1 px-6 rounded-full text-white">
               Articles
@@ -81,7 +82,7 @@ export default function LatestNewsAndBlog() {
           </button>
         </div>
 
-        <div className="bg-yellow-100 p-6 pb-14 rounded-3xl shadow-md relative">
+        <div className="bg-[#ffeaf5] p-6 pb-14 rounded-3xl shadow-md relative">
           <section className="flex gap-4 mb-4 text-sm ">
             <h1 className="bg-customGreen/80 p-1 px-6 rounded-full text-white">
               Articles

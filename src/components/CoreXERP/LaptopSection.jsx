@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Laptop from "../../assets/CoreXImages/big-laptop.png";
 import Books from "../../assets/CoreXImages/booksSet.png";
 import { IoPlay } from "react-icons/io5";
+import Dashboardimage from "../../assets/CoreXImages/Dashbaord-1-2048x1515.png";
 
 export default function LaptopSection() {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
@@ -63,28 +64,26 @@ export default function LaptopSection() {
         </div>
       </section>
 
-    
       {isVideoPlaying && (
         <div
           style={{ zIndex: 1000 }}
-          className="fixed inset-0 top-[0px] bg-black bg-opacity-90 flex items-center justify-center z-50"
+          className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center"
         >
+          {/* Close Button */}
           <button
             className="absolute top-5 right-5 text-white text-3xl font-bold cursor-pointer"
             onClick={handleCloseVideo}
+            aria-label="Close Video"
           >
             &times;
           </button>
-          <iframe
-            width="80%"
-            height="90%"
-            src="https://www.youtube.com/embed/4yBxb5RQxPs?autoplay=1&controls=1"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-            className="rounded-lg shadow-lg"
-          ></iframe>
+
+          {/* Image */}
+          <img
+            src={Dashboardimage}
+            alt="Dashboard preview"
+            className="w-full h-full object-contain"
+          />
         </div>
       )}
     </div>

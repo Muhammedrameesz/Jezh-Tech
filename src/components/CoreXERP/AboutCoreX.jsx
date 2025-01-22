@@ -17,7 +17,7 @@ export default function AboutCoreX() {
   ];
 
   return (
-    <div className="relative bg-[#ada8f0] min-h-screen py-16 ">
+    <div className="relative bg-[#ada8f0] min-h-screen py-16 font-jost">
       <div className="absolute w-[50%] h-[95%] bg-[#b5b1f2] backdrop-blur-3xl top-5 rounded-full left-1/3 -translate-x-1/3 border border-[#c8c5e9]"></div>
       <div className="absolute w-[50%] h-[95%] bg-[#b5b1f2] backdrop-blur-3xl top-5 rounded-full right-1/3 translate-x-1/3 border border-[#c8c5e9] "></div>
 
@@ -25,7 +25,7 @@ export default function AboutCoreX() {
         <span className="p-2 px-6 shadow-xl rounded-full bg-[#a6a1ee] text-white text-sm z-10">
           About CoreX ERP
         </span>
-        <h1 className="text-2xl  leading-relaxed text-gray-700 z-10">
+        <h1 className="text-2xl md:text-3xl  leading-relaxed text-gray-700 z-10">
           Simplify operations with <span className="font-semibold">CoreX,</span>  our all-in-one ERP software. <span className="font-semibold mr-1">CoreX</span>  
           integrates essential business functions like accounting, inventory,
           CRM,HRM,and project management, giving you a unified view of your
@@ -37,7 +37,7 @@ export default function AboutCoreX() {
         {contents.map((content, index) => (
           <div
             key={index}
-            className={`shadow-lg rounded-lg p-6 max-w-lg w-full flex flex-col items-start text-start transform 
+            className={`shadow-lg rounded-3xl p-6 max-w-lg w-full flex flex-col items-start text-start transform 
                 hover:-translate-y-2 transition-transform duration-500
                 ${index === 0 && "bg-[#dff7df]"}     ${index === 1 && "bg-[#fff6ea]"} 
                 `}

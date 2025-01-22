@@ -18,7 +18,7 @@ export default function PricingPlans() {
          px-4 md:px-10 py-5 md:py-10 w-full max-w-screen-xl mx-auto">
         {/* Card 1  */}
 
-        <div className="border p-8 rounded-3xl bg-gradient-to-bl from-green-100 via-white to-transparent shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
+        <div className="border p-8 rounded-3xl bg-gradient-to-bl from-green-50 via-white to-transparent shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
           <h1 className="text-xl md:text-2xl text-gray-800 font-bold mb-6 tracking-wide">
             Individuals
           </h1>
@@ -71,7 +71,7 @@ export default function PricingPlans() {
         </div>
 
         {/* CARD 2 */}
-        <div className="border p-8 rounded-3xl bg-gradient-to-bl from-red-100 via-white to-transparent shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
+        <div className="border p-8 rounded-3xl bg-gradient-to-bl from-red-50 via-white to-transparent shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
           <h1 className="text-xl md:text-2xl text-gray-800 font-bold mb-6 tracking-wide">
             Teams
           </h1>
@@ -124,7 +124,7 @@ export default function PricingPlans() {
         </div>
 
         {/* CARD 3  */}
-        <div className="border p-8 rounded-3xl bg-gradient-to-bl from-blue-100 via-white to-transparent shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
+        <div className="border p-8 rounded-3xl bg-gradient-to-bl from-blue-50 via-white to-transparent shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
           <h1 className="text-xl md:text-2xl text-gray-800 font-bold mb-6 tracking-wide">
             Enterprice
           </h1>

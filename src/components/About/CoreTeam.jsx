@@ -109,7 +109,7 @@ export default function AllTeam() {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    arrows: true,
+    arrows: false,
     autoplay: true,            
     autoplaySpeed: 2000, 
     responsive: [

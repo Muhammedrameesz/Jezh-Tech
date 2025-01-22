@@ -50,6 +50,7 @@ export default function LogoHover() {
     speed: 500,
     slidesToShow: 6,
     slidesToScroll: 1,
+    arrows: false,
     autoplay: true,
     autoplaySpeed: 2000,
     pauseOnHover: true,

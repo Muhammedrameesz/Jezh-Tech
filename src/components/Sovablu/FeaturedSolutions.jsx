@@ -3,7 +3,6 @@ import Underline from "../../ui/Underline.jsx";
 import { useState } from "react";
 import Pattern from "../../ui/RandomPatterns3.jsx";
 
-
 import { FaCodepen } from "react-icons/fa";
 import { FaFileCode } from "react-icons/fa";
 import { TbBrandDatabricks } from "react-icons/tb";
@@ -13,7 +12,6 @@ import { MdIntegrationInstructions } from "react-icons/md";
 import { FaOctopusDeploy } from "react-icons/fa";
 import { SiBuiltbybit } from "react-icons/si";
 import { GiClassicalKnowledge } from "react-icons/gi";
-
 
 export default function FeaturedSolutions() {
   const contents = [
@@ -71,11 +69,9 @@ export default function FeaturedSolutions() {
       description:
         "Experience virtually unlimited highly efficient and inexpensive serverless cloud solutions based on open-source solutions with no proprietary components.",
     },
-    
   ];
 
   const [hover, setHover] = useState(null);
- 
 
   return (
     <div className="py-10 bg-white font-jost relative">
@@ -87,7 +83,8 @@ export default function FeaturedSolutions() {
         <Underline />
 
         <p className="text-base text-gray-500 text-center max-w-lg">
-        Sovablu&apos;s No-code platform empowers you to build powerful digital experiences with ease. 
+          Sovablu&apos;s No-code platform empowers you to build powerful digital
+          experiences with ease.
         </p>
       </div>
 
@@ -97,25 +94,24 @@ export default function FeaturedSolutions() {
             onMouseEnter={() => setHover(i)}
             onMouseLeave={() => setHover(null)}
             key={i}
-            className="flex bg-white  z-40   flex-col items-start justify-between text-center p-5  gap-3 rounded-lg  border border-dashed border-customGreen hover:border-white group transform hover:-translate-y-2 hover:shadow-custom group transition-all duration-500"
+            className="flex bg-gradient-to-br from-green-50 via-white to-transparent  z-40   flex-col items-start justify-between text-center p-5  gap-3 rounded-lg   hover:border-white group transform hover:-translate-y-2 hover:shadow-lg group transition-all duration-500"
           >
             {/* <Anim> */}
-              <div className=" shadow-lg group-hover:bg-customGreen transition-colors duration-500  rounded-full  p-2 mb-2 ">
-                <motion.div
-                  initial={{ rotateY: 0 }}
-                  animate={{
-                    rotateY: hover === i ? [0, 180, 0] : 0,
-                  }}
-                  transition={{
-                    duration: 0.3,
-                    repeat: 0,
-                   
-                  }}
-                  className=" text-4xl text-customGreen group-hover:text-white transition-colors duration-500"
-                >
-                  {item.icon}
-                </motion.div>
-              </div>
+            <div className=" bg-white group-hover:bg-customGreen transition-colors duration-500  rounded-full  p-2 mb-2 ">
+              <motion.div
+                initial={{ rotateY: 0 }}
+                animate={{
+                  rotateY: hover === i ? [0, 180, 0] : 0,
+                }}
+                transition={{
+                  duration: 0.3,
+                  repeat: 0,
+                }}
+                className=" text-4xl text-customGreen group-hover:text-white transition-colors duration-500"
+              >
+                {item.icon}
+              </motion.div>
+            </div>
             {/* </Anim> */}
 
             <h1 className="text-lg font-semibold text-start text-[#0E314C]  ">
@@ -145,11 +141,9 @@ export default function FeaturedSolutions() {
                 
               </motion.button>
             </div> */}
-
           </div>
         ))}
       </section>
-      
     </div>
   );
 }

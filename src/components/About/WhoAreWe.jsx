@@ -6,7 +6,7 @@ import Underline from "../../ui/Underline.jsx";
 
 export default function AboutUs() {
   return (
-    <div className="bg-gray-50  py-10 font-jost  ">
+    <div className="bg-gray-50  py-10 font-jost  overflow-hidden">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mx-10 md:mx-20">
         <Anim>
           <section className="mt-5 md:mt-20">

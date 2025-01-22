@@ -9,7 +9,7 @@ export default function Location() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 mx-5 md:mx-auto max-w-2xl">
         {/* Email Card */}
-        <div className="bg-white p-8 rounded-lg border-dashed border-2 transform hover:scale-105 transition-all duration-300 text-center group">
+        <div className="bg-gradient-to-tl from-green-50 via-transparent to-transparent p-8 rounded-lg border-dashed border-2 transform hover:scale-105 transition-all duration-300 text-center group">
           <div className="text-customGreen text-4xl mb-4 transition duration-300 group-hover:text-white ">
             <EmailOutlinedIcon
               sx={{ fontSize: "55px", transition: "all 0.3s ease" }}
@@ -34,7 +34,7 @@ export default function Location() {
         
 
         {/* Phone Card */}
-        <div className="bg-white p-8 rounded-lg border-dashed border-2  transform hover:scale-105 transition-all duration-300 text-center group">
+        <div className="bg-gradient-to-tl from-green-50 via-transparent to-transparent  p-8 rounded-lg border-dashed border-2  transform hover:scale-105 transition-all duration-300 text-center group">
           <div className="text-customGreen text-4xl mb-4 transition duration-300 group-hover:text-white ">
             <PhoneOutlinedIcon
               sx={{ fontSize: "55px", transition: "all 0.3s ease" }}
@@ -59,7 +59,7 @@ export default function Location() {
                   {/* SECOND CARD ROW  */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-5 md:mx-auto max-w-5xl mt-10">
         {/* Location Card */}
-        <div className="bg-white p-8 rounded-lg border-dashed border-2  transform hover:scale-105 transition-all duration-300 text-center group">
+        <div className="bg-gradient-to-tl from-green-50 via-transparent to-transparent p-8 rounded-lg border-dashed border-2  transform hover:scale-105 transition-all duration-300 text-center group">
           <div className="text-customGreen text-4xl mb-4 transition duration-300 group-hover:text-white ">
             <LocationOnOutlinedIcon
               sx={{ fontSize: "55px", transition: "all 0.3s ease" }}
@@ -74,7 +74,7 @@ export default function Location() {
         </div>
 
           {/* Location Card */}
-          <div className="bg-white p-8 rounded-lg border-dashed border-2  transform hover:scale-105 transition-all duration-300 text-center group">
+          <div className="bg-gradient-to-tl from-green-50 via-transparent to-transparent p-8 rounded-lg border-dashed border-2  transform hover:scale-105 transition-all duration-300 text-center group">
           <div className="text-customGreen text-4xl mb-4 transition duration-300 group-hover:text-white ">
             <LocationOnOutlinedIcon
               sx={{ fontSize: "55px", transition: "all 0.3s ease" }}
@@ -89,7 +89,7 @@ export default function Location() {
         </div>
 
         {/* Location Card */}
-        <div className="bg-white p-8 rounded-lg border-dashed border-2  transform hover:scale-105 transition-all duration-300 text-center group">
+        <div className="bg-gradient-to-tl from-green-50 via-transparent to-transparent p-8 rounded-lg border-dashed border-2  transform hover:scale-105 transition-all duration-300 text-center group">
           <div className="text-customGreen text-4xl mb-4 transition duration-300 group-hover:text-white ">
             <LocationOnOutlinedIcon
               sx={{ fontSize: "55px", transition: "all 0.3s ease" }}
