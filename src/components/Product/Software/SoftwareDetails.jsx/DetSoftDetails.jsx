@@ -1,6 +1,9 @@
 import useSoftwareServiceDetails from "../../../../store/SoftwareProductsStore";
-import Timetickimg1 from "../../../../assets/image2/prducts/TimeTick.png"
-import TimeTickImage2 from "../../../../assets/image2/prducts/Timetickimage2.jpeg"
+
+import {
+  LaptopImage,
+  MobileImage,
+} from "../../../../pages/Products/custamizedImages.jsx";
 
 import Accordian from "./Accordian.jsx";
 
@@ -24,8 +27,8 @@ const serviceDetailsContent = [
       des: "Streamlines complex scheduling needs for large teams, including multiple locations and shifts.",
     },
 
-    image:Timetickimg1,
-    image2:TimeTickImage2,
+    customComp1: <LaptopImage />,
+    customComp2: <MobileImage />,
   },
   {
     title: "Maze HCM",
@@ -129,13 +132,11 @@ export default function SoftwareProductseDetailsCom() {
   const SoftwareDetails = useSoftwareServiceDetails(
     (state) => state.SoftwareProductsDetails
   );
-  const currentService = serviceDetailsContent.find(
-    (item) => {
-       console.log("currenet:",item.title);
-       console.log("Store:",SoftwareDetails.title);
-     return item.title === SoftwareDetails.title
-    }
-  );
+  const currentService = serviceDetailsContent.find((item) => {
+    console.log("currenet:", item.title);
+    console.log("Store:", SoftwareDetails.title);
+    return item.title === SoftwareDetails.title;
+  });
 
   return (
     <div className="font-jost pb-10">
@@ -154,12 +155,16 @@ export default function SoftwareProductseDetailsCom() {
         </section>
 
         {/* Image Section */}
-        <section className="flex justify-center items-center bg-white ">
-          <img
-            src={currentService?.image}
-            alt={currentService?.title}
-            className="h-auto w-full md:h-[400px] object-cover rounded-lg "
-          />
+        <section className="flex justify-center items-center bg-white">
+          {currentService?.image ? (
+            <img
+              src={currentService?.image}
+              alt={currentService?.title || "Service Image"}
+              className="h-full w-full  object-cover rounded-lg"
+            />
+          ) : currentService?.customComp1 ? (
+            currentService?.customComp1
+          ) : null}
         </section>
       </div>
 
@@ -168,11 +173,15 @@ export default function SoftwareProductseDetailsCom() {
       <div className=" grid grid-cols-1 md:grid-cols-2  p-6">
         {/* Image Section */}
         <section className="flex justify-center items-center bg-white ">
-          <img
-            src={currentService?.image2}
-            alt={currentService?.title}
-            className="order-2 mb-5 md:mb-0 h-auto w-full md:h-[400px] object-cover max-w-lg rounded-lg "
-          />
+          {currentService?.image2 ? (
+            <img
+              src={currentService?.image2}
+              alt={currentService?.title}
+              className=" mb-5 md:mb-0 h-full w-full  object-cover  rounded-lg "
+            />
+          ) : currentService?.customComp2 ? (
+            currentService?.customComp2
+          ) : null}
         </section>
         {/* Text Section */}
         <section className="flex flex-col justify-center gap-4 mx-5 md:mx-10">
