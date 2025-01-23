@@ -10,7 +10,7 @@ import partner6 from "../assets/images/Clients/Rojavanam B&W.png";
 import partner7 from "../assets/images/Clients/Sidone B&W.png";
 import partner8 from "../assets/images/Clients/ENYARD.jpeg";
 import partner9 from "../assets/images/Clients/robofun_logo-removebg-preview-modified.png";
-import partner10 from "../assets/images/Clients/booba logo-modified.jpg";
+import partner10 from "../assets/partners/booba logo-modified (1).jpg";
 
 import partnerHover1 from "../assets/images/Clients/Adarsh Logo.png";
 import partnerHover2 from "../assets/images/Clients/DSSC logo.png";
@@ -38,7 +38,7 @@ const partners = [
     className: "w-40 h-16 cursor-pointer",
   },
   { normal: partner9, hover: partnerHover9 ,className: "w-40 h-20 cursor-pointer"},
-  { normal: partner10, hover: partnerHover10,className: "w-32 h-20 cursor-pointer" },
+  { normal: partner10, hover: partnerHover10,className: "w-40 h-24 cursor-pointer" },
 
  
 ];
@@ -60,7 +60,7 @@ export default function LogoHover() {
 
   return (
     <div className="w-full absolute -bottom-10 translate-y-1/2 overflow-hidden ">
-      <section className="grid grid-cols-2 justify-center items-center  md:grid-cols-3 lg:grid-cols-5 bg-white p-10 gap-5 rounded-lg mx-5 md:mx-16 lg:mx-20 shadow-lg overflow-hidden">
+      <section className="grid grid-cols-2 justify-center items-center  md:grid-cols-3 lg:grid-cols-5 bg-white p-10 gap-5 rounded-lg mx-5 md:mx-16 lg:mx-20 shadow-xl overflow-hidden">
         {partners.map((partner, index) => (
           <div key={index} className="relative">
             <img

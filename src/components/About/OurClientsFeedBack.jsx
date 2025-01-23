@@ -12,6 +12,7 @@ import Binumon from "../../assets/images/Binumon.png"
 const ScrollableCards = () => {
   const settings = {
     dots: true,
+    arrows: false,
     infinite: true,
     speed: 500,
     slidesToShow: 2,

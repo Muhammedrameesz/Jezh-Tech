@@ -1,11 +1,9 @@
 import useSoftwareServiceDetails from "../../../../store/SoftwareProductsStore";
-
-import {
-  LaptopImage,
-  MobileImage,
-} from "../../../../pages/Products/custamizedImages.jsx";
-
+import {MobileImage,} from "../../../../pages/Products/custamizedImages.jsx";
 import Accordian from "./Accordian.jsx";
+import Timetick from "../../../../assets/image2/prducts/timetick2.png";
+import Trakoon from "../../../../assets/image2/prducts/trackoon.png";
+import mazeHcm from "../../../../assets/image2/prducts/maze hcm.png";
 
 const serviceDetailsContent = [
   {
@@ -27,7 +25,7 @@ const serviceDetailsContent = [
       des: "Streamlines complex scheduling needs for large teams, including multiple locations and shifts.",
     },
 
-    customComp1: <LaptopImage />,
+    image: Timetick,
     customComp2: <MobileImage />,
   },
   {
@@ -49,10 +47,8 @@ const serviceDetailsContent = [
       des: "Automate workflows for improved productivity.",
     },
 
-    image:
-      "https://img.freepik.com/free-photo/businessmen-solving-maze-together_1134-600.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid",
-    image2:
-      "https://img.freepik.com/free-photo/businessman-solving-maze_1134-599.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid",
+    image: mazeHcm,
+    image2: mazeHcm,
   },
   {
     title: "Trackoon GPS",
@@ -73,10 +69,8 @@ const serviceDetailsContent = [
       des: "Simplify vehicle maintenance scheduling and transport fee collection for a seamless transportation experience.",
     },
 
-    image:
-      "https://img.freepik.com/free-vector/laptop-with-gps-navigation-software_24877-51529.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid",
-    image2:
-      "https://img.freepik.com/free-vector/gps-navigation-illustration_24877-57121.jpg?uid=R121738979&ga=GA1.1.906489000.1700029812&semt=ais_hybrid",
+    image: Trakoon,
+    image2: Trakoon,
   },
   {
     title: "Safety Management System",
@@ -133,69 +127,126 @@ export default function SoftwareProductseDetailsCom() {
     (state) => state.SoftwareProductsDetails
   );
   const currentService = serviceDetailsContent.find((item) => {
-    console.log("currenet:", item.title);
-    console.log("Store:", SoftwareDetails.title);
     return item.title === SoftwareDetails.title;
   });
 
   return (
     <div className="font-jost pb-10">
-      <div className=" grid grid-cols-1 md:grid-cols-2  p-6">
-        {/* Text Section */}
-        <section className="flex flex-col justify-center gap-4 mx-5 md:mx-10">
-          <h1 className="text-2xl font-bold text-customBlue mb-4">
-            {currentService?.title}
-          </h1>
-          <p className="text-gray-500 leading-7 text-justify text-sm">
-            {currentService?.description}
-          </p>
-          <p className="text-gray-500 leading-7 text-justify text-sm">
-            {currentService?.description2}
-          </p>
-        </section>
+      {currentService ? (
+        <>
+          <div className=" grid grid-cols-1 md:grid-cols-2  p-6">
+            {/* Text Section */}
+            <section className="flex flex-col justify-center gap-4 mx-5 md:mx-10">
+              <h1 className="text-2xl font-bold text-customBlue mb-4">
+                {currentService?.title}
+              </h1>
+              <p className="text-gray-500 leading-7 text-justify text-sm">
+                {currentService?.description}
+              </p>
+              <p className="text-gray-500 leading-7 text-justify text-sm">
+                {currentService?.description2}
+              </p>
+            </section>
 
-        {/* Image Section */}
-        <section className="flex justify-center items-center bg-white">
-          {currentService?.image ? (
-            <img
-              src={currentService?.image}
-              alt={currentService?.title || "Service Image"}
-              className="h-full w-full  object-cover rounded-lg"
-            />
-          ) : currentService?.customComp1 ? (
-            currentService?.customComp1
-          ) : null}
-        </section>
-      </div>
+            {/* Image Section */}
+            <section className="flex justify-center items-center bg-white">
+              <img
+                src={currentService?.image}
+                alt={currentService?.title || "Service Image"}
+                className="h-full w-full  object-contain rounded-lg"
+              />
+            </section>
+          </div>
 
-      {/* 2nd Row  */}
+          {/* 2nd Row  */}
 
-      <div className=" grid grid-cols-1 md:grid-cols-2  p-6">
-        {/* Image Section */}
-        <section className="flex justify-center items-center bg-white ">
-          {currentService?.image2 ? (
-            <img
-              src={currentService?.image2}
-              alt={currentService?.title}
-              className=" mb-5 md:mb-0 h-full w-full  object-cover  rounded-lg "
-            />
-          ) : currentService?.customComp2 ? (
-            currentService?.customComp2
-          ) : null}
-        </section>
-        {/* Text Section */}
-        <section className="flex flex-col justify-center gap-4 mx-5 md:mx-10">
-          <p className="text-gray-500 leading-7 text-justify text-sm">
-            {SoftwareDetails?.des}
-          </p>
+          <div className=" grid grid-cols-1 md:grid-cols-2  p-6">
+            {/* Image Section */}
+            <section className="flex justify-center items-center bg-white ">
+              {currentService?.image2 ? (
+                <img
+                  src={currentService?.image2}
+                  alt={currentService?.title}
+                  className=" mb-5 md:mb-0 h-full w-full  object-cover  rounded-lg "
+                />
+              ) : currentService?.customComp2 ? (
+                currentService?.customComp2
+              ) : null}
+            </section>
+            {/* Text Section */}
+            <section className="flex flex-col justify-center gap-4 mx-5 md:mx-10">
+              <p className="text-gray-500 leading-7 text-justify text-sm">
+                {SoftwareDetails?.des}
+              </p>
 
-          <Accordian
-            acc1={currentService?.accordianItem1}
-            acc2={currentService?.accordianItem2}
-            acc3={currentService?.accordianItem3}
-          />
-        </section>
-      </div>
+              <Accordian
+                acc1={currentService?.accordianItem1}
+                acc2={currentService?.accordianItem2}
+                acc3={currentService?.accordianItem3}
+              />
+            </section>
+          </div>
+        </>
+      ) : (
+        <>
+          {serviceDetailsContent.slice(0, 1).map((item) => (
+            <div key={item.title}>
+              <div className=" grid grid-cols-1 md:grid-cols-2  p-6">
+                {/* Text Section */}
+                <section className="flex flex-col justify-center gap-4 mx-5 md:mx-10">
+                  <h1 className="text-2xl font-bold text-customBlue mb-4">
+                    {item.title}
+                  </h1>
+                  <p className="text-gray-500 leading-7 text-justify text-sm">
+                    {item.description}
+                  </p>
+                  <p className="text-gray-500 leading-7 text-justify text-sm">
+                    {item.description2}
+                  </p>
+                </section>
+
+                {/* Image Section */}
+                <section className="flex justify-center items-center bg-white">
+                  <img
+                    src={item.image}
+                    alt={item.title || "Service Image"}
+                    className="h-full w-full  object-contain rounded-lg"
+                  />
+                </section>
+              </div>
+
+              {/* 2nd Row  */}
+
+              <div className=" grid grid-cols-1 md:grid-cols-2  p-6">
+                {/* Image Section */}
+                <section className="flex justify-center items-center bg-white ">
+                  {currentService?.image2 ? (
+                    <img
+                      src={item.image2}
+                      alt={item.title}
+                      className=" mb-5 md:mb-0 h-full w-full  object-cover  rounded-lg "
+                    />
+                  ) : item.customComp2 ? (
+                    item.customComp2
+                  ) : null}
+                </section>
+                {/* Text Section */}
+                <section className="flex flex-col justify-center gap-4 mx-5 md:mx-10">
+                  <p className="text-gray-500 leading-7 text-justify text-sm">
+                    {item.des}
+                  </p>
+
+                  <Accordian
+                    acc1={item.accordianItem1}
+                    acc2={item.accordianItem2}
+                    acc3={item.accordianItem3}
+                  />
+                </section>
+              </div>
+            </div>
+          ))}
+        </>
+      )}
     </div>
   );
 }

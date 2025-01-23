@@ -14,7 +14,7 @@ import partner6 from "../../assets/images/Clients/Rojavanam B&W.png";
 import partner7 from "../../assets/images/Clients/Sidone B&W.png";
 import partner8 from "../../assets/images/Clients/ENYARD.jpeg";
 import partner9 from "../../assets/images/Clients/robofun_logo-removebg-preview-modified.png";
-import partner10 from "../../assets/images/Clients/booba logo-modified.jpg";
+import partner10 from "../../assets/partners/booba logo-modified (1).jpg";
 
 import partnerHover1 from "../../assets/images/Clients/Adarsh Logo.png";
 import partnerHover2 from "../../assets/images/Clients/DSSC logo.png";
@@ -30,18 +30,20 @@ import partnerHover10 from "../../assets/partners/BoobaTaxiSecond.png";
 const partners = [
   { normal: partner1, hover: partnerHover1 },
   { normal: partner2, hover: partnerHover2 },
-  { normal: partner3, hover: partnerHover3 },
   { normal: partner4, hover: partnerHover4 },
+  { normal: partner3, hover: partnerHover3 },
+ 
   { normal: partner5, hover: partnerHover5 },
   { normal: partner6, hover: partnerHover6 },
   { normal: partner7, hover: partnerHover7 },
   { normal: partner8, hover: partnerHover8 },
-  { normal: partner9, hover: partnerHover9 },
+  
   { normal: partner10, hover: partnerHover10 },
+  { normal: partner9, hover: partnerHover9 },
 ];
 
 export default function LogoHover() {
-  const imgStyle = "w-40 h-24 object-contain cursor-pointer";
+  const imgStyle = "w-52 h-28 object-contain cursor-pointer";
   const [hoveredImage, setHoveredImage] = useState(null);
 
   const settings = {
