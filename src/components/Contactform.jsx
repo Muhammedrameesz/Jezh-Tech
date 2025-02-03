@@ -48,27 +48,26 @@ export default function ContactForm() {
 
     setErrors({});
     setIsSubmitted(true);
-    setLoading(true); // Start loading
+    setLoading(true); 
 
-    // List of recipient email addresses
+   
     const recipients = [
-      "rameesta456@gmail.com",
        "info@jezhtechnologies.com",
        "shabin@jezhtechnologies.com",
        "Arshitha@jezhtechnologies.com"
     ];
 
-    // Loop through recipients and send emails
+    
     const emailPromises = recipients.map((recipient) =>
       emailjs.send(
-        "service_447409k",
-        "template_b2ku3eb",
+        "service_ic4otwh",
+        "template_hi5ao4e",
         { ...formData, recipient_email: recipient },
-        "qI8zxfCk1DLGkeecf"
+        "obOvpX3CQTRX2QZVj"
       )
     );
 
-    // Wait for all emails to be sent
+    
     Promise.all(emailPromises)
       .then((responses) => {
         console.log("Emails sent successfully:", responses);
@@ -79,10 +78,9 @@ export default function ContactForm() {
         toast.error("There was an error sending some or all messages.");
       })
       .finally(() => {
-        setLoading(false); // Stop loading
+        setLoading(false); 
         setTimeout(() => setIsSubmitted(false), 3000);
 
-        // Reset the form data after submission
         setFormData({
           name: "",
           email: "",
