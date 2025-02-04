@@ -2,7 +2,7 @@ import { useState } from "react";
 import emailjs from "emailjs-com";
 import { toast } from "react-toastify";
 import CircularProgress from "@mui/material/CircularProgress";
-
+import { Link } from "react-router-dom";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -48,26 +48,23 @@ export default function ContactForm() {
 
     setErrors({});
     setIsSubmitted(true);
-    setLoading(true); 
+    setLoading(true);
 
-   
     const recipients = [
        "info@jezhtechnologies.com",
        "shabin@jezhtechnologies.com",
-       "Arshitha@jezhtechnologies.com"
+      "Arshitha@jezhtechnologies.com",
     ];
 
-    
     const emailPromises = recipients.map((recipient) =>
       emailjs.send(
-        "service_ic4otwh",
-        "template_hi5ao4e",
+        "service_chsqipn",
+        "template_l5n1u8i",
         { ...formData, recipient_email: recipient },
-        "obOvpX3CQTRX2QZVj"
+        "HaWKXjNwjG2ep--5A"
       )
     );
 
-    
     Promise.all(emailPromises)
       .then((responses) => {
         console.log("Emails sent successfully:", responses);
@@ -78,7 +75,7 @@ export default function ContactForm() {
         toast.error("There was an error sending some or all messages.");
       })
       .finally(() => {
-        setLoading(false); 
+        setLoading(false);
         setTimeout(() => setIsSubmitted(false), 3000);
 
         setFormData({
@@ -93,7 +90,6 @@ export default function ContactForm() {
   };
 
   return (
-    
     <div className="bg-white flex items-center justify-center font-jost">
       <div className="bg-white shadow-custom rounded-lg p-8 w-full max-w-6xl">
         <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">
@@ -109,7 +105,7 @@ export default function ContactForm() {
               >
                 Your Name
               </label>
-              
+
               <input
                 type="text"
                 name="name"
@@ -223,12 +219,12 @@ export default function ContactForm() {
             />
             <label htmlFor="terms" className="ml-2 text-sm text-gray-600">
               By checking this, you agree to our{" "}
-              <a
-                href="#"
+              <Link
+                to={"/privacy-policy"}
                 className="text-blue-500 underline hover:text-blue-600"
               >
                 Terms and Privacy Policy
-              </a>
+              </Link>
               .
             </label>
           </div>
@@ -244,7 +240,11 @@ export default function ContactForm() {
             >
               {loading ? (
                 <div>
-                 Please Wait <CircularProgress size={16} sx={{color:'#fff',marginLeft:"4px"}}/>
+                  Please Wait{" "}
+                  <CircularProgress
+                    size={16}
+                    sx={{ color: "#fff", marginLeft: "4px" }}
+                  />
                 </div>
               ) : (
                 "Send Message"
