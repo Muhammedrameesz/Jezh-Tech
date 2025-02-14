@@ -22,11 +22,11 @@ export default function LastSection() {
       </Anim>
 
       <Anim delay={0.6}>
-        <span >
+        <div onClick={()=>window.location.href ="https://outlook.office365.com/book/OneonOneDemoSession@jezhtechnologies.com/s/vt-oIjQa6EKODez0JTAnKQ2"} >
           <HoverButton>
           Schedule Your Appointment Today
           </HoverButton>
-        </span>
+        </div>
       </Anim>
 
       {/* <div className="block md:hidden">
