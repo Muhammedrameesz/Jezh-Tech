@@ -1,4 +1,4 @@
-import Image from "../../assets/image2/contact/ContactFormImage.png";
+import Image from "../../assets/Contact/Contact us-pana.png";
 import ContactForm from "../Contactform.jsx";
 import Underline from "../../ui/Underline.jsx";
 
@@ -16,9 +16,9 @@ export default function Contact() {
         </p>
       </div>
 
-      <div className=" grid grid-cols-1 md:grid-cols-2 mx-10">
+      <div className=" grid grid-cols-1 md:grid-cols-2 px-6 md:px-10 mx-auto max-w-7xl gap-5">
         <section className="">
-          <img src={Image} alt="image" className="h-[80%] w-[80%] object-cover" />
+          <img src={Image} alt="image" className="h-auto w-full object-cover" />
         </section>
         <section>
           <ContactForm />

@@ -26,9 +26,12 @@ export default function ForthSection() {
       if (typeof index !== "number") {
         throw new Error("Index is missing or not a valid number.");
       }
+      
+      if(title ==="Time Tick"){
+       window.location.href ="https://www.timetick.ae/"
+      }
       await softwareProductDet({ title, index, des });
       console.log('data sent to store');
-      
       navigate("/softwareProductsDetails");
     } catch (error) {
       console.error("Error:", error.message);

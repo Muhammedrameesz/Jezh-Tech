@@ -1,6 +1,9 @@
 import { IoMdCheckmark } from "react-icons/io";
+import {useNavigate} from "react-router-dom"
 
 export default function PricingPlans() {
+  const navigate = useNavigate()
+
   const iconStyle = "text-customGreen text-xl";
   return (
     <div className="font-jost py-10 bg-white">
@@ -18,15 +21,15 @@ export default function PricingPlans() {
          px-4 md:px-10 py-5 md:py-10 w-full max-w-screen-xl mx-auto">
         {/* Card 1  */}
 
-        <div className="border p-8 rounded-3xl bg-gradient-to-bl from-green-50 via-white to-transparent shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
+        <div className=" min-h-[680px] border p-8 rounded-3xl bg-gradient-to-bl from-green-50 via-white to-transparent shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
           <h1 className="text-xl md:text-2xl text-gray-800 font-bold mb-6 tracking-wide">
-            Individuals
+          Standard
           </h1>
           <h5 className="mb-3 text-gray-500 text-sm uppercase tracking-wide">
             Starts at
           </h5>
           <h1 className="font-bold text-5xl md:text-6xl mb-4 text-gray-800">
-            $0{" "}
+            $30{" "}
             <span className="font-normal text-base text-gray-500">
               per month/user
             </span>
@@ -71,15 +74,15 @@ export default function PricingPlans() {
         </div>
 
         {/* CARD 2 */}
-        <div className="border p-8 rounded-3xl bg-gradient-to-bl from-red-50 via-white to-transparent shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
+        <div className="border min-h-[680px] p-8 rounded-3xl bg-gradient-to-bl from-red-50 via-white to-transparent shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
           <h1 className="text-xl md:text-2xl text-gray-800 font-bold mb-6 tracking-wide">
-            Teams
+          Professional
           </h1>
           <h5 className="mb-3 text-gray-500 text-sm uppercase tracking-wide">
             Starts at
           </h5>
           <h1 className="font-bold text-5xl md:text-6xl mb-4 text-gray-800">
-            $12{" "}
+            $65{" "}
             <span className="font-normal text-base text-gray-500">
               per month/user
             </span>
@@ -124,11 +127,11 @@ export default function PricingPlans() {
         </div>
 
         {/* CARD 3  */}
-        <div className="border p-8 rounded-3xl bg-gradient-to-bl from-blue-50 via-white to-transparent shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
+        <div  className="min-h-[680px] border p-8 rounded-3xl bg-gradient-to-bl from-blue-50 via-white to-transparent shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
           <h1 className="text-xl md:text-2xl text-gray-800 font-bold mb-6 tracking-wide">
             Enterprice
           </h1>
-          <h5 className="mb-3 text-gray-500 text-sm uppercase tracking-wide">
+          {/* <h5 className="mb-3 text-gray-500 text-sm uppercase tracking-wide">
             Starts at
           </h5>
           <h1 className="font-bold text-5xl md:text-6xl mb-4 text-gray-800">
@@ -136,16 +139,17 @@ export default function PricingPlans() {
             <span className="font-normal text-base text-gray-500">
               per month/user
             </span>
-          </h1>
+          </h1> */}
           <p className="text-gray-600 mb-6 leading-relaxed">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
             molestiae sequi at dolore.
           </p>
           <button
+          onClick={()=>navigate("/contact")}
             className="border rounded-full my-6 flex justify-center items-center py-3 px-6 w-full
                hover:bg-customGreen hover:text-white text-customGreen font-semibold transition-colors duration-300 ease-in-out shadow-md"
           >
-            Get Started
+            Contact Us
           </button>
           <span className="w-full h-[1px] bg-gray-300 my-6"></span>
           <h1 className="mb-4 text-gray-800 font-bold text-lg">

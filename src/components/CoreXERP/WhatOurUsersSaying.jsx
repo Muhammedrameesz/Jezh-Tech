@@ -6,6 +6,7 @@ import QuotationImg from "../../assets/partners/quotation-mark.png";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import PropTypes from "prop-types";
 import { TiStarFullOutline } from "react-icons/ti";
+import GoogleSvg from "../../assets/Google/google_logo.svg"
 
 export default function WhatOurUsersSaying() {
   const reviews = [
@@ -146,9 +147,9 @@ export default function WhatOurUsersSaying() {
         <div className="bg-gradient-to-br from-white via-white to-green-300 shadow-lg rounded-3xl p-6 md:p-8 flex flex-col items-start text-left mx-4 md:mx-0  md:ml-10">
           <h3 className="md:text-base text-gray-500 mb-4">REVIEWED ON</h3>
           <img
-            src="https://startp-next.envytheme.com/images/saas/clutch-logo.png"
-            alt="Clutch Logo"
-            className="mb-4"
+            src={GoogleSvg}
+            alt="google Logo"
+            className="mb-4 w-[70%] h-auto"
           />
           <h1 className="text-5xl md:text-6xl font-bold text-customGreen mb-4">
             4.9/5
