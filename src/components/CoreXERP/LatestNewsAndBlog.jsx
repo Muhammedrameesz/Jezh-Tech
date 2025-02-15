@@ -15,7 +15,7 @@ export default function LatestNewsAndBlog() {
   };
 
   return (
-    <div className="bg-white py-16 p-5 font-jost">
+    <div className="bg-white pb-16 pt-5 p-5 font-jost">
       <div className="text-center mb-6">
         <h1 className="text-customBlue text-3xl md:text-4xl">
           Read Our Latest <span className="font-semibold">News & Blog</span>

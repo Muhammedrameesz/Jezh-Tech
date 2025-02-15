@@ -6,7 +6,7 @@ export default function PricingPlans() {
 
   const iconStyle = "text-customGreen text-xl";
   return (
-    <div className="font-jost py-10 bg-white">
+    <div className="font-jost pt-10 bg-white">
       <section className="flex flex-col justify-center items-center text-center gap-4 mb-5">
         <h1 className="text-2xl md:text-3xl lg:text-4xl text-customBlue">
           Simple <span className="font-semibold">Pricing,</span> Tailored for
@@ -21,7 +21,7 @@ export default function PricingPlans() {
          px-4 md:px-10 py-5 md:py-10 w-full max-w-screen-xl mx-auto">
         {/* Card 1  */}
 
-        <div className=" min-h-[680px] border p-8 rounded-3xl bg-gradient-to-bl from-green-50 via-white to-transparent shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
+        <div className=" min-h-[750px] border p-8 rounded-3xl bg-gradient-to-bl from-green-50 via-white to-transparent shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
           <h1 className="text-xl md:text-2xl text-gray-800 font-bold mb-6 tracking-wide">
           Standard
           </h1>
@@ -35,8 +35,7 @@ export default function PricingPlans() {
             </span>
           </h1>
           <p className="text-gray-600 mb-6 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-            molestiae sequi at dolore.
+          This plan is ideal for small businesses and startups seeking a streamlined solution.  Manage your core operations with ease, from accounting and inventory to CRM and reporting.
           </p>
           <button
             className="border rounded-full my-6 flex justify-center items-center py-3 px-6 w-full
@@ -74,7 +73,7 @@ export default function PricingPlans() {
         </div>
 
         {/* CARD 2 */}
-        <div className="border min-h-[680px] p-8 rounded-3xl bg-gradient-to-bl from-red-50 via-white to-transparent shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
+        <div className="border min-h-[750px] p-8 rounded-3xl bg-gradient-to-bl from-red-50 via-white to-transparent shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
           <h1 className="text-xl md:text-2xl text-gray-800 font-bold mb-6 tracking-wide">
           Professional
           </h1>
@@ -88,8 +87,8 @@ export default function PricingPlans() {
             </span>
           </h1>
           <p className="text-gray-600 mb-6 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-            molestiae sequi at dolore.
+          In this plan, we have enhanced features for growing businesses.
+          Empower your teams with advanced tools and automation.  Streamline workflows, improve collaboration, and gain deeper insights into your business performance.
           </p>
           <button
             className="border rounded-full my-6 flex bg-customGreen text-white justify-center items-center py-3 px-6 w-full
@@ -127,7 +126,7 @@ export default function PricingPlans() {
         </div>
 
         {/* CARD 3  */}
-        <div  className="min-h-[680px] border p-8 rounded-3xl bg-gradient-to-bl from-blue-50 via-white to-transparent shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
+        <div  className="min-h-[750px] border p-8 rounded-3xl bg-gradient-to-bl from-blue-50 via-white to-transparent shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out">
           <h1 className="text-xl md:text-2xl text-gray-800 font-bold mb-6 tracking-wide">
             Enterprice
           </h1>
@@ -141,8 +140,7 @@ export default function PricingPlans() {
             </span>
           </h1> */}
           <p className="text-gray-600 mb-6 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-            molestiae sequi at dolore.
+          Optimize Your Enterprise with CoreX.Comprehensive solutions for large organizations.Tailored for complex business needs, providing maximum control, scalability, and performance.  Gain enterprise-grade security, advanced analytics, and dedicated support for seamless integration and optimization.
           </p>
           <button
           onClick={()=>navigate("/contact")}

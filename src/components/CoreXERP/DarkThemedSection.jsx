@@ -6,7 +6,7 @@ import Man2 from "../../assets/CoreXImages/man2.png"
 export default function DarkThemedSection() {
   const navigate =useNavigate()
   return (
-    <div className="py-10 font-jost flex flex-col justify-center items-center p-5 md:p-10 lg:p-20">
+    <div className="py-0 font-jost flex flex-col justify-center items-center p-5 md:p-10 lg:p-20">
       <section className="relative w-full p-5  flex flex-col justify-center items-center gap-8 py-20  rounded-3xl bg-gradient-to-br from-black via-green-950 to-black">
         <h1 className="text-white text-center font-semibold text-3xl md:text-5xl lg:text-7xl max-w-4xl leading-loose">
           Experience the Power{" "}
