@@ -6,7 +6,7 @@ import HoverLogo from "../LogoHover.jsx"
 export default function LastSection() {
   // const TextColor="text-white"
   return (
-    <div className="relative flex flex-col items-center justify-center bg-custom-gradient gap-12 pb-96 md:pb-80 lg:pb-56  pt-12 p-6 font-jost mb-96 md:mb-60  ">
+    <div className="relative flex flex-col items-center justify-center bg-custom-gradient gap-12 pb-96 md:pb-80 lg:pb-56  pt-12 p-6 font-jakarta mb-96 md:mb-60  ">
      <HoverLogo/>
       <Anim>
         <h1 className="text-3xl md:text-4xl font-semibold text-white text-center leading-snug">

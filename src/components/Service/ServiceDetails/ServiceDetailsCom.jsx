@@ -187,7 +187,7 @@ export default function ServiceDetailsCom() {
   );
 
   return (
-    <div className="font-jost">
+    <div className="font-jakarta">
       {currentService ? (
         <>
           <div className=" grid grid-cols-1 md:grid-cols-2  p-6">

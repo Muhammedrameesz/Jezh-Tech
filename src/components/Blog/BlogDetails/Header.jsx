@@ -11,7 +11,7 @@ export default function Header() {
   
  
   return (
-    <div className="relative py-20 top-14 flex flex-col justify-center items-center  pt-20 font-jost px-4 overflow-hidden ">
+    <div className="relative py-20 top-14 flex flex-col justify-center items-center  pt-20 font-jakarta px-4 overflow-hidden ">
       <div className="absolute w-full h-full object-cover  z-[-1]">
         <img src={Background} alt="" />
       </div>

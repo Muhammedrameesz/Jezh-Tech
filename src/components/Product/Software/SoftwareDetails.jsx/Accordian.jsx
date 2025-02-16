@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 export default function SDAccordian({acc1,acc2,acc3}) {
     return (
-      <div className="w-full   font-jost bg-white">
+      <div className="w-full   font-jakarta bg-white">
 
         <h1 className="py-5 text-customBlue text-xl underline ml-2 ">key features;</h1>
         {/* Accordion Item 1    */}

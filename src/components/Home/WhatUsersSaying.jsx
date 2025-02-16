@@ -87,7 +87,7 @@ export default function WhatUsersSaying() {
   const displayedImages = getDisplayedImages();
 
   return (
-    <div className="relative font-jost overflow-hidden py-20 bg-white">
+    <div className="relative font-jakarta overflow-hidden py-20 bg-white">
       <RandomPatterns/>
       
       {/* Heading */}

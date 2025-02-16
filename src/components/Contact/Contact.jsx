@@ -4,7 +4,7 @@ import Underline from "../../ui/Underline.jsx";
 
 export default function Contact() {
   return (
-    <div className="pb-10 pt-10 font-jost">
+    <div className="pb-10 pt-10 font-jakarta">
       <div className="flex flex-col justify-center items-center mx-10 mb-20">
         <h1 className="text-xl  md:text-3xl lg:text-3xl text-[#0E314C] font-semibold mb-5">
         Get In Touch With Us

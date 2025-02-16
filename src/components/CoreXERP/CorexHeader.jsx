@@ -17,7 +17,7 @@ export default function CoreXHeader() {
     "Streamline workflows, cut costs, and unlock efficiency with our all-in-one ERP Platform.";
 
   return (
-    <div className="relative min-h-screen pt-10 md:pt-14 flex flex-col justify-center items-center  font-jost px-4 overflow-hidden">
+    <div className="relative min-h-screen pt-10 md:pt-14 flex flex-col justify-center items-center  font-jakarta px-4 overflow-hidden">
       <section className="absolute grid grid-cols-4 top-1/2  ">
         <img
           src={corexImage}
@@ -48,10 +48,10 @@ export default function CoreXHeader() {
         <section className="mt-10  text-center">
           <Anim key="anim-header">
             <div className="flex flex-col gap-2 mb-8">
-            <span className="text-3xl md:text-4xl lg:text-6xl font-semibold text-customBlue ">
+            <span className="text-3xl md:text-4xl lg:text-6xl font-bold text-customBlue ">
             Transformative ERP Solutions 
             </span>
-            <span className="text-3xl md:text-4xl lg:text-6xl  text-customBlue">for Seamless Operations</span>
+            <span className="text-3xl md:text-4xl lg:text-6xl  text-customBlue font-medium">For Seamless Operations</span>
             </div>
           </Anim>
 

@@ -35,7 +35,7 @@ export default function WorkCulture() {
   ];
 
   return (
-    <div className="py-10 font-jost bg-white ">
+    <div className="py-10 font-jakarta bg-white ">
       <div className="flex flex-col justify-center items-center text-center space-y-6">
         <p className="text-sm font-semibold text-customGreen bg-white rounded-full shadow-lg p-2 px-6">Jezh Technologies&apos;s Work Culture & Value</p>
         <h1 className="text-4xl sm:text-3xl font-semibold text-gray-800">Your Life In Jezh Technologies</h1>

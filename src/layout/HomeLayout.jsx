@@ -18,9 +18,12 @@ export default function HomeLayout() {
       <HomeNav />
       <div
         onClick={() =>
-          window.location.href="https://api.whatsapp.com/send/?phone=918428807007&text&type=phone_number&app_absent=0"
+          window.open(
+            "https://api.whatsapp.com/send/?phone=9385722102&text&type=phone_number&app_absent=0",
+            "_blank"
+          )
         }
-        className="fixed bottom-5 right-5 cursor-pointer z-50 text-3xl bg-white p-2 shadow-2xl hover:shadow-custom transition-all duration-300 rounded-full text-green-500"
+        className=" fixed bottom-5 right-5 cursor-pointer z-50 text-3xl bg-white p-2 shadow-2xl hover:shadow-custom transition-all duration-300 rounded-full text-green-500"
       >
         <IoLogoWhatsapp className="" />
       </div>

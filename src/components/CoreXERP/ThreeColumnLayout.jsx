@@ -51,14 +51,14 @@ const contents = [
 
 const LayoutComponent = () => {
   return (
-    <div className="space-y-12 bg-white font-jost py-16">
+    <div className="space-y-12 bg-white font-jakarta py-16">
       {/* Two Column Layout for Heading and Description */}
       <div className="grid grid-cols-1 md:grid-cols-3 justify-center items-center mx-5 md:mx-8 px-4 max-w-7xl gap-6">
         <div className="">
-          <h1 className="text-2xl md:text-4xl  text-customBlue ">
-          Why CoreX is the right
+          <h1 className="text-4xl md:text-4xl font-medium text-customBlue  ">
+          Why CoreX Is The Right <span className="font-bold"> Choice </span> 
           </h1>
-          <h1 className="text-2xl  md:text-4xl  text-customBlue "><span className="font-semibold"> choice </span> for you</h1>
+          <h1 className="text-4xl font-medium md:text-4xl  text-customBlue ">For You</h1>
         </div>
         <div className=" col-span-2">
           <p className="text-lg text-gray-500 text-start">

@@ -9,7 +9,7 @@ export default function FifthSection() {
   const [hover, setHover] = useState(null);
 
   return (
-    <div className="flex flex-col  items-center font-jost px-6 py-16 bg-white ">
+    <div className="flex flex-col  items-center font-jakarta px-6 py-16 bg-white ">
       {/* Header Section */}
       <div className="flex flex-col justify-center items-center mb-10 md:mb-20">
         <Anim>

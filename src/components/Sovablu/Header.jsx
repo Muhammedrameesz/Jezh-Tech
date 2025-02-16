@@ -19,7 +19,7 @@ export default function Header() {
     "Seamlessly build and deploy complicated, scalable, cloud-native, AI-augmented applications and processes for your business without writing any code whatsoever.";
 
   return (
-    <div className="font-jost mt-10 bg-white text-black  flex items-center justify-center overflow-hidden relative ">
+    <div className="font-jakarta mt-10 bg-white text-black  flex items-center justify-center overflow-hidden relative ">
       <RandomP2 />
       <div className="absolute w-full h-full object-cover  ">
         <img src={Background} alt="img" />

@@ -30,7 +30,7 @@ export default function LaptopSection() {
   // }, [isVideoPlaying]);
 
   return (
-    <div className="pt-5 pb-20 font-jost">
+    <div className="pt-5 pb-20 font-jakarta">
       <section className="relative mx-10 md:mx-20">
         {/* Background Books Image */}
         <img

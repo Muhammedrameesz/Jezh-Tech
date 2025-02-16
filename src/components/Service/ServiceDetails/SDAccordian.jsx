@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 export default function SDAccordian({ accordianData }) {
   return (
-    <div className="w-full font-jost bg-white">
+    <div className="w-full font-jakarta bg-white">
       <h1 className="py-5 text-customBlue text-xl underline ml-2">
         Key Features:
       </h1>

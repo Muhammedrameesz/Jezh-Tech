@@ -18,7 +18,7 @@ function Header() {
 
   return (
     <div 
-    className="relative pt-20 flex flex-col justify-center items-center gap-10 font-jost  overflow-hidden">
+    className="relative pt-20 flex flex-col justify-center items-center gap-10 font-jakarta  overflow-hidden">
       <div className="absolute w-full h-full object-cover  z-[-1]">
         <img src={Background} alt="" />
       </div>

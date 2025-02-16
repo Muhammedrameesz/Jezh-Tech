@@ -3,7 +3,7 @@ export default function Pricing() {
 const greenBg = "p-4 border-r border-r-customBlue text-center  bg-customGreen text-white"
 
   return (
-    <div className="font-jost pt-14 pb-5">
+    <div className="font-jakarta pt-14 pb-5">
       <section className="flex flex-col justify-center items-center text-center gap-4 mb-5">
         <h1 className="text-2xl md:text-3xl lg:text-4xl text-customBlue">
           Simple <span className="font-semibold">Pricing,</span> Tailored for

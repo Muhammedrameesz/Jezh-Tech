@@ -26,14 +26,14 @@ export default function Subscribe() {
     setAgree(false);
   };
   return (
-    <div className="py-10 flex flex-col justify-center items-center font-jost bg-white ">
+    <div className="py-10 flex flex-col justify-center items-center font-jakarta bg-white ">
       <section className="relative p-16 px-20 md:px-28 lg:px-36 bg-[#7e05ff] grid grid-cols-1 gap-5 md:gap-10 lg:gap-16 md:grid-cols-2 rounded-3xl">
         <div className="flex flex-col text-white text-3xl md:text-4xl">
-          <span className="font-semibold">
-            Subscribe <span className="font-normal"> to our</span>
+          <span className="font-bold">
+            Subscribe <span className="font-medium"> To Our</span>
           </span>{" "}
-          <span>newsletter for the latest</span>{" "}
-          <span>updates & insights!</span>
+          <span className="font-medium">Newsletter For The Latest</span>{" "}
+          <span className="font-medium">Updates & Insights!</span>
         </div>
 
         <div className="relative w-full max-w-2xl">

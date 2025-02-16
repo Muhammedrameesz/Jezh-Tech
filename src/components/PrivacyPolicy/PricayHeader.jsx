@@ -9,7 +9,7 @@ export default function PrivacyHeader() {
     "Jezh Technologies holds your privacy in high esteem. We believe in creating a digital oasis where innovation and privacy coexist seamlessly. We encourage you to utilize Jezh services with utmost assurance in our dedication to your well-being and the security of your confidential information. This privacy policy outlines the methods through which we gather information from users of Jezh’s services and visitors to our website. We kindly urge customers and visitors to thoroughly review this privacy policy for a comprehensive understanding. Our commitment to your data’s security is as strong as the currents that shape the Jezh itself."
 
   return (
-    <div className="relative top-14 flex flex-col justify-center items-center  pt-20 font-jost px-4 overflow-hidden ">
+    <div className="relative top-14 flex flex-col justify-center items-center  pt-20 font-jakarta px-4 overflow-hidden ">
       <div className="absolute w-full h-full object-cover  z-[-1]">
         <img src={Background} alt="" />
       </div>

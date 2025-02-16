@@ -6,8 +6,8 @@ export default function SignupForm() {
 
 
   return (
-    <div className="bg-customWhite py-20 font-jost">
-    <div className="   items-center justify-center  px-4 font-jost grid grid-cols-1 md:grid-cols-2 gap-5 mx-5 md:mx-10">
+    <div className="bg-customWhite py-20 font-jakarta">
+    <div className="   items-center justify-center  px-4 font-jakarta grid grid-cols-1 md:grid-cols-2 gap-5 mx-5 md:mx-10">
       <div className="flex flex-col gap-6">
         
         <p className="text-gray-600 text-sm font-semibold shadow-lg bg-white rounded-full w-fit p-2 px-5">

@@ -56,7 +56,7 @@ export default function ForthSection() {
   ];
 
   return (
-    <div className="py-20 font-jost bg-white">
+    <div className="py-20 font-jakarta bg-white">
       <div className="flex flex-col justify-center items-center">
         <h1
           className="text-[#0E314C] text-xl md:text-xl lg:text-2xl font-semibold leading-tight mb-4

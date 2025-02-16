@@ -18,7 +18,7 @@ export default function Header() {
   const sentence = " Trust us to simplify tech and drive success";
 
   return (
-    <div className="relative top-14 py-10 md:py-14 flex flex-col justify-center items-center  font-jost px-4 overflow-hidden">
+    <div className="relative top-14 py-10 md:py-14 flex flex-col justify-center items-center  font-jakarta px-4 overflow-hidden">
     
       <div className="absolute w-full h-full object-cover  z-[-1]">
         <img src={Background} alt="" />

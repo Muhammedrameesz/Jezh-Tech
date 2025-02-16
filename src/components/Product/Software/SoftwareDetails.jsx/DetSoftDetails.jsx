@@ -131,7 +131,7 @@ export default function SoftwareProductseDetailsCom() {
   });
 
   return (
-    <div className="font-jost pb-10">
+    <div className="font-jakarta pb-10">
       {currentService ? (
         <>
           <div className=" grid grid-cols-1 md:grid-cols-2  p-6">

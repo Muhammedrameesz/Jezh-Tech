@@ -140,7 +140,7 @@ export default function SoftwareProductseDetailsCom() {
   );
 
   return (
-    <div className="font-jost pb-10">
+    <div className="font-jakarta pb-10">
       <div className=" grid grid-cols-1 md:grid-cols-2  p-6">
         {/* Text Section */}
         <section className="flex flex-col justify-center gap-4 mx-5 md:mx-10">

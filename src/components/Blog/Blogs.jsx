@@ -190,7 +190,7 @@ export default function Blogs() {
   }
 
   return (
-    <div className="py-20 font-jost">
+    <div className="py-20 font-jakarta">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 mx-5 md:mx-10">
         {/* First Column (4/3 width) */}
         <section className="col-span-4 grid grid-cols-1 md:grid-cols-2 gap-5">

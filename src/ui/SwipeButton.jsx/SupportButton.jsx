@@ -9,7 +9,7 @@ export default function Support({ children }) {
     <div
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className="relative group w-auto h-auto cursor-pointer p-2 px-6 rounded-lg font-jost border-2 border-dashed border-customGreen/40   bg-transparent text-center font-semibold uppercase overflow-hidden z-50"
+      className="relative group w-auto h-auto cursor-pointer p-2 px-6 rounded-lg font-jakarta border-2 border-dashed border-customGreen/40   bg-transparent text-center font-semibold uppercase overflow-hidden z-50"
       style={{ position: "relative", display: "inline-block" }}
     >
       {/* Top Swipe */}

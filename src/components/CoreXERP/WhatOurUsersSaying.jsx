@@ -138,9 +138,9 @@ export default function WhatOurUsersSaying() {
   const stars = Array(5).fill(0);
 
   return (
-    <div className=" py-20 font-jost min-h-screen bg-gradient-to-br from-purple-500 via-purple-100 to-transparent ">
-      <h2 className="text-3xl md:text-4xl  text-center text-customBlue mb-8 md:mb-10">
-        What Our Users Are <span className="font-semibold">Saying</span>
+    <div className=" py-20 font-jakarta min-h-screen bg-gradient-to-br from-purple-500 via-purple-100 to-transparent ">
+      <h2 className="text-3xl md:text-4xl  text-center text-customBlue mb-8 md:mb-10 font-medium">
+        What Our Users Are <span className="font-bold">Saying</span>
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto items-center">
         {/* Column 1 */}

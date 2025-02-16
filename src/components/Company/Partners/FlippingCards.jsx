@@ -5,7 +5,7 @@ import Anim from "../../../ui/Anim.jsx"
 
 const AnimatedCardGrid = () => {
   return (
-    <div className="font-jost py-20 bg-customWhite">
+    <div className="font-jakarta py-20 bg-customWhite">
       <div className="flex flex-col pb-10 items-center justify-center">
         <h1 className="text-[#0E314C] text-center text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4">
         Our Global Network 

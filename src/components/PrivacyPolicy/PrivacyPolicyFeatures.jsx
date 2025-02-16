@@ -61,7 +61,7 @@ const privacyPolicyContent = [
 
 export default function PrivacyPolicyFeatures() {
   return (
-    <div className="font-jost py-16 bg-customWhite">
+    <div className="font-jakarta py-16 bg-customWhite">
     <div className="flex flex-col justify-center items-center text-center mb-10 md:mb-16">
       <h1 className="text-sm font-semibold shadow-md rounded-full p-2 px-6 text-customGreen mb-4 bg-green-50">
         Privacy Policy

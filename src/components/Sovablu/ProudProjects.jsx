@@ -113,7 +113,7 @@ const ImageCarousel = () => {
   const [hover, setHover] = useState(null);
 
   return (
-    <div className="relative py-10 font-jost">
+    <div className="relative py-10 font-jakarta">
       <Pattern />
       <div className="flex flex-col items-center justify-center max-w-3xl mb-8 mt-4 mx-auto text-center">
         <h1 className="text-[#0E314C] text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4">

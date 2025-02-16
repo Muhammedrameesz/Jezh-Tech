@@ -67,7 +67,7 @@ export default function ForthSection() {
   
 
   return (
-    <div className="bg-white  items-center pb-16 pt-20   font-jost">
+    <div className="bg-white  items-center pb-16 pt-20   font-jakarta">
 
     <div className="grid grid-cols-1 md:grid-cols-2 mx-5 md:mx-10 lg:mx-16">
       {/* Left Section */}

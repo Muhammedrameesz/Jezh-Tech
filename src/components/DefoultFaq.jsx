@@ -46,7 +46,7 @@ export default function StyledAccordion() {
   ];
 
   return (
-    <div className="py-20 bg-customWhite font-jost flex items-center justify-center">
+    <div className="py-20 bg-customWhite font-jakarta flex items-center justify-center">
   <div className="w-full max-w-7xl mx-5 lg:mx-14 rounded-lg grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
     {/* Left Column: Image */}
    
@@ -97,7 +97,7 @@ export default function StyledAccordion() {
                 fontWeight: 600,
                 fontSize: "15px",
               }}
-              className={`font-semibold group-hover:text-customGreen transition-colors duration-300 font-jost ${
+              className={`font-semibold group-hover:text-customGreen transition-colors duration-300 font-jakarta ${
                 expanded === index ? "text-customGreen" : "text-gray-800"
               }`}
             >
@@ -108,7 +108,7 @@ export default function StyledAccordion() {
             <AccordionDetails>
               <Typography
                 sx={{ fontSize: 14 }}
-                className="text-gray-500 font-jost"
+                className="text-gray-500 font-jakarta"
               >
                 {item.content}
               </Typography>

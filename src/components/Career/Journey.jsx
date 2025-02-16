@@ -21,7 +21,7 @@ export default function CompanyValues() {
   ];
 
   return (
-    <div className="py-10 bg-white font-jost">
+    <div className="py-10 bg-white font-jakarta">
       <div className="text-center mb-12">
         <h1 className="text-4xl sm:text-3xl font-semibold mb-4 text-gray-800 ">Our Mission, Vision, and Core Values</h1>
         <p className="text-base text-gray-500 max-w-3xl mx-auto">

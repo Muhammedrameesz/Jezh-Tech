@@ -26,7 +26,7 @@ export default function ResponsiveNav() {
   };
 
   return (
-    <div className="font-jost absolute top-0 left-0 w-full z-50">
+    <div className="font-jakarta absolute top-0 left-0 w-full z-50">
       {/* Navbar Toggle Button */}
       <div className="flex justify-end items-center p-4 transform translate-y-1/3 top-1/2">
         <button onClick={() => setOpen(!open)} className="text-gray-950 z-20">

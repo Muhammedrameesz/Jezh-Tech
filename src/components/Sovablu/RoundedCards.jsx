@@ -8,7 +8,7 @@ import Underline from "../../ui/Underline.jsx";
 
 export default function OurFeatures() {
   return (
-    <section className=" font-jost bg-white pt-10 pb-5 ">
+    <section className=" font-jakartarta bg-white pt-10 pb-5 ">
       <div className="flex flex-col justify-center items-center mx-10 ">
         <h1 className="text-xl  md:text-3xl lg:text-3xl text-[#0E314C] font-semibold mb-5">
         Benefits of Sovablu No code development platform

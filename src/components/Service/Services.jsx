@@ -29,7 +29,7 @@ export default function Service() {
   const [BtnHover, setBtnHover] = useState(null);
 
   return (
-    <div className="flex flex-col  items-center font-jost px-6 py-16 bg-green-50  ">
+    <div className="flex flex-col  items-center font-jakarta px-6 py-16 bg-green-50  ">
       {/* Header Section */}
       <div className="flex flex-col justify-center items-center mb-10 md:mb-20">
         <h1 className="text-[#0E314C] text-center text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4">

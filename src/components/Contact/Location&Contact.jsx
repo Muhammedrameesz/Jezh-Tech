@@ -4,7 +4,7 @@ import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
 
 export default function Location() {
   return (
-    <div className="py-20 font-jost  ">
+    <div className="py-20 font-jakarta  ">
 
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 mx-5 md:mx-auto max-w-2xl">

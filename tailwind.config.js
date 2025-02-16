@@ -37,6 +37,7 @@ export default {
         helvetica: ["Helvetica", "Arial", "Lucida", "sans-serif"],
         exo2: ['"Exo 2"', "sans-serif"],
         jost: ['Jost', 'sans-serif'],
+        jakarta: ["'Plus Jakarta Sans'", "sans-serif"],
       },
       keyframes: {
         spinSlow: {

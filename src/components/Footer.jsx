@@ -15,7 +15,7 @@ export default function Footer() {
   const iconStyle = { marginRight: "8px", color: "rgb(156, 163, 175)" };
 
   return (
-    <footer className="relative font-jost bg-black ">
+    <footer className="relative font-jakarta bg-black ">
       <AnimBT>
         <div className="relative z-10 flex flex-col md:flex-row items-start justify-between py-12 px-6 md:px-12 lg:px-24 space-y-8 md:space-y-0">
           {/* Logo and Description */}

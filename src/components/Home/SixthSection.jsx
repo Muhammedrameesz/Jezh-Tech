@@ -72,7 +72,7 @@ export default function StatsSection() {
 
   return (
     <div
-      className="relative bg-customWhite py-14 font-jost
+      className="relative bg-customWhite py-14 font-jakarta
     "
     >
       

@@ -15,10 +15,10 @@ export default function LatestNewsAndBlog() {
   };
 
   return (
-    <div className="bg-white pb-16 pt-5 p-5 font-jost">
+    <div className="bg-white pb-16 pt-5 p-5 font-jakarta">
       <div className="text-center mb-6">
-        <h1 className="text-customBlue text-3xl md:text-4xl">
-          Read Our Latest <span className="font-semibold">News & Blog</span>
+        <h1 className="text-customBlue text-3xl md:text-4xl font-medium">
+          Read Our Latest <span className="font-bold">News & Blog</span>
         </h1>
       </div>
 
@@ -31,7 +31,7 @@ export default function LatestNewsAndBlog() {
             </h1>
             <p className="mt-1 text-gray-500">12 Feb, 2024</p>
           </section>
-          <h3 className="text-xl text-customBlue  mb-4">
+          <h3 className="text-xl text-customBlue  mb-4 font-medium">
             {" "}
             How a Website Can Help Scale Your Small Business
           </h3>
@@ -61,7 +61,7 @@ export default function LatestNewsAndBlog() {
             </h1>
             <p className="mt-1 text-gray-500">23 Oct, 2024</p>
           </section>
-          <h3 className="text-xl text-customBlue  mb-4">
+          <h3 className="text-xl text-customBlue  mb-4 font-medium">
             The Role of Software Development in Digital Transformation
           </h3>
           <p className="text-gray-500 mb-6 ">
@@ -89,7 +89,7 @@ export default function LatestNewsAndBlog() {
             </h1>
             <p className="mt-1 text-gray-500">5 Dec, 2024</p>
           </section>
-          <h3 className="text-xl text-customBlue  mb-4">
+          <h3 className="text-xl text-customBlue  mb-4 font-medium">
             Top 5 Features Every E-Commerce Website Should Have
           </h3>
           <p className="text-gray-500 mb-6 ">

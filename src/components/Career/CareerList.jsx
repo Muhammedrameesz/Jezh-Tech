@@ -59,7 +59,7 @@ const careerList = [
 
 const CareerList = () => {
   return (
-    <section className="pb-20 pt-10 font-jost">
+    <section className="pb-20 pt-10 font-jakarta">
   <div className="mx-10 md:mx-20 shadow-custom py-10">
     <div className="text-center mt-8 px-4">
       <h2 className="text-2xl sm:text-3xl font-bold text-[#0E314C] mb-2">

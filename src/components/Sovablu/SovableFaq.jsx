@@ -72,7 +72,7 @@ export default function StyledAccordion() {
   const rightColumnData = accordionData.slice(5,10);
 
   return (
-    <div className="py-20 bg-customWhite font-jost">
+    <div className="py-20 bg-customWhite font-jakarta">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -123,7 +123,7 @@ export default function StyledAccordion() {
                       fontWeight: 600,
                       fontSize: "15px",
                     }}
-                    className={`font-semibold group-hover:text-customGreen transition-colors duration-300 font-jost ${
+                    className={`font-semibold group-hover:text-customGreen transition-colors duration-300 font-jakarta ${
                       expanded === `left-${index}`
                         ? "text-customGreen"
                         : "text-gray-800"
@@ -136,7 +136,7 @@ export default function StyledAccordion() {
                   <AccordionDetails>
                     <Typography
                       sx={{ fontFamily: "Poppins, sans-serif", fontSize: 14 }}
-                      className="text-gray-500 font-jost"
+                      className="text-gray-500 font-jakarta"
                     >
                       {item.content}
                     </Typography>
@@ -180,7 +180,7 @@ export default function StyledAccordion() {
                       fontWeight: 600,
                       fontSize: "15px",
                     }}
-                    className={`font-semibold group-hover:text-customGreen transition-colors duration-300 font-jost ${
+                    className={`font-semibold group-hover:text-customGreen transition-colors duration-300 font-jakarta ${
                       expanded === `right-${index}`
                         ? "text-customGreen"
                         : "text-gray-800"
@@ -193,7 +193,7 @@ export default function StyledAccordion() {
                   <AccordionDetails>
                     <Typography
                       sx={{ fontFamily: "Poppins, sans-serif", fontSize: 14 }}
-                      className="text-gray-500 font-jost"
+                      className="text-gray-500 font-jakarta"
                     >
                       {item.content}
                     </Typography>

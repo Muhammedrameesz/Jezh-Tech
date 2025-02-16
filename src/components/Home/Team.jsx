@@ -161,7 +161,7 @@ export default function AllTeam() {
   // }, []);
 
   return (
-    <div className="bg-gray-100 py-20 font-jost">
+    <div className="bg-gray-100 py-20 font-jakarta">
       <Anim>
         <div className="flex flex-col pb-10 md:pb-20 items-center justify-center">
           <h1 className="text-[#0E314C] text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4">

@@ -60,7 +60,7 @@ export default function ForthSection() {
     },
   ];
   return (
-    <div className="bg-customWhite pb-16 pt-20  font-jost">
+    <div className="bg-customWhite pb-16 pt-20  font-jakarta">
     <div className="grid grid-cols-1 md:grid-cols-2 items-center mx-5 md:mx-10 lg:mx-10">
       <div className="relative  ">
         <div className="block md:hidden ">

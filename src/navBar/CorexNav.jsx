@@ -51,7 +51,7 @@ export default function HomeNav() {
 
   return (
     <motion.nav
-      className="font-jost z-50 max-w-6xl w-full shadow-custom flex items-center fixed bg-white rounded-full left-1/2 transform -translate-x-1/2 "
+      className="font-jakarta z-50 max-w-6xl w-full shadow-custom flex items-center fixed bg-white rounded-full left-1/2 transform -translate-x-1/2 "
       initial={{ top: isScrolled ? 0 : 80 }}
       animate={{ top: isScrolled ? 0 : 80 }}
       transition={{ duration: 0.5, ease: "easeInOut" }}
@@ -97,7 +97,7 @@ export default function HomeNav() {
                   activeDrop === item.element
                     ? "text-customGreen"
                     : "text-gray-600"
-                } tracking-tight leading-relaxed px-4 py-2 rounded-full transition-all duration-300 transform hover:text-customGreen hover:scale-105 ${
+                } tracking-tight leading-relaxed px-4 py-2 rounded-full font-semibold transition-all duration-300 transform hover:text-customGreen hover:scale-105 ${
                   item.hasDropdown &&
                   isDropdownOpen &&
                   activeLink === item.element &&
@@ -161,7 +161,7 @@ export default function HomeNav() {
                                   linkActive === subItem.element
                                     ? "text-customGreen"
                                     : "text-gray-600"
-                                } transition-all duration-300 ease-in-out group-hover:text-customGreen`}
+                                } transition-all duration-300 font-medium ease-in-out group-hover:text-customGreen`}
                               >
                                 {subItem.element}
                               </Link>

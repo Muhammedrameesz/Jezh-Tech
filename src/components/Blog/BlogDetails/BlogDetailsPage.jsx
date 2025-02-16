@@ -218,7 +218,7 @@ export default function BlogDetailsPage() {
   );
 
   return (
-    <div className="py-20 bg-white font-jost">
+    <div className="py-20 bg-white font-jakarta">
       <div className="grid grid-cols-1 md:grid-cols-6 gap-5 mx-5 md:mx-10 items-start">
         <div className="col-span-4 bg-white p-8 rounded-lg flex flex-col space-y-6">
           <div>

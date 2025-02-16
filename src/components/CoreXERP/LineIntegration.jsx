@@ -12,13 +12,13 @@ export default function LineIntegration() {
   const imageArray = [Jezh, BoobaTaxi, Enyard, Goyaka, lagoon, UaeCh, Witblox];
 
   return (
-    <div className="pb-20 font-jost">
+    <div className="pb-20 font-jakarta">
       <section className="flex flex-col items-center justify-center gap-3">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl text-customBlue">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl text-customBlue font-medium">
           Effortlessly Collaborate with{" "}
         </h1>
-        <h1 className="text-2xl md:text-3xl lg:text-4xl text-customBlue">
-          Our Trusted<span className="font-semibold"> Partners</span>
+        <h1 className="text-2xl md:text-3xl lg:text-4xl text-customBlue font-medium">
+          Our Trusted<span className="font-bold"> Partners</span>
         </h1>
         <p className="text-base text-gray-500 max-w-2xl text-center mt-2">
           Discover our esteemed partners dedicated to delivering innovative

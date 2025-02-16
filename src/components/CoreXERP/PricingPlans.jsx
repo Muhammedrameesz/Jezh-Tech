@@ -6,10 +6,10 @@ export default function PricingPlans() {
 
   const iconStyle = "text-customGreen text-xl";
   return (
-    <div className="font-jost pt-10 bg-white">
+    <div className="font-jakarta pt-10 bg-white">
       <section className="flex flex-col justify-center items-center text-center gap-4 mb-5">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl text-customBlue">
-          Simple <span className="font-semibold">Pricing,</span> Tailored for
+        <h1 className="text-2xl md:text-3xl lg:text-4xl text-customBlue font-medium">
+          Simple <span className="font-bold">Pricing,</span> Tailored for
           Your Needs
         </h1>
         <p className="text-base text-gray-500">

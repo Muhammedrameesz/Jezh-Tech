@@ -9,7 +9,7 @@ function Header() {
   const serviceDetails = useServiceStore((state)=>state.serviceDetails)
 
   return (
-    <div className="relative py-28 flex flex-col justify-center items-center gap-10 font-jost  overflow-hidden">
+    <div className="relative py-28 flex flex-col justify-center items-center gap-10 font-jakarta  overflow-hidden">
       <div className="absolute w-full h-full -z-10">
         <img src={Background} alt="" />
       </div>

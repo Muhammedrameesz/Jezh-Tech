@@ -74,7 +74,7 @@ export default function FeaturedSolutions() {
   const [hover, setHover] = useState(null);
 
   return (
-    <div className="py-10 bg-white font-jost relative">
+    <div className="py-10 bg-white font-jakarta relative">
       <Pattern />
       <div className="flex flex-col justify-center items-center mx-10">
         <h1 className="text-xl md:text-3xl lg:text-3xl text-[#0E314C] font-semibold mb-5">

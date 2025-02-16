@@ -4,6 +4,7 @@ import feature2 from "../../assets/CoreXImages/feature2.png";
 import feature3 from "../../assets/CoreXImages/feature3.png";
 import feature4 from "../../assets/CoreXImages/feature4.png";
 import { motion } from "framer-motion";
+import Underline from "../../ui/Underline";
 
 export default function Features() {
   const contents = [
@@ -36,14 +37,15 @@ export default function Features() {
   const [hover, setHover] = useState(null);
 
   return (
-    <div className="min-h-screen bg-white py-16">
+    <div className="min-h-screen bg-white py-16 font-jakarta">
       <div className="flex flex-col items-center justify-center  mb-5 md:mb-10 lg:mb-20">
-      <span className="text-3xl  md:text-4xl font-semibold text-customBlue">
+      <span className="text-3xl  md:text-4xl font-bold text-customBlue">
          Advanced Features 
         </span>
-        <h1 className="text-3xl  md:text-4xl text-customBlue mb-2">
-        for your Growth 
+        <h1 className="text-3xl  md:text-4xl text-customBlue mb-2 font-medium">
+        For Your Growth 
         </h1>
+        <Underline/>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6  items-center justify-center px-6 md:px-14">

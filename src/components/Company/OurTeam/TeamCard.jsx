@@ -53,7 +53,7 @@ const MyComponent = () => {
   ];
 
   return (
-    <div className="py-20 font-jost bg-white">
+    <div className="py-20 font-jakarta bg-white">
       <div className="flex flex-col pb-10 md:pb-20 items-center justify-center space-x-4">
         
             <h1 className="text-[#0E314C] text-center text-xl md:text-2xl lg:text-3xl font-semibold leading-tight mb-4 ">

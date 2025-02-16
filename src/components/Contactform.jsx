@@ -90,7 +90,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="bg-white flex items-center justify-center font-jost">
+    <div className="bg-white flex items-center justify-center font-jakarta">
       <div className="bg-white shadow-custom rounded-lg p-8 w-full max-w-6xl">
         <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">
           Ask Your Question

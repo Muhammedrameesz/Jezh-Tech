@@ -22,7 +22,7 @@ export default function Header() {
     "Empowering businesses with cutting-edge technology solutions for seamless growth and innovation.";
 
   return (
-    <div className="font-jost bg-white text-black flex items-center justify-center overflow-hidden relative min-h-screen">
+    <div className="font-jakarta bg-white text-black flex items-center justify-center overflow-hidden relative min-h-screen">
       <RandomP2 />
       <div className="absolute w-full h-full object-cover">
         <img src={Background} alt="img" />
@@ -31,7 +31,7 @@ export default function Header() {
         <div className="flex flex-col space-y-6 mt-5 md:mt-10 lg:mt-20">
           {/* Content */}
           <Anim>
-            <h1 className="text-2xl sm:text-4xl max-w-full md:max-w-md md:text-4xl text-start font-semibold text-[#0E314C] leading-10 tracking-wide mb-2 mt-10">
+            <h1 className="text-4xl sm:text-5xl max-w-full md:max-w-md md:text-5xl text-start font-semibold text-[#0E314C] leading-10 tracking-wide mb-2 mt-10">
               {sentence}
             </h1>
           </Anim>
