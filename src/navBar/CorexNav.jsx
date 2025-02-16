@@ -189,7 +189,7 @@ export default function HomeNav() {
       {/* Action Buttons */}
       <div
         onClick={() => navigate("/contact")}
-        className="hidden lg:flex gap-4 mr-10"
+        className="hidden lg:flex gap-4 mr-10 font-semibold"
       >
         <SupportButton>Contact Us</SupportButton>
       </div>
