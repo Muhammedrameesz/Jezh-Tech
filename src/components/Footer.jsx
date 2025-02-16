@@ -106,7 +106,7 @@ export default function Footer() {
           </div>
 
           <div className="text-white grid grid-cols-1 gap-5">
-            <h1 className="text-gray-100 font-semibold text-lg">Support & Info</h1>
+            <h1 className="text-gray-100 font-semibold text-lg">Quick Links</h1>
 
             <Link to="/services" className={linkStyle}>
               Services
