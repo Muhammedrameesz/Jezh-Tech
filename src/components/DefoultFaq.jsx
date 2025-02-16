@@ -1,7 +1,7 @@
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
+// import Typography from "@mui/material/Typography";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import Underline from "../ui/Underline";
@@ -92,8 +92,8 @@ export default function StyledAccordion() {
             aria-controls={`panel${index}-content`}
             id={`panel${index}-header`}
           >
-            <Typography
-              sx={{
+            <h1
+              style={{
                 fontWeight: 600,
                 fontSize: "15px",
               }}
@@ -102,16 +102,16 @@ export default function StyledAccordion() {
               }`}
             >
               {item.title}
-            </Typography>
+            </h1>
           </AccordionSummary>
           {!item.disabled && (
             <AccordionDetails>
-              <Typography
-                sx={{ fontSize: 14 }}
-                className="text-gray-500 font-jakarta"
+              <h1
+                style={{ fontSize: 14 }}
+                className="text-gray-500 font-jakarta font-medium"
               >
                 {item.content}
-              </Typography>
+              </h1>
             </AccordionDetails>
           )}
         </Accordion>

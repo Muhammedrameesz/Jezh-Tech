@@ -38,7 +38,7 @@ export default function Service() {
         <Underline />
 
         <Anim>
-          <p className="text-base text-gray-500 text-center max-w-xl leading-6">
+          <p className="text-base text-gray-500 text-center max-w-xl leading-6 font-medium">
           We offer a comprehensive suite of services to support your business growth, IoT Automation, Digital marketing, Web development, and E-commerce development. Our approach is specialized to your specific needs and budget. 
           </p>
         </Anim>

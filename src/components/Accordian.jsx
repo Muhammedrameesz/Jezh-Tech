@@ -1,7 +1,7 @@
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
+// import Typography from "@mui/material/Typography";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import Underline from "../ui/Underline";
@@ -45,7 +45,7 @@ export default function StyledAccordion() {
   ];
 
   return (
-    <div className="py-20 bg-customWhite font-jakarta flex items-center justify-center">
+    <div className="py-20 bg-customWhite font-jakarta flex items-center justify-center ">
   <div className="w-full max-w-7xl mx-5 lg:mx-14 rounded-lg grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
     {/* Left Column: Image */}
     <div className="flex justify-center mt-20">
@@ -97,26 +97,27 @@ export default function StyledAccordion() {
             aria-controls={`panel${index}-content`}
             id={`panel${index}-header`}
           >
-            <Typography
-              sx={{
+            <h1
+              style={{
                 fontWeight: 600,
                 fontSize: "15px",
+              
               }}
               className={`font-semibold group-hover:text-customGreen transition-colors duration-300 font-jakarta ${
                 expanded === index ? "text-customGreen" : "text-gray-800"
               }`}
             >
               {item.title}
-            </Typography>
+            </h1>
           </AccordionSummary>
           {!item.disabled && (
             <AccordionDetails>
-              <Typography
-                sx={{ fontSize: 14 }}
-                className="text-gray-500 font-jakarta"
+              <h1
+                style={{ fontSize: 14 }}
+                className="text-gray-500 font-jakarta font-medium"
               >
                 {item.content}
-              </Typography>
+              </h1>
             </AccordionDetails>
           )}
         </Accordion>

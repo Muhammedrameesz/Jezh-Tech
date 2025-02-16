@@ -17,7 +17,7 @@ export default function Footer() {
   return (
     <footer className="relative font-jakarta bg-black ">
       <AnimBT>
-        <div className="relative z-10 flex flex-col md:flex-row items-start justify-between py-12 px-6 md:px-12 lg:px-24 space-y-8 md:space-y-0">
+        <div className="relative z-10 flex flex-col md:flex-row items-start justify-between  py-12 px-6 md:px-10 max-w-7xl mx-auto space-y-8 md:space-y-0">
           {/* Logo and Description */}
           <div className="flex flex-col items-center md:items-start">
             <img src={Jezh} alt="JezhTechLogo" className="h-32 w-32 mb-4" />
@@ -106,7 +106,7 @@ export default function Footer() {
           </div>
 
           <div className="text-white grid grid-cols-1 gap-5">
-            <h1 className="opacity-0">Career</h1>
+            <h1 className="text-gray-100 font-semibold text-lg">Support & Info</h1>
 
             <Link to="/services" className={linkStyle}>
               Services
@@ -126,7 +126,7 @@ export default function Footer() {
 
       {/* Location Cards */}
       <div className="relative z-10 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 md:px-12 lg:px-24">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 md:px-10 mx-auto max-w-7xl">
 
           <ANim delay={0.3}>
             <div className="border border-gray-600 flex gap-5 justify-center items-center p-4 rounded text-center shadow-sm">
