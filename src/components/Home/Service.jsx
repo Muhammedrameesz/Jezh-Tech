@@ -28,7 +28,7 @@ export default function Service() {
           {/* Card 1 */}
 
           <Anim delay={0.4}>
-            <div className="bg-white h-[300px] hover:bg-customGreen rounded-lg border border-dashed border-green-200 hover:border-none font-jakarta group shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-2 transition-all duration-500">
+            <div className="bg-white h-[320px] hover:bg-customGreen rounded-lg border border-dashed border-green-200 hover:border-none font-jakarta group shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-2 transition-all duration-500">
               <div className="p-6">
                 <span className="flex items-center justify-center mb-5 bg-green-200 group-hover:bg-white transition-all duration-500 rounded-full w-12 h-12">
                   <HomeWorkOutlinedIcon
@@ -51,7 +51,7 @@ export default function Service() {
           </Anim>
           {/* Card 2 */}
           <Anim delay={0.6}>
-            <div className="bg-white h-[300px] hover:bg-customGreen rounded-lg border border-dashed border-blue-200 hover:border-none font-jakarta group shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-2 transition-all duration-500">
+            <div className="bg-white h-[320px] hover:bg-customGreen rounded-lg border border-dashed border-blue-200 hover:border-none font-jakarta group shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-2 transition-all duration-500">
               <div className="p-6 space-y-5">
                 <span className="flex items-center justify-center  bg-blue-200 group-hover:bg-white transition-all duration-500 rounded-full w-12 h-12">
                   <LanguageOutlinedIcon
@@ -74,7 +74,7 @@ export default function Service() {
           </Anim>
           {/* Card 3 */}
           <AnimRL delay={0.4}>
-            <div className="bg-white h-[300px] hover:bg-customGreen rounded-lg border border-dashed border-rose-200 hover:border-none font-jakarta group shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-2 transition-all duration-500">
+            <div className="bg-white h-[320px] hover:bg-customGreen rounded-lg border border-dashed border-rose-200 hover:border-none font-jakarta group shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-2 transition-all duration-500">
               <div className="p-6">
                 <span className="flex items-center justify-center mb-5 bg-rose-200 group-hover:bg-white transition-all duration-300 rounded-full w-12 h-12">
                   <CodeOutlinedIcon
@@ -97,7 +97,7 @@ export default function Service() {
           </AnimRL>
           {/* Card 4 */}
           <AnimRL delay={0.6}>
-            <div className="bg-white h-[300px] hover:bg-customGreen rounded-lg border border-dashed border-lime-200 hover:border-none font-jakarta group shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-2 transition-all duration-500">
+            <div className="bg-white h-[320px] hover:bg-customGreen rounded-lg border border-dashed border-lime-200 hover:border-none font-jakarta group shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-2 transition-all duration-500">
               <div className="p-6">
                 <span className="flex items-center justify-center mb-5 bg-lime-200 group-hover:bg-white transition-all duration-300 rounded-full w-12 h-12">
                   <RiRobot3Line

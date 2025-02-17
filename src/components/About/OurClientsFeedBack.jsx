@@ -110,7 +110,7 @@ const ScrollableCards = () => {
         <Slider {...settings}>
           {cards.map((card) => (
             <div key={card.id} className="p-2 ">
-              <div className="bg-white shadow-md rounded-lg hover:shadow-xl  transition-shadow duration-300 flex ">
+              <div className="bg-white shadow-md rounded-lg hover:shadow-xl  transition-shadow duration-300 flex flex-col md:flex-row justify-center items-center ">
                 {/* First Column: Image, Title, Subtitle */}
                 <div className="w-1/2 p-4 flex flex-col items-center">
                   <img
