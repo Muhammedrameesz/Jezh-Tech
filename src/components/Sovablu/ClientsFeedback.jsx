@@ -110,9 +110,9 @@ const ScrollableCards = () => {
         <Slider {...settings} arrows={false}>
           {cards.map((card) => (
             <div key={card.id} className="p-2 ">
-              <div className="bg-white shadow-md rounded-lg hover:shadow-xl max-w-xl  transition-shadow duration-300 flex justify-center items-center">
+              <div className="bg-white shadow-md rounded-lg hover:shadow-xl max-w-xl  transition-shadow duration-300 flex flex-col md:flex-row justify-center items-center">
                 {/* First Column: Image, Title, Subtitle */}
-                <div className="w-1/2 p-4 flex flex-col items-center ">
+                <div className="w-1/2 p-4 flex flex-col  mx-auto items-center ">
                   <img
                     src={card.image}
                     alt={card.title}
@@ -123,7 +123,7 @@ const ScrollableCards = () => {
                 </div>
 
                 {/* Second Column: Description, Rating */}
-                <div className="w-1/2 p-4 flex flex-col justify-between">
+                <div className="w-1/2 p-4 flex flex-col mx-auto justify-between">
                   <p className="text-gray-600 mb-4 text-sm font-semibold">{card.description}</p>
                   <div className="flex items-center">{renderStars(card.rating)}</div>
                 </div>

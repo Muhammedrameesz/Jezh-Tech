@@ -32,7 +32,7 @@ export default function OurFeatures() {
                   className="text-green-700 text-lg group-hover:text-white transition-all duration-500"
                 />
               </span>
-              <div className="flex flex-col gap-2 w-auto h-24">
+              <div className="flex flex-col gap-2 w-auto h-[170px] md:h-24">
                 <h1 className="text-base font-semibold w-fit text-gray-700 ">
                 AI-Powered Solutions
                 </h1>
@@ -52,7 +52,7 @@ export default function OurFeatures() {
                 />
               </span>
 
-              <div className="flex flex-col gap-2 w-auto h-24">
+              <div className="flex flex-col gap-2 w-auto h-[170px]  lg:h-24">
                 <h1 className="text-base w-fit font-semibold text-gray-700 ">
                 Engaging User Experiences 
                 </h1>
@@ -71,7 +71,7 @@ export default function OurFeatures() {
                   className="text-orange-700 text-lg group-hover:text-white transition-all duration-500"
                 />
               </span>
-              <div className="flex flex-col gap-2 w-auto h-24">
+              <div className="flex flex-col gap-2 w-auto h-[170px]  lg:h-24">
                 <h1 className="text-base w-fit font-semibold text-gray-700 ">
                 Accessibility 
                 </h1>
@@ -92,7 +92,7 @@ export default function OurFeatures() {
                   className="text-green-700 text-lg group-hover:text-white transition-all duration-500"
                 />
               </span>
-              <div className="flex flex-col gap-2 w-auto h-24">
+              <div className="flex flex-col gap-2 w-auto h-[170px]  lg:h-24">
                 <h1 className="text-base w-fit font-semibold text-gray-700 ">
                 Personalization 
                 </h1>
@@ -111,7 +111,7 @@ export default function OurFeatures() {
                   className="text-fuchsia-700 text-lg group-hover:text-white transition-all duration-500"
                 />
               </span>
-              <div className="flex flex-col gap-2 w-auto h-24">
+              <div className="flex flex-col gap-2 w-auto h-[170px]  lg:h-24">
                 <h1 className="text-base w-fit font-semibold text-gray-700 ">
                 Data Driven Decisions 
                 </h1>
@@ -130,7 +130,7 @@ export default function OurFeatures() {
                   className="text-orange-700 text-lg group-hover:text-white transition-all duration-500"
                 />
               </span>
-              <div className="flex flex-col gap-2 w-auto h-24">
+              <div className="flex flex-col gap-2 w-auto h-[170px]  lg:h-24">
                 <h1 className="text-base w-fit font-semibold text-gray-700 ">
                 Continuous Improvement 
                 </h1>
