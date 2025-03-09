@@ -5,7 +5,7 @@ import { useState } from "react";
 import { navLinks, dropdownLinks } from "./navLinks.jsx";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
-import {motion} from "framer-motion"
+import {motion,AnimatePresence} from "framer-motion"
 
 export default function ResponsiveNav() {
   const [open, setOpen] = useState(false);
@@ -26,7 +26,7 @@ export default function ResponsiveNav() {
   }
 
   return (
-    <div className="relative font-jakarta">
+    <div className="relative font-jakarta bg-white">
       {/* Navbar Toggle Button */}
       <div className="flex justify-end items-center p-4">
         <button onClick={() => setOpen(!open)} className="text-gray-950 z-20">
@@ -47,12 +47,13 @@ export default function ResponsiveNav() {
       )}
 
       {/* Navigation Drawer */}
-      {open && (
+      {/* {open && ( */}
+        {/* <AnimatePresence> */}
         <motion.div 
-         initial={{height:0,width:0}}
-         animate={open?{height:'100%',width:'100%'}:{height:0,width:0}}
-         transition={{duration:0.2}}
-          className="fixed top-0 left-0  bg-gray-50 z-10 p-6 overflow-y-auto">
+         initial={{height:0,width:'100%'}}
+         animate={open?{height:'100%'}:{height:0}}
+         transition={{duration:0.5,ease:'easeInOut'}}
+          className="fixed inset-0  bg-white z-10 p-6 overflow-y-auto">
           <ul className="flex flex-col mt-14 gap-6 text-gray-800 ">
             {navLinks?.map((item) => (
               <li key={item.element} className="relative">
@@ -123,7 +124,8 @@ export default function ResponsiveNav() {
            
           </div>
         </motion.div>
-      )}
+        {/* </AnimatePresence> */}
+      {/* )} */}
     </div>
   );
 }

@@ -93,6 +93,7 @@ export default function StyledAccordion() {
           <div>
             {leftColumnData.map((item, index) => (
               <Accordion
+                
                 key={`left-${index}`}
                 expanded={expanded === `left-${index}`}
                 onChange={handleChange(`left-${index}`)}
@@ -103,6 +104,7 @@ export default function StyledAccordion() {
                   borderRadius: "8px",
                   overflow: "hidden",
                   marginBottom: "20px",
+                  
                 }}
               >
                 <AccordionSummary

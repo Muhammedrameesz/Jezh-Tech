@@ -10,7 +10,6 @@ function App() {
   const sentence =
         "Your concerns, ideas, and feedback are important to us. Reach out to our team, and together, we make sure you get the best experience possible."
     
-
   return (
     <div className="relative pt-28 flex flex-col justify-center items-center gap-10 font-jakarta  overflow-hidden">
        <div className="absolute w-full h-full object-cover  z-[-1]">

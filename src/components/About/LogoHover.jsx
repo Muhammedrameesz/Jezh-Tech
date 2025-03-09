@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import partner1 from "../../assets/images/Clients/Adarsh B&W.png";
 import partner2 from "../../assets/images/Clients/DSSC B&W.png";
 import partner3 from "../../assets/images/Clients/lg construction  B&W.png";
-import partner4 from "../../assets/images/Clients/Ramakrishna college B&W.png";
+// import partner4 from "../../assets/images/Clients/Ramakrishna college B&W.png";
 import partner5 from "../../assets/images/Clients/ricspace B&W.png";
 import partner6 from "../../assets/images/Clients/Rojavanam B&W.png";
 import partner7 from "../../assets/images/Clients/Sidone B&W.png";
@@ -19,7 +19,7 @@ import partner10 from "../../assets/partners/booba logo-modified (1).jpg";
 import partnerHover1 from "../../assets/images/Clients/Adarsh Logo.png";
 import partnerHover2 from "../../assets/images/Clients/DSSC logo.png";
 import partnerHover3 from "../../assets/images/Clients/lg construction logo.png";
-import partnerHover4 from "../../assets/images/Clients/Ramakrishna college logo.png";
+// import partnerHover4 from "../../assets/images/Clients/Ramakrishna college logo.png";
 import partnerHover5 from "../../assets/images/Clients/ricspace logo.png";
 import partnerHover6 from "../../assets/images/Clients/Rojavanam internation school logo.png";
 import partnerHover7 from "../../assets/images/Clients/Sidone logo.jpg";
@@ -30,7 +30,7 @@ import partnerHover10 from "../../assets/partners/BoobaTaxiSecond.png";
 const partners = [
   { normal: partner1, hover: partnerHover1 },
   { normal: partner2, hover: partnerHover2 },
-  { normal: partner4, hover: partnerHover4 },
+  // { normal: partner4, hover: partnerHover4 },
   { normal: partner3, hover: partnerHover3 },
  
   { normal: partner5, hover: partnerHover5 },

@@ -71,13 +71,13 @@ export default function LineIntegration() {
       </section>
 
       <div className="flex items-center justify-center py-10">
-        <section className="grid lg:hidden grid-cols-2 justify-center items-center gap-10">
+        <section className="grid lg:hidden grid-cols-1 justify-center items-center gap-10">
           {imageArray?.map((item, i) => (
             <img
               key={i}
               src={item}
               alt="images"
-              className="w-[150px] h-[150px] md:w-[150 md:h-[150px]"
+              className="w-[200px] h-auto"
             />
           ))}
         </section>

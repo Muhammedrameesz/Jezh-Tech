@@ -23,7 +23,7 @@ export default function OurFeatures() {
       <div className="grid grid-cols-1 md:grid-cols-2 mx-16 my-20 gap-8">
         <section className="flex flex-col items-center justify-center gap-5 ">
           <AnimBT>
-            <div className="flex flex-col md:flex-row gap-5 bg-white rounded-lg p-5 group hover:bg-white shadow-custom hover:shadow-none transform hover:-translate-y-3 transition-all duration-700 ">
+            <div className="flex min-h-[130px] flex-col md:flex-row gap-5 bg-white rounded-lg p-5 group hover:bg-white shadow-custom hover:shadow-none transform hover:-translate-y-3 transition-all duration-700 ">
               <span className="flex items-center justify-center bg-white shadow-lg group-hover:shadow-custom transition-all duration-500 rounded-full h-12 p-5 w-12">
                 <CodeIcon
                   sx={{ transition: "all 0.5s ease" }}
@@ -34,7 +34,7 @@ export default function OurFeatures() {
                 <h1 className="text-base font-semibold w-fit text-gray-700 ">
                 Rapid Development
                 </h1>
-                <p className="text-sm text-gray-400 group-hover:text-gray-600 font-semibold transition-all duration-500">
+                <p className="text-sm text-gray-600 group-hover:text-gray-700 font-medium  transition-all duration-500">
                 You will be capable of developing complex apps simultaneously 5x faster with a no-code approach meaning you will not have to code anything at all. 
                 </p>
               </div>
@@ -42,7 +42,7 @@ export default function OurFeatures() {
           </AnimBT>
 
           <AnimBT>
-            <div className="flex flex-col md:flex-row gap-5 rounded-lg bg-white p-5 group hover:bg-white shadow-custom hover:shadow-none transform hover:-translate-y-3 transition-all duration-700">
+            <div className="flex min-h-[130px] flex-col md:flex-row gap-5 rounded-lg bg-white p-5 group hover:bg-white shadow-custom hover:shadow-none transform hover:-translate-y-3 transition-all duration-700">
               <span className="flex items-center justify-center bg-white shadow-lg group-hover:shadow-custom transition-all duration-500 rounded-full h-12 p-5 w-12">
                 <SmartToyIcon
                   sx={{ transition: "all 0.5s " }}
@@ -54,7 +54,7 @@ export default function OurFeatures() {
                 <h1 className="text-base w-fit font-semibold text-gray-700 ">
                 Seamless AI Integration
                 </h1>
-                <p className="text-sm text-gray-400 group-hover:text-gray-600 font-semibold transition-all duration-500">
+                <p className="text-sm text-gray-600 group-hover:text-gray-700 font-medium  transition-all duration-500">
                 Utilize advanced AI technologies for faster development and to gain the advanced functionality conveniently embedded into the applications.
                 </p>
               </div>
@@ -66,7 +66,7 @@ export default function OurFeatures() {
 
         <section className="flex flex-col items-center justify-center gap-5 ">
           <AnimBT delay={0.3}>
-            <div className="flex flex-col md:flex-row gap-5 rounded-lg bg-white p-5 group hover:bg-white shadow-custom hover:shadow-none transform hover:-translate-y-3 transition-all duration-700">
+            <div className="flex min-h-[130px] flex-col md:flex-row gap-5 rounded-lg bg-white p-5 group hover:bg-white shadow-custom hover:shadow-none transform hover:-translate-y-3 transition-all duration-700">
               <span className="flex items-center justify-center bg-white shadow-lg group-hover:shadow-custom transition-all duration-500 rounded-full h-12 p-5 w-12">
                 <GroupsIcon
                   sx={{ transition: "all 0.5s ease" }}
@@ -77,7 +77,7 @@ export default function OurFeatures() {
                 <h1 className="text-base w-fit font-semibold text-gray-700 ">
                 Enhanced Collaboration
                 </h1>
-                <p className="text-sm text-gray-400 group-hover:text-gray-600 font-semibold transition-all duration-500">
+                <p className="text-sm text-gray-600 group-hover:text-gray-700 font-medium  transition-all duration-500">
                 Support IT and business personnel and help them cooperate to create new solutions and improve the existing ones with the help of clear forms of presentation and data modelling.
                 </p>
               </div>
@@ -85,7 +85,7 @@ export default function OurFeatures() {
           </AnimBT>
 
           <AnimBT delay={0.3}>
-            <div className="flex flex-col md:flex-row gap-5 rounded-lg bg-white p-5 group hover:bg-white shadow-custom hover:shadow-none transform hover:-translate-y-3 transition-all duration-700">
+            <div className="flex min-h-[130px] flex-col md:flex-row gap-5 rounded-lg bg-white p-5 group hover:bg-white shadow-custom hover:shadow-none transform hover:-translate-y-3 transition-all duration-700">
               <span className="flex items-center justify-center bg-white shadow-lg group-hover:shadow-custom transition-all duration-500 rounded-full h-12 p-5 w-12">
                 <PaidIcon
                   sx={{ transition: "all 0.5s ease" }}
@@ -96,7 +96,7 @@ export default function OurFeatures() {
                 <h1 className="text-base w-fit font-semibold text-gray-700  ">
                 Cost-Effective Licensing
                 </h1>
-                <p className="text-sm text-gray-400 group-hover:text-gray-600 font-semibold transition-all duration-500">
+                <p className="text-sm text-gray-600 group-hover:text-gray-700 font-medium transition-all duration-500">
                 Enjoy entrusting business with a “pay as you grow” licensing model that provides unlimited user access and gives you freedom to shape the way how to engage the customers.
                 </p>
               </div>

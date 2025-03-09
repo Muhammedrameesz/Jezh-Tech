@@ -126,12 +126,12 @@ export default function Footer() {
 
       {/* Location Cards */}
       <div className="relative z-10 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 md:px-10 mx-auto max-w-7xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-6 md:px-10 mx-auto max-w-7xl">
 
           <ANim delay={0.3}>
-            <div className="border border-gray-600 flex gap-5 justify-center items-center p-4 rounded text-center shadow-sm">
+            <div className="border w-f border-gray-600 flex gap-5 justify-center items-center p-4 rounded text-center shadow-sm">
               <div className="">
-                <CiLocationOn className="text-gray-100 text-2xl lg:text-3xl" />
+                <CiLocationOn className="text-gray-100 text-3xl lg:text-4xl" />
               </div>
               <div>
                 <h2 className="text-gray-100 text-lg font-semibold mb-2">
@@ -146,7 +146,7 @@ export default function Footer() {
             </div>
           </ANim>
 
-          <ANim delay={0.4}>
+          {/* <ANim delay={0.4}>
             <div className="border border-gray-600 flex gap-5 justify-center items-center p-4 rounded text-center shadow-sm">
               <div className="">
                 <CiLocationOn className="text-gray-100 text-2xl lg:text-3xl" />
@@ -162,12 +162,12 @@ export default function Footer() {
                 </p>
               </div>
             </div>
-          </ANim>
+          </ANim> */}
 
-          <ANim delay={0.5}>
+          <ANim delay={0.4}>
             <div className="border border-gray-600 flex gap-5 justify-center items-center p-4 rounded text-center shadow-sm">
               <div className="">
-                <CiLocationOn className="text-gray-100 text-2xl lg:text-3xl" />
+                <CiLocationOn className="text-gray-100 text-3xl lg:text-4xl" />
               </div>
               <div>
                 <h2 className="text-gray-100 text-lg font-semibold mb-2">
